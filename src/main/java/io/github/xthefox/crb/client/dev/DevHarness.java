@@ -23,6 +23,8 @@ import java.util.Deque;
  * waitmove 56             # until the local player's active move reaches elapsed tick 56
  * cmd crb kit give @s crb:gojo
  * look 90 10              # yaw pitch
+ * combat on               # Combat Mode on/off
+ * cast 2 sneak up         # cast skill key 2 with sneak + look-up modifiers (also: air)
  * fx ds:hollow_blue_stars 3 1.5   # spawn a Bedrock particle effect 3 blocks ahead, 1.5 up
  * shot hollow_purple_t56  # screenshot into &lt;gameDir&gt;/screenshots/harness/
  * quit
@@ -106,6 +108,17 @@ public final class DevHarness {
                     var pos = io.github.xthefox.crb.move.CuePositions.local(mc.player.position().add(0, upOff, 0), mc.player.getYRot(), 0, left, 0, fwd);
                     boolean ok = io.github.xthefox.crb.client.fx.BedrockFX.INSTANCE.spawn(a[0], pos, mc.player.getYRot(), null);
                     if (!ok) CRB.LOG.warn("Dev harness: unknown effect {}", a[0]);
+                }
+                case "combat" -> io.github.xthefox.crb.client.input.CombatMode.setEnabled(arg.trim().equals("on"));
+                case "page" -> io.github.xthefox.crb.client.input.CombatMode.setPage(Integer.parseInt(arg.trim()) - 1);
+                case "cast" -> {
+                    // cast <key 1-6> [sneak] [air] [up]: fire a Combat Mode key with the given stance
+                    String[] a = arg.trim().split("\\s+");
+                    int key = Integer.parseInt(a[0]) - 1;
+                    java.util.Set<String> m = java.util.Set.of(a).stream().skip(0).collect(java.util.stream.Collectors.toSet());
+                    var mods = new io.github.xthefox.crb.ability.Modifiers(m.contains("sneak"), m.contains("air"), m.contains("up"));
+                    net.neoforged.neoforge.network.PacketDistributor.sendToServer(new io.github.xthefox.crb.net.MovePayloads.AbilityInput(
+                            io.github.xthefox.crb.client.input.CombatMode.page(), key, mods.toBits()));
                 }
                 case "look" -> {
                     String[] a = arg.trim().split("\\s+");
