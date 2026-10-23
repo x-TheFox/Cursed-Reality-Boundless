@@ -1,0 +1,59 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "crb"
+version = "0.1.0"
+displayName = "Cursed Reality: Boundless"
+authors = "x-TheFox"
+description = '''A NeoForge port of the Jujutsu Awakening Bedrock addon: techniques, domains, bosses and anime-style cinematics.'''
+
+[[dependencies.crb]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.219,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.crb]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.crb]]
+modId = "geckolib"
+type = "required"
+versionRange = "[4.9.3,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.crb]]
+modId = "player_animation_library"
+type = "required"
+versionRange = "[1.1.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.crb]]
+modId = "free_camera_api"
+type = "required"
+versionRange = "[3.2.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.crb]]
+modId = "veil"
+type = "required"
+versionRange = "[4.5.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.crb]]
+modId = "smartbrainlib"
+type = "required"
+versionRange = "[1.16.11,)"
+ordering = "NONE"
+side = "BOTH"

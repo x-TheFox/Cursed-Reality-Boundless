@@ -1,0 +1,32 @@
+{
+  "display": "Kinji Hakari",
+  "technique": "crb:love_train",
+  "forms": "max",
+  "traits": [
+    "crb:restless_gambler"
+  ],
+  "unlocks": [
+    "crb:rct"
+  ],
+  "grade": "grade_1",
+  "stats": {
+    "strength": 45,
+    "endurance": 50,
+    "agility": 40,
+    "energy_cap": 3000
+  },
+  "combat_styles": [
+    "crb:lovetrain_fists"
+  ],
+  "items": [
+    {
+      "id": "crb:gamblers_hoodie"
+    },
+    {
+      "id": "crb:gamblers_legs"
+    }
+  ],
+  "claims": [
+    "crb:love_train"
+  ]
+}

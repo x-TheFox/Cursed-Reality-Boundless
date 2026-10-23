@@ -1,0 +1,26 @@
+{
+  "display": "Hajime Kashimo",
+  "technique": "crb:mythical_beast_amber",
+  "forms": "max",
+  "unlocks": [
+    "crb:rct"
+  ],
+  "grade": "special",
+  "stats": {
+    "strength": 45,
+    "endurance": 40,
+    "agility": 55,
+    "energy_cap": 4000
+  },
+  "combat_styles": [
+    "crb:lightning1"
+  ],
+  "items": [
+    {
+      "id": "crb:kashimo_fit"
+    }
+  ],
+  "claims": [
+    "crb:mythical_beast_amber"
+  ]
+}

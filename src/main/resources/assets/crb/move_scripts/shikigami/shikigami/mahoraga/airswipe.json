@@ -1,0 +1,1 @@
+{"source":"shikigami/shikigami/mahoraga/airswipe","key":"move","duration":28,"cues":[{"t":1,"until":1,"type":"anim","anim":"animation.mahoraga.airswipe","target":"self"},{"t":9,"until":9,"type":"particle","particle":"ds:ground_slam2","at":[{"local":[0.0,1.0,2.0]}]},{"t":9,"until":9,"type":"particle","particle":"ds:ground_slam2","at":[{"local":[0.0,1.0,2.0]}]}]}

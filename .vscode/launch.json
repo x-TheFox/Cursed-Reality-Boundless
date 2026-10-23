@@ -1,0 +1,71 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - cursed-reality-boundless",
+        "order": 0
+      },
+      "projectName": "cursed-reality-boundless",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@/Users/mb/Documents/Github/Cursed Reality-Boundless WORKSPACE/CRB/build/moddev/clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@/Users/mb/Documents/Github/Cursed Reality-Boundless WORKSPACE/CRB/build/moddev/clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dcrb%%/Users/mb/Documents/Github/Cursed Reality-Boundless WORKSPACE/CRB/bin/main"
+      ],
+      "cwd": "${workspaceFolder}/run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "GameTestServer",
+      "presentation": {
+        "group": "Mod Development - cursed-reality-boundless",
+        "order": 1
+      },
+      "projectName": "cursed-reality-boundless",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@/Users/mb/Documents/Github/Cursed Reality-Boundless WORKSPACE/CRB/build/moddev/gameTestServerRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@/Users/mb/Documents/Github/Cursed Reality-Boundless WORKSPACE/CRB/build/moddev/gameTestServerRunVmArgs.txt",
+        "-Dfml.modFolders\u003dcrb%%/Users/mb/Documents/Github/Cursed Reality-Boundless WORKSPACE/CRB/bin/main"
+      ],
+      "cwd": "${workspaceFolder}/run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - cursed-reality-boundless",
+        "order": 2
+      },
+      "projectName": "cursed-reality-boundless",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@/Users/mb/Documents/Github/Cursed Reality-Boundless WORKSPACE/CRB/build/moddev/serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@/Users/mb/Documents/Github/Cursed Reality-Boundless WORKSPACE/CRB/build/moddev/serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dcrb%%/Users/mb/Documents/Github/Cursed Reality-Boundless WORKSPACE/CRB/bin/main"
+      ],
+      "cwd": "${workspaceFolder}/run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}

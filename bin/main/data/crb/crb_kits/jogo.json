@@ -1,0 +1,26 @@
+{
+  "display": "Jogo",
+  "technique": "crb:disaster_flames",
+  "forms": "max",
+  "traits": [
+    "crb:curse"
+  ],
+  "grade": "special",
+  "stats": {
+    "strength": 35,
+    "endurance": 45,
+    "agility": 40,
+    "energy_cap": 5000
+  },
+  "combat_styles": [
+    "crb:flames_fists"
+  ],
+  "items": [
+    {
+      "id": "crb:jogo_fit"
+    }
+  ],
+  "claims": [
+    "crb:disaster_flames"
+  ]
+}

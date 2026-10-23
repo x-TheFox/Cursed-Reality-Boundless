@@ -1,0 +1,1 @@
+{"source":"shikigami/shikigami/mahoraga_clash_barrage","key":"cutscene","duration":140,"cues":[{"t":1,"until":1,"type":"anim","anim":"animation.mahoraga.punch_barrage","target":"self","cond":["family=mahoraga","tag=ClashBarrage"]}]}

@@ -1,0 +1,1 @@
+{"source":"boogie_woogie/boogie_bc3","key":"move","duration":31,"cues":[{"t":1,"until":1,"type":"anim","anim":"animation.todo.stylistic_swap1","target":"self"},{"t":11,"until":11,"type":"sound","sound":"mob.witch.throw","audience":"radius:15","at":[{"local":[0.0,0.0,2.5]},{"rel":[0.0,0.0,0.0]}],"volume":9999.0,"pitch":1.25}]}

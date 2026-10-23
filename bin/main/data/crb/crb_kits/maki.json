@@ -1,0 +1,30 @@
+{
+  "display": "Maki Zenin",
+  "technique": "crb:heavenly_restriction",
+  "forms": "max",
+  "traits": [
+    "crb:heavenly_restriction",
+    "crb:heavenly_restriction_zenin"
+  ],
+  "grade": "special",
+  "stats": {
+    "strength": 60,
+    "endurance": 55,
+    "agility": 65,
+    "energy_cap": 0
+  },
+  "combat_styles": [
+    "crb:hr_combat"
+  ],
+  "items": [
+    {
+      "id": "crb:soul_sword"
+    },
+    {
+      "id": "crb:slaughter_demon"
+    },
+    {
+      "id": "crb:playful_cloud"
+    }
+  ]
+}

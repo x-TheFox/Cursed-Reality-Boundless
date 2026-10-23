@@ -1,0 +1,1 @@
+{"source":"shikigami/shikigami/mahoragaboss","key":"move","duration":26,"cues":[{"t":0,"until":1,"type":"anim","anim":"animation.mahoraga.small_adaption","target":"self","cond":["tag=small_adapt"]},{"t":19,"until":19,"type":"sound","sound":"music.adapt","audience":"radius:200","at":[],"cond":["tag=small_adapt"]}]}

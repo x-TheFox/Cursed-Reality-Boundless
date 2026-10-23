@@ -1,0 +1,24 @@
+{
+  "display": "Atsuya Kusakabe",
+  "grade": "grade_1",
+  "unlocks": [
+    "crb:simple_domain"
+  ],
+  "stats": {
+    "strength": 35,
+    "endurance": 35,
+    "agility": 40,
+    "energy_cap": 1200
+  },
+  "items": [
+    {
+      "id": "crb:shadow_style_katana"
+    },
+    {
+      "id": "crb:kusakabe_fit"
+    },
+    {
+      "id": "crb:kusakabe_cloak"
+    }
+  ]
+}

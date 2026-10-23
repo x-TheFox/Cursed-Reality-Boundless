@@ -1,0 +1,2201 @@
+{
+ "controller.render.afraid_face": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.afraid_face"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.afraid_face"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:afraid_face')]",
+  "materials": [
+   {
+    "*": "Material.blend"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:afraid_face')]"
+  ]
+ },
+ "controller.render.airhorn": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.textureoff",
+     "Geometry.airhorn"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.airhorn"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:airhorn')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:airhorn')]"
+  ]
+ },
+ "controller.render.animated_hats": {
+  "geometry": "Geometry.default",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Texture.default"
+  ]
+ },
+ "controller.render.arx.entity.outline": {
+  "geometry": "geometry.outline",
+  "ignore_lighting": true,
+  "materials": [
+   {
+    "*": "material.outline"
+   }
+  ],
+  "textures": [
+   "texture.outline"
+  ]
+ },
+ "controller.render.astaroth_lament": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.astaroth_lament"
+    ]
+   }
+  },
+  "geometry": "Geometry.astaroth_lament",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "query.property('property:astaroth_lament') == 1 ? Texture.astaroth_lament : (query.property('property:astaroth_lament') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.belt": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.belt",
+     "Geometry.belt"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.belt",
+     "Texture.belt"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:belt')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:belt')]"
+  ]
+ },
+ "controller.render.benedictus": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.default",
+     "Geometry.awakened"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.default",
+     "Texture.awakened"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:awakened')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:awakened')]"
+  ]
+ },
+ "controller.render.block_hat": {
+  "geometry": "Geometry.default",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Texture.default"
+  ]
+ },
+ "controller.render.body_transfigure": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.body_transfigure",
+     "Geometry.mouth_handsigns"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.default",
+     "Texture.default"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:body_transfigure')]",
+  "materials": [
+   {
+    "*": "Material.entity_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:body_transfigure')]"
+  ]
+ },
+ "controller.render.body_transfigure2": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.body_transfigure",
+     "Geometry.mouth_handsigns"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.default2",
+     "Texture.default2"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:body_transfigure')]",
+  "materials": [
+   {
+    "*": "Material.entity_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:body_transfigure')]"
+  ]
+ },
+ "controller.render.butterjaffa_sword": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.no",
+     "Geometry.butterjaffa_sword"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.butterjaffa_sword"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:butterjaffa_sword')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:butterjaffa_sword')]"
+  ]
+ },
+ "controller.render.colours": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.default",
+     "Geometry.default",
+     "Geometry.default",
+     "Geometry.default",
+     "Geometry.default",
+     "Geometry.default"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.white",
+     "Texture.pink",
+     "Texture.hearts",
+     "Texture.yellow",
+     "Texture.yellow_pink",
+     "Texture.black"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:colours')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:colours')]"
+  ]
+ },
+ "controller.render.divergent_fists": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff"
+    ]
+   }
+  },
+  "geometry": "Geometry.nothing",
+  "ignore_lighting": true,
+  "materials": [
+   {
+    "*": "Material.emissive"
+   }
+  ],
+  "textures": [
+   "query.property('property:divergent_fists') == 1 ? Texture.textureoff : (query.property('property:divergent_fists') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.evidence": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.evidence"
+    ]
+   }
+  },
+  "geometry": "Geometry.evidence",
+  "ignore_lighting": true,
+  "materials": [
+   {
+    "*": "Material.emissive"
+   }
+  ],
+  "textures": [
+   "query.property('property:evidence') == 1 ? Texture.evidence : (query.property('property:evidence') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.execution_sword": {
+  "geometry": "geometry.locator_players",
+  "materials": [
+   {
+    "*": "material.default"
+   }
+  ],
+  "textures": [
+   "texture.textureoff"
+  ]
+ },
+ "controller.render.explode_staff": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.no",
+     "Geometry.explode_staff"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.explode_staff"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:explode_staff')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:explode_staff')]"
+  ]
+ },
+ "controller.render.extermination_sword": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.extermination_sword"
+    ]
+   }
+  },
+  "geometry": "Geometry.extermination_sword",
+  "materials": [
+   {
+    "*": "Material.emissive"
+   }
+  ],
+  "textures": [
+   "query.property('property:extermination_sword') == 1 ? Texture.extermination_sword : (query.property('property:extermination_sword') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.extermination_swordretracted": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.extermination_sword"
+    ]
+   }
+  },
+  "geometry": "Geometry.extermination_swordretracted",
+  "materials": [
+   {
+    "*": "Material.emissive"
+   }
+  ],
+  "textures": [
+   "query.property('property:extermination_swordretracted') == 1 ? Texture.extermination_sword : (query.property('property:exterminationretracted_sword') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.eyelashes": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.eyes",
+     "Geometry.eyes"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.eyelashes",
+     "Texture.eyelashes"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:eyelashes')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:eyelashes')]"
+  ]
+ },
+ "controller.render.eyes": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.eyes",
+     "Geometry.eyes",
+     "Geometry.eyes",
+     "Geometry.eyes",
+     "Geometry.eyes",
+     "Geometry.eyes",
+     "Geometry.eyes",
+     "Geometry.eyes",
+     "Geometry.eyes",
+     "Geometry.eyes"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.eyes_red",
+     "Texture.eyes_blue",
+     "Texture.eyes_gray",
+     "Texture.eyes_orange",
+     "Texture.eyes_serious_teal",
+     "Texture.eyes_serious_red",
+     "Texture.eyes_serious_blue",
+     "Texture.eyes_serious_gray",
+     "Texture.eyes_serious_orange",
+     "Texture.eyes_serious_teal"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:eyes')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:eyes')]"
+  ]
+ },
+ "controller.render.fuga_scythe": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.fuga_scythe"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.fuga_scythe"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:fuga_scythe')]",
+  "materials": [
+   {
+    "*": "Material.additive"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:fuga_scythe')]"
+  ]
+ },
+ "controller.render.fuga_spear": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.fuga_spear"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.fuga_spear"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:fuga_spear')]",
+  "materials": [
+   {
+    "*": "Material.additive"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:fuga_spear')]"
+  ]
+ },
+ "controller.render.glocks": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.glocks"
+    ]
+   }
+  },
+  "geometry": "Geometry.glocks",
+  "materials": [
+   {
+    "*": "Material.emissive"
+   }
+  ],
+  "textures": [
+   "query.property('property:glocks') == 1 ? Texture.glocks : (query.property('property:glocks') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.glowing": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.default",
+     "Geometry.default"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.not_glowing",
+     "Texture.glowing"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:glowing')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:glowing')]"
+  ]
+ },
+ "controller.render.gray": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.default",
+     "Geometry.default"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.default",
+     "Texture.gray"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:gray')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:gray')]"
+  ]
+ },
+ "controller.render.hair": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair",
+     "Geometry.hair"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.hair_normal",
+     "Texture.hair_normal2",
+     "Texture.hair_normal3",
+     "Texture.hair_normal4",
+     "Texture.hair_classic",
+     "Texture.hair_classic2",
+     "Texture.hair_classic3",
+     "Texture.hair_classic4",
+     "Texture.hair_straight",
+     "Texture.hair_straight2",
+     "Texture.hair_straight3",
+     "Texture.hair_straight4",
+     "Texture.hair_long",
+     "Texture.hair_long2",
+     "Texture.hair_long3",
+     "Texture.hair_long4",
+     "Texture.hair_long5"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:hair')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:hair')]"
+  ]
+ },
+ "controller.render.hair_female": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female",
+     "Geometry.hair_female"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.hair_normal",
+     "Texture.hair_normal2",
+     "Texture.hair_normal3",
+     "Texture.hair_normal4",
+     "Texture.hair_classic",
+     "Texture.hair_classic2",
+     "Texture.hair_classic3",
+     "Texture.hair_classic4",
+     "Texture.hair_straight",
+     "Texture.hair_straight2",
+     "Texture.hair_straight3",
+     "Texture.hair_straight4",
+     "Texture.hair_long2",
+     "Texture.hair_long2",
+     "Texture.hair_long3",
+     "Texture.hair_long4",
+     "Texture.hair_long5"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:hair_female')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:hair_female')]"
+  ]
+ },
+ "controller.render.hazy_moon": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.hazy_moon"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.hazy_moon"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:hazy_moon')]",
+  "materials": [
+   {
+    "*": "Material.additive"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:hazy_moon')]"
+  ]
+ },
+ "controller.render.heart": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.textureoff",
+     "Geometry.heart",
+     "Geometry.rippedfinger",
+     "Geometry.yuji_rage",
+     "Geometry.rock_item",
+     "Geometry.megaphone",
+     "Geometry.special_charm",
+     "Geometry.rock_item2",
+     "Geometry.textureoff",
+     "Geometry.textureoff"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.heart",
+     "Texture.rippedfinger",
+     "Texture.yuji_rage",
+     "Texture.rock_item",
+     "Texture.megaphone",
+     "Texture.special_charm",
+     "Texture.rock_item",
+     "Texture.textureoff",
+     "Texture.textureoff"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:heart')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:heart')]"
+  ]
+ },
+ "controller.render.heart_wound": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.textureoff",
+     "Geometry.heart_wound"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.heart_wound"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:heart_wound')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:heart_wound')]"
+  ]
+ },
+ "controller.render.heian_sukuna": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.default2",
+     "Geometry.heian_sukuna",
+     "Geometry.heian_sukuna",
+     "Geometry.instant_body"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.default2",
+     "Texture.heian_sukuna",
+     "Texture.heian_sukuna_red",
+     "Texture.instant_body"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:body_transformation')]",
+  "materials": [
+   {
+    "*": "Material.entity_alphatest"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:body_transformation')]"
+  ]
+ },
+ "controller.render.hiten": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.hiten",
+     "Geometry.hiten_left"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.hiten",
+     "Texture.hiten"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:hiten')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:hiten')]"
+  ]
+ },
+ "controller.render.hollow_basket": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.hollow_basket"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.hollow_basket"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:hollow_basket')]",
+  "materials": [
+   {
+    "*": "Material.additive"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:hollow_basket')]"
+  ]
+ },
+ "controller.render.impactblack": {
+  "geometry": "Geometry.inversionbox",
+  "ignore_lighting": true,
+  "materials": [
+   {
+    "*": "Material.impactblack"
+   }
+  ],
+  "textures": [
+   "Texture.black"
+  ]
+ },
+ "controller.render.inventory_curse": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.inventory_curse"
+    ]
+   }
+  },
+  "geometry": "Geometry.inventory_curse",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "query.property('property:inventory_curse') == 1 ? Texture.inventory_curse : (query.property('property:inventory_curse') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.joystick": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.joystick"
+    ]
+   }
+  },
+  "geometry": "Geometry.joystick",
+  "materials": [
+   {
+    "*": "Material.emissive"
+   }
+  ],
+  "textures": [
+   "query.property('property:joystick') == 1 ? Texture.joystick : (query.property('property:joystick') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.kamutoke": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.kamutoke",
+     "Geometry.kamutoke_right"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.kamutoke",
+     "Texture.kamutoke"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:kamutoke')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:kamutoke')]"
+  ]
+ },
+ "controller.render.katana2": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.katana2_sheathed",
+     "Geometry.katana2_sheathed",
+     "Geometry.katana2",
+     "Geometry.katana2_sheathed",
+     "Geometry.katana3"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.katana2",
+     "Texture.katana2",
+     "Texture.textureoff",
+     "Texture.katana2"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:katana2')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:katana2')]"
+  ]
+ },
+ "controller.render.katana_renders": {
+  "geometry": "geometry.katana_renders",
+  "materials": [
+   {
+    "*": "material.default"
+   }
+  ],
+  "textures": [
+   "texture.textureoff"
+  ]
+ },
+ "controller.render.killer_bunny": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.brown",
+     "Texture.white",
+     "Texture.black",
+     "Texture.white_splotched",
+     "Texture.gold",
+     "Texture.salt"
+    ]
+   }
+  },
+  "geometry": "Geometry.default",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "query.get_name == 'Toast' ? Texture.toast : Array.skins[query.variant]"
+  ]
+ },
+ "controller.render.locator_players": {
+  "geometry": "geometry.locator_players",
+  "materials": [
+   {
+    "*": "material.default"
+   }
+  ],
+  "textures": [
+   "texture.textureoff"
+  ]
+ },
+ "controller.render.luminosity_emblem": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.luminosity_emblem"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.luminosity_emblem"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:luminosity_emblem')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:luminosity_emblem')]"
+  ]
+ },
+ "controller.render.luminosity_staff": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.luminosity_staff"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.luminosity_staff"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:luminosity_staff')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:luminosity_staff')]"
+  ]
+ },
+ "controller.render.magroic_trident": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.no",
+     "Geometry.magroic_trident"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.magroic_trident"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:magroic_trident')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:magroic_trident')]"
+  ]
+ },
+ "controller.render.mahito_clump": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.mahito_clump1",
+     "Geometry.mahito_clump2",
+     "Geometry.mahito_clump3",
+     "Geometry.mahito_clump4"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.default",
+     "Texture.default",
+     "Texture.default",
+     "Texture.default"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:mahito_clump')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:mahito_clump')]"
+  ]
+ },
+ "controller.render.mahito_fit": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.mahito_fit"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.mahito_fit"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:mahito_fit')]",
+  "materials": [
+   {
+    "*": "Material.entity_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:mahito_fit')]"
+  ]
+ },
+ "controller.render.mahito_weapons": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.body_metal",
+     "Geometry.body_drill",
+     "Geometry.murder_manifestation",
+     "Geometry.body_clankers",
+     "Geometry.dual_souls",
+     "Geometry.six_souls"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.metal_texture",
+     "Texture.metal_texture",
+     "Texture.murder_manifestation",
+     "Texture.body_clankers",
+     "Texture.dual_souls",
+     "Texture.six_souls"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:mahito_weapons')]",
+  "materials": [
+   {
+    "*": "Material.entity_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:mahito_weapons')]"
+  ]
+ },
+ "controller.render.mahoraga_wheel": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.mahoraga_wheel"
+    ]
+   }
+  },
+  "geometry": "Geometry.mahoraga_wheel",
+  "ignore_lighting": true,
+  "materials": [
+   {
+    "*": "Material.emissive"
+   }
+  ],
+  "textures": [
+   "query.property('property:mahoraga_wheel') == 1 ? Texture.mahoraga_wheel : (query.property('property:mahoraga_wheel') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.mahoraga_wheel2": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.mahoraga_wheel2"
+    ]
+   }
+  },
+  "geometry": "Geometry.mahoraga_wheel2",
+  "ignore_lighting": true,
+  "materials": [
+   {
+    "*": "Material.emissive"
+   }
+  ],
+  "textures": [
+   "query.property('property:mahoraga_wheel2') == 1 ? Texture.mahoraga_wheel2 : (query.property('property:mahoraga_wheel2') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.megumi_phase": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.megumi_phase2"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.megumi_phase2"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:megumi_phase')]",
+  "materials": [
+   {
+    "*": "Material.additive"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:megumi_phase')]"
+  ]
+ },
+ "controller.render.megumi_v2": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.megumi_v1",
+     "Geometry.megumi_v2",
+     "Geometry.megumi_v3"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.megumi_v1",
+     "Texture.megumi_v2",
+     "Texture.megumi_v3"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:megumi')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:megumi')]"
+  ]
+ },
+ "controller.render.middleroot": {
+  "geometry": "geometry.playermodel",
+  "materials": [
+   {
+    "*": "material.default"
+   }
+  ],
+  "textures": [
+   "texture.textureoff"
+  ]
+ },
+ "controller.render.miracle": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.miracle",
+     "Geometry.miracle",
+     "Geometry.miracle",
+     "Geometry.miracle",
+     "Geometry.miracle",
+     "Geometry.miracle",
+     "Geometry.miracle",
+     "Geometry.speech_tattoos"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.miracle0",
+     "Texture.miracle1",
+     "Texture.miracle2",
+     "Texture.miracle3",
+     "Texture.miracle4",
+     "Texture.miracle5",
+     "Texture.miracle6",
+     "Texture.speech_tattoos"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:ct_face')]",
+  "materials": [
+   {
+    "*": "Material.blend"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:ct_face')]"
+  ]
+ },
+ "controller.render.mushroom_curse": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.mushroom_curse",
+     "Geometry.mushroom_curse",
+     "Geometry.mushroom_curse",
+     "Geometry.mushroom_curse"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.mushroom_curse1",
+     "Texture.mushroom_curse2",
+     "Texture.mushroom_curse3",
+     "Texture.mushroom_curse3"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:mushroom_curse')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:mushroom_curse')]"
+  ]
+ },
+ "controller.render.mysterious_torch": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.default",
+     "Geometry.awakened"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.default",
+     "Texture.awakened"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:torch_light')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:torch_light')]"
+  ]
+ },
+ "controller.render.okarun": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.okarun"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.okarun"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:okarun')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:okarun')]"
+  ]
+ },
+ "controller.render.organs": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.default",
+     "Geometry.organs",
+     "Geometry.organs2"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.default",
+     "Texture.organs",
+     "Texture.organs2"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:organs')]",
+  "materials": [
+   {
+    "*": "Material.entity_alphatest"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:organs')]"
+  ]
+ },
+ "controller.render.outfitfemale": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.outfitfemale_sorcerer",
+     "Geometry.outfitmale_male1",
+     "Geometry.outfitmale_male2",
+     "Geometry.outfitmale_male3",
+     "Geometry.outfitmale_male4",
+     "Geometry.outfitmale_male5",
+     "Geometry.outfitmale_male6",
+     "Geometry.outfitmale_male7",
+     "Geometry.outfitmale_male8",
+     "Geometry.outfitmale_male9"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.outfitfemale_sorcerer",
+     "Texture.outfitmale_male1",
+     "Texture.outfitmale_male2",
+     "Texture.outfitmale_male3",
+     "Texture.outfitmale_male4",
+     "Texture.outfitmale_male5",
+     "Texture.outfitmale_male6",
+     "Texture.outfitmale_male7",
+     "Texture.outfitmale_male8",
+     "Texture.outfitmale_male9"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:outfitfemale')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:outfitfemale')]"
+  ]
+ },
+ "controller.render.outfitmale": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.outfitmale_sorcerer",
+     "Geometry.outfitmale_male1",
+     "Geometry.outfitmale_male2",
+     "Geometry.outfitmale_male3",
+     "Geometry.outfitmale_male4",
+     "Geometry.outfitmale_male5",
+     "Geometry.outfitmale_male6",
+     "Geometry.outfitmale_male7",
+     "Geometry.outfitmale_male8",
+     "Geometry.outfitmale_male9"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.outfitmale_sorcerer",
+     "Texture.outfitmale_male1",
+     "Texture.outfitmale_male2",
+     "Texture.outfitmale_male3",
+     "Texture.outfitmale_male4",
+     "Texture.outfitmale_male5",
+     "Texture.outfitmale_male6",
+     "Texture.outfitmale_male7",
+     "Texture.outfitmale_male8",
+     "Texture.outfitmale_male9"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:outfitmale')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:outfitmale')]"
+  ]
+ },
+ "controller.render.pachinko": {
+  "geometry": "geometry.pachinko",
+  "materials": [
+   {
+    "*": "material.default1"
+   }
+  ],
+  "textures": [
+   "texture.pachinko"
+  ]
+ },
+ "controller.render.pachinkohand1": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.default",
+     "Geometry.pachinkohand1",
+     "Geometry.pachinkohand2",
+     "Geometry.pachinkohand3",
+     "Geometry.pachinkohand4"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.pachinkohand1",
+     "Texture.pachinkohand2",
+     "Texture.pachinkohand3",
+     "Texture.pachinkohand4"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:pachinkohand1')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:pachinkohand1')]"
+  ]
+ },
+ "controller.render.player.first_person": {
+  "geometry": "Geometry.default",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "part_visibility": [
+   {
+    "*": false
+   },
+   {
+    "rightArm": "query.property('property:body_transformation') == 0"
+   },
+   {
+    "rightSleeve": "query.property('property:body_transformation') == 0"
+   },
+   {
+    "leftArm": "query.property('property:body_transformation') == 0"
+   },
+   {
+    "leftSleeve": "query.property('property:body_transformation') == 0"
+   }
+  ],
+  "textures": [
+   "Texture.default"
+  ]
+ },
+ "controller.render.player.third_person": {
+  "geometry": "Geometry.default",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "part_visibility": [
+   {
+    "*": "query.property('property:body_transformation') == 0"
+   },
+   {
+    "helmet": "variable.helmet_layer_visible && query.property('property:body_transformation') == 0"
+   },
+   {
+    "leftLegging": "variable.leg_layer_visible && query.property('property:body_transformation') == 0"
+   },
+   {
+    "rightLegging": "variable.leg_layer_visible && query.property('property:body_transformation') == 0"
+   },
+   {
+    "leftBoot": "variable.boot_layer_visible && query.property('property:body_transformation') == 0"
+   },
+   {
+    "rightBoot": "variable.boot_layer_visible && query.property('property:body_transformation') == 0"
+   },
+   {
+    "leftSock": "variable.boot_layer_visible && variable.leg_layer_visible && query.property('property:body_transformation') == 0"
+   },
+   {
+    "rightSock": "variable.boot_layer_visible && variable.leg_layer_visible && query.property('property:body_transformation') == 0"
+   },
+   {
+    "bodyArmor": "variable.chest_layer_visible && !query.has_cape && query.property('property:body_transformation') == 0"
+   },
+   {
+    "leftArmArmor": "variable.chest_layer_visible && !query.has_cape && query.property('property:body_transformation') == 0"
+   },
+   {
+    "rightArmArmor": "variable.chest_layer_visible && !query.has_cape && query.property('property:body_transformation') == 0"
+   },
+   {
+    "belt": "variable.chest_layer_visible && variable.leg_layer_visible && query.property('property:body_transformation') == 0"
+   }
+  ],
+  "textures": [
+   "Texture.default"
+  ]
+ },
+ "controller.render.playful_cloud": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.playful_cloud"
+    ]
+   }
+  },
+  "geometry": "Geometry.playful_cloud",
+  "materials": [
+   {
+    "*": "Material.emissive"
+   }
+  ],
+  "textures": [
+   "query.property('property:playful_cloud') == 1 ? Texture.playful_cloud : (query.property('property:playful_cloud') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.primekatana": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.textureoff",
+     "Geometry.primekatana",
+     "Geometry.primekatana_sheathed",
+     "Geometry.primekatana3"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.primekatana",
+     "Texture.primekatana",
+     "Texture.primekatana"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:primekatana')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:primekatana')]"
+  ]
+ },
+ "controller.render.primesoul": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.default",
+     "Geometry.awakened"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.default",
+     "Texture.awakened"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:awakened')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:awakened')]"
+  ]
+ },
+ "controller.render.primesoul_weapon": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.scythe",
+     "Geometry.scythe",
+     "Geometry.sword",
+     "Geometry.spear",
+     "Geometry.nogkatanalol",
+     "Geometry.nothing",
+     "Geometry.nothing",
+     "Geometry.nothing",
+     "Geometry.nothing",
+     "Geometry.nothing",
+     "Geometry.nothing"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.scythe",
+     "Texture.scythe",
+     "Texture.sword",
+     "Texture.spear",
+     "Texture.primekatana",
+     "Texture.textureoff",
+     "Texture.textureoff",
+     "Texture.textureoff",
+     "Texture.textureoff",
+     "Texture.textureoff",
+     "Texture.textureoff"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:weapon')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:weapon')]"
+  ]
+ },
+ "controller.render.primesoul_wings": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.wings",
+     "Geometry.wings2"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.wings",
+     "Texture.wings"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:wings')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:wings')]"
+  ]
+ },
+ "controller.render.rabbit": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.brown",
+     "Texture.white",
+     "Texture.black",
+     "Texture.white_splotched",
+     "Texture.gold",
+     "Texture.salt"
+    ]
+   }
+  },
+  "geometry": "Geometry.default",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "query.get_name == 'Toast' ? Texture.toast : Array.skins[query.variant]"
+  ]
+ },
+ "controller.render.sixeyes": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.sixeyes"
+    ]
+   }
+  },
+  "geometry": "Geometry.sixeyes",
+  "ignore_lighting": true,
+  "materials": [
+   {
+    "*": "Material.emissive"
+   }
+  ],
+  "textures": [
+   "query.property('property:sixeyes') == 1 ? Texture.sixeyes : (query.property('property:sixeyes') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.sixeyesb": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.sixeyesb"
+    ]
+   }
+  },
+  "geometry": "Geometry.sixeyesb",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "query.property('property:sixeyesb') == 1 ? Texture.sixeyesb : (query.property('property:sixeyesb') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.skincolour": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.skin",
+     "Geometry.skin",
+     "Geometry.skin"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.skincolour_white",
+     "Texture.skincolour_black",
+     "Texture.skincolour_tan"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:skincolour')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:skincolour')]"
+  ]
+ },
+ "controller.render.soul_sword_back": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.soul_sword_back"
+    ]
+   }
+  },
+  "geometry": "Geometry.soul_sword_back",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "query.property('property:soul_sword_back') == 1 ? Texture.soul_sword_back : (query.property('property:soul_sword_back') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.soulking_sword": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.no",
+     "Geometry.soulking_sword"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.soulking_sword"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:soulking_sword')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:soulking_sword')]"
+  ]
+ },
+ "controller.render.sukuna_markings": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.textureoff",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.sukuna_markings",
+     "Texture.sukuna_markings_glowred0",
+     "Texture.sukuna_markings_glowred1",
+     "Texture.textureoff",
+     "Texture.sukuna_markings_glowfire0",
+     "Texture.sukuna_markings_glowfire1",
+     "Texture.textureoff",
+     "Texture.textureoff"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:sukuna_markings')]",
+  "materials": [
+   {
+    "*": "Material.blend"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:sukuna_markings')]"
+  ]
+ },
+ "controller.render.sukuna_markings2": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.textureoff",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings2",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings",
+     "Geometry.sukuna_markings2"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.textureoff",
+     "Texture.textureoff",
+     "Texture.textureoff",
+     "Texture.sukuna_markings_glowred",
+     "Texture.textureoff",
+     "Texture.textureoff",
+     "Texture.textureoff",
+     "Texture.textureoff",
+     "Texture.sukuna_markings_glowfire"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:sukuna_markings')]",
+  "materials": [
+   {
+    "*": "Material.additive"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:sukuna_markings')]"
+  ]
+ },
+ "controller.render.takada_chan": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.face",
+     "Geometry.face",
+     "Geometry.face",
+     "Geometry.face"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.wink",
+     "Texture.eyesclosed",
+     "Texture.wink2",
+     "Texture.lookright"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:face')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:face')]"
+  ]
+ },
+ "controller.render.torn_limb": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.torn_limb"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.torn_limb"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:torn_limb')]",
+  "materials": [
+   {
+    "*": "Material.entity_emissive_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:torn_limb')]"
+  ]
+ },
+ "controller.render.transfigured_colour": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.transfigured_model1",
+     "Geometry.transfigured_model2",
+     "Geometry.transfigured_model3",
+     "Geometry.transfigured_model4",
+     "Geometry.transfigured_model5",
+     "Geometry.transfigured_model6",
+     "Geometry.transfigured_model7",
+     "Geometry.transfigured_model8"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.transfigured_colour1",
+     "Texture.transfigured_colour2",
+     "Texture.transfigured_colour3",
+     "Texture.transfigured_colour4",
+     "Texture.transfigured_colour5",
+     "Texture.transfigured_colour6",
+     "Texture.transfigured_colour7",
+     "Texture.transfigured_colour8"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:transfigured_model')]",
+  "materials": [
+   {
+    "*": "Material.entity_alphatest"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:transfigured_colour')]"
+  ]
+ },
+ "controller.render.transfigured_colour2": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.default",
+     "Geometry.default",
+     "Geometry.default",
+     "Geometry.default",
+     "Geometry.default",
+     "Geometry.default",
+     "Geometry.default",
+     "Geometry.default"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.transfigured_colour1",
+     "Texture.transfigured_colour2",
+     "Texture.transfigured_colour3",
+     "Texture.transfigured_colour4",
+     "Texture.transfigured_colour5",
+     "Texture.transfigured_colour6",
+     "Texture.transfigured_colour7",
+     "Texture.transfigured_colour8"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:transfigured_colour')]",
+  "materials": [
+   {
+    "*": "Material.entity_alphatest"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:transfigured_colour')]"
+  ]
+ },
+ "controller.render.void_reactor": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.default",
+     "Geometry.void_reactor_red",
+     "Geometry.void_reactor_off"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.default",
+     "Texture.void_reactor_red",
+     "Texture.void_reactor_off"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:void_reactor')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:void_reactor')]"
+  ]
+ },
+ "controller.render.volcano_head": {
+  "arrays": {
+   "textures": {
+    "Array.skins": [
+     "Texture.textureoff",
+     "Texture.volcano_head"
+    ]
+   }
+  },
+  "geometry": "Geometry.volcano_head",
+  "materials": [
+   {
+    "*": "Material.alpha"
+   }
+  ],
+  "textures": [
+   "query.property('property:volcano_head') == 1 ? Texture.volcano_head : (query.property('property:volcano_head') == 0 ? Texture.textureoff)"
+  ]
+ },
+ "controller.render.weapon_hands": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.textureoff",
+     "Geometry.calamity_claws"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.calamity_claws"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:weapon_hands')]",
+  "materials": [
+   {
+    "*": "Material.default"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:weapon_hands')]"
+  ]
+ },
+ "controller.render.yuji_face": {
+  "arrays": {
+   "geometries": {
+    "Array.variants": [
+     "Geometry.nothing",
+     "Geometry.yuji_face",
+     "Geometry.yuji_face",
+     "Geometry.yuji_face"
+    ]
+   },
+   "textures": {
+    "Array.variants": [
+     "Texture.textureoff",
+     "Texture.yuji_face1",
+     "Texture.yuji_face2",
+     "Texture.yuji_face3"
+    ]
+   }
+  },
+  "geometry": "Array.variants[query.property('property:yuji_face')]",
+  "materials": [
+   {
+    "*": "Material.entity_alpha"
+   }
+  ],
+  "textures": [
+   "Array.variants[query.property('property:yuji_face')]"
+  ]
+ }
+}

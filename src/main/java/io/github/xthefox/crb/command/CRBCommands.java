@@ -50,7 +50,40 @@ public final class CRBCommands {
     private static final SuggestionProvider<CommandSourceStack> GRADES = (c, b) ->
             SharedSuggestionProvider.suggest(Stream.of(Grade.values()).map(Grade::serializedName), b);
 
+    private static final SuggestionProvider<CommandSourceStack> MOVES = (c, b) ->
+            SharedSuggestionProvider.suggestResource(io.github.xthefox.crb.move.MoveDurations.INSTANCE.ids(), b);
+
     private CRBCommands() {}
+
+    private static int movePlay(CommandContext<CommandSourceStack> c, int duration) throws CommandSyntaxException {
+        ResourceLocation id = ResourceLocationArgument.getId(c, "move");
+        int d = duration > 0 ? duration : io.github.xthefox.crb.move.MoveDurations.INSTANCE.get(id).orElse(-1);
+        if (d <= 0) {
+            c.getSource().sendFailure(Component.translatable("commands.crb.move.unknown", id.toString()));
+            return 0;
+        }
+        int n = 0;
+        for (var e : EntityArgument.getEntities(c, "targets")) {
+            if (e instanceof net.minecraft.world.entity.LivingEntity l) {
+                io.github.xthefox.crb.move.MoveEngine.start(l, id, d);
+                n++;
+            }
+        }
+        int count = n;
+        c.getSource().sendSuccess(() -> Component.translatable("commands.crb.move.played", id.toString(), count, d), true);
+        return n;
+    }
+
+    private static int moveStop(CommandContext<CommandSourceStack> c) throws CommandSyntaxException {
+        int n = 0;
+        for (var e : EntityArgument.getEntities(c, "targets")) {
+            if (e instanceof net.minecraft.world.entity.LivingEntity l && io.github.xthefox.crb.move.MoveEngine.isBusy(l)) {
+                io.github.xthefox.crb.move.MoveEngine.end(l, io.github.xthefox.crb.move.MoveLogic.EndReason.CANCELLED);
+                n++;
+            }
+        }
+        return n;
+    }
 
     public static void register(CommandDispatcher<CommandSourceStack> d, CommandBuildContext ctx) {
         LiteralArgumentBuilder<CommandSourceStack> root = Commands.literal("crb").requires(s -> s.hasPermission(2));
@@ -107,6 +140,15 @@ public final class CRBCommands {
                         .executes(CRBCommands::ownerRelease)))
                 .then(Commands.literal("transfer").then(Commands.argument("id", ResourceLocationArgument.id()).suggests(CLAIMABLE)
                         .then(Commands.argument("target", EntityArgument.player()).executes(CRBCommands::ownerTransfer)))));
+
+        root.then(Commands.literal("move")
+                .then(Commands.literal("play").then(Commands.argument("targets", EntityArgument.entities())
+                        .then(Commands.argument("move", ResourceLocationArgument.id()).suggests(MOVES)
+                                .executes(c -> movePlay(c, -1))
+                                .then(Commands.argument("duration", IntegerArgumentType.integer(1, 20000))
+                                        .executes(c -> movePlay(c, IntegerArgumentType.getInteger(c, "duration")))))))
+                .then(Commands.literal("stop").then(Commands.argument("targets", EntityArgument.entities())
+                        .executes(CRBCommands::moveStop))));
 
         root.then(Commands.literal("info").then(Commands.argument("target", EntityArgument.player()).executes(CRBCommands::info)));
 

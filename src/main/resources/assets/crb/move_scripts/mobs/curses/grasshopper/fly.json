@@ -1,0 +1,1 @@
+{"source":"mobs/curses/grasshopper/fly","key":"move","duration":26,"cues":[{"t":1,"until":1,"type":"anim","anim":"animation.grasshopper_curse.fly","target":"self"},{"t":6,"until":21,"type":"sound","sound":"mob.bee.loop","audience":"all","at":[{"rel":[0.0,0.0,0.0]}],"volume":0.1,"pitch":1.0}]}

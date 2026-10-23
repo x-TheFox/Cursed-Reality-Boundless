@@ -6,6 +6,8 @@ import io.github.xthefox.crb.command.CRBCommands;
 import io.github.xthefox.crb.data.CRBAttachments;
 import io.github.xthefox.crb.data.CombatState;
 import io.github.xthefox.crb.data.SorcererData;
+import io.github.xthefox.crb.move.MoveEngine;
+import io.github.xthefox.crb.move.MoveLogic;
 import io.github.xthefox.crb.net.CRBNetwork;
 import io.github.xthefox.crb.progression.Traits;
 import io.github.xthefox.crb.progression.kit.KitManager;
@@ -15,6 +17,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
@@ -66,6 +69,7 @@ public final class ServerEvents {
     @SubscribeEvent
     static void onEntityTick(EntityTickEvent.Post event) {
         if (event.getEntity().level().isClientSide() || !(event.getEntity() instanceof LivingEntity living)) return;
+        if (living.hasData(CRBAttachments.MOVE)) MoveEngine.tick(living);
         if (!living.hasData(CRBAttachments.COMBAT)) return;
         CombatState state = living.getData(CRBAttachments.COMBAT);
         state.tick();
@@ -97,15 +101,22 @@ public final class ServerEvents {
 
     @SubscribeEvent
     static void onStartTracking(PlayerEvent.StartTracking event) {
-        if (event.getEntity() instanceof ServerPlayer viewer && event.getTarget() instanceof LivingEntity target
-                && target.hasData(CRBAttachments.COMBAT)) {
-            CRBNetwork.syncCombatTo(viewer, target);
+        if (event.getEntity() instanceof ServerPlayer viewer && event.getTarget() instanceof LivingEntity target) {
+            if (target.hasData(CRBAttachments.COMBAT)) CRBNetwork.syncCombatTo(viewer, target);
+            if (target.hasData(CRBAttachments.MOVE)) MoveEngine.syncTo(viewer, target);
         }
+    }
+
+    @SubscribeEvent
+    static void onDeath(LivingDeathEvent event) {
+        LivingEntity e = event.getEntity();
+        if (!e.level().isClientSide() && e.hasData(CRBAttachments.MOVE)) MoveEngine.end(e, MoveLogic.EndReason.DIED);
     }
 
     @SubscribeEvent
     static void onReload(AddReloadListenerEvent event) {
         event.addListener(KitManager.INSTANCE);
+        event.addListener(io.github.xthefox.crb.move.MoveDurations.INSTANCE);
     }
 
     @SubscribeEvent
