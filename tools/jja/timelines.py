@@ -37,11 +37,12 @@ from common import BP, REPO, RESEARCH  # noqa: E402
 
 FN = BP / "functions"
 OUT = REPO / "src" / "main" / "resources" / "assets" / "crb" / "move_scripts"
-TIMELINE_KEYS = ("move", "domain", "domainstart", "cutscene", "sukunacutscene", "blackflashing", "scene")
+TIMELINE_KEYS = ("move", "domain", "domainstart", "cutscene", "sukunacutscene", "blackflashing", "scene", "Dash", "Evasive")
 IGNORED_SCORE_CONDS = {"Stun=0", "Disabled=0", "Disabled2=0", "nocts=0"}
 IGNORED_TAG_CONDS = {"tag=!impactframesoff", "tag=!arenaboss"}
 
 STATS = Counter()
+SIM_TYPES = {"hit", "stun", "impulse", "hover", "self_move"}
 
 
 # ---------------------------------------------------------------------------------------------
@@ -247,6 +248,8 @@ def parse_command(toks: list[str], ctx: Context, key: str):
     if not toks:
         return None
     cue = _parse_command(toks, ctx, key)
+    if cue is None:
+        cue = _parse_sim(toks, ctx)
     if cue is not None:
         sel = next((t for t in toks[1:4] if t.startswith("@") and not t.startswith("@s")), None)
         if sel:
@@ -254,6 +257,73 @@ def parse_command(toks: list[str], ctx: Context, key: str):
             if f:
                 cue["audience_cond"] = f
     return cue
+
+
+SELF_IMPULSES = {
+    # Bedrock applyKnockback(horizontal strength along view, vertical) from index.js
+    "ds:leapforwards": (7, 2), "ds:leapforwards2": (3, 0.85), "ds:leapforwards3": (3, 0.8),
+    "ds:upslightly2": (0, 0.25), "ds:dasheast": ("side", -9), "ds:dashwest": ("side", 9),
+}
+
+
+def target_radius(tok: str):
+    """Radius of a non-self target selector (@e[r=..] / @a[r=..]); None if it targets self or has no radius."""
+    kind, args = parse_selector(tok)
+    if kind in (None, "s") or args is None:
+        return None
+    return args["r"] if args["r"] is not None else None
+
+
+def _parse_sim(toks: list[str], ctx: Context):
+    """Simulation cues: radius hits, stun, strength bonus, caster impulses and self teleports."""
+    cmd = toks[0]
+    if cmd == "damage" and len(toks) >= 3:
+        r = target_radius(toks[1])
+        if r is None:
+            return None
+        try:
+            amount = float(toks[2])
+        except ValueError:
+            return None
+        return {"type": "hit", "amount": amount, "radius": r, "at": list(ctx.pos)}
+    if cmd == "scoreboard" and len(toks) >= 6 and toks[1] == "players":
+        op, sel, obj = toks[2], toks[3], toks[4]
+        r = target_radius(sel)
+        if r is None:
+            return None
+        if obj == "damage" and op == "add":
+            try:
+                return {"type": "hit", "amount": float(toks[5]), "radius": r, "at": list(ctx.pos)}
+            except ValueError:
+                return None
+        if obj == "damage" and op == "operation" and toks[5] == "+=" and len(toks) >= 8 and toks[7] == "damageadd":
+            return {"type": "hit", "amount": 0, "strength": True, "radius": r, "at": list(ctx.pos)}
+        if obj == "Stun" and op in ("add", "set"):
+            try:
+                return {"type": "stun", "ticks": int(float(toks[5])), "radius": r, "at": list(ctx.pos)}
+            except ValueError:
+                return None
+        return None
+    if cmd == "scriptevent" and len(toks) >= 2:
+        ev = toks[1].lower()
+        if ev == "ds:knockback":
+            nums = [float(x) for x in toks[2:4] if re.fullmatch(r"-?\d*\.?\d+", x)]
+            return {"type": "impulse", "forward": nums[0] if nums else 0, "up": nums[1] if len(nums) > 1 else 0}
+        if ev in SELF_IMPULSES:
+            a, b = SELF_IMPULSES[ev]
+            if a == "side":
+                return {"type": "impulse", "side": b, "forward": 0, "up": 0}
+            return {"type": "impulse", "forward": a, "up": b}
+        if ev == "ds:antiair":
+            return {"type": "hover"}
+        if ev == "ds:downfall":
+            return {"type": "impulse", "forward": 0, "up": -1.5}
+        return None
+    if cmd == "tp" and len(toks) == 3 and toks[1].startswith("@s"):
+        k, xyz, j = split_coords(toks, 2)
+        if k == "local" and any(abs(v) > 1e-6 for v in xyz):
+            return {"type": "self_move", "local": xyz}
+    return None
 
 
 def _parse_command(toks: list[str], ctx: Context, key: str):
@@ -461,6 +531,10 @@ def parse_line(line: str, key: str):
         kind, args = parse_selector(cmd_toks[1])
         if cmd_toks[0] not in ("playanimation", "camera", "title", "titleraw"):
             absorb_selector(ctx, kind, args, key, "target")
+    # `scoreboard players <op> @s[scores={move=N}] ...` gates on the 4th token
+    if len(cmd_toks) > 3 and cmd_toks[0] == "scoreboard" and cmd_toks[3].startswith("@s"):
+        kind, args = parse_selector(cmd_toks[3])
+        absorb_selector(ctx, kind, args, key, "target")
     cue = parse_command(cmd_toks, ctx, key)
     if cue is None:
         STATS["skipped:" + cmd_toks[0]] += 1
@@ -486,9 +560,14 @@ def dominant_key(text: str):
     return k if n >= 3 else None
 
 
+# Countdowns that are not set by a *_click: JJA's dashclick sets Dash 12 (28 for the charge dash),
+# evade sets Evasive 21, Black Flash runs blackflashing from 9.
+SPECIAL_DURATIONS = {"dash": 12, "evade": 21, "blackflash1": 10, "blackflash2": 10, "blackflash3": 10, "blackflash4": 10}
+
+
 def known_durations():
     mv = json.loads((RESEARCH / "catalog" / "movesets.json").read_text())
-    out = {}
+    out = dict(SPECIAL_DURATIONS)
     for rows in mv.values():
         for r in rows:
             if r.get("function") and r.get("duration"):
@@ -537,6 +616,7 @@ def main():
         import shutil
         shutil.rmtree(OUT)
     index = {}
+    sim_index = {}
     type_counts = Counter()
     for path in sorted(FN.rglob("*.mcfunction")):
         script = extract(path, durations)
@@ -546,10 +626,18 @@ def main():
         safe = re.sub(r"[^a-z0-9_/.-]", "_", rel.lower())
         dst = OUT / f"{safe}.json"
         dst.parent.mkdir(parents=True, exist_ok=True)
+        sim = [c for c in script["cues"] if c["type"] in SIM_TYPES]
+        script["cues"] = [c for c in script["cues"] if c["type"] not in SIM_TYPES]
+        if sim:
+            sim_index["crb:" + safe] = sim
         dst.write_text(json.dumps(script, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
         index[rel] = {"id": f"crb:{safe}", "duration": script["duration"], "cues": len(script["cues"]), "key": script["key"]}
         type_counts.update(c["type"] for c in script["cues"])
+        type_counts.update(c["type"] for c in sim_index.get("crb:" + safe, []))
     (OUT.parent / "jja" / "move_scripts.json").write_text(json.dumps(dict(sorted(index.items())), indent=1), encoding="utf-8")
+    (REPO / "src" / "main" / "resources" / "data" / "crb" / "move_sim.json").write_text(
+        json.dumps(dict(sorted(sim_index.items())), separators=(",", ":")), encoding="utf-8")
+    print(f"simulation: {len(sim_index)} moves")
     # gameplay effects (slowness, levitation, blindness...) are applied by the server
     effects = {}
     for path in sorted(OUT.rglob("*.json")):

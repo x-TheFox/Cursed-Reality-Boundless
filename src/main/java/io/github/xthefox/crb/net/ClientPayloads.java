@@ -41,4 +41,8 @@ final class ClientPayloads {
     static void onMoveState(MovePayloads.State p, IPayloadContext ctx) {
         io.github.xthefox.crb.client.move.ClientMoves.state(p);
     }
+
+    static void onCue(MovePayloads.Cue p, IPayloadContext ctx) {
+        io.github.xthefox.crb.client.move.ClientMoves.playOneShot(p.entityId(), p.cue());
+    }
 }

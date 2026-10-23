@@ -40,6 +40,12 @@ public final class MoveEngine {
     }
 
     public static MoveInstance start(LivingEntity caster, ResourceLocation moveId, int duration, Variant variant) {
+        return start(caster, moveId, duration, variant, java.util.Set.of(), Map.of());
+    }
+
+    /** Starts a move with extra cue-condition tags/scores known up front (they go out with the start packet). */
+    public static MoveInstance start(LivingEntity caster, ResourceLocation moveId, int duration, Variant variant,
+                                     java.util.Set<String> extraTags, Map<String, Integer> extraScores) {
         if (caster.level().isClientSide()) throw new IllegalStateException("moves start on the server");
         Holder h = caster.getData(CRBAttachments.MOVE);
         if (h.current != null) end(caster, MoveLogic.EndReason.INTERRUPTED);
@@ -48,9 +54,12 @@ public final class MoveEngine {
         m.tags().addAll(JjaTags.of(caster));
         // JJA's NPC and some player moves branch on a random `chance` score picked at the start
         m.scores().put("chance", 1 + m.random().nextInt(100));
+        m.tags().addAll(extraTags);
+        m.scores().putAll(extraScores);
         h.current = m;
         broadcast(m, 0);
         MoveEffects.INSTANCE.apply(m, 0);
+        MoveSim.INSTANCE.apply(m, 0);
         MoveLogics.get(moveId).tick(m, 0);
         return m;
     }
@@ -76,6 +85,7 @@ public final class MoveEngine {
         }
         if (t > 0) {
             MoveEffects.INSTANCE.apply(m, t);
+            MoveSim.INSTANCE.apply(m, t);
             try {
                 logic.tick(m, t);
             } catch (RuntimeException ex) {

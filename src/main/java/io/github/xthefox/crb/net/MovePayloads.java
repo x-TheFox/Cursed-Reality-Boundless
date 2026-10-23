@@ -80,4 +80,46 @@ public final class MovePayloads {
         @Override
         public Type<? extends CustomPacketPayload> type() { return TYPE; }
     }
+
+    /**
+     * Server → trackers: one presentation cue outside a move (M1 swings and hits, which in JJA are
+     * not moves and must not block casting). {@code cue} is a move-script cue object.
+     */
+    public record Cue(int entityId, String cue) implements CustomPacketPayload {
+        public static final Type<Cue> TYPE = new Type<>(CRB.id("cue"));
+        public static final StreamCodec<FriendlyByteBuf, Cue> STREAM_CODEC = StreamCodec.composite(
+                ByteBufCodecs.VAR_INT, Cue::entityId,
+                ByteBufCodecs.STRING_UTF8, Cue::cue,
+                Cue::new);
+
+        @Override
+        public Type<? extends CustomPacketPayload> type() { return TYPE; }
+    }
+
+    /** Client → server: melee input in Combat Mode. */
+    public record Melee(int action) implements CustomPacketPayload {
+        public static final int M1 = 0;
+        public static final Type<Melee> TYPE = new Type<>(CRB.id("melee"));
+        public static final StreamCodec<FriendlyByteBuf, Melee> STREAM_CODEC = StreamCodec.composite(
+                ByteBufCodecs.VAR_INT, Melee::action, Melee::new);
+
+        @Override
+        public Type<? extends CustomPacketPayload> type() { return TYPE; }
+    }
+
+    /**
+     * Client → server: movement techniques. {@code dir} bits: 1 forward, 2 back, 4 left, 8 right
+     * (the keys held, as JJA's {@code moveAngle} derived from velocity).
+     */
+    public record Movement(int kind, int dir) implements CustomPacketPayload {
+        public static final int DASH = 0, EVADE = 1, DOUBLE_JUMP = 2;
+        public static final Type<Movement> TYPE = new Type<>(CRB.id("movement"));
+        public static final StreamCodec<FriendlyByteBuf, Movement> STREAM_CODEC = StreamCodec.composite(
+                ByteBufCodecs.VAR_INT, Movement::kind,
+                ByteBufCodecs.VAR_INT, Movement::dir,
+                Movement::new);
+
+        @Override
+        public Type<? extends CustomPacketPayload> type() { return TYPE; }
+    }
 }

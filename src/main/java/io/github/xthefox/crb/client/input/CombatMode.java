@@ -58,6 +58,10 @@ public final class CombatMode {
     }
 
     public static Optional<Ability> abilityAt(int key) {
+        if (key == AbilityService.STYLE_ART_KEY) {
+            LocalPlayer p = Minecraft.getInstance().player;
+            return p == null ? Optional.empty() : Optional.of(io.github.xthefox.crb.combat.CombatStyle.of(p).arts());
+        }
         Technique t = technique();
         if (t == null) return Optional.empty();
         return key == AbilityService.DOMAIN_KEY ? t.domain() : t.abilityAt(page, key);
@@ -84,6 +88,38 @@ public final class CombatMode {
         KeyMapping[] hotbar = mc.options.keyHotbarSlots;
         for (int i = 0; i < 6; i++) {
             while (hotbar[i].consumeClick()) cast(i);
+        }
+        while (CRBKeys.STYLE_ART.consumeClick()) cast(AbilityService.STYLE_ART_KEY);
+        while (CRBKeys.DASH.consumeClick()) {
+            var o = mc.options;
+            int dir = (o.keyUp.isDown() ? 1 : 0) | (o.keyDown.isDown() ? 2 : 0) | (o.keyLeft.isDown() ? 4 : 0) | (o.keyRight.isDown() ? 8 : 0);
+            PacketDistributor.sendToServer(new MovePayloads.Movement(MovePayloads.Movement.DASH, dir));
+        }
+        while (CRBKeys.EVADE.consumeClick()) PacketDistributor.sendToServer(new MovePayloads.Movement(MovePayloads.Movement.EVADE, 0));
+        boolean jump = mc.options.keyJump.isDown();
+        if (jump && !jumpWasDown && !player.onGround() && !player.getAbilities().flying && !player.isInWater() && !player.onClimbable()) {
+            PacketDistributor.sendToServer(new MovePayloads.Movement(MovePayloads.Movement.DOUBLE_JUMP, 0));
+        }
+        jumpWasDown = jump;
+    }
+
+    private static boolean jumpWasDown;
+
+    /**
+     * In Combat Mode with an empty main hand, attack is an M1 and use is the style art (JJA:
+     * left/right click with the combat-style item). Holding an item keeps vanilla behaviour.
+     */
+    public static void onInteraction(InputEvent.InteractionKeyMappingTriggered e) {
+        Minecraft mc = Minecraft.getInstance();
+        if (!enabled || mc.player == null || !mc.player.getMainHandItem().isEmpty()) return;
+        if (e.isAttack()) {
+            PacketDistributor.sendToServer(new MovePayloads.Melee(MovePayloads.Melee.M1));
+            e.setSwingHand(false);
+            e.setCanceled(true);
+        } else if (e.isUseItem() && e.getHand() == net.minecraft.world.InteractionHand.MAIN_HAND) {
+            cast(AbilityService.STYLE_ART_KEY);
+            e.setSwingHand(false);
+            e.setCanceled(true);
         }
     }
 

@@ -147,6 +147,28 @@ public final class ClientMoves {
         m.scores.putAll(p.scores());
     }
 
+    /** Plays a single cue now (M1 swings and hits, which are not moves in JJA). */
+    public static void playOneShot(int entityId, String cueJson) {
+        com.google.gson.JsonObject c;
+        try {
+            c = com.google.gson.JsonParser.parseString(cueJson).getAsJsonObject();
+        } catch (RuntimeException e) {
+            return;
+        }
+        c.addProperty("t", 0);
+        c.addProperty("until", 0);
+        com.google.gson.JsonObject script = new com.google.gson.JsonObject();
+        script.addProperty("source", "one_shot");
+        script.addProperty("duration", 1);
+        com.google.gson.JsonArray arr = new com.google.gson.JsonArray();
+        arr.add(c);
+        script.add("cues", arr);
+        MoveScript ms = MoveScript.parse(script);
+        Playing p = new Playing(new MovePayloads.Start(entityId, ResourceLocation.fromNamespaceAndPath("crb", "one_shot"), 0, 1, 0,
+                List.of(), Map.of()), ms, ticks);
+        fire(p, 0);
+    }
+
     public static void clear() {
         ACTIVE.clear();
     }
