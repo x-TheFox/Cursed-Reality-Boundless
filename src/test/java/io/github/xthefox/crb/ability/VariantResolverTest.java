@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /** Lapse Blue's variants as extracted in catalog/movesets.md. */
@@ -13,7 +14,7 @@ class VariantResolverTest {
     static final Ability LAPSE_BLUE = new Ability("lapse_blue", "ability.crb.lapse_blue", 2, List.of(
             Variant.builder("form2", "limitless/lapse_blue").energy(50).cooldown("ability2", 250).duration(15).build(),
             Variant.builder("form2c", "limitless/lapse_blue_air").airborne(Tri.YES).energy(50).cooldown("ability2", 240).duration(21).build(),
-            Variant.builder("form2e", "limitless/enchanted_blue").sneak(Tri.YES).airborne(Tri.ANY).lookUp(Tri.YES)
+            Variant.builder("form2e", "limitless/enchanted_blue").sneak(Tri.YES).airborne(Tri.ANY).lookDown(Tri.NO)
                     .requires("crb:six_eyes").energy(300).cooldown("ability7", 500).duration(66).build(),
             Variant.builder("form2b", "limitless/max_blue").sneak(Tri.YES).airborne(Tri.ANY).energy(250).cooldown("ability2", 400).duration(141).build()
     ));
@@ -36,13 +37,13 @@ class VariantResolverTest {
 
     @Test
     void airbornePicksAirVariant() {
-        var r = VariantResolver.resolve(LAPSE_BLUE, new Modifiers(false, true, false), user(1000), true);
+        var r = VariantResolver.resolve(LAPSE_BLUE, new Modifiers(false, true, false, false), user(1000), true);
         assertEquals("form2c", r.variant().orElseThrow().form());
     }
 
     @Test
     void sixEyesGateFallsThroughToNextVariant() {
-        var sneakUp = new Modifiers(true, false, true);
+        var sneakUp = new Modifiers(true, false, false, false);
         assertEquals("form2b", VariantResolver.resolve(LAPSE_BLUE, sneakUp, user(1000), true).variant().orElseThrow().form());
         assertEquals("form2e", VariantResolver.resolve(LAPSE_BLUE, sneakUp, user(1000, "crb:six_eyes"), true).variant().orElseThrow().form());
     }
@@ -65,9 +66,12 @@ class VariantResolverTest {
 
     @Test
     void modifierBitsRoundTrip() {
-        for (int bits = 0; bits < 8; bits++) assertEquals(bits, Modifiers.fromBits(bits).toBits());
-        assertTrue(Modifiers.fromPitch(false, false, -60f).lookUp());
-        assertFalse(Modifiers.fromPitch(false, false, 10f).lookUp());
+        for (int bits = 0; bits < 16; bits++) assertEquals(bits, Modifiers.fromBits(bits).toBits());
+        assertTrue(Modifiers.fromPitch(false, false, -85f).lookUp());
+        assertFalse(Modifiers.fromPitch(false, false, -60f).lookUp());
+        assertTrue(Modifiers.fromPitch(false, false, 80f).lookDown());
+        assertFalse(Modifiers.fromPitch(false, false, 10f).lookDown());
+        assertEquals(Modifiers.fromPitch(true, true, 80f), Modifiers.fromBits(Modifiers.fromPitch(true, true, 80f).toBits()));
     }
 
     @Test

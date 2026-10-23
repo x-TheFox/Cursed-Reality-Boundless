@@ -30,7 +30,15 @@ class MoveScriptTest {
             assertTrue(files.size() > 600, "found " + files.size());
             int cues = 0;
             for (Path p : files) {
-                MoveScript ms = MoveScript.parse(JsonParser.parseString(Files.readString(p)).getAsJsonObject());
+                var json = JsonParser.parseString(Files.readString(p)).getAsJsonObject();
+                MoveScript ms = MoveScript.parse(json);
+                if (json.has("names")) {
+                    // projectile runner: cues keyed on the remaining Deleter, unbounded ends allowed
+                    assertFalse(json.getAsJsonArray("names").isEmpty(), p.toString());
+                    for (MoveScript.Cue c : ms.cues()) assertTrue(c.until() >= c.t(), p + " cue at " + c.t());
+                    cues += ms.cues().size();
+                    continue;
+                }
                 assertTrue(ms.duration() > 0, p.toString());
                 for (MoveScript.Cue c : ms.cues()) {
                     assertTrue(c.t() >= 0 && c.until() >= c.t() && c.t() <= ms.duration(), p + " cue at " + c.t());

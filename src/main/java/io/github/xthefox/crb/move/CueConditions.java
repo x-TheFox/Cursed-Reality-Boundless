@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
  *   <li>{@code if:*} world tests (hit confirmations, block checks) fail and {@code unless:*} pass by
  *       default: a missed effect is better than a doubled one. Server logic flips either by setting
  *       the same string as a move tag (e.g. tag {@code if:entity} after a hit lands).</li>
+ *   <li>{@code proj=Name} and {@code w:*} world facts (projectile runners): present in the tag set.</li>
  *   <li>Anything else ({@code family=}, {@code hasitem=}, {@code name=}) passes.</li>
  * </ul>
  */
@@ -37,6 +38,7 @@ public final class CueConditions {
         if (c.startsWith("tag=!")) return !tags.contains(c.substring(5));
         if (c.startsWith("tag=")) return tags.contains(c.substring(4));
         if (c.equals("type=!player")) return !tags.contains("player");
+        if (c.startsWith("proj=") || c.startsWith("w:")) return tags.contains(c);
         if (c.startsWith("if:")) return tags.contains(c);
         if (c.startsWith("unless:")) return !tags.contains(c);
         if (c.startsWith("score:")) {

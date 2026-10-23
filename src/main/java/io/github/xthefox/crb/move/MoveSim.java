@@ -1,13 +1,14 @@
 package io.github.xthefox.crb.move;
 
 import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import io.github.xthefox.crb.CRB;
 import io.github.xthefox.crb.combat.CombatDamage;
 import io.github.xthefox.crb.combat.DamageKind;
+import io.github.xthefox.crb.combat.HitBatch;
 import io.github.xthefox.crb.combat.Hits;
+import io.github.xthefox.crb.projectile.Projectiles;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.ResourceManagerReloadListener;
@@ -18,9 +19,7 @@ import net.minecraft.world.phys.Vec3;
 
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -29,9 +28,9 @@ import java.util.Map;
  * JJA's simulation lines, extracted alongside the presentation ({@code data/crb/move_sim.json}):
  * radius hits ({@code damage @e[r=..] N}, {@code damage += N}, {@code += damageadd}), stuns, caster
  * impulses ({@code ds:knockback}, {@code ds:leapforwards...}), hover ({@code ds:antiair}) and
- * self-lunges ({@code tp @s ^ ^ ^0.5}). Hits within one tick are summed per target and applied
- * once, with lag-compensated hit tests. Moves with bespoke Java logic (projectiles, domains) add
- * that on top.
+ * self-lunges ({@code tp @s ^ ^ ^0.5}), plus the move's projectiles and helper entities
+ * ({@link Projectiles}). Hits within one tick are summed per target and applied once, with
+ * lag-compensated hit tests. Moves with bespoke Java logic (domains) add that on top.
  */
 public final class MoveSim implements ResourceManagerReloadListener {
     public static final MoveSim INSTANCE = new MoveSim();
@@ -39,30 +38,19 @@ public final class MoveSim implements ResourceManagerReloadListener {
     /** Bedrock applyKnockback strength → blocks/tick (same scale as hit knockback). */
     static final double IMPULSE_SCALE = CombatDamage.KNOCKBACK_SCALE;
 
-    record Cue(int t, int until, String type, JsonObject data, List<String> cond) {}
-
-    private Map<ResourceLocation, List<Cue>> sims = Map.of();
+    private Map<ResourceLocation, List<SimCue>> sims = Map.of();
 
     private MoveSim() {}
 
     @Override
     public void onResourceManagerReload(ResourceManager rm) {
-        Map<ResourceLocation, List<Cue>> loaded = new HashMap<>();
+        Map<ResourceLocation, List<SimCue>> loaded = new HashMap<>();
         rm.getResource(FILE).ifPresent(r -> {
             try (var reader = new InputStreamReader(r.open(), StandardCharsets.UTF_8)) {
                 for (var e : JsonParser.parseReader(reader).getAsJsonObject().entrySet()) {
-                    List<Cue> list = new ArrayList<>();
-                    for (JsonElement el : e.getValue().getAsJsonArray()) {
-                        JsonObject o = el.getAsJsonObject();
-                        List<String> cond = new ArrayList<>();
-                        if (o.has("cond")) o.getAsJsonArray("cond").forEach(c -> {
-                            String s = c.getAsString();
-                            // world tests ("if entity in range") are what the hit test itself checks
-                            if (!s.startsWith("if:") && !s.startsWith("unless:")) cond.add(s);
-                        });
-                        list.add(new Cue(o.get("t").getAsInt(), o.get("until").getAsInt(), o.get("type").getAsString(), o, cond));
-                    }
-                    loaded.put(ResourceLocation.parse(e.getKey()), List.copyOf(list));
+                    // world tests ("if entity in range") are what the hit test itself checks
+                    loaded.put(ResourceLocation.parse(e.getKey()),
+                            SimCue.parseAll(e.getValue().getAsJsonArray(), c -> !c.startsWith("if:") && !c.startsWith("unless:")));
                 }
             } catch (Exception ex) {
                 CRB.LOG.error("Failed to read {}", FILE, ex);
@@ -76,27 +64,20 @@ public final class MoveSim implements ResourceManagerReloadListener {
     }
 
     void apply(MoveInstance m, int elapsed) {
-        List<Cue> list = sims.get(m.moveId());
+        List<SimCue> list = sims.get(m.moveId());
         if (list == null) return;
         LivingEntity caster = m.caster();
-        Map<LivingEntity, float[]> hits = new LinkedHashMap<>(); // damage, stun, strength flag
-        for (Cue c : list) {
+        HitBatch hits = new HitBatch();
+        for (SimCue c : list) {
             if (elapsed < c.t() || elapsed > c.until()) continue;
             if (!CueConditions.test(c.cond(), m.tags(), m.scores())) continue;
             switch (c.type()) {
                 case "hit", "stun" -> {
-                    Vec3 at = CuePositions.resolve(c.data().getAsJsonArray("at"), caster.position(), caster.getEyeHeight(),
+                    Vec3 at = CuePositions.resolve(c.array("at"), caster.position(), caster.getEyeHeight(),
                             caster.getYRot(), caster.getXRot());
-                    double r = c.data().get("radius").getAsDouble();
-                    for (LivingEntity target : Hits.sphere(caster, at, r)) {
-                        float[] acc = hits.computeIfAbsent(target, k -> new float[3]);
-                        if (c.type().equals("hit")) {
-                            acc[0] += c.data().get("amount").getAsFloat();
-                            if (c.data().has("strength")) acc[2] = 1;
-                        } else {
-                            acc[1] = Math.max(acc[1], c.data().get("ticks").getAsFloat());
-                        }
-                    }
+                    List<LivingEntity> targets = Hits.sphere(caster, at, c.num("radius", 1));
+                    if (c.type().equals("hit")) hits.add(targets, c.targetCond(), (float) c.num("amount", 0), 0, c.data().has("strength"));
+                    else hits.add(targets, c.targetCond(), 0, (int) c.num("ticks", 0), false);
                 }
                 case "impulse" -> impulse(caster, c.data());
                 case "hover" -> {
@@ -105,21 +86,16 @@ public final class MoveSim implements ResourceManagerReloadListener {
                     caster.fallDistance = 0;
                     caster.hurtMarked = true;
                 }
-                case "self_move" -> selfMove(caster, c.data().getAsJsonArray("local"));
-                default -> { }
+                case "self_move" -> {
+                    if (c.data().has("local")) selfMove(caster, c.array("local"));
+                }
+                case "move_toward" -> Projectiles.moveToward(caster, caster, c.str("target", ""), c.num("step", 0));
+                default -> Projectiles.apply(c, caster, caster, caster.position(), caster.getEyeHeight(), caster.getYRot(), caster.getXRot());
             }
         }
         if (hits.isEmpty()) return;
-        DamageKind kind = kindFor(m.moveId());
-        boolean landed = false;
-        for (var e : hits.entrySet()) {
-            float[] acc = e.getValue();
-            float dmg = acc[0] + (acc[2] > 0 ? CombatDamage.strengthBonus(caster) : 0);
-            CombatDamage.Hit hit = new CombatDamage.Hit(dmg, kind, (int) acc[1], dmg > 0 ? 1 : 0, dmg > 0 ? 6 : 0);
-            landed |= CombatDamage.deal(caster, e.getKey(), hit);
-        }
         // lets hit-confirm presentation (JJA `if entity ... run playsound`) play on clients
-        if (landed) m.tag("if:entity", true);
+        if (hits.flush(caster, kindFor(m.moveId()), null)) m.tag("if:entity", true);
     }
 
     /** Bedrock {@code applyKnockback(view.x, view.z, horizontal, vertical)} on the caster. */

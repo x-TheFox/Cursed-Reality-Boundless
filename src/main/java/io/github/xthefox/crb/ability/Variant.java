@@ -9,7 +9,8 @@ import java.util.Set;
  * @param nameKey       translation key shown on the HUD and in cooldown messages
  * @param sneak         required sneak state
  * @param airborne      required airborne state
- * @param lookUp        required look-up state
+ * @param lookDown      required looking-down state (JJA {@code tag=!uplook})
+ * @param lookUp        required looking-straight-up state (JJA {@code tag=lookingup})
  * @param energyCost    cursed energy removed on start (also the minimum required)
  * @param cooldownKey   shared cooldown bucket (JJA {@code ability1..12}, {@code domainCD})
  * @param cooldownTicks cooldown applied on start
@@ -17,12 +18,14 @@ import java.util.Set;
  * @param durationTicks length of the move timeline
  * @param requirements  tags the user must have (e.g. {@code six_eyes}, {@code rct}); see {@link AbilityUser#has}
  * @param minForms      technique mastery level needed (JJA {@code forms})
+ * @param energyRequired cursed energy needed to cast, when more than the cost (JJA {@code Energy=7500..} with a 150 cost)
  */
 public record Variant(
         String form,
         String nameKey,
         Tri sneak,
         Tri airborne,
+        Tri lookDown,
         Tri lookUp,
         int energyCost,
         String cooldownKey,
@@ -30,10 +33,12 @@ public record Variant(
         String moveId,
         int durationTicks,
         Set<String> requirements,
-        int minForms
+        int minForms,
+        int energyRequired
 ) {
     public boolean matches(Modifiers m) {
-        return sneak.test(m.sneak()) && airborne.test(m.airborne()) && lookUp.test(m.lookUp());
+        return sneak.test(m.sneak()) && airborne.test(m.airborne()) && lookDown.test(m.lookDown())
+                && lookUp.test(m.lookUp());
     }
 
     public static Builder builder(String form, String moveId) {
@@ -44,8 +49,8 @@ public record Variant(
         private final String form;
         private final String moveId;
         private String nameKey;
-        private Tri sneak = Tri.NO, airborne = Tri.NO, lookUp = Tri.ANY;
-        private int energy, cooldown, duration, minForms;
+        private Tri sneak = Tri.NO, airborne = Tri.NO, lookDown = Tri.ANY, lookUp = Tri.ANY;
+        private int energy, energyRequired, cooldown, duration, minForms;
         private String cooldownKey;
         private Set<String> requirements = Set.of();
 
@@ -59,16 +64,18 @@ public record Variant(
         public Builder name(String key) { this.nameKey = key; return this; }
         public Builder sneak(Tri t) { this.sneak = t; return this; }
         public Builder airborne(Tri t) { this.airborne = t; return this; }
+        public Builder lookDown(Tri t) { this.lookDown = t; return this; }
         public Builder lookUp(Tri t) { this.lookUp = t; return this; }
         public Builder energy(int e) { this.energy = e; return this; }
+        public Builder energyRequired(int e) { this.energyRequired = e; return this; }
         public Builder cooldown(String key, int ticks) { this.cooldownKey = key; this.cooldown = ticks; return this; }
         public Builder duration(int ticks) { this.duration = ticks; return this; }
         public Builder requires(String... tags) { this.requirements = Set.of(tags); return this; }
         public Builder minForms(int forms) { this.minForms = forms; return this; }
 
         public Variant build() {
-            return new Variant(form, nameKey, sneak, airborne, lookUp, energy, cooldownKey, cooldown, moveId,
-                    duration, requirements, minForms);
+            return new Variant(form, nameKey, sneak, airborne, lookDown, lookUp, energy, cooldownKey, cooldown, moveId,
+                    duration, requirements, minForms, Math.max(energy, energyRequired));
         }
     }
 }

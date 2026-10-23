@@ -70,6 +70,19 @@ public final class ServerEvents {
         }
     }
 
+    /** Infinity stops vanilla damage too (mobs, arrows, falls, fire), except what bypasses invulnerability. */
+    @SubscribeEvent
+    static void onIncomingDamage(net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent event) {
+        LivingEntity target = event.getEntity();
+        var src = event.getSource();
+        if (src.is(net.minecraft.tags.DamageTypeTags.BYPASSES_INVULNERABILITY)) return;
+        var kind = io.github.xthefox.crb.combat.DamageKind.of(src);
+        if (kind != null) return; // our own damage was already checked in CombatDamage
+        if (io.github.xthefox.crb.combat.Infinity.blocks(target, src.getEntity(), io.github.xthefox.crb.combat.DamageKind.BLUNT)) {
+            event.setCanceled(true);
+        }
+    }
+
     @SubscribeEvent
     static void onEntityTick(EntityTickEvent.Post event) {
         if (event.getEntity().level().isClientSide() || !(event.getEntity() instanceof LivingEntity living)) return;
@@ -81,6 +94,7 @@ public final class ServerEvents {
         if (!living.hasData(CRBAttachments.COMBAT)) return;
         CombatState state = living.getData(CRBAttachments.COMBAT);
         state.tick();
+        io.github.xthefox.crb.combat.Infinity.tick(living);
         if (state.isDirty()) CRBNetwork.syncCombat(living);
     }
 
@@ -132,6 +146,8 @@ public final class ServerEvents {
         event.addListener(io.github.xthefox.crb.move.MoveDurations.INSTANCE);
         event.addListener(io.github.xthefox.crb.move.MoveEffects.INSTANCE);
         event.addListener(io.github.xthefox.crb.move.MoveSim.INSTANCE);
+        event.addListener(io.github.xthefox.crb.projectile.ProjectileData.INSTANCE);
+        event.addListener(io.github.xthefox.crb.projectile.HelperEntities.INSTANCE);
     }
 
     @SubscribeEvent

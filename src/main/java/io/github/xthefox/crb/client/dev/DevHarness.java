@@ -112,11 +112,11 @@ public final class DevHarness {
                 case "combat" -> io.github.xthefox.crb.client.input.CombatMode.setEnabled(arg.trim().equals("on"));
                 case "page" -> io.github.xthefox.crb.client.input.CombatMode.setPage(Integer.parseInt(arg.trim()) - 1);
                 case "cast" -> {
-                    // cast <key 1-6> [sneak] [air] [up]: fire a Combat Mode key with the given stance
+                    // cast <key 1-6> [sneak] [air] [down] [up]: fire a Combat Mode key with the given stance
                     String[] a = arg.trim().split("\\s+");
                     int key = Integer.parseInt(a[0]) - 1;
                     java.util.Set<String> m = java.util.Set.of(a).stream().skip(0).collect(java.util.stream.Collectors.toSet());
-                    var mods = new io.github.xthefox.crb.ability.Modifiers(m.contains("sneak"), m.contains("air"), m.contains("up"));
+                    var mods = new io.github.xthefox.crb.ability.Modifiers(m.contains("sneak"), m.contains("air"), m.contains("down"), m.contains("up"));
                     net.neoforged.neoforge.network.PacketDistributor.sendToServer(new io.github.xthefox.crb.net.MovePayloads.AbilityInput(
                             io.github.xthefox.crb.client.input.CombatMode.page(), key, mods.toBits()));
                 }

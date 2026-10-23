@@ -15,6 +15,8 @@ import java.util.Map;
 public final class MoveScriptManager extends SimpleJsonResourceReloadListener {
     public static final MoveScriptManager INSTANCE = new MoveScriptManager();
     private Map<ResourceLocation, MoveScript> scripts = Map.of();
+    /** Projectile runner scripts by JJA projectile name ("Lapse2" -> crb:projectile/limitless/lapseblue2). */
+    private Map<String, ResourceLocation> projectiles = Map.of();
 
     private MoveScriptManager() {
         super(new Gson(), "move_scripts");
@@ -23,22 +25,30 @@ public final class MoveScriptManager extends SimpleJsonResourceReloadListener {
     @Override
     protected void apply(Map<ResourceLocation, JsonElement> files, ResourceManager rm, ProfilerFiller profiler) {
         Map<ResourceLocation, MoveScript> loaded = new HashMap<>();
+        Map<String, ResourceLocation> names = new HashMap<>();
         int cues = 0;
         for (var e : files.entrySet()) {
             try {
-                MoveScript s = MoveScript.parse(e.getValue().getAsJsonObject());
+                var json = e.getValue().getAsJsonObject();
+                MoveScript s = MoveScript.parse(json);
                 loaded.put(e.getKey(), s);
+                if (json.has("names")) json.getAsJsonArray("names").forEach(n -> names.put(n.getAsString(), e.getKey()));
                 cues += s.cues().size();
             } catch (RuntimeException ex) {
                 CRB.LOG.error("Invalid move script {}", e.getKey(), ex);
             }
         }
         scripts = Map.copyOf(loaded);
+        projectiles = Map.copyOf(names);
         CRB.LOG.info("Loaded {} move scripts ({} cues)", scripts.size(), cues);
     }
 
     public MoveScript get(ResourceLocation moveId) {
         return scripts.get(moveId);
+    }
+
+    public ResourceLocation projectileScript(String name) {
+        return projectiles.get(name);
     }
 
     public int size() {

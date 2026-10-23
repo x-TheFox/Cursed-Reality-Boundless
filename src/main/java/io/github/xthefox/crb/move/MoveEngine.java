@@ -130,7 +130,6 @@ public final class MoveEngine {
     }
 
     private static void sendTrackingAndSelf(LivingEntity e, net.minecraft.network.protocol.common.custom.CustomPacketPayload p) {
-        PacketDistributor.sendToPlayersTrackingEntity(e, p);
-        if (e instanceof ServerPlayer sp && CRBNetwork.canReceive(sp, p.type())) PacketDistributor.sendToPlayer(sp, p);
+        CRBNetwork.sendTrackingAndSelf(e, p);
     }
 }

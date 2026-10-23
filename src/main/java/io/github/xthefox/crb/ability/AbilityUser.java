@@ -17,4 +17,14 @@ public interface AbilityUser {
     boolean has(String tag);
 
     boolean canAct();
+
+    /** Multiplier on a variant's cursed-energy cost and requirement (Six Eyes' efficiency). */
+    default float costScale(Variant v) {
+        return 1f;
+    }
+
+    /** The energy a variant actually takes. */
+    default int cost(Variant v) {
+        return (int) Math.ceil(v.energyCost() * costScale(v));
+    }
 }

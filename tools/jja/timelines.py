@@ -33,7 +33,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import BP, REPO, RESEARCH  # noqa: E402
+from common import BP, REPO, RESEARCH, load_json  # noqa: E402
 
 FN = BP / "functions"
 OUT = REPO / "src" / "main" / "resources" / "assets" / "crb" / "move_scripts"
@@ -42,7 +42,7 @@ IGNORED_SCORE_CONDS = {"Stun=0", "Disabled=0", "Disabled2=0", "nocts=0"}
 IGNORED_TAG_CONDS = {"tag=!impactframesoff", "tag=!arenaboss"}
 
 STATS = Counter()
-SIM_TYPES = {"hit", "stun", "impulse", "hover", "self_move"}
+SIM_TYPES = {"hit", "stun", "impulse", "hover", "self_move", "move_toward", "proj_tp", "summon", "shoot", "proj_deleter", "proj_kill", "self_deleter", "carve"}
 
 
 # ---------------------------------------------------------------------------------------------
@@ -167,6 +167,8 @@ class Context:
         self.pos: list[dict] = []
         self.self_ctx = True       # executing as / at the caster
         self.facing = None
+        self.runner = False        # extracting a projectile's own tick function
+        self.victims = None        # `as @e[r=R,...]` from the caster: who a later `damage @s` hits
 
 
 def _intersect(a, b):
@@ -274,9 +276,17 @@ def target_radius(tok: str):
     return args["r"] if args["r"] is not None else None
 
 
+# JJA's terrain carving functions: structure loads of an air sphere -> (radius, centre offset)
+CARVES = {"2x2sphere": (1.5, 0.0), "4x4sphere": (4.5, 0.5), "23x23sphere": (11.5, 11.5), "32x32sphere": (16.0, 16.0)}
+
+
 def _parse_sim(toks: list[str], ctx: Context):
     """Simulation cues: radius hits, stun, strength bonus, caster impulses and self teleports."""
     cmd = toks[0]
+    if cmd == "function" and len(toks) >= 2 and toks[1] in CARVES:
+        r, off = CARVES[toks[1]]
+        at = list(ctx.pos) + ([{"rel": [off, off, off]}] if off else [])
+        return {"type": "carve", "radius": r, "at": at}
     if cmd == "damage" and len(toks) >= 3:
         r = target_radius(toks[1])
         if r is None:
@@ -286,6 +296,19 @@ def _parse_sim(toks: list[str], ctx: Context):
         except ValueError:
             return None
         return {"type": "hit", "amount": amount, "radius": r, "at": list(ctx.pos)}
+    if cmd == "scoreboard" and len(toks) >= 6 and toks[1] == "players" and toks[2] == "set" and toks[4] == "Deleter" \
+            and toks[3].startswith("@s"):
+        try:
+            return {"type": "self_deleter", "value": int(toks[5])}
+        except ValueError:
+            return None
+    if cmd == "scoreboard" and len(toks) >= 6 and toks[1] == "players" and toks[2] == "set" and toks[4] == "Deleter":
+        name = proj_name(toks[3])
+        if name:
+            try:
+                return {"type": "proj_deleter", "name": name, "value": int(toks[5])}
+            except ValueError:
+                return None
     if cmd == "scoreboard" and len(toks) >= 6 and toks[1] == "players":
         op, sel, obj = toks[2], toks[3], toks[4]
         r = target_radius(sel)
@@ -304,6 +327,19 @@ def _parse_sim(toks: list[str], ctx: Context):
             except ValueError:
                 return None
         return None
+    if cmd == "scriptevent" and len(toks) >= 4 and toks[1].lower() == "ds:shootprojectile":
+        cue = {"type": "shoot", "entity": toks[2].lower(), "name": toks[3], "velocity": 3.0, "deleter": None, "at": list(ctx.pos)}
+        for i, a in enumerate(toks):
+            if a.startswith("velocity:"):
+                try: cue["velocity"] = float(a.split(":")[1])
+                except ValueError: pass
+            if a == "scores:" and i + 2 < len(toks) and toks[i + 1] == "Deleter":
+                try: cue["deleter"] = int(toks[i + 2])
+                except ValueError: pass
+            # JJA's parser only knows "scores: Deleter N"; "scores:Deleter N" sets nothing
+            if a == "nearestTypeApply":
+                cue["existing"] = True  # launch the nearest projectile with this name instead of spawning
+        return cue
     if cmd == "scriptevent" and len(toks) >= 2:
         ev = toks[1].lower()
         if ev == "ds:knockback":
@@ -319,11 +355,127 @@ def _parse_sim(toks: list[str], ctx: Context):
         if ev == "ds:downfall":
             return {"type": "impulse", "forward": 0, "up": -1.5}
         return None
-    if cmd == "tp" and len(toks) == 3 and toks[1].startswith("@s"):
+    if cmd == "tp" and len(toks) in (3, 4) and toks[1].startswith("@s"):
         k, xyz, j = split_coords(toks, 2)
         if k == "local" and any(abs(v) > 1e-6 for v in xyz):
             return {"type": "self_move", "local": xyz}
+        if k == "rel" and ctx.runner and any(abs(v) > 1e-6 for v in xyz):
+            return {"type": "self_move", "rel": xyz}
+    if cmd == "tp" and len(toks) >= 5 and toks[1].startswith("@s") and toks[3] == "facing" and toks[4].startswith("@e"):
+        # tp @s ^^^0.111 facing @e[name=ImagineTRG,...]: step toward a named projectile
+        k, xyz, j = split_coords(toks, 2)
+        target = proj_name(toks[4])
+        if k == "local" and target:
+            return {"type": "move_toward", "target": target, "step": xyz[2]}
+    if cmd == "tp" and len(toks) >= 3 and toks[1].startswith("@e"):
+        name = proj_name(toks[1])
+        if name:
+            k, xyz, j = split_coords(toks, 2)
+            if k in ("local", "rel"):
+                return {"type": "proj_tp", "name": name, "at": list(ctx.pos) + [{k: xyz}]}
+    if cmd == "summon" and len(toks) >= 2:
+        ent = toks[1].lower()
+        name = None
+        i = 2
+        if ent == "ds:projectile" and len(toks) > 2 and toks[2][0] not in "~^":
+            name = toks[2].strip('"')
+            i = 3
+        k, xyz, j = split_coords(toks, i)
+        at = list(ctx.pos) + ([{k: xyz}] if k in ("local", "rel") else [])
+        cue = {"type": "summon", "entity": ent, "at": at}
+        rest = toks[j:] if j > i else toks[i:]
+        if rest and rest[0] == "facing":
+            fk, fxyz, fj = split_coords(rest, 1)
+            if fk in ("local", "rel"):
+                cue["facing_at"] = list(ctx.pos) + [{fk: fxyz}]
+            rest = rest[fj:] if fj > 1 else rest[2:]
+        if ent == "ds:projectile" and name is None and rest:
+            # summon <type> <pos> [facing ...] <spawnEvent> <name>
+            name = rest[-1].strip('"') if len(rest) >= 2 else rest[0].strip('"')
+        if name:
+            cue["name"] = name
+        return cue
+    if cmd == "kill" and len(toks) >= 2 and toks[1].startswith("@e"):
+        name = proj_name(toks[1])
+        if name:
+            return {"type": "proj_kill", "name": name}
+    if cmd == "scoreboard" and len(toks) >= 6 and toks[1] == "players" and toks[2] == "set" and toks[4] == "Deleter":
+        name = proj_name(toks[3])
+        if name:
+            try:
+                return {"type": "proj_deleter", "name": name, "value": int(toks[5])}
+            except ValueError:
+                return None
     return None
+
+
+def victim_command(toks: list[str], ctx: Context):
+    """`execute as @e[r=R] ... run damage @s N` / `scoreboard players add @s Stun N` as radius cues."""
+    v = ctx.victims
+    if len(toks) >= 3 and toks[0] == "damage" and toks[1].startswith("@s"):
+        try:
+            amount = float(toks[2])
+        except ValueError:
+            return None
+        return {"type": "hit", "amount": amount, "radius": v["radius"], "at": v["at"], "audience_cond": v["cond"]}
+    if len(toks) >= 6 and toks[0] == "scoreboard" and toks[3].startswith("@s") and toks[4] == "Stun" and toks[2] in ("add", "set"):
+        try:
+            return {"type": "stun", "ticks": int(float(toks[5])), "radius": v["radius"], "at": v["at"], "audience_cond": v["cond"]}
+        except ValueError:
+            return None
+    return None
+
+
+def world_fact(w: str, args: list[str]):
+    """Runner world tests as facts the projectile runtime evaluates: 'w:solid' (block here is not
+    air), 'w:air', 'w:near=R' (a valid target within R), 'w:far=R'. '' = no condition (fire checks)."""
+    if args and args[0] == "block":
+        k, xyz, j = split_coords(args, 1)
+        blk = args[j - 0] if k and j < len(args) else (args[2] if len(args) > 2 else "")
+        if k == "rel" and all(abs(v) < 1e-6 for v in xyz):
+            if blk == "air":
+                return "w:solid" if w == "unless" else "w:air"
+            if blk in ("fire", "soul_fire") and w == "unless":
+                return ""
+    if args and args[0] == "entity" and len(args) > 1 and "tag=griefable" in args[1]:
+        return ""  # the griefing setting is enforced by the Java carve itself
+    if args and args[0] == "entity" and len(args) > 1 and args[1].startswith("@e"):
+        m = re.search(r"\br=([\d.]+)", args[1])
+        if m and "name=" not in args[1]:
+            return ("w:near=" if w == "if" else "w:far=") + m.group(1)
+    return None
+
+
+def helper_entities():
+    """BP helper entities that exist to explode or knock back once ({id: {explode|roar}})."""
+    out = {}
+    for p in (BP / "entities").rglob("*.json"):
+        try:
+            d = load_json(p)["minecraft:entity"]
+        except Exception:
+            continue
+        ident = d.get("description", {}).get("identifier")
+        comps = d.get("components", {})
+        if not ident:
+            continue
+        e = {}
+        if "minecraft:explode" in comps:
+            x = comps["minecraft:explode"]
+            e["explode"] = {"power": x.get("power", 3), "fire": bool(x.get("causes_fire", False)),
+                            "breaks": bool(x.get("destroy_affected_by_griefing", x.get("breaks_blocks", True)))}
+        roar = comps.get("minecraft:behavior.knockback_roar")
+        if roar:
+            e["roar"] = {"strength": roar.get("knockback_strength", 4), "range": roar.get("knockback_range", 4),
+                         "damage": roar.get("knockback_damage", 0)}
+        if e:
+            out[ident] = e
+    return dict(sorted(out.items()))
+
+
+def proj_name(tok: str):
+    """'@e[name=ImagineTRG,type=ds:projectile,r=5,c=1]' -> 'ImagineTRG'."""
+    m = re.search(r'name="?([^",\]]+)"?', tok)
+    return m.group(1) if m and "ds:projectile" in tok else None
 
 
 def _parse_command(toks: list[str], ctx: Context, key: str):
@@ -472,12 +624,13 @@ def _parse_command(toks: list[str], ctx: Context, key: str):
     return None
 
 
-def parse_line(line: str, key: str):
+def parse_line(line: str, key: str, allow_ungated: bool = False, runner: bool = False):
     line = line.strip()
     if not line or line.startswith("#"):
         return None
     toks = tokenize(line)
     ctx = Context()
+    ctx.runner = runner
     i = 0
     if toks and toks[0] == "execute":
         i = 1
@@ -488,6 +641,9 @@ def parse_line(line: str, key: str):
                 break
             if w in ("as", "at") and i + 1 < len(toks):
                 kind, args = parse_selector(toks[i + 1])
+                if w == "as" and kind in ("e", "a") and args and args.get("r") is not None \
+                        and ctx.self_ctx and ctx.victims is None:
+                    ctx.victims = {"radius": args["r"], "at": list(ctx.pos), "cond": audience_filters(toks[i + 1])}
                 absorb_selector(ctx, kind, args, key, w)
                 if w == "at" and kind == "s":
                     ctx.pos = []  # re-anchored at the caster
@@ -510,7 +666,9 @@ def parse_line(line: str, key: str):
                 i += 2
             elif w in ("if", "unless") and i + 1 < len(toks):
                 # conditions on world state: keep a marker, skip its arguments up to the next keyword
-                ctx.cond.append(f"{w}:{toks[i + 1]}")
+                fact = world_fact(w, toks[i + 1:i + 5]) if runner else None
+                if fact != "":
+                    ctx.cond.append(fact or f"{w}:{toks[i + 1]}")
                 i += 2
                 while i < len(toks) and toks[i] not in ("as", "at", "positioned", "anchored", "if", "unless",
                                                         "run", "rotated", "facing", "align", "in"):
@@ -535,14 +693,18 @@ def parse_line(line: str, key: str):
     if len(cmd_toks) > 3 and cmd_toks[0] == "scoreboard" and cmd_toks[3].startswith("@s"):
         kind, args = parse_selector(cmd_toks[3])
         absorb_selector(ctx, kind, args, key, "target")
-    cue = parse_command(cmd_toks, ctx, key)
+    cue = victim_command(cmd_toks, ctx) if ctx.victims else None
+    if cue is not None:
+        ctx.self_ctx = True  # `as @e[r=..] run damage @s N` is the caster's radius hit
+    else:
+        cue = parse_command(cmd_toks, ctx, key)
     if cue is None:
         STATS["skipped:" + cmd_toks[0]] += 1
         return None
     if not ctx.self_ctx:
         STATS["skipped:other_context"] += 1
         return None
-    if ctx.gate is None:
+    if ctx.gate is None and not allow_ungated:
         STATS["skipped:ungated"] += 1
         return None
     if ctx.cond:
@@ -551,6 +713,41 @@ def parse_line(line: str, key: str):
 
 
 # ---------------------------------------------------------------------------------------------
+
+UNBOUNDED_LO, UNBOUNDED_HI = -1000000, 1000000
+
+
+def find_runners():
+    """Functions run each tick as a named ds:projectile: {function path: {names}}."""
+    out = defaultdict(set)
+    pat = re.compile(r'as @e\[name="?([^",\]]+)"?,type=ds:projectile[^\]]*\] at @s run function ([\w/]+)')
+    for p in FN.rglob("*.mcfunction"):
+        for line in p.open(encoding="utf-8", errors="ignore"):
+            for m in pat.finditer(line):
+                out[m.group(2)].add(m.group(1))
+    return out
+
+
+def extract_runner(path: Path, names: set):
+    """A projectile's per-tick function: cues keyed on its remaining Deleter (lo/hi), 'proj=' name conditions."""
+    text = path.read_text(encoding="utf-8", errors="ignore")
+    rel = str(path.relative_to(FN).with_suffix(""))
+    cues = []
+    for line in text.splitlines():
+        r = parse_line(line, "Deleter", allow_ungated=True, runner=True)
+        if r is None:
+            continue
+        gate, cue = r
+        lo, hi = gate if gate else (None, None)
+        cue = {"t": UNBOUNDED_LO if lo is None else lo, "until": UNBOUNDED_HI if hi is None else hi, **cue}
+        if "cond" in cue:
+            cue["cond"] = ["proj=" + c[5:] if c.startswith("name=") else c for c in cue["cond"]]
+        cues.append(cue)
+    if not cues:
+        return None
+    cues.sort(key=lambda c: c["t"])
+    return {"source": rel, "duration": 0, "key": "Deleter", "mode": "remaining", "names": sorted(names), "cues": cues}
+
 
 def dominant_key(text: str):
     counts = Counter()
@@ -618,7 +815,33 @@ def main():
     index = {}
     sim_index = {}
     type_counts = Counter()
+    runners = find_runners()
+    projectile_index = {}
+    for fn, names in sorted(runners.items()):
+        path = FN / (fn + ".mcfunction")
+        if not path.exists():
+            continue
+        script = extract_runner(path, names)
+        if not script:
+            continue
+        safe = re.sub(r"[^a-z0-9_/.-]", "_", fn.lower())
+        sim = [c for c in script["cues"] if c["type"] in SIM_TYPES]
+        script["cues"] = [c for c in script["cues"] if c["type"] not in SIM_TYPES]
+        dst = OUT / "projectile" / f"{safe}.json"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.write_text(json.dumps(script, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
+        for n in names:
+            projectile_index[n] = {"script": f"crb:projectile/{safe}", "sim": sim}
+    (REPO / "src" / "main" / "resources" / "data" / "crb" / "projectiles.json").write_text(
+        json.dumps(dict(sorted(projectile_index.items())), separators=(",", ":")), encoding="utf-8")
+    print(f"projectile runners: {len(projectile_index)} names")
+    helpers = helper_entities()
+    (REPO / "src" / "main" / "resources" / "data" / "crb" / "helper_entities.json").write_text(
+        json.dumps(helpers, separators=(",", ":")), encoding="utf-8")
+    print(f"helper entities: {len(helpers)}")
     for path in sorted(FN.rglob("*.mcfunction")):
+        if str(path.relative_to(FN).with_suffix("")) in runners:
+            continue  # runner functions are projectile scripts, not caster moves
         script = extract(path, durations)
         if not script:
             continue

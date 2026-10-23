@@ -97,7 +97,7 @@ public final class Movement {
         Melee.cue(p, shake);
     }
 
-    static JsonObject particle(String id) {
+    public static JsonObject particle(String id) {
         JsonObject o = new JsonObject();
         o.addProperty("type", "particle");
         o.addProperty("particle", id);

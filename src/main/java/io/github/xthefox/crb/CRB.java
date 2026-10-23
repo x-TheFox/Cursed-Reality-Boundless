@@ -20,6 +20,7 @@ public final class CRB {
     public CRB(IEventBus modBus, ModContainer container) {
         CRBRegistries.register(modBus);
         CRBAttachments.register(modBus);
+        io.github.xthefox.crb.projectile.ProjectileTypes.register(modBus);
         modBus.addListener(CRBNetwork::register);
 
         container.registerConfig(ModConfig.Type.SERVER, CRBConfig.SERVER_SPEC);

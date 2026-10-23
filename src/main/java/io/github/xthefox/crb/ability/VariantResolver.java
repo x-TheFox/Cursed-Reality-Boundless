@@ -29,7 +29,7 @@ public final class VariantResolver {
             if (user.forms() < v.minForms()) continue;
             if (!v.requirements().stream().allMatch(user::has)) continue;
             if (cooldownsEnabled && user.cooldown(v.cooldownKey()) > 0) return Result.fail(v, Failure.ON_COOLDOWN);
-            if (user.energy() < v.energyCost()) return Result.fail(v, Failure.NOT_ENOUGH_ENERGY);
+            if (user.energy() < Math.ceil(v.energyRequired() * user.costScale(v))) return Result.fail(v, Failure.NOT_ENOUGH_ENERGY);
             return Result.ok(v);
         }
         return Result.fail(Failure.NO_VARIANT);

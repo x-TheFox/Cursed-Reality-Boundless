@@ -16,6 +16,10 @@ public final class CombatState implements INBTSerializable<CompoundTag> {
     private int moveLock;
     private int cameraLock;
     private int zone;
+    /** JJA {@code infinity}: ticks of Gojo's Infinity left (active from 3, like JJA's {@code infinity=3..}). */
+    private int infinity;
+    /** The user switched passive Infinity off (pressing Infinity while it is up). */
+    private boolean infinitySuppressed;
     private boolean dirty;
 
     public int stun() { return stun; }
@@ -23,12 +27,16 @@ public final class CombatState implements INBTSerializable<CompoundTag> {
     public int moveLock() { return moveLock; }
     public int cameraLock() { return cameraLock; }
     public int zone() { return zone; }
+    public int infinity() { return infinity; }
 
     public boolean stunned() { return stun > 0; }
     public boolean invulnerable() { return iframes > 0; }
     public boolean movementLocked() { return moveLock > 0; }
     public boolean cameraLocked() { return cameraLock > 0; }
     public boolean inTheZone() { return zone > 0; }
+    public boolean infinityActive() { return infinity >= 3; }
+    public boolean infinitySuppressed() { return infinitySuppressed; }
+    public void suppressInfinity(boolean b) { if (b != infinitySuppressed) { infinitySuppressed = b; dirty = true; } }
 
     /** Applies a stun, keeping the longer of the current and new duration (JJA overwrites with the max). */
     public void stun(int ticks) { if (ticks > stun) { stun = ticks; dirty = true; } }
@@ -38,6 +46,8 @@ public final class CombatState implements INBTSerializable<CompoundTag> {
     public void zone(int ticks) { if (ticks > zone) { zone = ticks; dirty = true; } }
 
     public void clearStun() { if (stun != 0) { stun = 0; dirty = true; } }
+    /** Sets Infinity's remaining ticks (JJA overwrites the score). 0 turns it off. */
+    public void infinity(int ticks) { if (ticks != infinity) { infinity = Math.max(0, ticks); dirty = true; } }
 
     /**
      * Counts every timer down one tick. A timer reaching zero marks the state dirty so clients
@@ -49,6 +59,7 @@ public final class CombatState implements INBTSerializable<CompoundTag> {
         if (moveLock > 0 && --moveLock == 0) dirty = true;
         if (cameraLock > 0 && --cameraLock == 0) dirty = true;
         if (zone > 0 && --zone == 0) dirty = true;
+        if (infinity > 0 && --infinity == 2) dirty = true; // inactive from here
     }
 
     public boolean isDirty() { return dirty; }
@@ -62,6 +73,8 @@ public final class CombatState implements INBTSerializable<CompoundTag> {
         t.putInt("moveLock", moveLock);
         t.putInt("cameraLock", cameraLock);
         t.putInt("zone", zone);
+        t.putInt("infinity", infinity);
+        t.putBoolean("infinityOff", infinitySuppressed);
         return t;
     }
 
@@ -72,5 +85,7 @@ public final class CombatState implements INBTSerializable<CompoundTag> {
         moveLock = t.getInt("moveLock");
         cameraLock = t.getInt("cameraLock");
         zone = t.getInt("zone");
+        infinity = t.getInt("infinity");
+        infinitySuppressed = t.getBoolean("infinityOff");
     }
 }
