@@ -50,6 +50,7 @@ public final class MoveEngine {
         m.scores().put("chance", 1 + m.random().nextInt(100));
         h.current = m;
         broadcast(m, 0);
+        MoveEffects.INSTANCE.apply(m, 0);
         MoveLogics.get(moveId).tick(m, 0);
         return m;
     }
@@ -74,6 +75,7 @@ public final class MoveEngine {
             return;
         }
         if (t > 0) {
+            MoveEffects.INSTANCE.apply(m, t);
             try {
                 logic.tick(m, t);
             } catch (RuntimeException ex) {

@@ -79,6 +79,10 @@ public final class ServerEvents {
     @SubscribeEvent
     static void onLogin(PlayerEvent.PlayerLoggedInEvent event) {
         if (event.getEntity() instanceof ServerPlayer p) {
+            // development harness only: let the scripted client run operator commands
+            if (Boolean.getBoolean("crb.devAutoOp") && !p.server.getPlayerList().isOp(p.getGameProfile())) {
+                p.server.getPlayerList().op(p.getGameProfile());
+            }
             p.getData(CRBAttachments.SORCERER).markDirty();
             CRBNetwork.syncSorcerer(p);
         }
@@ -117,6 +121,7 @@ public final class ServerEvents {
     static void onReload(AddReloadListenerEvent event) {
         event.addListener(KitManager.INSTANCE);
         event.addListener(io.github.xthefox.crb.move.MoveDurations.INSTANCE);
+        event.addListener(io.github.xthefox.crb.move.MoveEffects.INSTANCE);
     }
 
     @SubscribeEvent

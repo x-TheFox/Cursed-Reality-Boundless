@@ -550,6 +550,16 @@ def main():
         index[rel] = {"id": f"crb:{safe}", "duration": script["duration"], "cues": len(script["cues"]), "key": script["key"]}
         type_counts.update(c["type"] for c in script["cues"])
     (OUT.parent / "jja" / "move_scripts.json").write_text(json.dumps(dict(sorted(index.items())), indent=1), encoding="utf-8")
+    # gameplay effects (slowness, levitation, blindness...) are applied by the server
+    effects = {}
+    for path in sorted(OUT.rglob("*.json")):
+        sc = json.loads(path.read_text(encoding="utf-8"))
+        ev = [{k: c[k] for k in ("t", "until", "effect", "seconds", "amplifier", "audience", "cond", "audience_cond") if k in c}
+              for c in sc["cues"] if c["type"] == "effect" and c.get("effect") != "night_vision"]
+        if ev:
+            effects["crb:" + str(path.relative_to(OUT).with_suffix(""))] = ev
+    (REPO / "src" / "main" / "resources" / "data" / "crb" / "move_effects.json").write_text(
+        json.dumps(dict(sorted(effects.items())), separators=(",", ":")), encoding="utf-8")
     # the server cannot read client assets; it needs durations for /crb move play and NPC moves
     durations = {v["id"]: v["duration"] for v in index.values()}
     data = REPO / "src" / "main" / "resources" / "data" / "crb" / "move_durations.json"

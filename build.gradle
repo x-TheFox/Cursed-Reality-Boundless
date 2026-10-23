@@ -42,6 +42,19 @@ neoForge {
             programArgument '--nogui'
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
+        // Scripted visual checks: ./gradlew runHarnessServer, then ./gradlew runHarnessClient -PcrbHarness=<script>
+        harnessServer {
+            server()
+            gameDirectory = project.file('run-harness-server')
+            programArgument '--nogui'
+            systemProperty 'crb.devAutoOp', 'true'
+        }
+        harnessClient {
+            client()
+            gameDirectory = project.file('run')
+            systemProperty 'crb.devHarness', project.findProperty('crbHarness') ?: ''
+            programArguments.addAll '--quickPlayMultiplayer', 'localhost:25565', '--username', 'Dev'
+        }
         gameTestServer {
             type = 'gameTestServer'
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
@@ -78,6 +91,16 @@ dependencies {
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.11.3'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.matching { it.name == 'runHarnessServer' }.configureEach {
+    doFirst {
+        def dir = project.file('run-harness-server')
+        dir.mkdirs()
+        new File(dir, 'eula.txt').text = 'eula=true\n'
+        def props = new File(dir, 'server.properties')
+        if (!props.exists()) props.text = 'online-mode=false\nspawn-protection=0\nlevel-type=minecraft\\:flat\ngamemode=creative\nspawn-monsters=false\nmotd=CRB harness\n'
+    }
 }
 
 // Server-side GameTests (kits, ownership) run as part of `check`.

@@ -46,6 +46,8 @@ public final class ClientMoves {
         public final Set<String> tags;
         public final Map<String, Integer> scores;
         int next;
+        /** Server said FINISHED; we are a few ticks behind it, so the script plays out locally. */
+        boolean serverFinished;
 
         Playing(MovePayloads.Start p, MoveScript script, long now) {
             this.entityId = p.entityId();
@@ -103,6 +105,11 @@ public final class ClientMoves {
         END_LISTENERS.add(listener);
     }
 
+    /** The client tick counter move playback runs on. */
+    public static long ticks() {
+        return ticks;
+    }
+
     public static Map<Integer, Playing> active() {
         return ACTIVE;
     }
@@ -121,8 +128,14 @@ public final class ClientMoves {
     }
 
     public static void end(MovePayloads.End p) {
-        Playing m = ACTIVE.remove(p.entityId());
-        if (m != null) END_LISTENERS.forEach(l -> l.onEnd(m, p.reason()));
+        Playing m = ACTIVE.get(p.entityId());
+        if (m == null || !m.moveId.equals(p.moveId())) return;
+        if (p.reason() == MoveLogic.EndReason.FINISHED && ticks - m.localStart < m.script.duration()) {
+            m.serverFinished = true; // finish the last few ticks of presentation, then end
+            return;
+        }
+        ACTIVE.remove(p.entityId());
+        END_LISTENERS.forEach(l -> l.onEnd(m, p.reason()));
     }
 
     public static void state(MovePayloads.State p) {
@@ -145,8 +158,9 @@ public final class ClientMoves {
         while (it.hasNext()) {
             Playing m = it.next();
             int now = (int) (ticks - m.localStart);
-            // the server sends MoveEnd; this is a safety net if it is lost
-            if (now > m.script.duration() + 40) {
+            // finished on the server and played out here; or the end packet was lost (safety net)
+            if ((m.serverFinished && now >= m.script.duration()) || now > m.script.duration() + 40) {
+                for (int e = m.next; e < m.script.duration(); e++) fire(m, e);
                 it.remove();
                 END_LISTENERS.forEach(l -> l.onEnd(m, MoveLogic.EndReason.FINISHED));
                 continue;

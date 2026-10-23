@@ -9,3 +9,4 @@ out/
 __pycache__/
 *.pyc
 /tools/jja/.cache/
+run-harness-server/

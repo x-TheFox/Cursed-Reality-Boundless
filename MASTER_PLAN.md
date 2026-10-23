@@ -158,7 +158,7 @@ Each line is one feature branch → PR → merge after a green `./gradlew build`
 | 2 | `feat/core-architecture` | Gradle/MDG, deps, entrypoint, config, custom registries, attachments, payload registration skeleton, technique-ownership SavedData, kit format + loader, `/crb` admin commands, 19 shipped kits, JUnit + GameTests | ✅ |
 | 3 | `feat/asset-pipeline` | Model/animation/texture/sound/lang/particle/impact-frame converters + converted assets | ✅ |
 | 4 | `feat/move-engine` | Timeline extractor, `MoveScript` loader, server `MoveEngine`/`MoveInstance`, client cue player (sounds, player animations), MoveStart/End/State sync, tracking catch-up, `AbilityInput`, `/crb move play` | ✅ |
-| 5 | `feat/camera-engine` | Director, splines, eases, shake, fades, impact frames, hit-stop, FOV | ☐ |
+| 5 | `feat/camera-engine` | Director (Bedrock free-camera semantics, all eases, presets, ownership/release), shakes, fades, impact frames, flash, FOV punch, HUD hiding, server-side move effects, dev harness | ✅ (hit-stop moves to combat-core) |
 | 6 | `feat/bedrock-particles` | BedrockFX runtime (emitters, curves, Molang, flipbooks, collision) | ☐ |
 | 7 | `feat/input-hud` | Combat Mode, keybinds, radial menu, HUD | ☐ |
 | 8 | `feat/combat-core` | M1 combos + clash, lag-comp hit tests, DamageKind, stun/i-frames, dash/evade/double jump/flash step, parry, Black Flash + The Zone, binds, CE regen/charge/burnout | ☐ |
