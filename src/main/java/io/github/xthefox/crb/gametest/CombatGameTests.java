@@ -79,11 +79,15 @@ public final class CombatGameTests {
     public static void extractedStrongPunchHitsOnItsTick(GameTestHelper h) {
         LivingEntity[] t = new LivingEntity[1];
         ServerPlayer p = attacker(h, t, 2.0);
-        MoveEngine.start(p, CRB.id("fighting/basic/strong_punch"), 21);
-        h.runAfterDelay(9, () -> h.assertTrue(t[0].getHealth() == 1000, "no damage before tick 11"));
-        h.runAfterDelay(14, () -> {
-            h.assertTrue(t[0].getHealth() <= 996, "JJA's strong punch hits at tick 11 for 4+ (health " + t[0].getHealth() + ")");
-            h.succeed();
+        // tests run in parallel next to each other, so watch only this attacker hitting this target
+        int[] firstHit = {-1};
+        io.github.xthefox.crb.move.MoveInstance m = MoveEngine.start(p, CRB.id("fighting/basic/strong_punch"), 21);
+        io.github.xthefox.crb.combat.CombatDamage.listen((attacker, target, amount, kind) -> {
+            if (attacker == p && target == t[0] && firstHit[0] < 0) firstHit[0] = m.elapsed();
+        });
+        h.succeedWhen(() -> {
+            h.assertTrue(firstHit[0] >= 0, "strong punch has not hit yet");
+            h.assertTrue(firstHit[0] == 11, "JJA's strong punch hits at tick 11, hit at " + firstHit[0]);
         });
     }
 }
