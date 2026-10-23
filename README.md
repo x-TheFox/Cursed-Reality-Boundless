@@ -30,3 +30,17 @@ Operators (permission level 2) can turn any player into a full canon character:
 ```
 
 By default (`uniqueTechniques = CANON` in the server config) each named character's technique belongs to the first player who gets it. See [research doc 06](architecture_and_research/06_kits_uniqueness_and_admin.md) for every command and kit.
+
+## Visual checks (dev harness)
+
+Scripted screenshots of any move, for checking cinematics without playing by hand:
+
+```bash
+./gradlew runHarnessServer
+```
+
+```bash
+./gradlew runHarnessClient -PcrbHarness=$PWD/tools/harness/hollow_purple.txt
+```
+
+Scripts (`tools/harness/*.txt`) run commands, wait on a move's own clock (`waitmove 56`), aim the camera and take screenshots into `run/screenshots/harness/`. Examples from the current build are in [docs/progress](docs/progress/).

@@ -1,0 +1,40 @@
+# Visual check: Hollow Purple (fades, impact frames, shake) and Unlimited Void (camera shots, impact frames)
+cmd gamerule sendCommandFeedback false
+cmd time set noon
+cmd weather clear
+cmd crb kit give @s crb:gojo
+cmd summon minecraft:iron_golem ~ ~ ~6 {NoAI:1b}
+look 0 0
+wait 20
+shot 00_before
+cmd crb move play @s crb:limitless/limitless5
+waitmove 1
+shot 01_t1_black_fade
+waitmove 16
+shot 02_t16_white_flash
+waitmove 56
+shot 03_t56_impact
+waitmove 57
+shot 04_t57_impact
+waitmove 65
+shot 05_t65_purple_fade
+waitmove 100
+shot 06_t100_end
+wait 10
+cmd crb move play @s crb:limitless/gojo_domain 761
+waitmove 30
+shot 07_domain_t30
+waitmove 110
+shot 08_domain_t110
+waitmove 215
+shot 09_domain_t215_behind
+waitmove 341
+shot 10_domain_t341_impact
+waitmove 470
+shot 11_domain_t470
+waitmove 680
+shot 12_domain_t680
+cmd crb move stop @s
+wait 10
+shot 13_after_stop
+quit
