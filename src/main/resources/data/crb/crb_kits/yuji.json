@@ -1,0 +1,34 @@
+{
+  "display": "Yuji Itadori",
+  "technique": "crb:soul_shrine",
+  "forms": "max",
+  "traits": [
+    "crb:prince_of_black_sparks",
+    "crb:perfect_vessel"
+  ],
+  "unlocks": [
+    "crb:divergent_fist",
+    "crb:black_flash_mastery"
+  ],
+  "grade": "grade_1",
+  "stats": {
+    "strength": 45,
+    "endurance": 50,
+    "agility": 40,
+    "energy_cap": 1200
+  },
+  "combat_styles": [
+    "crb:yuji_fists",
+    "crb:black_fists"
+  ],
+  "items": [
+    {
+      "id": "crb:yuji_fit"
+    }
+  ],
+  "fingers": 1,
+  "claims": [
+    "crb:soul_shrine",
+    "crb:perfect_vessel"
+  ]
+}

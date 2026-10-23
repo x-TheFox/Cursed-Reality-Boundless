@@ -1,0 +1,45 @@
+{
+  "display": "Ryomen Sukuna (Heian Era)",
+  "technique": "crb:shrine",
+  "forms": "max",
+  "traits": [
+    "crb:rct_master",
+    "crb:curse",
+    "crb:meguna",
+    "crb:heian_era"
+  ],
+  "unlocks": [
+    "crb:rct",
+    "crb:domain_amplification",
+    "crb:simple_domain",
+    "crb:black_flash_mastery"
+  ],
+  "grade": "special",
+  "stats": {
+    "strength": 75,
+    "endurance": 70,
+    "agility": 65,
+    "energy_cap": 12000
+  },
+  "combat_styles": [
+    "crb:sukuna_fists",
+    "crb:four_fists",
+    "crb:cleave_fists"
+  ],
+  "items": [
+    {
+      "id": "crb:kamutoke"
+    },
+    {
+      "id": "crb:hiten"
+    },
+    {
+      "id": "crb:kings_cloak"
+    }
+  ],
+  "fingers": 20,
+  "claims": [
+    "crb:shrine",
+    "crb:ten_shadows"
+  ]
+}

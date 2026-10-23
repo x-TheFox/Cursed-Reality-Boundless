@@ -1,0 +1,40 @@
+{
+  "display": "Toji Fushiguro",
+  "technique": "crb:heavenly_restriction",
+  "forms": "max",
+  "traits": [
+    "crb:heavenly_restriction",
+    "crb:heavenly_restriction_fushiguro"
+  ],
+  "grade": "special",
+  "stats": {
+    "strength": 70,
+    "endurance": 60,
+    "agility": 75,
+    "energy_cap": 0
+  },
+  "combat_styles": [
+    "crb:hr_combat"
+  ],
+  "items": [
+    {
+      "id": "crb:inverted_spear"
+    },
+    {
+      "id": "crb:playful_cloud"
+    },
+    {
+      "id": "crb:soul_sword"
+    },
+    {
+      "id": "crb:glock"
+    },
+    {
+      "id": "crb:9mm_ammo",
+      "count": 32
+    },
+    {
+      "id": "crb:gojo_torso"
+    }
+  ]
+}
