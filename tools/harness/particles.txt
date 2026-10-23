@@ -1,0 +1,46 @@
+# Visual check: BedrockFX particle effects spawned in front of the camera
+cmd gamerule sendCommandFeedback false
+cmd time set midnight
+cmd weather clear
+look 0 0
+wait 40
+fx ds:hollow_blue_stars 4 1.6 1.5
+fx ds:hollow_red_stars 4 1.6 -1.5
+wait 2
+shot fx_01_hollow_stars
+wait 30
+fx ds:imaginary_purple1 4 1.6
+wait 2
+shot fx_02_imaginary_purple1
+wait 30
+fx ds:heian_impact1 3 1.6
+wait 2
+shot fx_03_heian_impact1
+wait 30
+fx ds:parry1 3 1.6
+wait 2
+shot fx_04_parry1
+wait 30
+fx ds:lightning_fist1a 2.5 1.4
+wait 2
+shot fx_05_lightning_fist
+wait 30
+fx ds:domainarea0 6 0
+wait 2
+shot fx_06_domainarea0
+wait 30
+fx ds:energy_refill1 3 0
+wait 2
+shot fx_07_energy_refill
+cmd time set noon
+wait 20
+cmd crb move play @s crb:limitless/limitless5
+waitmove 3
+shot fx_08_purple_t3
+waitmove 20
+shot fx_09_purple_t20
+waitmove 45
+shot fx_10_purple_t45
+waitmove 60
+shot fx_11_purple_t60
+quit

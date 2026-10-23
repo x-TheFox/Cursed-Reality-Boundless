@@ -23,6 +23,7 @@ import java.util.Deque;
  * waitmove 56             # until the local player's active move reaches elapsed tick 56
  * cmd crb kit give @s crb:gojo
  * look 90 10              # yaw pitch
+ * fx ds:hollow_blue_stars 3 1.5   # spawn a Bedrock particle effect 3 blocks ahead, 1.5 up
  * shot hollow_purple_t56  # screenshot into &lt;gameDir&gt;/screenshots/harness/
  * quit
  * </pre>
@@ -96,6 +97,15 @@ public final class DevHarness {
                 case "cmd" -> {
                     if (arg.contains("move play")) moveSeen = false;
                     mc.getConnection().sendCommand(arg.startsWith("/") ? arg.substring(1) : arg);
+                }
+                case "fx" -> {
+                    // fx <effect id> <forward> <up> [right]: spawn a particle effect in front of the player
+                    String[] a = arg.trim().split("\\s+");
+                    double fwd = a.length > 1 ? Double.parseDouble(a[1]) : 3, upOff = a.length > 2 ? Double.parseDouble(a[2]) : 1.5,
+                            left = a.length > 3 ? Double.parseDouble(a[3]) : 0;
+                    var pos = io.github.xthefox.crb.move.CuePositions.local(mc.player.position().add(0, upOff, 0), mc.player.getYRot(), 0, left, 0, fwd);
+                    boolean ok = io.github.xthefox.crb.client.fx.BedrockFX.INSTANCE.spawn(a[0], pos, mc.player.getYRot(), null);
+                    if (!ok) CRB.LOG.warn("Dev harness: unknown effect {}", a[0]);
                 }
                 case "look" -> {
                     String[] a = arg.trim().split("\\s+");
