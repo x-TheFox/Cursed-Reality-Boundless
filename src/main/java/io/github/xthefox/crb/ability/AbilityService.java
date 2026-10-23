@@ -19,6 +19,8 @@ import java.util.Optional;
 /** Handles {@link MovePayloads.AbilityInput}: picks the variant, charges it, starts the move. */
 public final class AbilityService {
     public static final int DOMAIN_KEY = 5;
+    /** The combat style's arts (JJA: right-click with the style item). */
+    public static final int STYLE_ART_KEY = 6;
     /** Inputs closer together than this are dropped (anti-spam; JJA's item use fires at most once per tick). */
     private static final int MIN_INPUT_INTERVAL = 2;
 
@@ -48,10 +50,15 @@ public final class AbilityService {
         player.setData(CRBAttachments.LAST_INPUT, now);
 
         SorcererData data = player.getData(CRBAttachments.SORCERER);
-        if (!data.hasTechnique()) return;
-        Technique tech = CRBRegistries.technique(data.technique());
-        Optional<Ability> ability = input.key() == DOMAIN_KEY ? tech.domain()
-                : tech.abilityAt(Math.floorMod(input.page(), tech.pages()), input.key());
+        Optional<Ability> ability;
+        if (input.key() == STYLE_ART_KEY) {
+            ability = Optional.of(io.github.xthefox.crb.combat.CombatStyle.of(player).arts());
+        } else {
+            if (!data.hasTechnique()) return;
+            Technique tech = CRBRegistries.technique(data.technique());
+            ability = input.key() == DOMAIN_KEY ? tech.domain()
+                    : tech.abilityAt(Math.floorMod(input.page(), tech.pages()), input.key());
+        }
         if (ability.isEmpty()) return;
 
         PlayerUser user = PlayerUser.of(player);
@@ -64,6 +71,7 @@ public final class AbilityService {
         Variant v = r.variant().orElseThrow();
         data.addEnergy(-v.energyCost());
         if (v.cooldownTicks() > 0) data.setCooldown(v.cooldownKey(), v.cooldownTicks());
+        player.getData(CRBAttachments.COMBO).resetString(); // JJA: starting a move clears the M1 string
         MoveEngine.start(player, ResourceLocation.fromNamespaceAndPath("crb", v.moveId()), v.durationTicks(), v);
     }
 

@@ -23,6 +23,11 @@ public final class CRBNetwork {
         r.playToClient(MovePayloads.Start.TYPE, MovePayloads.Start.STREAM_CODEC, ClientPayloads::onMoveStart);
         r.playToClient(MovePayloads.End.TYPE, MovePayloads.End.STREAM_CODEC, ClientPayloads::onMoveEnd);
         r.playToClient(MovePayloads.State.TYPE, MovePayloads.State.STREAM_CODEC, ClientPayloads::onMoveState);
+        r.playToClient(MovePayloads.Cue.TYPE, MovePayloads.Cue.STREAM_CODEC, ClientPayloads::onCue);
+        r.playToServer(MovePayloads.Melee.TYPE, MovePayloads.Melee.STREAM_CODEC,
+                (p, ctx) -> io.github.xthefox.crb.combat.Melee.press((net.minecraft.server.level.ServerPlayer) ctx.player()));
+        r.playToServer(MovePayloads.Movement.TYPE, MovePayloads.Movement.STREAM_CODEC,
+                (p, ctx) -> io.github.xthefox.crb.combat.Movement.handle((net.minecraft.server.level.ServerPlayer) ctx.player(), p));
         r.playToServer(MovePayloads.AbilityInput.TYPE, MovePayloads.AbilityInput.STREAM_CODEC,
                 (p, ctx) -> io.github.xthefox.crb.ability.AbilityService.handle((net.minecraft.server.level.ServerPlayer) ctx.player(), p));
     }

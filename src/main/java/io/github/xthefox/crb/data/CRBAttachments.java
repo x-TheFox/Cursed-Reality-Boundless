@@ -24,6 +24,10 @@ public final class CRBAttachments {
     public static final Supplier<AttachmentType<io.github.xthefox.crb.move.MoveEngine.Holder>> MOVE = TYPES.register("move",
             () -> AttachmentType.builder(io.github.xthefox.crb.move.MoveEngine.Holder::new).build());
 
+    /** Melee combo, evade meter and movement cooldowns; transient. */
+    public static final Supplier<AttachmentType<io.github.xthefox.crb.combat.ComboState>> COMBO = TYPES.register("combo",
+            () -> AttachmentType.builder(io.github.xthefox.crb.combat.ComboState::new).build());
+
     /** Game time of the player's last ability input (rate limiting); transient. */
     public static final Supplier<AttachmentType<Long>> LAST_INPUT = TYPES.register("last_input",
             () -> AttachmentType.builder(() -> 0L).build());

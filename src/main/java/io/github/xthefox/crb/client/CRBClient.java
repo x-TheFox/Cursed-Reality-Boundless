@@ -55,6 +55,7 @@ public final class CRBClient {
         });
         NeoForge.EVENT_BUS.addListener(io.github.xthefox.crb.client.input.CombatMode::preTick);
         NeoForge.EVENT_BUS.addListener(io.github.xthefox.crb.client.input.CombatMode::onScroll);
+        NeoForge.EVENT_BUS.addListener(io.github.xthefox.crb.client.input.CombatMode::onInteraction);
         NeoForge.EVENT_BUS.addListener((ClientTickEvent.Post e) -> {
             // cooldowns count down locally between syncs so the HUD stays smooth
             var player = Minecraft.getInstance().player;

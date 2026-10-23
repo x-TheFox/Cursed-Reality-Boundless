@@ -63,12 +63,20 @@ public final class ServerEvents {
             if (!wasDirty && player.tickCount % ENERGY_SYNC_INTERVAL != 0 && newEnergy < data.energyCap()) data.clearDirty();
         }
 
-        if (data.isDirty()) CRBNetwork.syncSorcerer(player);
+        io.github.xthefox.crb.combat.StatAttributes.tickSprint(player);
+        if (data.isDirty()) {
+            io.github.xthefox.crb.combat.StatAttributes.apply(player);
+            CRBNetwork.syncSorcerer(player);
+        }
     }
 
     @SubscribeEvent
     static void onEntityTick(EntityTickEvent.Post event) {
         if (event.getEntity().level().isClientSide() || !(event.getEntity() instanceof LivingEntity living)) return;
+        io.github.xthefox.crb.combat.HitHistory.record(living, living.level().getGameTime());
+        if (living instanceof net.minecraft.world.entity.player.Player || living.hasData(CRBAttachments.COMBO)) {
+            io.github.xthefox.crb.combat.Melee.tick(living);
+        }
         if (living.hasData(CRBAttachments.MOVE)) MoveEngine.tick(living);
         if (!living.hasData(CRBAttachments.COMBAT)) return;
         CombatState state = living.getData(CRBAttachments.COMBAT);
@@ -84,6 +92,7 @@ public final class ServerEvents {
                 p.server.getPlayerList().op(p.getGameProfile());
             }
             p.getData(CRBAttachments.SORCERER).markDirty();
+            io.github.xthefox.crb.combat.StatAttributes.apply(p);
             CRBNetwork.syncSorcerer(p);
         }
     }
@@ -122,6 +131,7 @@ public final class ServerEvents {
         event.addListener(KitManager.INSTANCE);
         event.addListener(io.github.xthefox.crb.move.MoveDurations.INSTANCE);
         event.addListener(io.github.xthefox.crb.move.MoveEffects.INSTANCE);
+        event.addListener(io.github.xthefox.crb.move.MoveSim.INSTANCE);
     }
 
     @SubscribeEvent

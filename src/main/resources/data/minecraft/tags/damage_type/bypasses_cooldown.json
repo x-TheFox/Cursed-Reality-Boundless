@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "crb:blunt",
+    "crb:slash",
+    "crb:cleave",
+    "crb:dismantle",
+    "crb:fire",
+    "crb:electric",
+    "crb:explosion",
+    "crb:poison",
+    "crb:pull",
+    "crb:water",
+    "crb:soul",
+    "crb:speech",
+    "crb:sight",
+    "crb:deletion",
+    "crb:infinity",
+    "crb:curse",
+    "crb:sure_hit"
+  ]
+}

@@ -161,10 +161,11 @@ Each line is one feature branch → PR → merge after a green `./gradlew build`
 | 5 | `feat/camera-engine` | Director (Bedrock free-camera semantics, all eases, presets, ownership/release), shakes, fades, impact frames, flash, FOV punch, HUD hiding, server-side move effects, dev harness | ✅ (hit-stop moves to combat-core) |
 | 6 | `feat/bedrock-particles` | Molang compiler, BedrockFX runtime (all JJA emitter shapes/rates/lifetimes, every facing mode, UV/flipbooks, gradients, curves, dynamic/parametric motion, collision, events, local space, blend modes), move-script particle cues | ✅ (animation-locator effects come with entity renderers) |
 | 7 | `feat/input-hud` | Combat Mode (1-6 + wheel pages), rebindable keys, radial page menu, HUD (CE bar, skill icons, cooldowns, live variant preview), harness cast steps | ✅ |
-| 8 | `feat/combat-core` | M1 combos + clash, lag-comp hit tests, DamageKind, stun/i-frames, dash/evade/double jump/flash step, parry, Black Flash + The Zone, binds, CE regen/charge/burnout | ☐ |
+| 8 | `feat/combat-core` | Lag-compensated hit tests, 17 DamageKinds (armour-bypassing damage types), JJA hit reaction, M1 string, combat styles + arts, Black Flash + The Zone, dash/Evade/double jump, stat attributes, **auto-extracted move simulation (435 moves: hits, stun, impulses, lunges)** | ✅ (M1 clash, parry, binds, hit-stop, CE burnout → `feat/combat-polish`) |
 
 ### Vertical slice
 
+| 8b | `feat/combat-polish` | M1 clash, parry, grab binds, hit-stop, CE burnout, flash step, charge dash | ☐ |
 | 9 | `feat/char-gojo` | Limitless complete (all 23 variants + fists), **Six Eyes perception + efficiency (GJ1–2)**, **passive Infinity (GJ3)**, **Blue Teleport (GJ4)**, **Blue Flight (GJ5)**, restored Twilight/Phase Blue + Phase Red (GJ6), Levitate Purple (GJ7), quick Unlimited Void (GJ8), domain system + barrier + Unlimited Void, domain clash, Student/Shinjuku Gojo NPCs, `gojo` + `gojo_student` kits | ☐ |
 
 ### Full roster (one branch each)

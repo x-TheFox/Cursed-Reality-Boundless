@@ -145,20 +145,20 @@
  },
  "blackflash2": {
   "id": "crb:blackflash2",
-  "duration": 12,
-  "cues": 29,
+  "duration": 10,
+  "cues": 27,
   "key": "blackflashing"
  },
  "blackflash3": {
   "id": "crb:blackflash3",
-  "duration": 12,
-  "cues": 31,
+  "duration": 10,
+  "cues": 29,
   "key": "blackflashing"
  },
  "blackflash4": {
   "id": "crb:blackflash4",
-  "duration": 12,
-  "cues": 31,
+  "duration": 10,
+  "cues": 30,
   "key": "blackflashing"
  },
  "blackflash_finisher_gojo": {
@@ -947,6 +947,12 @@
   "cues": 13,
   "key": "move"
  },
+ "dash": {
+  "id": "crb:dash",
+  "duration": 12,
+  "cues": 28,
+  "key": "Dash"
+ },
  "delusional/ab1": {
   "id": "crb:delusional/ab1",
   "duration": 42,
@@ -1042,6 +1048,12 @@
   "duration": 1,
   "cues": 22,
   "key": "move"
+ },
+ "evade": {
+  "id": "crb:evade",
+  "duration": 21,
+  "cues": 15,
+  "key": "Evasive"
  },
  "explosive/explosive1": {
   "id": "crb:explosive/explosive1",
@@ -2255,6 +2267,12 @@
   "cues": 12,
   "key": "cutscene"
  },
+ "infinity_dash": {
+  "id": "crb:infinity_dash",
+  "duration": 12,
+  "cues": 7,
+  "key": "Dash"
+ },
  "judgeman/deadlysentencing": {
   "id": "crb:judgeman/deadlysentencing",
   "duration": 9991,
@@ -2417,6 +2435,12 @@
   "cues": 11,
   "key": "cutscene"
  },
+ "kashimo/amberbeast": {
+  "id": "crb:kashimo/amberbeast",
+  "duration": 11,
+  "cues": 4,
+  "key": "Dash"
+ },
  "kashimo/beast_awaken": {
   "id": "crb:kashimo/beast_awaken",
   "duration": 131,
@@ -2518,6 +2542,12 @@
   "duration": 201,
   "cues": 54,
   "key": "move"
+ },
+ "kashimo/lightning_cloak": {
+  "id": "crb:kashimo/lightning_cloak",
+  "duration": 11,
+  "cues": 6,
+  "key": "Dash"
  },
  "knives1": {
   "id": "crb:knives1",
@@ -2819,6 +2849,12 @@
   "cues": 37,
   "key": "move"
  },
+ "m1move": {
+  "id": "crb:m1move",
+  "duration": 1,
+  "cues": 0,
+  "key": "cutscene"
+ },
  "mobs/cursed_doll/dash_punch": {
   "id": "crb:mobs/cursed_doll/dash_punch",
   "duration": 31,
@@ -3119,6 +3155,12 @@
   "cues": 3,
   "key": "move"
  },
+ "mobs/kashimo": {
+  "id": "crb:mobs/kashimo",
+  "duration": 2,
+  "cues": 0,
+  "key": "move"
+ },
  "mobs/maki_phase": {
   "id": "crb:mobs/maki_phase",
   "duration": 41,
@@ -3127,7 +3169,7 @@
  },
  "mobs/megumi": {
   "id": "crb:mobs/megumi",
-  "duration": 5,
+  "duration": 20,
   "cues": 1,
   "key": "move"
  },
@@ -3181,7 +3223,7 @@
  },
  "mobs/toji/flyheads": {
   "id": "crb:mobs/toji/flyheads",
-  "duration": 4,
+  "duration": 51,
   "cues": 2,
   "key": "move"
  },
