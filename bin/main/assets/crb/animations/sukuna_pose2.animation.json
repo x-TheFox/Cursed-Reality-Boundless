@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","animations":{"animation.sukuna_pose2":{"loop":true,"bones":{"root":{"rotation":[-2,0,0]},"head":{"rotation":[-20,0,0]},"rightArm":{"rotation":[-40,87.5,32.5],"position":[1,0.22656,0.26172]},"leftArm":{"rotation":[-40,-87.5,-32.5],"position":[1,0.22656,0.26172]},"rightLeg":{"rotation":[7.5,0,-7.5]},"leftLeg":{"rotation":[0,5,7.5]}}}}}

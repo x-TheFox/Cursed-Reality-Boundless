@@ -1,0 +1,3389 @@
+{
+ "ambient.weather.thunder": {
+  "sounds": [
+   "minecraft:ambient/weather/thunder1",
+   "minecraft:ambient/weather/thunder2",
+   "minecraft:ambient/weather/thunder3"
+  ]
+ },
+ "mob.200hollow": {
+  "sounds": [
+   {
+    "name": "crb:main/200hollow",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.alarm": {
+  "sounds": [
+   {
+    "name": "crb:main/alarm",
+    "volume": 6.0
+   }
+  ]
+ },
+ "mob.ambient_glitch": {
+  "sounds": [
+   {
+    "name": "crb:ambient_glitch",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.asleep": {
+  "sounds": [
+   {
+    "name": "crb:main/asleep",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.atomicbreath1": {
+  "sounds": [
+   {
+    "name": "crb:main/atomicbreath1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.atomicbreath2": {
+  "sounds": [
+   {
+    "name": "crb:main/atomicbreath2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.attorney": {
+  "sounds": [
+   {
+    "name": "crb:music/attorney",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.bang": {
+  "sounds": [
+   {
+    "name": "crb:main/bang",
+    "volume": 5.0
+   }
+  ]
+ },
+ "mob.bass": {
+  "sounds": [
+   {
+    "name": "crb:main/bass",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blackflash": {
+  "sounds": [
+   {
+    "name": "crb:main/blackflash",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blackflash2": {
+  "sounds": [
+   {
+    "name": "crb:main/blackflash2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blade1": {
+  "sounds": [
+   {
+    "name": "crb:main/yoru1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blade2": {
+  "sounds": [
+   {
+    "name": "crb:main/yoru2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blast1": {
+  "sounds": [
+   {
+    "name": "crb:main/blast1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blast2": {
+  "sounds": [
+   {
+    "name": "crb:main/blast2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blasted1": {
+  "sounds": [
+   {
+    "name": "crb:main/blasted1",
+    "volume": 6.0
+   }
+  ]
+ },
+ "mob.blasted2": {
+  "sounds": [
+   {
+    "name": "crb:main/blasted2",
+    "volume": 6.0
+   }
+  ]
+ },
+ "mob.blasted3": {
+  "sounds": [
+   {
+    "name": "crb:main/blasted3",
+    "volume": 6.0
+   }
+  ]
+ },
+ "mob.blasted4": {
+  "sounds": [
+   {
+    "name": "crb:main/blasted4",
+    "volume": 6.0
+   }
+  ]
+ },
+ "mob.blitz1": {
+  "sounds": [
+   {
+    "name": "crb:main/blitz1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blitz2": {
+  "sounds": [
+   {
+    "name": "crb:main/blitz2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blocked": {
+  "sounds": [
+   {
+    "name": "crb:main/blocked",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blood": {
+  "sounds": [
+   {
+    "name": "crb:main/blood",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blood1": {
+  "sounds": [
+   {
+    "name": "crb:main/blood1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blood2": {
+  "sounds": [
+   {
+    "name": "crb:main/blood2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blood3": {
+  "sounds": [
+   {
+    "name": "crb:main/blood3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.blood4": {
+  "sounds": [
+   {
+    "name": "crb:main/blood4",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.bonk": {
+  "sounds": [
+   {
+    "name": "crb:main/bonk",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.brat": {
+  "sounds": [
+   {
+    "name": "crb:main/brat",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.brat2": {
+  "sounds": [
+   {
+    "name": "crb:main/brat2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.bullet": {
+  "sounds": [
+   {
+    "name": "crb:main/bullet",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.burn": {
+  "sounds": [
+   {
+    "name": "crb:main/burn1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/burn2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.burst": {
+  "sounds": [
+   {
+    "name": "crb:main/burst",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.button": {
+  "sounds": [
+   {
+    "name": "crb:main/button",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.cartoon1": {
+  "sounds": [
+   {
+    "name": "crb:main/cartoon1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.cartoon2": {
+  "sounds": [
+   {
+    "name": "crb:main/cartoon2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.cartoon4": {
+  "sounds": [
+   {
+    "name": "crb:main/cartoon4",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.cartoon_laugh": {
+  "sounds": [
+   {
+    "name": "crb:main/cartoon_laugh",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.cero": {
+  "sounds": [
+   {
+    "name": "crb:main/cero",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.chant": {
+  "sounds": [
+   {
+    "name": "crb:main/chant",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.chimera1": {
+  "sounds": [
+   {
+    "name": "crb:main/chimera1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.clang1": {
+  "sounds": [
+   {
+    "name": "crb:main/clang1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.clap": {
+  "sounds": [
+   {
+    "name": "crb:main/clap",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.cleave": {
+  "sounds": [
+   {
+    "name": "crb:main/cleave",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.comeatme": {
+  "sounds": [
+   {
+    "name": "crb:main/comeatme",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.crash": {
+  "sounds": [
+   {
+    "name": "crb:main/crash",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.creepy": {
+  "sounds": [
+   {
+    "name": "crb:main/creepy",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.crimsonsun": {
+  "sounds": [
+   {
+    "name": "crb:main/crimsonsun",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.curse.ambient": {
+  "sounds": [
+   {
+    "name": "crb:mob/curses/curse_ambient1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:mob/curses/curse_ambient2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:mob/curses/curse_ambient3",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:mob/curses/curse_ambient4",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:mob/curses/curse_ambient5",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:mob/curses/curse_ambient6",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.cursed_energy": {
+  "sounds": [
+   {
+    "name": "crb:main/cursed_energy",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.cursed_speech": {
+  "sounds": [
+   {
+    "name": "crb:main/cursed_speech1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/cursed_speech2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.cursed_tune": {
+  "sounds": [
+   {
+    "name": "crb:main/cursed_tune",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.deadlysentencing": {
+  "sounds": [
+   {
+    "name": "crb:main/deadlysentencing",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.deathgamble1": {
+  "sounds": [
+   {
+    "name": "crb:main/deathgamble1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.disfigure1": {
+  "sounds": [
+   {
+    "name": "crb:main/disfigure1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.disfigure2": {
+  "sounds": [
+   {
+    "name": "crb:main/disfigure2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.disfigure3": {
+  "sounds": [
+   {
+    "name": "crb:main/disfigure3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.dismantle": {
+  "sounds": [
+   {
+    "name": "crb:main/dismantle",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.distort1": {
+  "sounds": [
+   {
+    "name": "crb:music/distort1",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.distort2": {
+  "sounds": [
+   {
+    "name": "crb:music/distort2",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.distort3": {
+  "sounds": [
+   {
+    "name": "crb:music/distort3",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.drill": {
+  "sounds": [
+   {
+    "name": "crb:main/drill",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.dukelaugh": {
+  "sounds": [
+   {
+    "name": "crb:main/dukelaugh",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.electric1": {
+  "sounds": [
+   {
+    "name": "crb:main/electricity2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.electric3": {
+  "sounds": [
+   {
+    "name": "crb:main/electricity3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.electric4": {
+  "sounds": [
+   {
+    "name": "crb:main/electricity4",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.electricity": {
+  "sounds": [
+   {
+    "name": "crb:main/electricity1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/electricity2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/electricity3",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/electricity4",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.elephant": {
+  "sounds": [
+   {
+    "name": "crb:main/elephant",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.enraged_yuji1": {
+  "sounds": [
+   {
+    "name": "crb:main/enraged_yuji1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.enraged_yuji2": {
+  "sounds": [
+   {
+    "name": "crb:main/enraged_yuji2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.eye": {
+  "sounds": [
+   {
+    "name": "crb:main/eye",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.fart": {
+  "sounds": [
+   {
+    "name": "crb:main/fart",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.first_blackflash": {
+  "sounds": [
+   {
+    "name": "crb:music/first_blackflash",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.flash": {
+  "sounds": [
+   {
+    "name": "crb:main/flash",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.forcedroles": {
+  "sounds": [
+   {
+    "name": "crb:main/forcedroles",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.fuga": {
+  "sounds": [
+   {
+    "name": "crb:main/fuga",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.fuga_appear": {
+  "sounds": [
+   {
+    "name": "crb:main/fuga_appear",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.fuga_clap": {
+  "sounds": [
+   {
+    "name": "crb:main/fuga_clap",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.fuga_form": {
+  "sounds": [
+   {
+    "name": "crb:main/fuga_form",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.fuga_hands": {
+  "sounds": [
+   {
+    "name": "crb:main/fuga_hands",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.fuga_shoot": {
+  "sounds": [
+   {
+    "name": "crb:main/fuga_shoot",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.gambaregambare1": {
+  "sounds": [
+   {
+    "name": "crb:main/gambaregambare1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.gambaregambare2": {
+  "sounds": [
+   {
+    "name": "crb:main/gambaregambare2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.gatling": {
+  "sounds": [
+   {
+    "name": "crb:main/gatling",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.get": {
+  "sounds": [
+   {
+    "name": "crb:main/get",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.getready": {
+  "sounds": [
+   {
+    "name": "crb:main/getready",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.glitch": {
+  "sounds": [
+   {
+    "name": "crb:glitch1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:glitch2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:glitch3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.glitch1": {
+  "sounds": [
+   {
+    "name": "crb:glitch1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.glitch2": {
+  "sounds": [
+   {
+    "name": "crb:glitch2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.glitch3": {
+  "sounds": [
+   {
+    "name": "crb:glitch3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.glitch_intense1": {
+  "sounds": [
+   {
+    "name": "crb:glitch_intense1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.glitch_intense2": {
+  "sounds": [
+   {
+    "name": "crb:glitch_intense1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.glitch_start": {
+  "sounds": [
+   {
+    "name": "crb:glitch_start",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.glitchtalk1": {
+  "sounds": [
+   {
+    "name": "crb:glitchtalk1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.glitchtalk2": {
+  "sounds": [
+   {
+    "name": "crb:glitchtalk2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.glock": {
+  "sounds": [
+   {
+    "name": "crb:main/glock",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.gojo_high": {
+  "sounds": [
+   {
+    "name": "crb:main/gojo_high",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.gojo_red1": {
+  "sounds": [
+   {
+    "name": "crb:main/gojo_red1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.gojo_red2": {
+  "sounds": [
+   {
+    "name": "crb:main/gojo_red2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.heartbeat": {
+  "sounds": [
+   {
+    "name": "crb:main/heartbeat",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.heavy_swing": {
+  "sounds": [
+   {
+    "name": "crb:main/heavy_swing",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.hiddeninventorydialogue1": {
+  "sounds": [
+   {
+    "name": "crb:main/hiddeninventorydialogue1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.hiddeninventorydialogue2": {
+  "sounds": [
+   {
+    "name": "crb:main/hiddeninventorydialogue2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.hiddeninventorydialogue3": {
+  "sounds": [
+   {
+    "name": "crb:main/hiddeninventorydialogue3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.hiddeninventorydialogue_start": {
+  "sounds": [
+   {
+    "name": "crb:main/hiddeninventorydialogue_start",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.hollow1": {
+  "sounds": [
+   {
+    "name": "crb:main/hollow1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.hollow2": {
+  "sounds": [
+   {
+    "name": "crb:main/hollow2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.honoredone": {
+  "sounds": [
+   {
+    "name": "crb:main/honoredone",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.idiot": {
+  "sounds": [
+   {
+    "name": "crb:main/idiot",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.impact": {
+  "sounds": [
+   {
+    "name": "crb:main/impact",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.impact1": {
+  "sounds": [
+   {
+    "name": "crb:main/impact1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.impact2": {
+  "sounds": [
+   {
+    "name": "crb:main/impact2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.improvisedpurple1": {
+  "sounds": [
+   {
+    "name": "crb:music/improvisedpurple1",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.improvisedpurple2": {
+  "sounds": [
+   {
+    "name": "crb:music/improvisedpurple2",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.infinitevoid1": {
+  "sounds": [
+   {
+    "name": "crb:main/infinitevoid1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.infinitevoidfast": {
+  "sounds": [
+   {
+    "name": "crb:main/infinitevoidfast",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.infinitevoidfast2": {
+  "sounds": [
+   {
+    "name": "crb:main/infinitevoidfast2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.infinitevoidsmall": {
+  "sounds": [
+   {
+    "name": "crb:main/infinitevoidsmall",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.infinity": {
+  "sounds": [
+   {
+    "name": "crb:main/infinity",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.innate1": {
+  "sounds": [
+   {
+    "name": "crb:main/innate1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.innate2": {
+  "sounds": [
+   {
+    "name": "crb:main/innate2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.innate3": {
+  "sounds": [
+   {
+    "name": "crb:main/innate3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.innate4": {
+  "sounds": [
+   {
+    "name": "crb:main/innate4",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.instant_body": {
+  "sounds": [
+   {
+    "name": "crb:main/instant_body",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.instant_body_break": {
+  "sounds": [
+   {
+    "name": "crb:main/instant_body_break",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.jcut": {
+  "sounds": [
+   {
+    "name": "crb:main/judgement",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.jogodomain": {
+  "sounds": [
+   {
+    "name": "crb:main/jogodomain",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.kai": {
+  "sounds": [
+   {
+    "name": "crb:main/kai",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.kaiju": {
+  "sounds": [
+   {
+    "name": "crb:main/kaiju",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.kashimoscream": {
+  "sounds": [
+   {
+    "name": "crb:main/kashimoscream",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.knowyourplace": {
+  "sounds": [
+   {
+    "name": "crb:main/knowyourplace",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.kokusen": {
+  "sounds": [
+   {
+    "name": "crb:main/kokusen",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.kokusen2": {
+  "sounds": [
+   {
+    "name": "crb:main/kokusen2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.kokusen3": {
+  "sounds": [
+   {
+    "name": "crb:main/kokusen3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.magic1": {
+  "sounds": [
+   {
+    "name": "crb:main/magic1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.magic2": {
+  "sounds": [
+   {
+    "name": "crb:main/magic2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.magic3": {
+  "sounds": [
+   {
+    "name": "crb:main/magic3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.magic4": {
+  "sounds": [
+   {
+    "name": "crb:main/magic4",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_02_domain1": {
+  "sounds": [
+   {
+    "name": "crb:music/mahito_02_domain1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_blackflash1": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_blackflash1",
+    "volume": 6.0
+   }
+  ]
+ },
+ "mob.mahito_blah": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_blah",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_bodyrepel": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_bodyrepel",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_domain1": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_domain1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_grunt1": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_grunt1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_grunt2": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_grunt2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_headon1": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_headon1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_headon2": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_headon2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_kiss": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_kiss",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_stage2": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_stage2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_trick": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_trick",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mahito_trulycurse1": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_trulycurse1",
+    "volume": 6.0
+   }
+  ]
+ },
+ "mob.mahito_trulycurse2": {
+  "sounds": [
+   {
+    "name": "crb:main/mahito_trulycurse2",
+    "volume": 6.0
+   }
+  ]
+ },
+ "mob.malevolentkitchen": {
+  "sounds": [
+   {
+    "name": "crb:main/malevolentkitchen",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.malevolentshrine1": {
+  "sounds": [
+   {
+    "name": "crb:main/malevolentshrine1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.megunacutscene1": {
+  "sounds": [
+   {
+    "name": "crb:main/megunacutscene1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.metal1": {
+  "sounds": [
+   {
+    "name": "crb:main/metal1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.metal2": {
+  "sounds": [
+   {
+    "name": "crb:main/metal2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.mountain_buster": {
+  "sounds": [
+   {
+    "name": "crb:main/mountain_buster",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.nue": {
+  "sounds": [
+   {
+    "name": "crb:main/nue",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.openspace": {
+  "sounds": [
+   {
+    "name": "crb:main/openspace",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.parry": {
+  "sounds": [
+   {
+    "name": "crb:main/parry1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/parry2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/parry3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.phone": {
+  "sounds": [
+   {
+    "name": "crb:main/phone",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.phone2": {
+  "sounds": [
+   {
+    "name": "crb:main/phone2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.punch": {
+  "sounds": [
+   {
+    "name": "crb:main/punch1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/punch2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.punch1": {
+  "sounds": [
+   {
+    "name": "crb:main/punch1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.punch2": {
+  "sounds": [
+   {
+    "name": "crb:main/punch2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.rapidcleave": {
+  "sounds": [
+   {
+    "name": "crb:main/rapidcleave",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.rapiddismantle": {
+  "sounds": [
+   {
+    "name": "crb:main/rapiddismantle",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.red1": {
+  "sounds": [
+   {
+    "name": "crb:main/red1",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.red2": {
+  "sounds": [
+   {
+    "name": "crb:main/red2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.red3": {
+  "sounds": [
+   {
+    "name": "crb:main/red3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.ring": {
+  "sounds": [
+   {
+    "name": "crb:main/ring",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.scopehim": {
+  "sounds": [
+   {
+    "name": "crb:main/scopehim",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.sekiro": {
+  "sounds": [
+   {
+    "name": "crb:main/sekiro",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.sharko": {
+  "sounds": [
+   {
+    "name": "crb:main/sharko",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.sharpen1": {
+  "sounds": [
+   {
+    "name": "crb:main/sharpen1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.sharpen2": {
+  "sounds": [
+   {
+    "name": "crb:main/sharpen2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.shi_yourself": {
+  "sounds": [
+   {
+    "name": "crb:main/shi_yourself",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.shock1": {
+  "sounds": [
+   {
+    "name": "crb:main/shock1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.shock2": {
+  "sounds": [
+   {
+    "name": "crb:main/shock2",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.shocked1": {
+  "sounds": [
+   {
+    "name": "crb:main/shocked1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.shocked2": {
+  "sounds": [
+   {
+    "name": "crb:main/shocked2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.shocked3": {
+  "sounds": [
+   {
+    "name": "crb:main/shocked3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.shootup": {
+  "sounds": [
+   {
+    "name": "crb:main/shootup",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.shrine_slashes": {
+  "sounds": [
+   {
+    "name": "crb:main/sword_swing1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/slice",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/slice1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/slice2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/slash",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/slash1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/rapidcleave",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.slash": {
+  "sounds": [
+   {
+    "name": "crb:main/slash",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.slash1": {
+  "sounds": [
+   {
+    "name": "crb:main/slash1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.slice": {
+  "sounds": [
+   {
+    "name": "crb:main/slice",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.slice1": {
+  "sounds": [
+   {
+    "name": "crb:main/slice1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.slice2": {
+  "sounds": [
+   {
+    "name": "crb:main/slice2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.slice3": {
+  "sounds": [
+   {
+    "name": "crb:main/slice3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.slice4": {
+  "sounds": [
+   {
+    "name": "crb:main/slice4",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.slicer2": {
+  "sounds": [
+   {
+    "name": "crb:main/slicer2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.slots1": {
+  "sounds": [
+   {
+    "name": "crb:main/slots1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.slots2": {
+  "sounds": [
+   {
+    "name": "crb:main/slots2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.speech_blastaway": {
+  "sounds": [
+   {
+    "name": "crb:main/speech_blastaway",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.speech_break": {
+  "sounds": [
+   {
+    "name": "crb:main/speech_break",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.speech_die": {
+  "sounds": [
+   {
+    "name": "crb:main/speech_die",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.speech_dontmove": {
+  "sounds": [
+   {
+    "name": "crb:main/speech_dontmove",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/speech_dontmove2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.speech_getcrushed": {
+  "sounds": [
+   {
+    "name": "crb:main/speech_getcrushed",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.speech_heal": {
+  "sounds": [
+   {
+    "name": "crb:main/speech_heal",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.speech_plummet": {
+  "sounds": [
+   {
+    "name": "crb:main/speech_plummet",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.speech_return": {
+  "sounds": [
+   {
+    "name": "crb:main/speech_return",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.speech_runaway": {
+  "sounds": [
+   {
+    "name": "crb:main/speech_runaway",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.speech_sleep": {
+  "sounds": [
+   {
+    "name": "crb:main/speech_sleep",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.speech_stop": {
+  "sounds": [
+   {
+    "name": "crb:main/speech_stop",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.stomp": {
+  "sounds": [
+   {
+    "name": "crb:main/step_1",
+    "volume": 0.5
+   },
+   {
+    "name": "crb:main/step_2",
+    "volume": 0.5
+   },
+   {
+    "name": "crb:main/step_3",
+    "volume": 0.5
+   },
+   {
+    "name": "crb:main/step_4",
+    "volume": 0.5
+   },
+   {
+    "name": "crb:main/step_4",
+    "volume": 0.5
+   }
+  ]
+ },
+ "mob.strike": {
+  "sounds": [
+   {
+    "name": "crb:main/strike",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.strong_punch1": {
+  "sounds": [
+   {
+    "name": "crb:main/strong_punch1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.strong_punch2": {
+  "sounds": [
+   {
+    "name": "crb:main/strong_punch2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.strong_punch3": {
+  "sounds": [
+   {
+    "name": "crb:main/strong_punch3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.strongleft": {
+  "sounds": [
+   {
+    "name": "crb:main/strongleft",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.sukuna_laugh1": {
+  "sounds": [
+   {
+    "name": "crb:main/sukuna_laugh1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.sukuna_laugh2": {
+  "sounds": [
+   {
+    "name": "crb:main/sukuna_laugh2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.sukuna_taste": {
+  "sounds": [
+   {
+    "name": "crb:main/sukuna_taste",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.sukunaawaken1": {
+  "sounds": [
+   {
+    "name": "crb:main/sukunaawaken1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.sukunaawaken2": {
+  "sounds": [
+   {
+    "name": "crb:main/sukunaawaken2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.sukunaawaken3": {
+  "sounds": [
+   {
+    "name": "crb:main/sukunaawaken3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.sukunamode": {
+  "sounds": [
+   {
+    "name": "crb:main/sukunamode",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.sword": {
+  "sounds": [
+   {
+    "name": "crb:main/sword",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.swordslash": {
+  "sounds": [
+   {
+    "name": "crb:main/sword_swing1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/sword_swing2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/sword_swing3",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/sword_swing4",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/sword_swing4",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.tear": {
+  "sounds": [
+   {
+    "name": "crb:main/tear",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.tinnitus": {
+  "sounds": [
+   {
+    "name": "crb:main/tinnitus",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.todo_asktype1": {
+  "sounds": [
+   {
+    "name": "crb:main/todo_asktype1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.todo_asktype2": {
+  "sounds": [
+   {
+    "name": "crb:main/todo_asktype2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.todo_asktype_good1": {
+  "sounds": [
+   {
+    "name": "crb:main/todo_asktype_good1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.todo_asktype_good2": {
+  "sounds": [
+   {
+    "name": "crb:main/todo_asktype_good2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.todo_asktype_good3": {
+  "sounds": [
+   {
+    "name": "crb:main/todo_asktype_good3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.tree1": {
+  "sounds": [
+   {
+    "name": "crb:main/tree1",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.tree2": {
+  "sounds": [
+   {
+    "name": "crb:main/tree2",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.turbulence": {
+  "sounds": [
+   {
+    "name": "crb:main/turbulence",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.water": {
+  "sounds": [
+   {
+    "name": "crb:main/water",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.wcssay": {
+  "sounds": [
+   {
+    "name": "crb:main/wcssay",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.whoop1": {
+  "sounds": [
+   {
+    "name": "crb:main/whoop1",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.whoop2": {
+  "sounds": [
+   {
+    "name": "crb:main/whoop2",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.whoop3": {
+  "sounds": [
+   {
+    "name": "crb:main/whoop3",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.whoosh1": {
+  "sounds": [
+   {
+    "name": "crb:main/whoosh1",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.whoosh2": {
+  "sounds": [
+   {
+    "name": "crb:main/whoosh2",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.whoosh3": {
+  "sounds": [
+   {
+    "name": "crb:main/whoosh3",
+    "volume": 4.0
+   }
+  ]
+ },
+ "mob.wind": {
+  "sounds": [
+   {
+    "name": "crb:main/wind1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/wind2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/wind3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.worm": {
+  "sounds": [
+   {
+    "name": "crb:main/worm",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.youdiehere": {
+  "sounds": [
+   {
+    "name": "crb:main/youdiehere",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.youjujutsusorcerers": {
+  "sounds": [
+   {
+    "name": "crb:main/youjujutsusorcerers",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.youvedoneitnow": {
+  "sounds": [
+   {
+    "name": "crb:main/youvedoneitnow",
+    "volume": 3.0
+   }
+  ]
+ },
+ "mob.yuji_domain": {
+  "sounds": [
+   {
+    "name": "crb:music/yuji_domain",
+    "volume": 3.0
+   }
+  ]
+ },
+ "music.200hollow2": {
+  "sounds": [
+   {
+    "name": "crb:music/200hollow2",
+    "stream": true
+   }
+  ]
+ },
+ "music.adapt": {
+  "sounds": [
+   {
+    "name": "crb:music/adapt",
+    "stream": true
+   }
+  ]
+ },
+ "music.alarm": {
+  "sounds": [
+   {
+    "name": "crb:main/alarm",
+    "stream": true
+   }
+  ]
+ },
+ "music.alwaysbetonahakari": {
+  "sounds": [
+   {
+    "name": "crb:music/alwaysbetonahakari",
+    "stream": true
+   }
+  ]
+ },
+ "music.atomic": {
+  "sounds": [
+   {
+    "name": "crb:music/atomic",
+    "stream": true
+   }
+  ]
+ },
+ "music.atomicbreath1": {
+  "sounds": [
+   {
+    "name": "crb:main/atomicbreath1",
+    "stream": true
+   }
+  ]
+ },
+ "music.atomicbreath2": {
+  "sounds": [
+   {
+    "name": "crb:main/atomicbreath2",
+    "stream": true
+   }
+  ]
+ },
+ "music.attorney": {
+  "sounds": [
+   {
+    "name": "crb:music/attorney",
+    "stream": true
+   }
+  ]
+ },
+ "music.bang": {
+  "sounds": [
+   {
+    "name": "crb:main/bang",
+    "stream": true
+   }
+  ]
+ },
+ "music.bass1": {
+  "sounds": [
+   {
+    "name": "crb:music/bass1",
+    "stream": true
+   }
+  ]
+ },
+ "music.bass2": {
+  "sounds": [
+   {
+    "name": "crb:music/bass2",
+    "stream": true
+   }
+  ]
+ },
+ "music.bass3": {
+  "sounds": [
+   {
+    "name": "crb:music/bass3",
+    "stream": true
+   }
+  ]
+ },
+ "music.bassboost": {
+  "sounds": [
+   {
+    "name": "crb:music/bassboost",
+    "stream": true
+   }
+  ]
+ },
+ "music.blade1": {
+  "sounds": [
+   {
+    "name": "crb:main/yoru1",
+    "stream": true
+   }
+  ]
+ },
+ "music.blade2": {
+  "sounds": [
+   {
+    "name": "crb:main/yoru2",
+    "stream": true
+   }
+  ]
+ },
+ "music.blitz": {
+  "sounds": [
+   {
+    "name": "crb:main/blitz2",
+    "stream": true
+   }
+  ]
+ },
+ "music.brat": {
+  "sounds": [
+   {
+    "name": "crb:main/brat",
+    "stream": true
+   }
+  ]
+ },
+ "music.brat2": {
+  "sounds": [
+   {
+    "name": "crb:main/brat2",
+    "stream": true
+   }
+  ]
+ },
+ "music.buildup": {
+  "sounds": [
+   {
+    "name": "crb:music/buildup",
+    "stream": true
+   }
+  ]
+ },
+ "music.carving_combo": {
+  "sounds": [
+   {
+    "name": "crb:main/carving_combo",
+    "stream": true
+   }
+  ]
+ },
+ "music.cero": {
+  "sounds": [
+   {
+    "name": "crb:main/cero",
+    "stream": true
+   }
+  ]
+ },
+ "music.chant": {
+  "sounds": [
+   {
+    "name": "crb:main/chant",
+    "stream": true
+   }
+  ]
+ },
+ "music.chaos": {
+  "sounds": [
+   {
+    "name": "crb:main/eye",
+    "stream": true
+   }
+  ]
+ },
+ "music.chimera": {
+  "sounds": [
+   {
+    "name": "crb:music/chimera",
+    "stream": true
+   }
+  ]
+ },
+ "music.chimera2": {
+  "sounds": [
+   {
+    "name": "crb:music/chimera2",
+    "stream": true
+   }
+  ]
+ },
+ "music.chimeragarden": {
+  "sounds": [
+   {
+    "name": "crb:music/chimeragarden",
+    "stream": true
+   }
+  ]
+ },
+ "music.claphands": {
+  "sounds": [
+   {
+    "name": "crb:music/claphands",
+    "stream": true
+   }
+  ]
+ },
+ "music.crimsonsun": {
+  "sounds": [
+   {
+    "name": "crb:main/crimsonsun",
+    "stream": true
+   }
+  ]
+ },
+ "music.deadlysentencing2": {
+  "sounds": [
+   {
+    "name": "crb:music/deadlysentencing2",
+    "stream": true
+   }
+  ]
+ },
+ "music.deathgamble2": {
+  "sounds": [
+   {
+    "name": "crb:music/deathgamble2",
+    "stream": true
+   }
+  ]
+ },
+ "music.deathgambleend": {
+  "sounds": [
+   {
+    "name": "crb:music/deathgambleend",
+    "stream": true
+   }
+  ]
+ },
+ "music.deathgamblesfx1": {
+  "sounds": [
+   {
+    "name": "crb:music/deathgamblesfx1",
+    "stream": true
+   }
+  ]
+ },
+ "music.distort1": {
+  "sounds": [
+   {
+    "name": "crb:music/distort1",
+    "stream": true
+   }
+  ]
+ },
+ "music.distort2": {
+  "sounds": [
+   {
+    "name": "crb:music/distort2",
+    "stream": true
+   }
+  ]
+ },
+ "music.distort3": {
+  "sounds": [
+   {
+    "name": "crb:music/distort3",
+    "stream": true
+   }
+  ]
+ },
+ "music.domainbreak": {
+  "sounds": [
+   {
+    "name": "crb:music/domainbreak",
+    "stream": true
+   }
+  ]
+ },
+ "music.domainclash1": {
+  "sounds": [
+   {
+    "name": "crb:music/domainclash1",
+    "stream": true
+   }
+  ]
+ },
+ "music.domainclashing": {
+  "sounds": [
+   {
+    "name": "crb:music/domainclashing",
+    "stream": true
+   }
+  ]
+ },
+ "music.dukelaugh": {
+  "sounds": [
+   {
+    "name": "crb:main/dukelaugh",
+    "stream": true
+   }
+  ]
+ },
+ "music.energy": {
+  "sounds": [
+   {
+    "name": "crb:music/energy1",
+    "stream": true
+   }
+  ]
+ },
+ "music.enuma": {
+  "sounds": [
+   {
+    "name": "crb:music/enuma",
+    "stream": true
+   }
+  ]
+ },
+ "music.eye": {
+  "sounds": [
+   {
+    "name": "crb:music/eye",
+    "stream": true
+   }
+  ]
+ },
+ "music.flashstep": {
+  "sounds": [
+   {
+    "name": "crb:music/flashstep",
+    "stream": true
+   }
+  ]
+ },
+ "music.fuga_music": {
+  "sounds": [
+   {
+    "name": "crb:music/fuga_music",
+    "stream": true
+   }
+  ]
+ },
+ "music.fuga_shrine": {
+  "sounds": [
+   {
+    "name": "crb:music/fuga_shrine",
+    "stream": true
+   }
+  ]
+ },
+ "music.gavel": {
+  "sounds": [
+   {
+    "name": "crb:music/gavel",
+    "stream": true
+   }
+  ]
+ },
+ "music.glitch1": {
+  "sounds": [
+   {
+    "name": "crb:glitch1",
+    "stream": true
+   }
+  ]
+ },
+ "music.glitch2": {
+  "sounds": [
+   {
+    "name": "crb:glitch2",
+    "stream": true
+   }
+  ]
+ },
+ "music.glitch3": {
+  "sounds": [
+   {
+    "name": "crb:glitch3",
+    "stream": true
+   }
+  ]
+ },
+ "music.glitch_intense1": {
+  "sounds": [
+   {
+    "name": "crb:glitch_intense1",
+    "stream": true
+   }
+  ]
+ },
+ "music.glitch_intense2": {
+  "sounds": [
+   {
+    "name": "crb:glitch_intense2",
+    "stream": true
+   }
+  ]
+ },
+ "music.glitch_start": {
+  "sounds": [
+   {
+    "name": "crb:glitch_start",
+    "stream": true
+   }
+  ]
+ },
+ "music.glitchtalk1": {
+  "sounds": [
+   {
+    "name": "crb:glitchtalk1",
+    "stream": true
+   }
+  ]
+ },
+ "music.glitchtalk2": {
+  "sounds": [
+   {
+    "name": "crb:glitchtalk2",
+    "stream": true
+   }
+  ]
+ },
+ "music.gojoblackflash": {
+  "sounds": [
+   {
+    "name": "crb:music/gojoblackflash",
+    "stream": true
+   }
+  ]
+ },
+ "music.heian_awakening": {
+  "sounds": [
+   {
+    "name": "crb:music/heian_awakening",
+    "stream": true
+   }
+  ]
+ },
+ "music.hiddeninventorydialogue_end": {
+  "sounds": [
+   {
+    "name": "crb:main/hiddeninventorydialogue_end",
+    "stream": true
+   }
+  ]
+ },
+ "music.hollow1": {
+  "sounds": [
+   {
+    "name": "crb:music/hollow1",
+    "stream": true
+   }
+  ]
+ },
+ "music.hollow2": {
+  "sounds": [
+   {
+    "name": "crb:music/hollow2",
+    "stream": true
+   }
+  ]
+ },
+ "music.hollow3": {
+  "sounds": [
+   {
+    "name": "crb:music/hollow3",
+    "stream": true
+   }
+  ]
+ },
+ "music.improvisedpurple1": {
+  "sounds": [
+   {
+    "name": "crb:music/improvisedpurple1",
+    "stream": true
+   }
+  ]
+ },
+ "music.improvisedpurple2": {
+  "sounds": [
+   {
+    "name": "crb:music/improvisedpurple2",
+    "stream": true
+   }
+  ]
+ },
+ "music.incomplete_shrine": {
+  "sounds": [
+   {
+    "name": "crb:music/incomplete_shrine",
+    "stream": true
+   }
+  ]
+ },
+ "music.infinitevoid2": {
+  "sounds": [
+   {
+    "name": "crb:music/infinitevoid2",
+    "stream": true
+   }
+  ]
+ },
+ "music.infinitevoid_fast": {
+  "sounds": [
+   {
+    "name": "crb:music/infinitevoid_fast",
+    "stream": true
+   }
+  ]
+ },
+ "music.infinitevoidmusic": {
+  "sounds": [
+   {
+    "name": "crb:music/infinitevoidmusic",
+    "stream": true
+   }
+  ]
+ },
+ "music.innate1": {
+  "sounds": [
+   {
+    "name": "crb:main/innate1",
+    "stream": true
+   }
+  ]
+ },
+ "music.innate2": {
+  "sounds": [
+   {
+    "name": "crb:main/innate2",
+    "stream": true
+   }
+  ]
+ },
+ "music.innate3": {
+  "sounds": [
+   {
+    "name": "crb:main/innate3",
+    "stream": true
+   }
+  ]
+ },
+ "music.innate4": {
+  "sounds": [
+   {
+    "name": "crb:main/innate4",
+    "stream": true
+   }
+  ]
+ },
+ "music.itadoriblackflash": {
+  "sounds": [
+   {
+    "name": "crb:music/itadoriblackflash",
+    "stream": true
+   }
+  ]
+ },
+ "music.jackpot": {
+  "sounds": [
+   {
+    "name": "crb:music/jackpot",
+    "stream": true
+   }
+  ]
+ },
+ "music.jackpot2": {
+  "sounds": [
+   {
+    "name": "crb:music/jackpot2",
+    "stream": true
+   }
+  ]
+ },
+ "music.jogodomain2": {
+  "sounds": [
+   {
+    "name": "crb:music/jogodomain2",
+    "stream": true
+   }
+  ]
+ },
+ "music.kaiju": {
+  "sounds": [
+   {
+    "name": "crb:main/kaiju",
+    "stream": true
+   }
+  ]
+ },
+ "music.knowyourplace": {
+  "sounds": [
+   {
+    "name": "crb:main/knowyourplace",
+    "stream": true
+   }
+  ]
+ },
+ "music.kokusen3": {
+  "sounds": [
+   {
+    "name": "crb:main/kokusen3",
+    "stream": true
+   }
+  ]
+ },
+ "music.laser1": {
+  "sounds": [
+   {
+    "name": "crb:music/laser1",
+    "stream": true
+   }
+  ]
+ },
+ "music.legendary": {
+  "sounds": [
+   {
+    "name": "crb:music/legendary",
+    "stream": true
+   }
+  ]
+ },
+ "music.limitlesspurple1": {
+  "sounds": [
+   {
+    "name": "crb:music/limitlesspurple1",
+    "stream": true
+   }
+  ]
+ },
+ "music.loudimpact": {
+  "sounds": [
+   {
+    "name": "crb:main/shock1",
+    "stream": true
+   }
+  ]
+ },
+ "music.mahito_02_domain2": {
+  "sounds": [
+   {
+    "name": "crb:music/mahito_02_domain2",
+    "stream": true
+   }
+  ]
+ },
+ "music.mahito_domain2": {
+  "sounds": [
+   {
+    "name": "crb:music/mahito_domain2",
+    "stream": true
+   }
+  ]
+ },
+ "music.mahoraga": {
+  "sounds": [
+   {
+    "name": "crb:music/mahoraga",
+    "stream": true
+   }
+  ]
+ },
+ "music.mahoragasummon": {
+  "sounds": [
+   {
+    "name": "crb:music/mahoragasummon",
+    "stream": true
+   }
+  ]
+ },
+ "music.malevolent_kitchen": {
+  "sounds": [
+   {
+    "name": "crb:music/malevolent_kitchen",
+    "stream": true
+   }
+  ]
+ },
+ "music.malevolentkitchen2": {
+  "sounds": [
+   {
+    "name": "crb:main/malevolentkitchen",
+    "stream": true
+   }
+  ]
+ },
+ "music.malevolentshrine2": {
+  "sounds": [
+   {
+    "name": "crb:music/malevolentshrine2",
+    "stream": true
+   }
+  ]
+ },
+ "music.maximum1": {
+  "sounds": [
+   {
+    "name": "crb:music/maximum1",
+    "stream": true
+   }
+  ]
+ },
+ "music.maximum2": {
+  "sounds": [
+   {
+    "name": "crb:music/maximum2",
+    "stream": true
+   }
+  ]
+ },
+ "music.maximumtheme": {
+  "sounds": [
+   {
+    "name": "crb:music/maximumtheme",
+    "stream": true
+   }
+  ]
+ },
+ "music.megunacutscene1": {
+  "sounds": [
+   {
+    "name": "crb:main/megunacutscene1",
+    "stream": true
+   }
+  ]
+ },
+ "music.menuintro": {
+  "sounds": [
+   {
+    "name": "crb:music/menuintro",
+    "stream": true
+   }
+  ]
+ },
+ "music.menuintro2": {
+  "sounds": [
+   {
+    "name": "crb:music/menuintro2",
+    "stream": true
+   }
+  ]
+ },
+ "music.menutheme": {
+  "sounds": [
+   {
+    "name": "crb:music/menutheme",
+    "stream": true
+   }
+  ]
+ },
+ "music.meteoric": {
+  "sounds": [
+   {
+    "name": "crb:main/meteoric2",
+    "stream": true
+   }
+  ]
+ },
+ "music.nuke": {
+  "sounds": [
+   {
+    "name": "crb:music/nuke",
+    "stream": true
+   }
+  ]
+ },
+ "music.objection": {
+  "sounds": [
+   {
+    "name": "crb:main/objection",
+    "stream": true
+   }
+  ]
+ },
+ "music.onrush": {
+  "sounds": [
+   {
+    "name": "crb:music/onrush",
+    "stream": true
+   }
+  ]
+ },
+ "music.payday": {
+  "sounds": [
+   {
+    "name": "crb:music/payday",
+    "stream": true
+   }
+  ]
+ },
+ "music.perfection": {
+  "sounds": [
+   {
+    "name": "crb:music/perfection",
+    "stream": true
+   }
+  ]
+ },
+ "music.plus_ultra": {
+  "sounds": [
+   {
+    "name": "crb:music/plus_ultra",
+    "stream": true
+   }
+  ]
+ },
+ "music.plus_ultra1": {
+  "sounds": [
+   {
+    "name": "crb:music/plus_ultra1",
+    "stream": true
+   }
+  ]
+ },
+ "music.plus_ultra2": {
+  "sounds": [
+   {
+    "name": "crb:music/plus_ultra2",
+    "stream": true
+   }
+  ]
+ },
+ "music.plus_ultra3": {
+  "sounds": [
+   {
+    "name": "crb:music/plus_ultra3",
+    "stream": true
+   }
+  ]
+ },
+ "music.plus_ultra4": {
+  "sounds": [
+   {
+    "name": "crb:music/plus_ultra4",
+    "stream": true
+   }
+  ]
+ },
+ "music.plus_ultra5": {
+  "sounds": [
+   {
+    "name": "crb:music/plus_ultra5",
+    "stream": true
+   }
+  ]
+ },
+ "music.plus_ultra6": {
+  "sounds": [
+   {
+    "name": "crb:music/plus_ultra6",
+    "stream": true
+   }
+  ]
+ },
+ "music.primedeath": {
+  "sounds": [
+   {
+    "name": "crb:music/primedeath",
+    "stream": true
+   }
+  ]
+ },
+ "music.prowess": {
+  "sounds": [
+   {
+    "name": "crb:music/prowess",
+    "stream": true
+   }
+  ]
+ },
+ "music.rare": {
+  "sounds": [
+   {
+    "name": "crb:music/rare",
+    "stream": true
+   }
+  ]
+ },
+ "music.ready": {
+  "sounds": [
+   {
+    "name": "crb:ready",
+    "stream": true
+   }
+  ]
+ },
+ "music.red2": {
+  "sounds": [
+   {
+    "name": "crb:main/red2",
+    "stream": true
+   }
+  ]
+ },
+ "music.ring": {
+  "sounds": [
+   {
+    "name": "crb:main/ring",
+    "stream": true
+   }
+  ]
+ },
+ "music.ryomensukuna": {
+  "sounds": [
+   {
+    "name": "crb:music/ryomensukuna",
+    "stream": true
+   }
+  ]
+ },
+ "music.sekiro": {
+  "sounds": [
+   {
+    "name": "crb:main/sekiro",
+    "stream": true
+   }
+  ]
+ },
+ "music.shadowgarden": {
+  "sounds": [
+   {
+    "name": "crb:music/shadowgarden",
+    "stream": true
+   }
+  ]
+ },
+ "music.shrineformation": {
+  "sounds": [
+   {
+    "name": "crb:music/shrineformation",
+    "stream": true
+   }
+  ]
+ },
+ "music.skyfall": {
+  "sounds": [
+   {
+    "name": "crb:music/skyfall",
+    "stream": true
+   }
+  ]
+ },
+ "music.soul": {
+  "sounds": [
+   {
+    "name": "crb:main/soul",
+    "stream": true
+   }
+  ]
+ },
+ "music.sparkle": {
+  "sounds": [
+   {
+    "name": "crb:music/sparkle",
+    "stream": true
+   }
+  ]
+ },
+ "music.spinning": {
+  "sounds": [
+   {
+    "name": "crb:music/spinning",
+    "stream": true
+   }
+  ]
+ },
+ "music.storm": {
+  "sounds": [
+   {
+    "name": "crb:music/storm",
+    "stream": true
+   }
+  ]
+ },
+ "music.sukuna_laugh1": {
+  "sounds": [
+   {
+    "name": "crb:main/sukuna_laugh1",
+    "stream": true
+   }
+  ]
+ },
+ "music.sukunablackflash": {
+  "sounds": [
+   {
+    "name": "crb:music/sukunablackflash",
+    "stream": true
+   }
+  ]
+ },
+ "music.sukunavoice1": {
+  "sounds": [
+   {
+    "name": "crb:main/sukunavoice1",
+    "stream": true
+   }
+  ]
+ },
+ "music.sukunavoice2": {
+  "sounds": [
+   {
+    "name": "crb:main/sukunavoice2",
+    "stream": true
+   }
+  ]
+ },
+ "music.sukunavoice3": {
+  "sounds": [
+   {
+    "name": "crb:main/sukunavoice3",
+    "stream": true
+   }
+  ]
+ },
+ "music.takada": {
+  "sounds": [
+   {
+    "name": "crb:music/takada",
+    "stream": true
+   }
+  ]
+ },
+ "music.takada_bell": {
+  "sounds": [
+   {
+    "name": "crb:music/takada_bell",
+    "stream": true
+   }
+  ]
+ },
+ "music.tear": {
+  "sounds": [
+   {
+    "name": "crb:main/tear",
+    "stream": true
+   }
+  ]
+ },
+ "music.thunderclap1": {
+  "sounds": [
+   {
+    "name": "crb:music/thunderclap1",
+    "stream": true
+   }
+  ]
+ },
+ "music.thunderclap2": {
+  "sounds": [
+   {
+    "name": "crb:music/thunderclap1",
+    "stream": true
+   }
+  ]
+ },
+ "music.time3": {
+  "sounds": [
+   {
+    "name": "crb:music/time3",
+    "stream": true
+   }
+  ]
+ },
+ "music.todo_blackflash1": {
+  "sounds": [
+   {
+    "name": "crb:music/todo_blackflash1",
+    "stream": true
+   }
+  ]
+ },
+ "music.todo_blackflash2": {
+  "sounds": [
+   {
+    "name": "crb:music/todo_blackflash2",
+    "stream": true
+   }
+  ]
+ },
+ "music.toji": {
+  "sounds": [
+   {
+    "name": "crb:music/toji",
+    "stream": true
+   }
+  ]
+ },
+ "music.toji_awaken": {
+  "sounds": [
+   {
+    "name": "crb:music/toji_awaken",
+    "stream": true
+   }
+  ]
+ },
+ "music.train": {
+  "sounds": [
+   {
+    "name": "crb:music/train",
+    "stream": true
+   }
+  ]
+ },
+ "music.tukadonka": {
+  "sounds": [
+   {
+    "name": "crb:music/tukadonka",
+    "stream": true
+   }
+  ]
+ },
+ "music.ultra1": {
+  "sounds": [
+   {
+    "name": "crb:ultra1",
+    "stream": true
+   }
+  ]
+ },
+ "music.ultra2": {
+  "sounds": [
+   {
+    "name": "crb:ultra2",
+    "stream": true
+   }
+  ]
+ },
+ "music.wcs": {
+  "sounds": [
+   {
+    "name": "crb:music/wcs",
+    "stream": true
+   }
+  ]
+ },
+ "music.world_slash1": {
+  "sounds": [
+   {
+    "name": "crb:music/worldslash1",
+    "stream": true
+   }
+  ]
+ },
+ "music.world_slash2": {
+  "sounds": [
+   {
+    "name": "crb:music/worldslash2",
+    "stream": true
+   }
+  ]
+ },
+ "music.yutablackflash": {
+  "sounds": [
+   {
+    "name": "crb:music/yutablackflash",
+    "stream": true
+   }
+  ]
+ },
+ "random.blocked": {
+  "sounds": [
+   {
+    "name": "crb:main/blocked",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/blocked2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/blocked3",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/blocked4",
+    "volume": 3.0
+   }
+  ]
+ },
+ "random.disfigure": {
+  "sounds": [
+   {
+    "name": "crb:main/disfigure1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/disfigure2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/disfigure3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "random.slice": {
+  "sounds": [
+   {
+    "name": "crb:main/sword",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/slice",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/slice1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/slice2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/slice3",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/slice4",
+    "volume": 3.0
+   }
+  ]
+ },
+ "random.sprint": {
+  "sounds": [
+   {
+    "name": "crb:main/step1",
+    "volume": 0.5
+   },
+   {
+    "name": "crb:main/step2",
+    "volume": 0.5
+   }
+  ]
+ },
+ "random.strong_punch": {
+  "sounds": [
+   {
+    "name": "crb:main/strong_punch1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/strong_punch2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/strong_punch3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "random.whoop": {
+  "sounds": [
+   {
+    "name": "crb:main/whoop1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/whoop2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/whoop3",
+    "volume": 3.0
+   }
+  ]
+ },
+ "random.whoosh": {
+  "sounds": [
+   {
+    "name": "crb:main/whoosh1",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/whoosh2",
+    "volume": 3.0
+   },
+   {
+    "name": "crb:main/whoosh3",
+    "volume": 3.0
+   }
+  ]
+ }
+}

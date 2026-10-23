@@ -1,1 +1,1 @@
-{"format_version":"1.8.0","animations":{"animation.sever_slash":{"loop":true,"animation_length":0.125,"override_previous_animation":true,"particle_effects":{"0.0":[{"effect":"sever_slash1"},{"effect":"sever_slash2"},{"effect":"sever_slash3"}]}}}}
+{"format_version":"1.8.0","animations":{"animation.sever_slash":{"loop":true,"animation_length":0.125,"override_previous_animation":true}}}

@@ -29,4 +29,16 @@ final class ClientPayloads {
         state.deserializeNBT(living.registryAccess(), payload.state());
         living.setData(CRBAttachments.COMBAT, state);
     }
+
+    static void onMoveStart(MovePayloads.Start p, IPayloadContext ctx) {
+        io.github.xthefox.crb.client.move.ClientMoves.start(p);
+    }
+
+    static void onMoveEnd(MovePayloads.End p, IPayloadContext ctx) {
+        io.github.xthefox.crb.client.move.ClientMoves.end(p);
+    }
+
+    static void onMoveState(MovePayloads.State p, IPayloadContext ctx) {
+        io.github.xthefox.crb.client.move.ClientMoves.state(p);
+    }
 }

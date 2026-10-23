@@ -1,0 +1,20 @@
+{
+  "display": "Hiromi Higuruma",
+  "technique": "crb:judgeman",
+  "forms": "max",
+  "grade": "grade_1",
+  "stats": {
+    "strength": 30,
+    "endurance": 35,
+    "agility": 30,
+    "energy_cap": 2500
+  },
+  "items": [
+    {
+      "id": "crb:judge_fit"
+    }
+  ],
+  "claims": [
+    "crb:judgeman"
+  ]
+}

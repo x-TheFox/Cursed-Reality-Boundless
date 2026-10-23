@@ -1,0 +1,1 @@
+{"source":"bosses/file/boss/summons/bluelemon","key":"move","duration":1,"cues":[{"t":1,"until":1,"type":"particle","particle":"ds:flashstep1","at":[{"rel":[0.0,0.0,0.0]}],"cond":["score:cutscene=0","unless:block"]}]}

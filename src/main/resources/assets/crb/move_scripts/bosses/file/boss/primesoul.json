@@ -1,0 +1,1 @@
+{"source":"bosses/file/boss/primesoul","key":"move","duration":1,"cues":[{"t":1,"until":1,"type":"particle","particle":"ds:thezone2","at":[],"cond":["score:Energy=1..","score:cutscene=0"]}]}

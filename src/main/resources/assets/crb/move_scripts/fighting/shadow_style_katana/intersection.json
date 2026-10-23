@@ -1,0 +1,1 @@
+{"source":"fighting/shadow_style_katana/intersection","key":"move","duration":21,"cues":[{"t":0,"until":1,"type":"anim","anim":"animation.shadow_katana.ab3","target":"self"},{"t":3,"until":19,"type":"sound","sound":"mob.slash1","audience":"radius:20","at":[{"rel":[0.0,0.0,0.0]}],"volume":0.1,"pitch":2.25}]}

@@ -75,6 +75,9 @@ def reset(path: Path):
 # ---------------------------------------------------------------------------------------------
 # textures
 
+ATLAS_DIRS = {"particle": "bedrock_particle", "block": "bedrock_block", "item": "bedrock_item"}
+
+
 def convert_textures():
     out = ASSETS / "textures"
     glyph_dir = out / "glyph"  # owned by convert_glyphs
@@ -87,6 +90,11 @@ def convert_textures():
     for src in files(RP / "textures", ".png"):
         rel = str(src.relative_to(RP / "textures"))
         dst = sanitize(rel)
+        # Minecraft stitches every namespace's textures/particle/ into the particle atlas; JJA's
+        # particle sheets are far too large for it and are bound directly by BedrockFX instead.
+        for atlas_dir, moved in ATLAS_DIRS.items():
+            if dst.startswith(atlas_dir + "/"):
+                dst = moved + dst[len(atlas_dir):]
         if dst in seen and seen[dst] != rel:
             stem, ext = dst.rsplit(".", 1)
             n = 2
@@ -222,6 +230,26 @@ PLAYER_BONES = {
 _PLAYER_CORE = {"head", "body", "rightArm", "leftArm", "rightLeg", "leftLeg", "root", "waist"}
 
 
+_THIS = re.compile(r"\bthis\b")
+
+
+def _molang_compat(node):
+    """Bedrock's `this` (the value before this animation applied) is 0 for a rest pose; GeckoLib has no `this`."""
+    if isinstance(node, str):
+        return _THIS.sub("0", node)
+    if isinstance(node, list):
+        return [_molang_compat(x) for x in node]
+    if isinstance(node, dict):
+        return {k: _molang_compat(v) for k, v in node.items()}
+    return node
+
+
+# Bedrock keyframe effects. GeckoLib only accepts one effect object per keyframe (JJA often lists
+# several), so these are removed from the GeckoLib copies and played by our own keyframe handler
+# from jja/animation_effects.json.
+ANIMATION_EFFECT_KEYS = ("particle_effects", "sound_effects", "timeline")
+
+
 def _player_copy(anim: dict) -> dict | None:
     bones = anim.get("bones") or {}
     if not any(b in _PLAYER_CORE for b in bones):
@@ -246,6 +274,7 @@ def convert_animations():
     reset(out)
     reset(pout)
     index = {}
+    effects = {}
     player_count = 0
     for src in files(RP / "animations", ".json"):
         d = try_load(src)
@@ -256,7 +285,15 @@ def convert_animations():
         if stem.endswith(".animation"):
             stem = stem[: -len(".animation")]
         anims = d.get("animations", {}) or {}
-        dump(out / f"{stem}.animation.json", {"format_version": "1.8.0", "animations": anims})
+        gecko = {}
+        for name, a in anims.items():
+            if not isinstance(a, dict):
+                continue
+            fx = {k: a[k] for k in ANIMATION_EFFECT_KEYS if a.get(k)}
+            if fx:
+                effects[name] = fx
+            gecko[name] = _molang_compat({k: v for k, v in a.items() if k not in ANIMATION_EFFECT_KEYS})
+        dump(out / f"{stem}.animation.json", {"format_version": "1.8.0", "animations": gecko})
         players = {}
         for name, a in anims.items():
             if not isinstance(a, dict):
@@ -266,7 +303,7 @@ def convert_animations():
             else:
                 index[name] = {"file": f"{NS}:animations/{stem}.animation.json", "length": a.get("animation_length"),
                                "loop": a.get("loop", False)}
-            pc = _player_copy(a)
+            pc = _player_copy(_molang_compat(a))
             if pc is not None:
                 players[name] = pc
         if players:
@@ -275,6 +312,7 @@ def convert_animations():
                 index.setdefault(name, {})["player"] = f"{NS}:{name}"
             player_count += len(players)
     dump(INDEX / "animations.json", dict(sorted(index.items())), pretty=True)
+    dump(INDEX / "animation_effects.json", dict(sorted(effects.items())))
     print(f"animations: {len(index)} ({player_count} also as player animations)")
     return index
 

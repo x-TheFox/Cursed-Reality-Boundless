@@ -1,0 +1,1 @@
+{"source":"fighting/shadow_style_katana/katana_m1s","key":"move","duration":1,"cues":[{"t":1,"until":1,"type":"anim","anim":"animation.nothing.idle","target":"self","cond":["hasitem={item=ds:shadow_style_katana,location=slot.weapon.mainhand}","score:BasicM1=0","score:BasicM1s=0","score:ab=0","score:detect_sneak=0"]}]}

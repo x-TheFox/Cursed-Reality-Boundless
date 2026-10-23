@@ -1,0 +1,1 @@
+{"source":"flames/flames5","key":"move","duration":21,"cues":[{"t":0,"until":11,"type":"anim","anim":"animation.stunned","target":"self","cond":["score:Stun=1..","tag=!noStunnedAnim"]},{"t":1,"until":1,"type":"anim","anim":"animation.point","target":"self"}]}

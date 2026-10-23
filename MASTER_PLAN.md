@@ -91,7 +91,7 @@ io.github.xthefox.crb
 
 Every JJA move is a tick-indexed timeline. The port splits each one in two:
 
-* **`MoveScript`** (JSON, `data/crb/move_scripts/<technique>/<move>.json`), **extracted automatically** from the mcfunction by `tools/jja/timelines.py`: animation, sound, particle, camera shot, fade, shake, impact frame, FOV, slowdown cues with their exact elapsed tick, target scope (`self`, `radius:40`, `victims`) and local-space offsets.
+* **`MoveScript`** (JSON, `assets/crb/move_scripts/<technique>/<move>.json`, client resources so resource packs can retime moves), **extracted automatically** from the mcfunction by `tools/jja/timelines.py`: animation, sound, particle, camera shot, fade, shake, impact frame, FOV, slowdown cues with their exact elapsed tick, target scope (`self`, `radius:40`, `victims`) and local-space offsets.
 * **`MoveLogic`** (Java): the simulation — summons, projectiles, hitboxes, damage, stun, knockback, binds, block destruction, domain lifecycle. Hand-written per move, using the JJA function as the spec.
 
 Both run on `elapsed = now − startTick`. The script can be hand-edited after extraction to add Java-only upgrades (spline shots, roll, FOV punches) without touching the logic.
@@ -129,7 +129,7 @@ All scripts are Python 3 (`python3 -I tools/jja/<script>.py`), deterministic and
 | `catalog.py` ✅ | both packs | research catalog |
 | `movesets.py` ✅ | `*_click`, `*_moves` | `catalog/movesets.{md,json}` |
 | `convert.py` ✅ | resource pack | `assets/crb/`: `textures/**` (1,065), `geo/*.geo.json` (364 GeckoLib models, one per geometry), `animations/*.animation.json` (1,464 for GeckoLib), `player_animations/*.json` (1,317 re-boned for Player Animation Library), `sounds/**` + `sounds.json` (395 files, 399 events), `bedrock_particles/<ns>/*.json` (3,468), `textures/glyph/<page>/*.png` (725 impact-frame/UI cells), `models/item/*.json` (216), `lang/en_us.json`, and `jja/*.json` indexes (entities, geometry, animations, particles, sounds, glyphs, attachables, render/animation controllers, poly meshes) |
-| `timelines.py` | move mcfunctions | `data/crb/move_scripts/**` (move-engine branch) |
+| `timelines.py` ✅ | move mcfunctions | `assets/crb/move_scripts/**` (701 scripts, 15,280 cues) + `data/crb/move_durations.json` |
 | `convert_structures.py` | `structures/*.mcstructure` | `data/crb/structure/…` (world branch) |
 | `convert_loot.py` | `loot_tables/**` | `data/crb/loot_table/…` (world branch) |
 
@@ -157,7 +157,7 @@ Each line is one feature branch → PR → merge after a green `./gradlew build`
 | 1 | `docs/phase1-research` | Research docs, catalog tools, this plan | ✅ |
 | 2 | `feat/core-architecture` | Gradle/MDG, deps, entrypoint, config, custom registries, attachments, payload registration skeleton, technique-ownership SavedData, kit format + loader, `/crb` admin commands, 19 shipped kits, JUnit + GameTests | ✅ |
 | 3 | `feat/asset-pipeline` | Model/animation/texture/sound/lang/particle/impact-frame converters + converted assets | ✅ |
-| 4 | `feat/move-engine` | Timeline extractor, `MoveScript` loader, server `MoveInstance`, client `MovePresenter`, MoveStart/End sync, tracking catch-up | ☐ |
+| 4 | `feat/move-engine` | Timeline extractor, `MoveScript` loader, server `MoveEngine`/`MoveInstance`, client cue player (sounds, player animations), MoveStart/End/State sync, tracking catch-up, `AbilityInput`, `/crb move play` | ✅ |
 | 5 | `feat/camera-engine` | Director, splines, eases, shake, fades, impact frames, hit-stop, FOV | ☐ |
 | 6 | `feat/bedrock-particles` | BedrockFX runtime (emitters, curves, Molang, flipbooks, collision) | ☐ |
 | 7 | `feat/input-hud` | Combat Mode, keybinds, radial menu, HUD | ☐ |

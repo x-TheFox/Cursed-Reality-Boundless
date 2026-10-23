@@ -1,0 +1,41 @@
+{
+  "display": "Satoru Gojo",
+  "technique": "crb:limitless",
+  "forms": "max",
+  "traits": [
+    "crb:six_eyes",
+    "crb:rct_master"
+  ],
+  "unlocks": [
+    "crb:rct",
+    "crb:simple_domain",
+    "crb:domain_amplification",
+    "crb:hollow_wicker_basket",
+    "crb:black_flash_mastery",
+    "crb:infinity_passive",
+    "crb:blue_teleport",
+    "crb:blue_flight"
+  ],
+  "grade": "special",
+  "stats": {
+    "strength": 60,
+    "endurance": 70,
+    "agility": 60,
+    "energy_cap": 10000
+  },
+  "combat_styles": [
+    "crb:limitless_fists"
+  ],
+  "items": [
+    {
+      "id": "crb:gojo_cloak"
+    },
+    {
+      "id": "crb:gojo_torso"
+    }
+  ],
+  "claims": [
+    "crb:limitless",
+    "crb:six_eyes"
+  ]
+}

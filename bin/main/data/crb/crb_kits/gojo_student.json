@@ -1,0 +1,31 @@
+{
+  "display": "Satoru Gojo (Hidden Inventory)",
+  "technique": "crb:limitless",
+  "forms": 4,
+  "traits": [
+    "crb:six_eyes"
+  ],
+  "unlocks": [
+    "crb:simple_domain",
+    "crb:blue_teleport"
+  ],
+  "grade": "special",
+  "stats": {
+    "strength": 35,
+    "endurance": 35,
+    "agility": 40,
+    "energy_cap": 3000
+  },
+  "combat_styles": [
+    "crb:limitless_fists"
+  ],
+  "items": [
+    {
+      "id": "crb:sorcerers_outfit"
+    }
+  ],
+  "claims": [
+    "crb:limitless",
+    "crb:six_eyes"
+  ]
+}

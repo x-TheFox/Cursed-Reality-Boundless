@@ -20,6 +20,14 @@ public final class CRBAttachments {
     public static final Supplier<AttachmentType<CombatState>> COMBAT = TYPES.register("combat",
             () -> AttachmentType.serializable(CombatState::new).build());
 
+    /** The entity's running move; transient (not saved, not copied on death). */
+    public static final Supplier<AttachmentType<io.github.xthefox.crb.move.MoveEngine.Holder>> MOVE = TYPES.register("move",
+            () -> AttachmentType.builder(io.github.xthefox.crb.move.MoveEngine.Holder::new).build());
+
+    /** Game time of the player's last ability input (rate limiting); transient. */
+    public static final Supplier<AttachmentType<Long>> LAST_INPUT = TYPES.register("last_input",
+            () -> AttachmentType.builder(() -> 0L).build());
+
     private CRBAttachments() {}
 
     public static void register(IEventBus modBus) {

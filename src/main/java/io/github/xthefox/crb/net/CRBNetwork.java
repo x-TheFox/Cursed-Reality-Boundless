@@ -20,6 +20,11 @@ public final class CRBNetwork {
         PayloadRegistrar r = event.registrar(PROTOCOL);
         r.playToClient(SorcererSyncPayload.TYPE, SorcererSyncPayload.STREAM_CODEC, ClientPayloads::onSorcererSync);
         r.playToClient(CombatSyncPayload.TYPE, CombatSyncPayload.STREAM_CODEC, ClientPayloads::onCombatSync);
+        r.playToClient(MovePayloads.Start.TYPE, MovePayloads.Start.STREAM_CODEC, ClientPayloads::onMoveStart);
+        r.playToClient(MovePayloads.End.TYPE, MovePayloads.End.STREAM_CODEC, ClientPayloads::onMoveEnd);
+        r.playToClient(MovePayloads.State.TYPE, MovePayloads.State.STREAM_CODEC, ClientPayloads::onMoveState);
+        r.playToServer(MovePayloads.AbilityInput.TYPE, MovePayloads.AbilityInput.STREAM_CODEC,
+                (p, ctx) -> io.github.xthefox.crb.ability.AbilityService.handle((net.minecraft.server.level.ServerPlayer) ctx.player(), p));
     }
 
     /** Sends the player's full sorcerer data to themselves and clears the dirty flag. */

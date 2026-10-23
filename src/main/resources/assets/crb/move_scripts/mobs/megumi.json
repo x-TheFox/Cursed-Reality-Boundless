@@ -1,0 +1,1 @@
+{"source":"mobs/megumi","key":"move","duration":5,"cues":[{"t":1,"until":2,"type":"particle","particle":"ds:flashstep1","at":[{"rel":[0.0,0.0,0.0]}],"cond":["score:chance=6"]}]}

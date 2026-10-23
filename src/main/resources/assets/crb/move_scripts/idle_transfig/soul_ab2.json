@@ -1,0 +1,1 @@
+{"source":"idle_transfig/soul_ab2","key":"move","duration":22,"cues":[{"t":0,"until":10,"type":"anim","anim":"animation.stunned","target":"self","cond":["score:Stun=1..","tag=!noStunnedAnim"]},{"t":1,"until":2,"type":"anim","anim":"animation.mahito.ab2","target":"self"}]}

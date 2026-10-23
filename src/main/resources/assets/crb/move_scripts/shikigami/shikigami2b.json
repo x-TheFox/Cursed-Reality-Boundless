@@ -1,0 +1,1 @@
+{"source":"shikigami/shikigami2b","key":"move","duration":22,"cues":[{"t":1,"until":1,"type":"anim","anim":"animation.toad_spawn2","target":"self"},{"t":3,"until":5,"type":"particle","particle":"ds:shikigami_appear2","at":[{"local":[0.0,1.0,14.0]},{"rel":[0.0,0.0,0.0]}],"cond":["if:block"]}]}

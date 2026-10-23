@@ -1,0 +1,24 @@
+{
+  "display": "Aoi Todo",
+  "technique": "crb:boogie_woogie",
+  "forms": "max",
+  "grade": "grade_1",
+  "traits": [
+    "crb:blessed_strength"
+  ],
+  "unlocks": [
+    "crb:black_flash_mastery"
+  ],
+  "stats": {
+    "strength": 55,
+    "endurance": 50,
+    "agility": 40,
+    "energy_cap": 1500
+  },
+  "combat_styles": [
+    "crb:boogie_fists"
+  ],
+  "claims": [
+    "crb:boogie_woogie"
+  ]
+}

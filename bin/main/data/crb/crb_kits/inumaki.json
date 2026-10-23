@@ -1,0 +1,24 @@
+{
+  "display": "Toge Inumaki",
+  "technique": "crb:cursed_speech",
+  "forms": "max",
+  "grade": "grade_1",
+  "stats": {
+    "strength": 20,
+    "endurance": 25,
+    "agility": 30,
+    "energy_cap": 1800
+  },
+  "items": [
+    {
+      "id": "crb:megaphone"
+    },
+    {
+      "id": "crb:cough_syrup",
+      "count": 8
+    }
+  ],
+  "claims": [
+    "crb:cursed_speech"
+  ]
+}

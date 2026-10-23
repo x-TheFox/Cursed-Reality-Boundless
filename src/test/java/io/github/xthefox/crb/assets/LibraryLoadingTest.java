@@ -76,7 +76,11 @@ class LibraryLoadingTest {
         for (Path p : files) {
             ResourceLocation id = ResourceLocation.fromNamespaceAndPath("crb", "animations/" + p.getFileName());
             try {
-                FileLoader.loadAnimationsFile(id, resources);
+                // GeckoLib logs and drops animations it cannot parse, so compare counts
+                int declared = com.google.gson.JsonParser.parseString(Files.readString(p)).getAsJsonObject()
+                        .getAsJsonObject("animations").size();
+                int baked = FileLoader.loadAnimationsFile(id, resources).animations().size();
+                if (baked != declared) failures.add(p.getFileName() + ": " + baked + "/" + declared + " animations parsed");
             } catch (Exception e) {
                 failures.add(p.getFileName() + ": " + e);
             }
