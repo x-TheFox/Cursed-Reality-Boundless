@@ -12,7 +12,7 @@ _Audited 2026-10-23._
 | `JJA RP AND BP/*.zip` | Zipped copies of the two packs (identical content). |
 | `Suggested API/` | Ten pre-downloaded NeoForge 1.21.1 library jars (below). |
 
-The addon is never copied into the repo. The converter in `tools/jja/` reads it from the workspace path and writes generated assets into `src/generated/resources` (see MASTER_PLAN §5). `JJA_ROOT` overrides the location.
+The addon is never copied into the repo, and neither are converted JJA assets: the GitHub repository is **public**. The converter in `tools/jja/` reads the addon from the workspace path and writes into the git-ignored `src/generated/jja/` (see MASTER_PLAN §5). `JJA_ROOT` overrides the location.
 
 ## Toolchain on this machine
 

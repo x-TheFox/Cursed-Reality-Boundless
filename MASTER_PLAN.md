@@ -121,13 +121,13 @@ The hotbar stays the player's own: cursed tools are real items; techniques, styl
 
 ## 5. Asset conversion pipeline (`tools/jja/`)
 
-All scripts are Python 3 (`python3 -I tools/jja/<script>.py`), deterministic and idempotent. They read the addon from `JJA_ROOT` and write into `src/main/resources`. Converted assets are committed so the repo builds without the addon present.
+All scripts are Python 3 (`python3 -I tools/jja/<script>.py`), deterministic and idempotent. They read the addon from `JJA_ROOT` and write into **`src/generated/jja/`**, which is git-ignored and added to the mod's resources by Gradle. The GitHub repository is public, so JJA's own textures, sounds, models and animations are never committed; anyone building the mod needs a local copy of the addon. Original code and newly synthesised assets live in `src/main/resources` and are committed.
 
 | Script | Input | Output |
 |---|---|---|
 | `catalog.py` ✅ | both packs | research catalog |
 | `movesets.py` ✅ | `*_click`, `*_moves` | `catalog/movesets.{md,json}` |
-| `convert_models.py` | `models/**/*.geo.json` | `assets/crb/geo/…` (GeckoLib) |
+| `convert_models.py` | `models/**/*.geo.json` | `assets/crb/geo/…` (GeckoLib) — all outputs below land in `src/generated/jja/` |
 | `convert_animations.py` | `animations/*.json` | `assets/crb/animations/…` (entities) and `assets/crb/player_animations/…` (players) |
 | `convert_textures.py` | `textures/**` | `assets/crb/textures/…`, item model JSONs from `item_texture.json` |
 | `convert_sounds.py` | `sounds/**`, `sound_definitions.json` | `assets/crb/sounds/…`, `sounds.json` (volume, pitch, stream, attenuation) |
@@ -139,7 +139,7 @@ All scripts are Python 3 (`python3 -I tools/jja/<script>.py`), deterministic and
 | `convert_loot.py` | `loot_tables/**` | `data/crb/loot_table/…` |
 | `validate.py` | generated resources | fails the build if a script references a missing sound/particle/animation/texture |
 
-`./gradlew build` runs the JUnit suite and `validate.py` (via an `Exec` task, skipped when Python is missing).
+`./gradlew build` runs the converters when `src/generated/jja` is missing or older than the addon, then the JUnit suite and `validate.py`. Without the addon the code still compiles, but the mod has no JJA assets.
 
 ## 6. Cinematic engine
 
