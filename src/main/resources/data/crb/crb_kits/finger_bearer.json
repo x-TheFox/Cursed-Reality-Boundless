@@ -1,0 +1,15 @@
+{
+  "display": "Finger Bearer",
+  "technique": "crb:explosive",
+  "forms": "max",
+  "traits": [
+    "crb:curse"
+  ],
+  "grade": "special",
+  "stats": {
+    "strength": 40,
+    "endurance": 45,
+    "agility": 30,
+    "energy_cap": 2500
+  }
+}

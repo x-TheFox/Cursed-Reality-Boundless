@@ -60,6 +60,10 @@ Outfits (armour): Gojo, Toji/Gojo, Gambler, Jogo, Judge, Kashimo, Kusakabe, Mahi
 | G5 | **Omega Death Scythe** | `omega_scythe.json`: "not yet developed", three `???` arts | Secret-boss reward: Reaper Sweep (RMB), Soul Harvest leap (jump + RMB), Death's Verdict execute/ultimate (sneak + RMB). Visual style taken from Legacy Scythe + Equinox Slicer assets. |
 | G6 | **Honored trait slot 2** | trait roll honored 2: "[ Unreleased ]" | **Perfect Vessel**: can eat Sukuna fingers without dying and resist Sukuna's takeover; +25 % finger buffs. |
 
+### Tier 1b — Gojo / Six Eyes (see doc 06)
+
+Six Eyes perception and efficiency, passive Infinity, Blue Teleport, Blue Flight, cut content (Twilight Blue, Phase Blue, Phase Red have handlers but are never spawned), Levitate Purple (NPC-only), quick Unlimited Void for players.
+
 ### Tier 2 — logical completion of existing characters
 
 | # | Gap | Why |

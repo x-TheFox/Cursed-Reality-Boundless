@@ -1,0 +1,18 @@
+{
+  "display": "Choso",
+  "technique": "crb:blood_manipulation",
+  "forms": "max",
+  "traits": [
+    "crb:curse"
+  ],
+  "grade": "special",
+  "stats": {
+    "strength": 40,
+    "endurance": 50,
+    "agility": 40,
+    "energy_cap": 3500
+  },
+  "claims": [
+    "crb:blood_manipulation"
+  ]
+}

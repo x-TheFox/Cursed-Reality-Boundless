@@ -9,4 +9,3 @@ out/
 __pycache__/
 *.pyc
 /tools/jja/.cache/
-/src/generated/

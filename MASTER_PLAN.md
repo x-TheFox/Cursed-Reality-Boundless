@@ -11,6 +11,7 @@ Research that backs every decision here is in [`architecture_and_research/`](arc
 | [03 Cinematics](architecture_and_research/03_cinematics.md) | Measured camera / shake / fade / impact-frame language, beat-by-beat breakdowns |
 | [04 Roster & gaps](architecture_and_research/04_roster_and_gap_analysis.md) | Every technique, tool, NPC, boss; stubbed and missing abilities |
 | [05 Networking](architecture_and_research/05_networking_and_authority.md) | Payloads, authority, lag compensation, binds, spectating |
+| [06 Kits & uniqueness](architecture_and_research/06_kits_uniqueness_and_admin.md) | One-user-per-technique rule, data-driven character kits, OP commands, Gojo/Six Eyes upgrades, Sukuna→Megumi and Yuji's vessel start |
 | [`catalog/`](architecture_and_research/catalog/) | Auto-generated inventories (entities, items, particles, sounds, animations, geometry, functions, movesets, roll tables) |
 
 ---
@@ -121,13 +122,13 @@ The hotbar stays the player's own: cursed tools are real items; techniques, styl
 
 ## 5. Asset conversion pipeline (`tools/jja/`)
 
-All scripts are Python 3 (`python3 -I tools/jja/<script>.py`), deterministic and idempotent. They read the addon from `JJA_ROOT` and write into **`src/generated/jja/`**, which is git-ignored and added to the mod's resources by Gradle. The GitHub repository is public, so JJA's own textures, sounds, models and animations are never committed; anyone building the mod needs a local copy of the addon. Original code and newly synthesised assets live in `src/main/resources` and are committed.
+All scripts are Python 3 (`python3 -I tools/jja/<script>.py`), deterministic and idempotent. They read the addon from `JJA_ROOT` and write into `src/main/resources` (under `assets/crb/` and `data/crb/`). Converted assets are committed (the project owner holds the rights to use them), so the repo builds without the addon present; re-run the scripts after changing them.
 
 | Script | Input | Output |
 |---|---|---|
 | `catalog.py` ✅ | both packs | research catalog |
 | `movesets.py` ✅ | `*_click`, `*_moves` | `catalog/movesets.{md,json}` |
-| `convert_models.py` | `models/**/*.geo.json` | `assets/crb/geo/…` (GeckoLib) — all outputs below land in `src/generated/jja/` |
+| `convert_models.py` | `models/**/*.geo.json` | `assets/crb/geo/…` (GeckoLib) |
 | `convert_animations.py` | `animations/*.json` | `assets/crb/animations/…` (entities) and `assets/crb/player_animations/…` (players) |
 | `convert_textures.py` | `textures/**` | `assets/crb/textures/…`, item model JSONs from `item_texture.json` |
 | `convert_sounds.py` | `sounds/**`, `sound_definitions.json` | `assets/crb/sounds/…`, `sounds.json` (volume, pitch, stream, attenuation) |
@@ -139,7 +140,7 @@ All scripts are Python 3 (`python3 -I tools/jja/<script>.py`), deterministic and
 | `convert_loot.py` | `loot_tables/**` | `data/crb/loot_table/…` |
 | `validate.py` | generated resources | fails the build if a script references a missing sound/particle/animation/texture |
 
-`./gradlew build` runs the converters when `src/generated/jja` is missing or older than the addon, then the JUnit suite and `validate.py`. Without the addon the code still compiles, but the mod has no JJA assets.
+`./gradlew build` runs the JUnit suite and `validate.py` (an `Exec` task, skipped when Python is missing).
 
 ## 6. Cinematic engine
 
@@ -159,8 +160,8 @@ Each line is one feature branch → PR → merge after a green `./gradlew build`
 | # | Branch | Scope | Status |
 |---|---|---|---|
 | 1 | `docs/phase1-research` | Research docs, catalog tools, this plan | ✅ |
-| 2 | `feat/core-architecture` | Gradle/MDG, deps, entrypoint, config, custom registries, attachments, payload registration skeleton | ⏳ |
-| 3 | `feat/asset-pipeline` | Model/animation/texture/sound/lang/particle/impact-frame converters + generated assets | ☐ |
+| 2 | `feat/core-architecture` | Gradle/MDG, deps, entrypoint, config, custom registries, attachments, payload registration skeleton, technique-ownership SavedData, kit format + loader, `/crb` admin commands, 19 shipped kits, JUnit + GameTests | ✅ |
+| 3 | `feat/asset-pipeline` | Model/animation/texture/sound/lang/particle/impact-frame converters + converted assets | ☐ |
 | 4 | `feat/move-engine` | Timeline extractor, `MoveScript` loader, server `MoveInstance`, client `MovePresenter`, MoveStart/End sync, tracking catch-up | ☐ |
 | 5 | `feat/camera-engine` | Director, splines, eases, shake, fades, impact frames, hit-stop, FOV | ☐ |
 | 6 | `feat/bedrock-particles` | BedrockFX runtime (emitters, curves, Molang, flipbooks, collision) | ☐ |
@@ -169,15 +170,15 @@ Each line is one feature branch → PR → merge after a green `./gradlew build`
 
 ### Vertical slice
 
-| 9 | `feat/char-gojo` | Limitless complete (all 23 variants + fists), Six Eyes, domain system + barrier + Unlimited Void, domain clash, Student Gojo NPC | ☐ |
+| 9 | `feat/char-gojo` | Limitless complete (all 23 variants + fists), **Six Eyes perception + efficiency (GJ1–2)**, **passive Infinity (GJ3)**, **Blue Teleport (GJ4)**, **Blue Flight (GJ5)**, restored Twilight/Phase Blue + Phase Red (GJ6), Levitate Purple (GJ7), quick Unlimited Void (GJ8), domain system + barrier + Unlimited Void, domain clash, Student/Shinjuku Gojo NPCs, `gojo` + `gojo_student` kits | ☐ |
 
 ### Full roster (one branch each)
 
 | # | Branch | Scope |
 |---|---|---|
-| 10 | `feat/char-sukuna` | Shrine kit, fingers/vessel, Fuga, Heian form, Malevolent Shrine ×3, Kamutoke/Hiten, Mahoraga interplay |
+| 10 | `feat/char-sukuna` | Shrine kit, fingers/vessel (uniqueness-aware), takeovers, **Meguna transfer (gains Ten Shadows)**, Fuga, Heian form, Malevolent Shrine ×3, Kamutoke/Hiten, Mahoraga interplay, `sukuna` / `sukuna_heian` kits |
 | 11 | `feat/char-megumi` | Ten Shadows: all shikigami + taming rituals, Shadow Wheel, Mahoraga adaptation, Agito, Chimera Shadow Garden, **Tiger Funeral (G1)**, **Shadow Swim/Storage (G8)** |
-| 12 | `feat/char-yuji` | Soul Shrine, Black Sparks style, Shrine of Reverie, awakened NPC, rage cutscene |
+| 12 | `feat/char-yuji` | Soul Shrine, Black Sparks style, Shrine of Reverie, awakened NPC, rage cutscene, `yuji` kit (vessel with 1 force-fed finger, Perfect Vessel) |
 | 13 | `feat/char-kashimo` | Mythical Beast Amber, Unforgiving Tempest |
 | 14 | `feat/char-hakari` | Love Train, jackpot, Idle Death Gamble |
 | 15 | `feat/char-mahito` | Idle Transfiguration, transfigured humans, Instant Spirit Body, Self-Embodiment of Perfection |
@@ -206,10 +207,17 @@ Full rationale in research doc 04. Assets for new abilities are derived from exi
 * **G3 Queen of Curses + Copy** — Rika (follower), Rika Grab / Arm Slam, Copy (store one variant of a technique Rika hit within 5 s; cast it at 1.5× cost), Pure Love beam, Domain: Authentic Mutual Love.
 * **G4 Falling Blossom Emotion** — 10 s anti-sure-hit stance; −80 % domain sure-hit damage, auto-counter lash.
 * **G5 Omega Death Scythe** — Reaper Sweep, Soul Harvest leap, Death's Verdict.
-* **G6 Perfect Vessel** — survive fingers, resist takeover, +25 % finger buffs.
+* **G6 Perfect Vessel** — survive fingers, resist takeover, +25 % finger buffs. Yuji's canon trait; part of the `yuji` kit.
+* **GJ1–GJ8 Gojo** — Six Eyes perception and efficiency, passive Infinity, Blue Teleport, Blue Flight, restored cut moves; see research doc 06.
 * **G7 Vibraslap** — swap without clapping (shorter wind-up, sound cue).
 * **G8 Shadow Swim / Storage** — sink into shadow for fast traversal; store one item in shadow.
 * **G9 Universal adaptation** — every `DamageKind` feeds Mahoraga.
+
+## 8b. Uniqueness and kits
+
+* `uniqueTechniques` = `OFF` / `CANON` (default) / `ALL`. First claim is permanent; only operators release or transfer. Sukuna's vessel owns Shrine; the Meguna transfer also claims Ten Shadows.
+* Kits are datapack JSON (`data/<ns>/crb_kits/*.json`) applied with `/crb kit give`; the `gojo` kit includes both Limitless and Six Eyes.
+* Full spec and command list: research doc 06.
 
 ## 9. Verification
 

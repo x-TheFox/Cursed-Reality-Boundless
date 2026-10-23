@@ -1,0 +1,31 @@
+{
+  "display": "Yuta Okkotsu",
+  "technique": "crb:queen_of_curses",
+  "forms": "max",
+  "traits": [
+    "crb:rct_master"
+  ],
+  "unlocks": [
+    "crb:rct",
+    "crb:simple_domain",
+    "crb:domain_amplification"
+  ],
+  "grade": "special",
+  "stats": {
+    "strength": 50,
+    "endurance": 55,
+    "agility": 50,
+    "energy_cap": 8000
+  },
+  "items": [
+    {
+      "id": "crb:katana"
+    },
+    {
+      "id": "crb:sorcerers_outfit"
+    }
+  ],
+  "claims": [
+    "crb:queen_of_curses"
+  ]
+}

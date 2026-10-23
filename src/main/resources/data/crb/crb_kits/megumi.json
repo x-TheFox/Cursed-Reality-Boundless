@@ -1,0 +1,23 @@
+{
+  "display": "Megumi Fushiguro",
+  "technique": "crb:ten_shadows",
+  "forms": 11,
+  "unlocks": [
+    "crb:simple_domain"
+  ],
+  "grade": "grade_2",
+  "stats": {
+    "strength": 20,
+    "endurance": 25,
+    "agility": 30,
+    "energy_cap": 1500
+  },
+  "items": [
+    {
+      "id": "crb:sorcerers_outfit"
+    }
+  ],
+  "claims": [
+    "crb:ten_shadows"
+  ]
+}

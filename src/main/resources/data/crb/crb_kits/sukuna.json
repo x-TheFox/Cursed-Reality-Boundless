@@ -1,0 +1,43 @@
+{
+  "display": "Ryomen Sukuna",
+  "technique": "crb:shrine",
+  "forms": "max",
+  "traits": [
+    "crb:rct_master",
+    "crb:curse",
+    "crb:meguna"
+  ],
+  "unlocks": [
+    "crb:rct",
+    "crb:domain_amplification",
+    "crb:simple_domain",
+    "crb:black_flash_mastery"
+  ],
+  "grade": "special",
+  "stats": {
+    "strength": 65,
+    "endurance": 60,
+    "agility": 55,
+    "energy_cap": 9000
+  },
+  "combat_styles": [
+    "crb:sukuna_fists",
+    "crb:cleave_fists"
+  ],
+  "items": [
+    {
+      "id": "crb:kamutoke"
+    },
+    {
+      "id": "crb:sukuna_robes"
+    },
+    {
+      "id": "crb:sukuna_torso"
+    }
+  ],
+  "fingers": 20,
+  "claims": [
+    "crb:shrine",
+    "crb:ten_shadows"
+  ]
+}

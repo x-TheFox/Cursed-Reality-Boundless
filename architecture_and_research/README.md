@@ -7,6 +7,7 @@ Phase 1 reverse-engineering of the Jujutsu Awakening Bedrock addon. Start with [
 3. [Why JJA feels cinematic](03_cinematics.md)
 4. [Roster & gap analysis](04_roster_and_gap_analysis.md)
 5. [Networking & authority](05_networking_and_authority.md)
+6. [Kits, uniqueness & admin tools](06_kits_uniqueness_and_admin.md)
 
 `catalog/` is generated. Regenerate with:
 
