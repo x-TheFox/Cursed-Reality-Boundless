@@ -1,0 +1,3873 @@
+{
+ "_stats_click": [],
+ "absorption/absorption_click": [
+  {
+   "form": "form1",
+   "item": "ds:absorption1",
+   "modifier": "plain",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": [
+    "ability1",
+    300
+   ],
+   "duration": [
+    "move",
+    34
+   ],
+   "name": "Power Punch",
+   "function": "absorption/absorption1",
+   "timeline_max_tick": 33,
+   "timeline_lines": 77
+  },
+  {
+   "form": "form2",
+   "item": "ds:absorption1",
+   "modifier": "sneak",
+   "energy": 75,
+   "energy_req": 75,
+   "cooldown": [
+    "ability2",
+    80
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Power Counter",
+   "function": "absorption/absorption2",
+   "timeline_max_tick": 15,
+   "timeline_lines": 51
+  },
+  {
+   "form": "form3",
+   "item": "ds:absorption1",
+   "modifier": "airborne",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": [
+    "ability3",
+    100
+   ],
+   "duration": [
+    "move",
+    8
+   ],
+   "name": "Power Leap",
+   "function": "absorption/absorption3",
+   "timeline_max_tick": 8,
+   "timeline_lines": 26
+  },
+  {
+   "form": "form4",
+   "item": "ds:absorption1",
+   "modifier": "sneak + airborne",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability4",
+    300
+   ],
+   "duration": [
+    "move",
+    36
+   ],
+   "name": "Power Leap",
+   "function": "absorption/absorption4",
+   "timeline_max_tick": 35,
+   "timeline_lines": 63
+  },
+  {
+   "form": "form5",
+   "item": "ds:absorption2",
+   "modifier": "plain",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability5",
+    200
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Power Bolt",
+   "function": "absorption/absorption5",
+   "timeline_max_tick": 31,
+   "timeline_lines": 35
+  },
+  {
+   "form": "form6",
+   "item": "ds:absorption2",
+   "modifier": "sneak",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability6",
+    700
+   ],
+   "duration": [
+    "move",
+    47
+   ],
+   "name": "Power Shock",
+   "function": "absorption/absorption6",
+   "timeline_max_tick": 46,
+   "timeline_lines": 32
+  },
+  {
+   "form": "form7",
+   "item": "ds:absorption2",
+   "modifier": "airborne",
+   "energy": 250,
+   "energy_req": 250,
+   "cooldown": [
+    "ability7",
+    900
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Power Wave",
+   "function": "absorption/absorption7",
+   "timeline_max_tick": 31,
+   "timeline_lines": 73
+  },
+  {
+   "form": "form8",
+   "item": "ds:absorption3",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability8",
+    2400
+   ],
+   "duration": [
+    "move",
+    71
+   ],
+   "name": "Power Punch",
+   "function": "absorption/absorption8",
+   "timeline_max_tick": 71,
+   "timeline_lines": 66
+  }
+ ],
+ "boogie_woogie/boogie_woogie_click": [
+  {
+   "form": "form1",
+   "item": "ds:boogie_woogie1",
+   "modifier": "plain",
+   "energy": 20,
+   "energy_req": 20,
+   "cooldown": [
+    "ability1",
+    20
+   ],
+   "duration": [
+    "move",
+    9
+   ],
+   "name": "Swap",
+   "function": "boogie_woogie/boogie1",
+   "timeline_max_tick": 8,
+   "timeline_lines": 27
+  },
+  {
+   "form": "form2",
+   "item": "ds:boogie_woogie1",
+   "modifier": "sneak",
+   "energy": 20,
+   "energy_req": 20,
+   "cooldown": [
+    "ability2",
+    30
+   ],
+   "duration": [
+    "move",
+    9
+   ],
+   "name": "Swap Others",
+   "function": "boogie_woogie/boogie2",
+   "timeline_max_tick": 8,
+   "timeline_lines": 32
+  },
+  {
+   "form": "form3",
+   "item": "ds:boogie_woogie1",
+   "modifier": "airborne",
+   "energy": 50,
+   "energy_req": 20,
+   "cooldown": [
+    "ability3",
+    150
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Switch Kick",
+   "function": "boogie_woogie/boogie3",
+   "timeline_max_tick": 1001,
+   "timeline_lines": 55
+  },
+  {
+   "form": "ask_brother",
+   "item": "ds:boogie_woogie2",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability12",
+    200
+   ],
+   "duration": [
+    "move",
+    101
+   ],
+   "name": null,
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form5",
+   "item": "ds:boogie_woogie3",
+   "modifier": "plain",
+   "energy": 20,
+   "energy_req": 20,
+   "cooldown": [
+    "ability5",
+    20
+   ],
+   "duration": [
+    "move",
+    9
+   ],
+   "name": "Brother Swap",
+   "function": "boogie_woogie/boogie_bc1",
+   "timeline_max_tick": 8,
+   "timeline_lines": 33
+  },
+  {
+   "form": "form6",
+   "item": "ds:boogie_woogie3",
+   "modifier": "sneak",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability6",
+    500
+   ],
+   "duration": [
+    "move",
+    11
+   ],
+   "name": "Jujutsu Jumping",
+   "function": "boogie_woogie/boogie_bc2",
+   "timeline_max_tick": 1000,
+   "timeline_lines": 143
+  },
+  {
+   "form": "form7",
+   "item": "ds:boogie_woogie3",
+   "modifier": "airborne",
+   "energy": 150,
+   "energy_req": 150,
+   "cooldown": [
+    "ability7",
+    400
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Stylistic Swap",
+   "function": "boogie_woogie/boogie_bc3",
+   "timeline_max_tick": 1001,
+   "timeline_lines": 102
+  }
+ ],
+ "boogie_woogie/combat_click": [
+  {
+   "form": "wep1",
+   "item": "ds:boogie_fists",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep1",
+    250
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Hefty Blow",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "wep2",
+   "item": "ds:boogie_fists",
+   "modifier": "sneak",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep2",
+    200
+   ],
+   "duration": [
+    "move",
+    26
+   ],
+   "name": "Agile Sweep",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "wep3",
+   "item": "ds:boogie_fists",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep3",
+    215
+   ],
+   "duration": [
+    "move",
+    36
+   ],
+   "name": "Divebomb",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "wep4",
+   "item": "ds:boogie_fists",
+   "modifier": "sneak + airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep4",
+    250
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Twinstrikes",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  }
+ ],
+ "delusional/delusional_click": [
+  {
+   "form": "delusional1",
+   "item": "ds:delusional2",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep1",
+    200
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Love Tap",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "delusional2",
+   "item": "ds:delusional2",
+   "modifier": "sneak",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep2",
+    240
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Idol's Debut",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "delusional3",
+   "item": "ds:delusional2",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep3",
+    220
+   ],
+   "duration": [
+    "move",
+    60
+   ],
+   "name": "Hearts",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "delusional4",
+   "item": "ds:delusional2",
+   "modifier": "sneak + airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep4",
+    600
+   ],
+   "duration": [
+    "move",
+    61
+   ],
+   "name": "Climax Jumping",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  }
+ ],
+ "explosive/explosive_click": [
+  {
+   "form": "form1",
+   "item": "ds:explosive1",
+   "modifier": "plain",
+   "energy": 80,
+   "energy_req": 80,
+   "cooldown": [
+    "ability1",
+    140
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Palm Blast",
+   "function": "explosive/explosive1",
+   "timeline_max_tick": 30,
+   "timeline_lines": 38
+  },
+  {
+   "form": "form2",
+   "item": "ds:explosive1",
+   "modifier": "sneak",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability2",
+    800
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Explosive Release",
+   "function": "explosive/explosive2",
+   "timeline_max_tick": 30,
+   "timeline_lines": 50
+  },
+  {
+   "form": "form3",
+   "item": "ds:explosive2",
+   "modifier": "plain",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": [
+    "ability3",
+    60
+   ],
+   "duration": [
+    "move",
+    16
+   ],
+   "name": "Explosive Spit",
+   "function": "explosive/explosive3",
+   "timeline_max_tick": 15,
+   "timeline_lines": 24
+  },
+  {
+   "form": "form4",
+   "item": "ds:explosive2",
+   "modifier": "sneak",
+   "energy": 250,
+   "energy_req": 250,
+   "cooldown": [
+    "ability4",
+    800
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Devastating Arrow",
+   "function": "explosive/explosive4",
+   "timeline_max_tick": 40,
+   "timeline_lines": 30
+  },
+  {
+   "form": "form5",
+   "item": "ds:explosive2",
+   "modifier": "airborne",
+   "energy": 400,
+   "energy_req": 400,
+   "cooldown": [
+    "ability5",
+    800
+   ],
+   "duration": [
+    "move",
+    61
+   ],
+   "name": "Devastating Arrow",
+   "function": "explosive/explosive5",
+   "timeline_max_tick": 55,
+   "timeline_lines": 36
+  },
+  {
+   "form": "form6",
+   "item": "ds:explosive3",
+   "modifier": "plain",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability6",
+    400
+   ],
+   "duration": [
+    "move",
+    46
+   ],
+   "name": "Heatwave Slash",
+   "function": "explosive/explosive6",
+   "timeline_max_tick": 45,
+   "timeline_lines": 46
+  },
+  {
+   "form": "form7",
+   "item": "ds:explosive3",
+   "modifier": "sneak",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability7",
+    350
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Flaming Wall",
+   "function": "explosive/explosive7",
+   "timeline_max_tick": 30,
+   "timeline_lines": 22
+  }
+ ],
+ "fighting/hr/hr_click": [
+  {
+   "form": "form1",
+   "item": "ds:hr1",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability1",
+    140
+   ],
+   "duration": [
+    "move",
+    19
+   ],
+   "name": "Liver Punch",
+   "function": "hr/hr1",
+   "timeline_max_tick": 18,
+   "timeline_lines": 62
+  },
+  {
+   "form": "form2",
+   "item": "ds:hr1",
+   "modifier": "sneak + airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability2",
+    500
+   ],
+   "duration": [
+    "move",
+    61
+   ],
+   "name": "Deadly Strikes",
+   "function": "hr/hr2",
+   "timeline_max_tick": 60,
+   "timeline_lines": 167
+  },
+  {
+   "form": "form3",
+   "item": "ds:hr1",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability3",
+    800
+   ],
+   "duration": [
+    "move",
+    111
+   ],
+   "name": "Vanishing Blow",
+   "function": "hr/hr3",
+   "timeline_max_tick": 110,
+   "timeline_lines": 109
+  },
+  {
+   "form": "form4",
+   "item": "ds:hr1",
+   "modifier": "sneak",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability4",
+    3600
+   ],
+   "duration": [
+    "move",
+    351
+   ],
+   "name": "Dempsey Roll",
+   "function": "hr/hr4",
+   "timeline_max_tick": 350,
+   "timeline_lines": 338
+  },
+  {
+   "form": "form5",
+   "item": "ds:hr2",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability5",
+    700
+   ],
+   "duration": [
+    "move",
+    66
+   ],
+   "name": "Swift Counter",
+   "function": "hr/hr5",
+   "timeline_max_tick": 65,
+   "timeline_lines": 58
+  },
+  {
+   "form": "form6",
+   "item": "ds:hr2",
+   "modifier": "sneak + airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability6",
+    400
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Swift Kick",
+   "function": "hr/hr6",
+   "timeline_max_tick": 40,
+   "timeline_lines": 93
+  },
+  {
+   "form": "form7",
+   "item": "ds:hr2",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability7",
+    800
+   ],
+   "duration": [
+    "move",
+    61
+   ],
+   "name": "Preys Peril",
+   "function": "hr/hr7",
+   "timeline_max_tick": 60,
+   "timeline_lines": 187
+  },
+  {
+   "form": "form8",
+   "item": "ds:hr2",
+   "modifier": "sneak",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability8",
+    800
+   ],
+   "duration": [
+    "move",
+    91
+   ],
+   "name": "Flashstrike",
+   "function": "hr/hr8",
+   "timeline_max_tick": 90,
+   "timeline_lines": 51
+  },
+  {
+   "form": "form9",
+   "item": "ds:hr3",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability9",
+    450
+   ],
+   "duration": [
+    "move",
+    17
+   ],
+   "name": "Ground Slam",
+   "function": "hr/hr9",
+   "timeline_max_tick": 16,
+   "timeline_lines": 44
+  },
+  {
+   "form": "form10",
+   "item": "ds:hr3",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability10",
+    900
+   ],
+   "duration": [
+    "move",
+    66
+   ],
+   "name": "Final Hunt",
+   "function": "hr/hr10",
+   "timeline_max_tick": 65,
+   "timeline_lines": 80
+  },
+  {
+   "form": "form11",
+   "item": "ds:hr3",
+   "modifier": "sneak",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability11",
+    300
+   ],
+   "duration": [
+    "move",
+    52
+   ],
+   "name": "Rock Kick",
+   "function": "hr/hr11",
+   "timeline_max_tick": 51,
+   "timeline_lines": 85
+  },
+  {
+   "form": "form12",
+   "item": "ds:hr3",
+   "modifier": "sneak + airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability12",
+    4800
+   ],
+   "duration": [
+    "move",
+    91
+   ],
+   "name": "Rubble Gatling",
+   "function": "hr/hr12",
+   "timeline_max_tick": 90,
+   "timeline_lines": 113
+  }
+ ],
+ "flames/flames_click": [
+  {
+   "form": "form1",
+   "item": "ds:flames1",
+   "modifier": "plain",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability1",
+    600
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Wildfire Flames",
+   "function": "flames/flames1",
+   "timeline_max_tick": 40,
+   "timeline_lines": 30
+  },
+  {
+   "form": "form1b",
+   "item": "ds:flames1",
+   "modifier": "airborne",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability1",
+    100
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Wildfire Flames",
+   "function": "flames/flames1b",
+   "timeline_max_tick": 30,
+   "timeline_lines": 18
+  },
+  {
+   "form": "form1c",
+   "item": "ds:flames1",
+   "modifier": "sneak",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability1",
+    200
+   ],
+   "duration": [
+    "move",
+    61
+   ],
+   "name": "Wildfire Flames",
+   "function": "flames/flames1c",
+   "timeline_max_tick": 60,
+   "timeline_lines": 47
+  },
+  {
+   "form": "form1e",
+   "item": "ds:flames1",
+   "modifier": "sneak + airborne",
+   "energy": 800,
+   "energy_req": 800,
+   "cooldown": [
+    "ability1",
+    2400
+   ],
+   "duration": [
+    "move",
+    152
+   ],
+   "name": "Wildfire Flames",
+   "function": "flames/flames1e",
+   "timeline_max_tick": 151,
+   "timeline_lines": 61
+  },
+  {
+   "form": "form2",
+   "item": "ds:flames2",
+   "modifier": "plain",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability2",
+    600
+   ],
+   "duration": [
+    "move",
+    11
+   ],
+   "name": "Ember Insects",
+   "function": "flames/flames2",
+   "timeline_max_tick": 10,
+   "timeline_lines": 38
+  },
+  {
+   "form": "form2b",
+   "item": "ds:flames2",
+   "modifier": "sneak",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": [
+    "ability3",
+    120
+   ],
+   "duration": [
+    "move",
+    11
+   ],
+   "name": "Volcanic Geysers",
+   "function": "flames/flames2b",
+   "timeline_max_tick": 10,
+   "timeline_lines": 28
+  },
+  {
+   "form": "form2c",
+   "item": "ds:flames2",
+   "modifier": "airborne",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability3",
+    600
+   ],
+   "duration": [
+    "move",
+    14
+   ],
+   "name": "Volcanic Geysers",
+   "function": "flames/flames2c",
+   "timeline_max_tick": 13,
+   "timeline_lines": 60
+  },
+  {
+   "form": "form3",
+   "item": "ds:flames3",
+   "modifier": "look-up",
+   "energy": 75,
+   "energy_req": 75,
+   "cooldown": [
+    "ability3",
+    80
+   ],
+   "duration": [
+    "move",
+    66
+   ],
+   "name": "Ranged Flames",
+   "function": "flames/flames3",
+   "timeline_max_tick": 65,
+   "timeline_lines": 72
+  },
+  {
+   "form": "form3b",
+   "item": "ds:flames3",
+   "modifier": "airborne + look-up",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability3",
+    300
+   ],
+   "duration": [
+    "move",
+    46
+   ],
+   "name": "Ranged Flames",
+   "function": "flames/flames3b",
+   "timeline_max_tick": 45,
+   "timeline_lines": 55
+  },
+  {
+   "form": "form3c",
+   "item": "ds:flames3",
+   "modifier": "sneak + look-up",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability3",
+    80
+   ],
+   "duration": [
+    "move",
+    26
+   ],
+   "name": "Ranged Flames",
+   "function": "flames/flames3c",
+   "timeline_max_tick": 25,
+   "timeline_lines": 23
+  },
+  {
+   "form": "form3d",
+   "item": "ds:flames3",
+   "modifier": "sneak + not look-up",
+   "energy": 400,
+   "energy_req": 400,
+   "cooldown": [
+    "ability4",
+    800
+   ],
+   "duration": [
+    "move",
+    26
+   ],
+   "name": "Pyro Cannon",
+   "function": "flames/flames3d",
+   "timeline_max_tick": 25,
+   "timeline_lines": 39
+  },
+  {
+   "form": "form4",
+   "item": "ds:flames4",
+   "modifier": "plain",
+   "energy": 125,
+   "energy_req": 125,
+   "cooldown": [
+    "ability5",
+    80
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Explosive Flames",
+   "function": "flames/flames4",
+   "timeline_max_tick": 20,
+   "timeline_lines": 89
+  },
+  {
+   "form": "form4b",
+   "item": "ds:flames4",
+   "modifier": "airborne",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability5",
+    400
+   ],
+   "duration": [
+    "move",
+    46
+   ],
+   "name": "Explosive Flames",
+   "function": "flames/flames4b",
+   "timeline_max_tick": 45,
+   "timeline_lines": 80
+  },
+  {
+   "form": "form4c",
+   "item": "ds:flames4",
+   "modifier": "sneak",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability5",
+    400
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Explosive Flames",
+   "function": "flames/flames4c",
+   "timeline_max_tick": 30,
+   "timeline_lines": 97
+  },
+  {
+   "form": "form4d",
+   "item": "ds:flames4",
+   "modifier": "sneak + airborne",
+   "energy": 800,
+   "energy_req": 800,
+   "cooldown": [
+    "ability6",
+    2400
+   ],
+   "duration": [
+    "move",
+    141
+   ],
+   "name": "Stoic Bomb",
+   "function": "flames/flames4d",
+   "timeline_max_tick": 999,
+   "timeline_lines": 201
+  },
+  {
+   "form": "form5b",
+   "item": "ds:flames5",
+   "modifier": "plain",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability7",
+    500
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Molten Lava",
+   "function": "flames/flames5b",
+   "timeline_max_tick": 20,
+   "timeline_lines": 35
+  },
+  {
+   "form": "form5",
+   "item": "ds:flames5",
+   "modifier": "sneak",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability7",
+    600
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Molten Lava",
+   "function": "flames/flames5",
+   "timeline_max_tick": 20,
+   "timeline_lines": 14
+  },
+  {
+   "form": "form5c",
+   "item": "ds:flames5",
+   "modifier": "airborne",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability7",
+    500
+   ],
+   "duration": [
+    "move",
+    36
+   ],
+   "name": "Molten Lava",
+   "function": "flames/flames5c",
+   "timeline_max_tick": 35,
+   "timeline_lines": 34
+  },
+  {
+   "form": "form5d",
+   "item": "ds:flames5",
+   "modifier": "sneak + airborne",
+   "energy": 800,
+   "energy_req": 800,
+   "cooldown": [
+    "ability8",
+    1300
+   ],
+   "duration": [
+    "move",
+    51
+   ],
+   "name": "Molten Crush",
+   "function": "flames/flames5d",
+   "timeline_max_tick": 50,
+   "timeline_lines": 74
+  },
+  {
+   "form": "form6",
+   "item": "ds:flames6",
+   "modifier": "plain",
+   "energy": 500,
+   "energy_req": 500,
+   "cooldown": [
+    "ability9",
+    750
+   ],
+   "duration": [
+    "move",
+    81
+   ],
+   "name": "Maximum Techniques",
+   "function": "flames/flames6",
+   "timeline_max_tick": 80,
+   "timeline_lines": 80
+  },
+  {
+   "form": "form6b",
+   "item": "ds:flames6",
+   "modifier": "airborne",
+   "energy": 800,
+   "energy_req": 800,
+   "cooldown": [
+    "ability9",
+    2000
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Maximum Techniques",
+   "function": "flames/flames6b",
+   "timeline_max_tick": 1184,
+   "timeline_lines": 138
+  },
+  {
+   "form": "form6c",
+   "item": "ds:flames6",
+   "modifier": "sneak",
+   "energy": 1200,
+   "energy_req": 1200,
+   "cooldown": [
+    "ability9",
+    12000
+   ],
+   "duration": [
+    "move",
+    321
+   ],
+   "name": "Maximum Techniques",
+   "function": "flames/flames6c",
+   "timeline_max_tick": 320,
+   "timeline_lines": 100
+  },
+  {
+   "form": "form7",
+   "item": "ds:flames7",
+   "modifier": "plain",
+   "energy": 800,
+   "energy_req": 800,
+   "cooldown": [
+    "domainCD",
+    12000
+   ],
+   "duration": [
+    "domainstart",
+    101
+   ],
+   "name": "Domain Expansion",
+   "function": "flames/flames7",
+   "timeline_max_tick": 1002,
+   "timeline_lines": 76
+  }
+ ],
+ "hr/hr_click": [
+  {
+   "form": "form1",
+   "item": "ds:hr1",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability1",
+    140
+   ],
+   "duration": [
+    "move",
+    19
+   ],
+   "name": "Liver Punch",
+   "function": "hr/hr1",
+   "timeline_max_tick": 18,
+   "timeline_lines": 62
+  },
+  {
+   "form": "form2",
+   "item": "ds:hr1",
+   "modifier": "sneak + airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability2",
+    500
+   ],
+   "duration": [
+    "move",
+    61
+   ],
+   "name": "Deadly Strikes",
+   "function": "hr/hr2",
+   "timeline_max_tick": 60,
+   "timeline_lines": 167
+  },
+  {
+   "form": "form3",
+   "item": "ds:hr1",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability3",
+    800
+   ],
+   "duration": [
+    "move",
+    111
+   ],
+   "name": "Vanishing Blow",
+   "function": "hr/hr3",
+   "timeline_max_tick": 110,
+   "timeline_lines": 109
+  },
+  {
+   "form": "form4",
+   "item": "ds:hr1",
+   "modifier": "sneak",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability4",
+    3600
+   ],
+   "duration": [
+    "move",
+    351
+   ],
+   "name": "Dempsey Roll",
+   "function": "hr/hr4",
+   "timeline_max_tick": 350,
+   "timeline_lines": 338
+  },
+  {
+   "form": "form5",
+   "item": "ds:hr2",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability5",
+    700
+   ],
+   "duration": [
+    "move",
+    66
+   ],
+   "name": "Swift Counter",
+   "function": "hr/hr5",
+   "timeline_max_tick": 65,
+   "timeline_lines": 58
+  },
+  {
+   "form": "form6",
+   "item": "ds:hr2",
+   "modifier": "sneak + airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability6",
+    400
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Swift Kick",
+   "function": "hr/hr6",
+   "timeline_max_tick": 40,
+   "timeline_lines": 93
+  },
+  {
+   "form": "form7",
+   "item": "ds:hr2",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability7",
+    800
+   ],
+   "duration": [
+    "move",
+    61
+   ],
+   "name": "Preys Peril",
+   "function": "hr/hr7",
+   "timeline_max_tick": 60,
+   "timeline_lines": 187
+  },
+  {
+   "form": "form8",
+   "item": "ds:hr2",
+   "modifier": "sneak",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability8",
+    800
+   ],
+   "duration": [
+    "move",
+    91
+   ],
+   "name": "Flashstrike",
+   "function": "hr/hr8",
+   "timeline_max_tick": 90,
+   "timeline_lines": 51
+  },
+  {
+   "form": "form9",
+   "item": "ds:hr3",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability9",
+    450
+   ],
+   "duration": [
+    "move",
+    17
+   ],
+   "name": "Ground Slam",
+   "function": "hr/hr9",
+   "timeline_max_tick": 16,
+   "timeline_lines": 44
+  },
+  {
+   "form": "form10",
+   "item": "ds:hr3",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability10",
+    900
+   ],
+   "duration": [
+    "move",
+    66
+   ],
+   "name": "Final Hunt",
+   "function": "hr/hr10",
+   "timeline_max_tick": 65,
+   "timeline_lines": 80
+  },
+  {
+   "form": "form11",
+   "item": "ds:hr3",
+   "modifier": "sneak",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability11",
+    300
+   ],
+   "duration": [
+    "move",
+    52
+   ],
+   "name": "Rock Kick",
+   "function": "hr/hr11",
+   "timeline_max_tick": 51,
+   "timeline_lines": 85
+  },
+  {
+   "form": "form12",
+   "item": "ds:hr3",
+   "modifier": "sneak + airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability12",
+    4800
+   ],
+   "duration": [
+    "move",
+    91
+   ],
+   "name": "Rubble Gatling",
+   "function": "hr/hr12",
+   "timeline_max_tick": 90,
+   "timeline_lines": 113
+  }
+ ],
+ "idle_transfig/idle_click": [
+  {
+   "form": "wep1m",
+   "item": "ds:idle_transfig_combat1",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep1",
+    100
+   ],
+   "duration": [
+    "move",
+    24
+   ],
+   "name": "Pistol Blow",
+   "function": "idle_transfig/base_ab1",
+   "timeline_max_tick": 24,
+   "timeline_lines": 33
+  },
+  {
+   "form": "wep2m",
+   "item": "ds:idle_transfig_combat1",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep2",
+    200
+   ],
+   "duration": [
+    "move",
+    26
+   ],
+   "name": "Quad Stamp",
+   "function": "idle_transfig/base_ab2",
+   "timeline_max_tick": 26,
+   "timeline_lines": 68
+  },
+  {
+   "form": "wep3m",
+   "item": "ds:idle_transfig_combat1",
+   "modifier": "sneak",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep3",
+    300
+   ],
+   "duration": [
+    "move",
+    16
+   ],
+   "name": "Kiss",
+   "function": "idle_transfig/base_ab3",
+   "timeline_max_tick": 1001,
+   "timeline_lines": 54
+  },
+  {
+   "form": "wep1m",
+   "item": "ds:idle_transfig_combat2",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep1",
+    100
+   ],
+   "duration": [
+    "move",
+    24
+   ],
+   "name": "Bisection",
+   "function": "idle_transfig/base_ab1",
+   "timeline_max_tick": 24,
+   "timeline_lines": 33
+  },
+  {
+   "form": "wep2m",
+   "item": "ds:idle_transfig_combat2",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep2",
+    200
+   ],
+   "duration": [
+    "move",
+    24
+   ],
+   "name": "Beyblade",
+   "function": "idle_transfig/base_ab2",
+   "timeline_max_tick": 26,
+   "timeline_lines": 68
+  },
+  {
+   "form": "wep1m",
+   "item": "ds:idle_transfig_combat3",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep1",
+    100
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Malice",
+   "function": "idle_transfig/base_ab1",
+   "timeline_max_tick": 24,
+   "timeline_lines": 33
+  },
+  {
+   "form": "wep2m",
+   "item": "ds:idle_transfig_combat3",
+   "modifier": "sneak",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep2",
+    400
+   ],
+   "duration": [
+    "move",
+    51
+   ],
+   "name": "Brutal Force",
+   "function": "idle_transfig/base_ab2",
+   "timeline_max_tick": 26,
+   "timeline_lines": 68
+  },
+  {
+   "form": "wep3m",
+   "item": "ds:idle_transfig_combat3",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep3",
+    400
+   ],
+   "duration": [
+    "move",
+    38
+   ],
+   "name": "Cursed Crash",
+   "function": "idle_transfig/base_ab3",
+   "timeline_max_tick": 1001,
+   "timeline_lines": 54
+  },
+  {
+   "form": "form1",
+   "item": null,
+   "modifier": "sneak",
+   "energy": 300,
+   "energy_req": 300,
+   "cooldown": [
+    "ability1",
+    100
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Soul Transfiguration",
+   "function": "idle_transfig/idle1",
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form2",
+   "item": null,
+   "modifier": "airborne",
+   "energy": 300,
+   "energy_req": 300,
+   "cooldown": [
+    "ability1",
+    300
+   ],
+   "duration": [
+    "move",
+    61
+   ],
+   "name": "Soul Transfiguration",
+   "function": "idle_transfig/soul_ab3",
+   "timeline_max_tick": 2000,
+   "timeline_lines": 85
+  },
+  {
+   "form": "form3",
+   "item": null,
+   "modifier": "plain",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": [
+    "ability2",
+    100
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Trident Rush",
+   "function": "idle_transfig/body_ab1",
+   "timeline_max_tick": 31,
+   "timeline_lines": 49
+  },
+  {
+   "form": "form4",
+   "item": null,
+   "modifier": "airborne",
+   "energy": 300,
+   "energy_req": 100,
+   "cooldown": [
+    "ability1",
+    300
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Soul Transfiguration",
+   "function": "idle_transfig/body_ab2",
+   "timeline_max_tick": 41,
+   "timeline_lines": 46
+  },
+  {
+   "form": "form5",
+   "item": null,
+   "modifier": "sneak",
+   "energy": 300,
+   "energy_req": 200,
+   "cooldown": [
+    "ability1",
+    100
+   ],
+   "duration": [
+    "move",
+    86
+   ],
+   "name": "Soul Transfiguration",
+   "function": "idle_transfig/body_ab3",
+   "timeline_max_tick": 1001,
+   "timeline_lines": 121
+  },
+  {
+   "form": "form7",
+   "item": null,
+   "modifier": "sneak + airborne",
+   "energy": 300,
+   "energy_req": 300,
+   "cooldown": [
+    "ability6",
+    400
+   ],
+   "duration": [
+    "move",
+    101
+   ],
+   "name": "Decoy Trick",
+   "function": "idle_transfig/body_ab5",
+   "timeline_max_tick": 101,
+   "timeline_lines": 72
+  },
+  {
+   "form": "form8",
+   "item": null,
+   "modifier": "plain",
+   "energy": 50,
+   "energy_req": 100,
+   "cooldown": [
+    "ability2",
+    100
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Trident Rush",
+   "function": "idle_transfig/human_ab1",
+   "timeline_max_tick": 31,
+   "timeline_lines": 98
+  },
+  {
+   "form": "form9",
+   "item": null,
+   "modifier": "sneak",
+   "energy": 300,
+   "energy_req": 100,
+   "cooldown": [
+    "ability1",
+    100
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Soul Transfiguration",
+   "function": "idle_transfig/human_ab2",
+   "timeline_max_tick": 31,
+   "timeline_lines": 31
+  },
+  {
+   "form": "form10",
+   "item": "ds:unstable_transfigured_human",
+   "modifier": "airborne",
+   "energy": 300,
+   "energy_req": 300,
+   "cooldown": [
+    "ability9",
+    300
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Body Repel",
+   "function": "idle_transfig/human_ab3",
+   "timeline_max_tick": 41,
+   "timeline_lines": 56
+  },
+  {
+   "form": "form11",
+   "item": "ds:unstable_transfigured_human",
+   "modifier": "sneak + airborne",
+   "energy": 500,
+   "energy_req": 500,
+   "cooldown": [
+    "ability9",
+    800
+   ],
+   "duration": [
+    "move",
+    61
+   ],
+   "name": "Body Repel",
+   "function": "idle_transfig/human_ab4",
+   "timeline_max_tick": 61,
+   "timeline_lines": 61
+  },
+  {
+   "form": "form12",
+   "item": null,
+   "modifier": "plain",
+   "energy": 1000,
+   "energy_req": 1000,
+   "cooldown": null,
+   "duration": null,
+   "name": "Instant Spirit Body of Distorted Killing",
+   "function": "idle_transfig/idle12",
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "wep1m",
+   "item": "ds:instant_body_combat",
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep1",
+    100
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Impale",
+   "function": "idle_transfig/base_ab1",
+   "timeline_max_tick": 24,
+   "timeline_lines": 33
+  },
+  {
+   "form": "wep2m",
+   "item": "ds:instant_body_combat",
+   "modifier": "sneak",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep2",
+    200
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Ruthless Strikes",
+   "function": "idle_transfig/base_ab2",
+   "timeline_max_tick": 26,
+   "timeline_lines": 68
+  },
+  {
+   "form": "wep3m",
+   "item": "ds:instant_body_combat",
+   "modifier": "airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "wep3",
+    500
+   ],
+   "duration": [
+    "move",
+    51
+   ],
+   "name": "Takedown",
+   "function": "idle_transfig/base_ab3",
+   "timeline_max_tick": 1001,
+   "timeline_lines": 54
+  },
+  {
+   "form": "wep6m",
+   "item": "ds:instant_body_combat",
+   "modifier": "sneak + airborne",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": [
+    "ability11",
+    6000
+   ],
+   "duration": [
+    "move",
+    176
+   ],
+   "name": "Truly a Curse",
+   "function": "idle_transfig/instant_body/ab6",
+   "timeline_max_tick": 10005,
+   "timeline_lines": 480
+  }
+ ],
+ "judgeman/judgeman_click": [
+  {
+   "form": "form1",
+   "item": "ds:judgeman1",
+   "modifier": "plain",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability1",
+    300
+   ],
+   "duration": [
+    "move",
+    16
+   ],
+   "name": "Objection",
+   "function": "judgeman/judgeman1",
+   "timeline_max_tick": 28,
+   "timeline_lines": 50
+  },
+  {
+   "form": "form2",
+   "item": "ds:judgeman1",
+   "modifier": "sneak",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability2",
+    600
+   ],
+   "duration": [
+    "move",
+    36
+   ],
+   "name": "Confiscation",
+   "function": "judgeman/judgeman2",
+   "timeline_max_tick": 35,
+   "timeline_lines": 44
+  },
+  {
+   "form": "form3",
+   "item": "ds:judgeman1",
+   "modifier": "airborne",
+   "energy": 300,
+   "energy_req": 300,
+   "cooldown": [
+    "ability3",
+    1200
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Judgement Zone",
+   "function": "judgeman/judgeman3",
+   "timeline_max_tick": 40,
+   "timeline_lines": 23
+  },
+  {
+   "form": "form4",
+   "item": "ds:judgeman2",
+   "modifier": "plain",
+   "energy": 800,
+   "energy_req": 800,
+   "cooldown": [
+    "domainCD",
+    12000
+   ],
+   "duration": [
+    "domainstart",
+    102
+   ],
+   "name": "Deadly Sentencing",
+   "function": "judgeman/deadlysentencing_start",
+   "timeline_max_tick": 1002,
+   "timeline_lines": 77
+  }
+ ],
+ "kashimo/lightning_click": [
+  {
+   "form": "wep1",
+   "item": "ds:lightning1",
+   "modifier": "plain",
+   "energy": 70,
+   "energy_req": 70,
+   "cooldown": [
+    "wep1",
+    140
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Lightning Palm",
+   "function": "kashimo/lightning1a",
+   "timeline_max_tick": 20,
+   "timeline_lines": 64
+  },
+  {
+   "form": "wep2",
+   "item": "ds:lightning1",
+   "modifier": "sneak",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "wep2",
+    800
+   ],
+   "duration": [
+    "move",
+    82
+   ],
+   "name": "Bolt Barrage",
+   "function": "kashimo/lightning1b",
+   "timeline_max_tick": 80,
+   "timeline_lines": 122
+  },
+  {
+   "form": "wep3",
+   "item": "ds:lightning1",
+   "modifier": "airborne",
+   "energy": 150,
+   "energy_req": 150,
+   "cooldown": [
+    "wep3",
+    350
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Speedblitz",
+   "function": "kashimo/lightning1c",
+   "timeline_max_tick": 40,
+   "timeline_lines": 97
+  },
+  {
+   "form": "form1",
+   "item": "ds:lightning2",
+   "modifier": "plain",
+   "energy": 75,
+   "energy_req": 75,
+   "cooldown": [
+    "ability1",
+    40
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "This Lightning attack",
+   "function": "kashimo/lightning1r",
+   "timeline_max_tick": 20,
+   "timeline_lines": 50
+  },
+  {
+   "form": "form1b",
+   "item": "ds:lightning2",
+   "modifier": "sneak",
+   "energy": 120,
+   "energy_req": 120,
+   "cooldown": [
+    "ability1",
+    160
+   ],
+   "duration": [
+    "move",
+    36
+   ],
+   "name": "This Lightning attack",
+   "function": "kashimo/lightning2r",
+   "timeline_max_tick": 35,
+   "timeline_lines": 73
+  },
+  {
+   "form": "form1c",
+   "item": "ds:lightning2",
+   "modifier": "airborne",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability1",
+    340
+   ],
+   "duration": [
+    "move",
+    81
+   ],
+   "name": "This Lightning attack",
+   "function": "kashimo/lightning3r",
+   "timeline_max_tick": 80,
+   "timeline_lines": 91
+  },
+  {
+   "form": "form1d",
+   "item": "ds:lightning2",
+   "modifier": "sneak + airborne",
+   "energy": 600,
+   "energy_req": 600,
+   "cooldown": [
+    "ability1",
+    700
+   ],
+   "duration": [
+    "move",
+    91
+   ],
+   "name": "This Lightning attack",
+   "function": "kashimo/lightning4r",
+   "timeline_max_tick": 90,
+   "timeline_lines": 120
+  },
+  {
+   "form": "form2",
+   "item": "ds:lightning3",
+   "modifier": "plain",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability2",
+    1200
+   ],
+   "duration": [
+    "move",
+    72
+   ],
+   "name": "Lightning Cloak",
+   "function": "kashimo/lightning2",
+   "timeline_max_tick": 70,
+   "timeline_lines": 32
+  },
+  {
+   "form": "beastawakening",
+   "item": "ds:lightning4",
+   "modifier": "plain",
+   "energy": 750,
+   "energy_req": 750,
+   "cooldown": [
+    "ability3",
+    24000
+   ],
+   "duration": [
+    "move",
+    131
+   ],
+   "name": "Mythical Beast Amber",
+   "function": "kashimo/beast_awaken",
+   "timeline_max_tick": 1038,
+   "timeline_lines": 87
+  },
+  {
+   "form": "form4a",
+   "item": "ds:lightning5",
+   "modifier": "plain",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability4",
+    200
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Cyclone Blitz",
+   "function": "kashimo/lightning_am1",
+   "timeline_max_tick": 40,
+   "timeline_lines": 25
+  },
+  {
+   "form": "form4b",
+   "item": "ds:lightning5",
+   "modifier": "sneak",
+   "energy": 250,
+   "energy_req": 250,
+   "cooldown": [
+    "ability5",
+    200
+   ],
+   "duration": [
+    "move",
+    81
+   ],
+   "name": "Rising Thunder",
+   "function": "kashimo/lightning_am2",
+   "timeline_max_tick": 80,
+   "timeline_lines": 145
+  },
+  {
+   "form": "form4c",
+   "item": "ds:lightning5",
+   "modifier": "airborne",
+   "energy": 300,
+   "energy_req": 300,
+   "cooldown": [
+    "ability6",
+    600
+   ],
+   "duration": [
+    "move",
+    106
+   ],
+   "name": "Thunderclap",
+   "function": "kashimo/lightning_am3",
+   "timeline_max_tick": 105,
+   "timeline_lines": 92
+  },
+  {
+   "form": "form5a",
+   "item": "ds:lightning6",
+   "modifier": "plain",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability7",
+    400
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Energy Wave",
+   "function": "kashimo/lightning_am4",
+   "timeline_max_tick": 20,
+   "timeline_lines": 39
+  },
+  {
+   "form": "form5b",
+   "item": "ds:lightning6",
+   "modifier": "airborne",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability8",
+    600
+   ],
+   "duration": [
+    "move",
+    121
+   ],
+   "name": "Energy Wave",
+   "function": "kashimo/lightning_am5",
+   "timeline_max_tick": 120,
+   "timeline_lines": 121
+  },
+  {
+   "form": "form5c",
+   "item": "ds:lightning6",
+   "modifier": "sneak",
+   "energy": 350,
+   "energy_req": 350,
+   "cooldown": [
+    "ability9",
+    12000
+   ],
+   "duration": [
+    "move",
+    201
+   ],
+   "name": "Electro-Magnetic Thunder Cannon",
+   "function": "kashimo/lightning_am6",
+   "timeline_max_tick": 200,
+   "timeline_lines": 233
+  },
+  {
+   "form": "form6",
+   "item": "ds:lightning7",
+   "modifier": "plain",
+   "energy": 800,
+   "energy_req": 800,
+   "cooldown": [
+    "domainCD",
+    12000
+   ],
+   "duration": [
+    "domainstart",
+    101
+   ],
+   "name": "Domain Expansion",
+   "function": "kashimo/lightning6",
+   "timeline_max_tick": 1002,
+   "timeline_lines": 77
+  }
+ ],
+ "limitless/limitless_click": [
+  {
+   "form": "form1",
+   "item": "ds:limitless1",
+   "modifier": "plain",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": [
+    "ability1",
+    1200
+   ],
+   "duration": [
+    "move",
+    15
+   ],
+   "name": "Infinity",
+   "function": "limitless/limitless1",
+   "timeline_max_tick": 12,
+   "timeline_lines": 12
+  },
+  {
+   "form": "form1b",
+   "item": "ds:limitless1",
+   "modifier": "sneak",
+   "energy": 60,
+   "energy_req": 60,
+   "cooldown": [
+    "ability1",
+    500
+   ],
+   "duration": [
+    "move",
+    81
+   ],
+   "name": "Infinity",
+   "function": "limitless/limitless1b",
+   "timeline_max_tick": 80,
+   "timeline_lines": 50
+  },
+  {
+   "form": "form1c",
+   "item": "ds:limitless1",
+   "modifier": "airborne",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": null,
+   "duration": null,
+   "name": null,
+   "function": "limitless/limitless1c",
+   "timeline_max_tick": 14,
+   "timeline_lines": 21
+  },
+  {
+   "form": "form2",
+   "item": "ds:limitless2",
+   "modifier": "plain",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": [
+    "ability2",
+    250
+   ],
+   "duration": [
+    "move",
+    15
+   ],
+   "name": "Lapse Blue",
+   "function": "limitless/limitless2",
+   "timeline_max_tick": 14,
+   "timeline_lines": 16
+  },
+  {
+   "form": "form2c",
+   "item": "ds:limitless2",
+   "modifier": "airborne",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": [
+    "ability2",
+    240
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Lapse Blue",
+   "function": "limitless/limitless2c",
+   "timeline_max_tick": 20,
+   "timeline_lines": 51
+  },
+  {
+   "form": "form2b",
+   "item": "ds:limitless2",
+   "modifier": "sneak + not look-up",
+   "energy": 250,
+   "energy_req": 250,
+   "cooldown": [
+    "ability2",
+    400
+   ],
+   "duration": [
+    "move",
+    141
+   ],
+   "name": "Lapse Blue",
+   "function": "limitless/limitless2b",
+   "timeline_max_tick": 140,
+   "timeline_lines": 30
+  },
+  {
+   "form": "form2e",
+   "item": "ds:limitless2",
+   "modifier": "sneak + sixeyes + look-up",
+   "energy": 300,
+   "energy_req": 300,
+   "cooldown": [
+    "ability7",
+    500
+   ],
+   "duration": [
+    "move",
+    66
+   ],
+   "name": "Enchanted Lapse Blue",
+   "function": "limitless/limitless2e",
+   "timeline_max_tick": 1000,
+   "timeline_lines": 108
+  },
+  {
+   "form": "form3",
+   "item": "ds:limitless3",
+   "modifier": "look-up",
+   "energy": 30,
+   "energy_req": 30,
+   "cooldown": [
+    "ability3",
+    300
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Reversal Red",
+   "function": "limitless/limitless3",
+   "timeline_max_tick": 40,
+   "timeline_lines": 55
+  },
+  {
+   "form": "form3b",
+   "item": "ds:limitless3",
+   "modifier": "not look-up",
+   "energy": 15,
+   "energy_req": 15,
+   "cooldown": [
+    "ability3",
+    80
+   ],
+   "duration": [
+    "move",
+    16
+   ],
+   "name": "Reversal Red",
+   "function": "limitless/limitless3b",
+   "timeline_max_tick": 15,
+   "timeline_lines": 27
+  },
+  {
+   "form": "form3c",
+   "item": "ds:limitless3",
+   "modifier": "airborne + look-up",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability3",
+    500
+   ],
+   "duration": [
+    "move",
+    51
+   ],
+   "name": "Reversal Red",
+   "function": "limitless/limitless3c",
+   "timeline_max_tick": 50,
+   "timeline_lines": 33
+  },
+  {
+   "form": "form3e",
+   "item": "ds:limitless3",
+   "modifier": "sneak + sixeyes",
+   "energy": 300,
+   "energy_req": 300,
+   "cooldown": [
+    "ability8",
+    500
+   ],
+   "duration": [
+    "move",
+    66
+   ],
+   "name": "Enchanted Reversal Red",
+   "function": "limitless/limitless3e",
+   "timeline_max_tick": 1000,
+   "timeline_lines": 126
+  },
+  {
+   "form": "form4",
+   "item": "ds:limitless4",
+   "modifier": "plain",
+   "energy": 45,
+   "energy_req": 45,
+   "cooldown": [
+    "ability4",
+    80
+   ],
+   "duration": [
+    "move",
+    16
+   ],
+   "name": "Spatial",
+   "function": "limitless/limitless4",
+   "timeline_max_tick": 15,
+   "timeline_lines": 20
+  },
+  {
+   "form": "form4b",
+   "item": "ds:limitless4",
+   "modifier": "sneak",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability4",
+    600
+   ],
+   "duration": [
+    "move",
+    15
+   ],
+   "name": "Spatial",
+   "function": "limitless/limitless4b",
+   "timeline_max_tick": 14,
+   "timeline_lines": 31
+  },
+  {
+   "form": "form4c",
+   "item": "ds:limitless4",
+   "modifier": "airborne",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability4",
+    250
+   ],
+   "duration": [
+    "move",
+    36
+   ],
+   "name": "Spatial",
+   "function": "limitless/limitless4c",
+   "timeline_max_tick": 35,
+   "timeline_lines": 41
+  },
+  {
+   "form": "form5",
+   "item": "ds:limitless5",
+   "modifier": "look-up",
+   "energy": 80,
+   "energy_req": 80,
+   "cooldown": [
+    "ability5",
+    800
+   ],
+   "duration": [
+    "move",
+    101
+   ],
+   "name": "Hollow Purple",
+   "function": "limitless/limitless5",
+   "timeline_max_tick": 100,
+   "timeline_lines": 71
+  },
+  {
+   "form": "form5b",
+   "item": "ds:limitless5",
+   "modifier": "sneak",
+   "energy": 150,
+   "energy_req": 150,
+   "cooldown": [
+    "ability5",
+    2400
+   ],
+   "duration": [
+    "move",
+    481
+   ],
+   "name": "Hollow Purple",
+   "function": "limitless/limitless5b",
+   "timeline_max_tick": 480,
+   "timeline_lines": 140
+  },
+  {
+   "form": "form5c",
+   "item": "ds:limitless5",
+   "modifier": "not look-up",
+   "energy": 3500,
+   "energy_req": 3500,
+   "cooldown": [
+    "ability5",
+    6000
+   ],
+   "duration": [
+    "move",
+    321
+   ],
+   "name": "Hollow Purple",
+   "function": "limitless/limitless5c",
+   "timeline_max_tick": 320,
+   "timeline_lines": 149
+  },
+  {
+   "form": "form5d",
+   "item": "ds:limitless5",
+   "modifier": "sneak",
+   "energy": 150,
+   "energy_req": 7500,
+   "cooldown": [
+    "ability5",
+    2400
+   ],
+   "duration": [
+    "move",
+    481
+   ],
+   "name": "Hollow Purple",
+   "function": "limitless/limitless5d",
+   "timeline_max_tick": 480,
+   "timeline_lines": 142
+  },
+  {
+   "form": "form6",
+   "item": "ds:limitless6",
+   "modifier": "plain",
+   "energy": 800,
+   "energy_req": 800,
+   "cooldown": [
+    "domainCD",
+    12000
+   ],
+   "duration": [
+    "domainstart",
+    102
+   ],
+   "name": "Unlimited Void",
+   "function": "limitless/limitless6",
+   "timeline_max_tick": 1002,
+   "timeline_lines": 79
+  },
+  {
+   "form": "form6c",
+   "item": "ds:limitless6",
+   "modifier": "sneak",
+   "energy": 800,
+   "energy_req": 800,
+   "cooldown": [
+    "domainCD",
+    12000
+   ],
+   "duration": [
+    "domainstart",
+    102
+   ],
+   "name": "Unlimited Void",
+   "function": "limitless/limitless6a",
+   "timeline_max_tick": 1002,
+   "timeline_lines": 81
+  },
+  {
+   "form": "form6b",
+   "item": "ds:limitless6",
+   "modifier": "airborne",
+   "energy": 300,
+   "energy_req": 300,
+   "cooldown": [
+    "domainCD",
+    7200
+   ],
+   "duration": [
+    "move",
+    101
+   ],
+   "name": "Unlimited Void",
+   "function": "limitless/limitless6b",
+   "timeline_max_tick": 1002,
+   "timeline_lines": 115
+  },
+  {
+   "form": "jfk",
+   "item": "ds:jfk_technique",
+   "modifier": "plain",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": [
+    "ability10",
+    200
+   ],
+   "duration": [
+    "move",
+    71
+   ],
+   "name": "Scope him like JFK",
+   "function": "limitless/spec1",
+   "timeline_max_tick": 70,
+   "timeline_lines": 36
+  },
+  {
+   "form": "glocks",
+   "item": "ds:glocks_technique",
+   "modifier": "plain",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": [
+    "ability11",
+    200
+   ],
+   "duration": [
+    "move",
+    102
+   ],
+   "name": "Shoot up the Classroom",
+   "function": "limitless/spec2",
+   "timeline_max_tick": 100,
+   "timeline_lines": 35
+  }
+ ],
+ "lovetrain/lovetrain_click": [
+  {
+   "form": "form1",
+   "item": "ds:lovetrain1",
+   "modifier": "plain",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": [
+    "ability1",
+    140
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Shutter Doors",
+   "function": "lovetrain/lovetrain1",
+   "timeline_max_tick": 20,
+   "timeline_lines": 28
+  },
+  {
+   "form": "form1b",
+   "item": "ds:lovetrain1",
+   "modifier": "airborne",
+   "energy": 120,
+   "energy_req": 120,
+   "cooldown": [
+    "ability1",
+    400
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Shutter Doors",
+   "function": "lovetrain/lovetrain1b",
+   "timeline_max_tick": 20,
+   "timeline_lines": 28
+  },
+  {
+   "form": "form1c",
+   "item": "ds:lovetrain1",
+   "modifier": "sneak",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability1",
+    200
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Shutter Doors",
+   "function": "lovetrain/lovetrain1c",
+   "timeline_max_tick": 20,
+   "timeline_lines": 29
+  },
+  {
+   "form": "form2",
+   "item": "ds:lovetrain2",
+   "modifier": "plain",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability2",
+    220
+   ],
+   "duration": [
+    "move",
+    36
+   ],
+   "name": "Pachinko Balls",
+   "function": "lovetrain/lovetrain2",
+   "timeline_max_tick": 35,
+   "timeline_lines": 111
+  },
+  {
+   "form": "form2b",
+   "item": "ds:lovetrain2",
+   "modifier": "airborne",
+   "energy": 120,
+   "energy_req": 120,
+   "cooldown": [
+    "ability2",
+    250
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Pachinko Balls",
+   "function": "lovetrain/lovetrain2b",
+   "timeline_max_tick": 20,
+   "timeline_lines": 61
+  },
+  {
+   "form": "form2c",
+   "item": "ds:lovetrain2",
+   "modifier": "sneak",
+   "energy": 300,
+   "energy_req": 300,
+   "cooldown": [
+    "ability2",
+    400
+   ],
+   "duration": [
+    "move",
+    36
+   ],
+   "name": "Pachinko Balls",
+   "function": "lovetrain/lovetrain2c",
+   "timeline_max_tick": 35,
+   "timeline_lines": 84
+  },
+  {
+   "form": "form3",
+   "item": "ds:lovetrain3",
+   "modifier": "plain",
+   "energy": 250,
+   "energy_req": 250,
+   "cooldown": [
+    "ability3",
+    400
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Slot Slam",
+   "function": "lovetrain/lovetrain3",
+   "timeline_max_tick": 20,
+   "timeline_lines": 14
+  },
+  {
+   "form": "form3b",
+   "item": "ds:lovetrain3",
+   "modifier": "sneak",
+   "energy": 150,
+   "energy_req": 150,
+   "cooldown": [
+    "ability3",
+    400
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Slot Slam",
+   "function": "lovetrain/lovetrain3b",
+   "timeline_max_tick": 28,
+   "timeline_lines": 33
+  },
+  {
+   "form": "form4",
+   "item": "ds:lovetrain4",
+   "modifier": "plain",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability4",
+    500
+   ],
+   "duration": [
+    "move",
+    37
+   ],
+   "name": "Cargo Haul",
+   "function": "lovetrain/lovetrain4",
+   "timeline_max_tick": 35,
+   "timeline_lines": 65
+  },
+  {
+   "form": "form5",
+   "item": "ds:lovetrain5",
+   "modifier": "plain",
+   "energy": 800,
+   "energy_req": 800,
+   "cooldown": [
+    "domainCD",
+    4000
+   ],
+   "duration": [
+    "domainstart",
+    101
+   ],
+   "name": "Idle Death Gamble",
+   "function": "lovetrain/idledeathgamble",
+   "timeline_max_tick": 1002,
+   "timeline_lines": 79
+  }
+ ],
+ "shikigami/shikigami_click": [
+  {
+   "form": "form1",
+   "item": "ds:shikigami1",
+   "modifier": "plain",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability1",
+    6000
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Rabbit Shikigami",
+   "function": "shikigami/shikigami1_fight",
+   "timeline_max_tick": 40,
+   "timeline_lines": 25
+  },
+  {
+   "form": "form1",
+   "item": "ds:shikigami1",
+   "modifier": "plain",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": [
+    "ability1",
+    6000
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Rabbit Shikigami",
+   "function": "shikigami/shikigami1_fight",
+   "timeline_max_tick": 40,
+   "timeline_lines": 25
+  },
+  {
+   "form": "form2",
+   "item": "ds:shikigami2",
+   "modifier": "plain",
+   "energy": 80,
+   "energy_req": 80,
+   "cooldown": [
+    "ability2",
+    6000
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Toad Shikigami",
+   "function": "shikigami/shikigami2_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 33
+  },
+  {
+   "form": "form2",
+   "item": "ds:shikigami2",
+   "modifier": "plain",
+   "energy": 80,
+   "energy_req": 80,
+   "cooldown": [
+    "ability2",
+    6000
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Toad Shikigami",
+   "function": "shikigami/shikigami2_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 33
+  },
+  {
+   "form": "form2b",
+   "item": "ds:shikigami2",
+   "modifier": "sneak",
+   "energy": 20,
+   "energy_req": 20,
+   "cooldown": [
+    "ability2",
+    60
+   ],
+   "duration": [
+    "move",
+    22
+   ],
+   "name": "Toad Pull",
+   "function": "shikigami/shikigami2b",
+   "timeline_max_tick": 21,
+   "timeline_lines": 17
+  },
+  {
+   "form": "form3",
+   "item": "ds:shikigami3",
+   "modifier": "plain",
+   "energy": 120,
+   "energy_req": 120,
+   "cooldown": [
+    "ability3",
+    6000
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Divine Dogs Shikigami",
+   "function": "shikigami/shikigami3_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 39
+  },
+  {
+   "form": "form3",
+   "item": "ds:shikigami3",
+   "modifier": "plain",
+   "energy": 120,
+   "energy_req": 120,
+   "cooldown": [
+    "ability3",
+    6000
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Divine Dogs Shikigami",
+   "function": "shikigami/shikigami3_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 39
+  },
+  {
+   "form": "form4",
+   "item": "ds:shikigami4",
+   "modifier": "plain",
+   "energy": 60,
+   "energy_req": 60,
+   "cooldown": [
+    "ability4",
+    6000
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Nue Shikigami",
+   "function": "shikigami/shikigami4_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 34
+  },
+  {
+   "form": "form4",
+   "item": "ds:shikigami4",
+   "modifier": "plain",
+   "energy": 60,
+   "energy_req": 60,
+   "cooldown": [
+    "ability4",
+    6000
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Nue Shikigami",
+   "function": "shikigami/shikigami4_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 34
+  },
+  {
+   "form": "form4b",
+   "item": "ds:shikigami4",
+   "modifier": "sneak",
+   "energy": 120,
+   "energy_req": 120,
+   "cooldown": [
+    "ability4",
+    300
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Nue Shikigami",
+   "function": "shikigami/shikigami4b",
+   "timeline_max_tick": 20,
+   "timeline_lines": 21
+  },
+  {
+   "form": "form5",
+   "item": "ds:shikigami5",
+   "modifier": "plain",
+   "energy": 120,
+   "energy_req": 120,
+   "cooldown": [
+    "ability5",
+    6000
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Great Serpent Shikigami",
+   "function": "shikigami/shikigami5_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 34
+  },
+  {
+   "form": "form5",
+   "item": "ds:shikigami5",
+   "modifier": "plain",
+   "energy": 120,
+   "energy_req": 120,
+   "cooldown": [
+    "ability5",
+    6000
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Great Serpent Shikigami",
+   "function": "shikigami/shikigami5_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 34
+  },
+  {
+   "form": "form5b",
+   "item": "ds:shikigami5",
+   "modifier": "sneak",
+   "energy": 70,
+   "energy_req": 70,
+   "cooldown": [
+    "ability5",
+    600
+   ],
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "Great Serpent Shikigami",
+   "function": "shikigami/shikigami5b",
+   "timeline_max_tick": 20,
+   "timeline_lines": 16
+  },
+  {
+   "form": "form6",
+   "item": "ds:shikigami6",
+   "modifier": "plain",
+   "energy": 140,
+   "energy_req": 140,
+   "cooldown": [
+    "ability6",
+    6000
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Piercing Ox Shikigami",
+   "function": "shikigami/shikigami6_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 34
+  },
+  {
+   "form": "form6",
+   "item": "ds:shikigami6",
+   "modifier": "plain",
+   "energy": 140,
+   "energy_req": 140,
+   "cooldown": [
+    "ability6",
+    6000
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Piercing Ox Shikigami",
+   "function": "shikigami/shikigami6_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 34
+  },
+  {
+   "form": "form7",
+   "item": "ds:shikigami7",
+   "modifier": "plain",
+   "energy": 325,
+   "energy_req": 325,
+   "cooldown": [
+    "ability7",
+    6000
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Max Elephant Shikigami",
+   "function": "shikigami/shikigami7_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 34
+  },
+  {
+   "form": "form7",
+   "item": "ds:shikigami7",
+   "modifier": "plain",
+   "energy": 325,
+   "energy_req": 325,
+   "cooldown": [
+    "ability7",
+    6000
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Max Elephant Shikigami",
+   "function": "shikigami/shikigami7_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 34
+  },
+  {
+   "form": "form7b",
+   "item": "ds:shikigami7",
+   "modifier": "airborne",
+   "energy": 150,
+   "energy_req": 150,
+   "cooldown": [
+    "ability7",
+    500
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Max Elephant Shikigami",
+   "function": "shikigami/shikigami7b",
+   "timeline_max_tick": 39,
+   "timeline_lines": 30
+  },
+  {
+   "form": "form7c",
+   "item": "ds:shikigami7",
+   "modifier": "sneak",
+   "energy": 250,
+   "energy_req": 250,
+   "cooldown": [
+    "ability7",
+    300
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Max Elephant Shikigami",
+   "function": "shikigami/shikigami7c",
+   "timeline_max_tick": 39,
+   "timeline_lines": 99
+  },
+  {
+   "form": "form8",
+   "item": "ds:shikigami8",
+   "modifier": "plain",
+   "energy": 500,
+   "energy_req": 500,
+   "cooldown": [
+    "ability8",
+    6000
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Round Deer Shikigami",
+   "function": "shikigami/shikigami8_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 35
+  },
+  {
+   "form": "form8",
+   "item": "ds:shikigami8",
+   "modifier": "plain",
+   "energy": 500,
+   "energy_req": 500,
+   "cooldown": [
+    "ability8",
+    3200
+   ],
+   "duration": [
+    "move",
+    40
+   ],
+   "name": "Round Deer Shikigami",
+   "function": "shikigami/shikigami8_fight",
+   "timeline_max_tick": 39,
+   "timeline_lines": 35
+  },
+  {
+   "form": "form11",
+   "item": "ds:shikigami11",
+   "modifier": "plain",
+   "energy": 600,
+   "energy_req": 600,
+   "cooldown": [
+    "ability10",
+    7200
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Merged Beast: Agito",
+   "function": "shikigami/shikigami11",
+   "timeline_max_tick": 39,
+   "timeline_lines": 41
+  },
+  {
+   "form": "form10",
+   "item": "ds:shikigami10",
+   "modifier": "plain",
+   "energy": 750,
+   "energy_req": 750,
+   "cooldown": [
+    "ability11",
+    12000
+   ],
+   "duration": [
+    "move",
+    706
+   ],
+   "name": "Divine General Mahoraga",
+   "function": "shikigami/shikigami10_fight",
+   "timeline_max_tick": 705,
+   "timeline_lines": 71
+  },
+  {
+   "form": "form10",
+   "item": "ds:shikigami10",
+   "modifier": "plain",
+   "energy": 750,
+   "energy_req": 750,
+   "cooldown": [
+    "ability11",
+    12000
+   ],
+   "duration": [
+    "move",
+    706
+   ],
+   "name": "Divine General Mahoraga",
+   "function": "shikigami/shikigami10_fight",
+   "timeline_max_tick": 705,
+   "timeline_lines": 71
+  },
+  {
+   "form": "form10b",
+   "item": "ds:shikigami10",
+   "modifier": "sneak",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability11",
+    260
+   ],
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Divine General Mahoraga",
+   "function": "shikigami/shikigami10b",
+   "timeline_max_tick": 40,
+   "timeline_lines": 39
+  },
+  {
+   "form": "form12",
+   "item": "ds:shikigami12",
+   "modifier": "plain",
+   "energy": 500,
+   "energy_req": 500,
+   "cooldown": [
+    "ability12",
+    10000
+   ],
+   "duration": [
+    "domainstart",
+    102
+   ],
+   "name": "Chimera Shadow Garden",
+   "function": "shikigami/shikigami12",
+   "timeline_max_tick": 1002,
+   "timeline_lines": 82
+  },
+  {
+   "form": "form12b",
+   "item": "ds:shikigami12",
+   "modifier": "sneak",
+   "energy": 800,
+   "energy_req": 800,
+   "cooldown": [
+    "ability12",
+    14000
+   ],
+   "duration": [
+    "domainstart",
+    102
+   ],
+   "name": "Chimera Shadow Garden",
+   "function": "shikigami/shikigami12b",
+   "timeline_max_tick": 1002,
+   "timeline_lines": 80
+  }
+ ],
+ "speech/speech_click": [
+  {
+   "form": "form1",
+   "item": "ds:speech1",
+   "modifier": "plain",
+   "energy": 75,
+   "energy_req": 75,
+   "cooldown": [
+    "ability1",
+    400
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Dont Move",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form2",
+   "item": "ds:speech1",
+   "modifier": "airborne",
+   "energy": 75,
+   "energy_req": 75,
+   "cooldown": [
+    "ability2",
+    400
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Run Away",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form3",
+   "item": "ds:speech1",
+   "modifier": "sneak",
+   "energy": 150,
+   "energy_req": 150,
+   "cooldown": [
+    "ability3",
+    400
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Return",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form4",
+   "item": "ds:speech1",
+   "modifier": "sneak + airborne",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability4",
+    400
+   ],
+   "duration": [
+    "move",
+    51
+   ],
+   "name": "Sleep",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form6",
+   "item": "ds:speech2",
+   "modifier": "plain",
+   "energy": 75,
+   "energy_req": 75,
+   "cooldown": [
+    "ability6",
+    100
+   ],
+   "duration": [
+    "move",
+    26
+   ],
+   "name": "Break",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form7",
+   "item": "ds:speech2",
+   "modifier": "airborne",
+   "energy": 150,
+   "energy_req": 150,
+   "cooldown": [
+    "ability7",
+    400
+   ],
+   "duration": [
+    "move",
+    51
+   ],
+   "name": "Blast Away",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form8",
+   "item": "ds:speech2",
+   "modifier": "sneak",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": [
+    "ability8",
+    600
+   ],
+   "duration": [
+    "move",
+    31
+   ],
+   "name": "Get Crushed",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form9",
+   "item": "ds:speech2",
+   "modifier": "sneak + airborne",
+   "energy": 500,
+   "energy_req": 500,
+   "cooldown": [
+    "ability9",
+    600
+   ],
+   "duration": [
+    "move",
+    71
+   ],
+   "name": "Plummet",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form11",
+   "item": "ds:speech4",
+   "modifier": "plain",
+   "energy": 5000,
+   "energy_req": 5000,
+   "cooldown": [
+    "ability11",
+    600
+   ],
+   "duration": [
+    "move",
+    56
+   ],
+   "name": "Sh*t Yourself",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form12",
+   "item": "ds:speech3",
+   "modifier": "plain",
+   "energy": 1000,
+   "energy_req": 1000,
+   "cooldown": [
+    "domainCD",
+    12000
+   ],
+   "duration": [
+    "domainstart",
+    102
+   ],
+   "name": "Resonant Chamber",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  }
+ ],
+ "sukuna/sukuna_click": [
+  {
+   "form": "back",
+   "item": null,
+   "modifier": "plain",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": null,
+   "duration": null,
+   "name": null,
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form1s",
+   "item": "ds:sukuna1",
+   "modifier": "look-up",
+   "energy": 50,
+   "energy_req": 50,
+   "cooldown": null,
+   "duration": [
+    "move",
+    11
+   ],
+   "name": "Dismantle",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form1sd",
+   "item": "ds:sukuna1",
+   "modifier": "airborne",
+   "energy": 75,
+   "energy_req": 75,
+   "cooldown": null,
+   "duration": [
+    "move",
+    36
+   ],
+   "name": "Dissect",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form1se",
+   "item": "ds:sukuna1",
+   "modifier": "airborne",
+   "energy": 75,
+   "energy_req": 75,
+   "cooldown": null,
+   "duration": [
+    "move",
+    36
+   ],
+   "name": "Dissect",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form4s",
+   "item": "ds:sukuna2",
+   "modifier": "look-up",
+   "energy": 30,
+   "energy_req": 30,
+   "cooldown": null,
+   "duration": [
+    "move",
+    11
+   ],
+   "name": "Cleave",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form4s2",
+   "item": "ds:sukuna2",
+   "modifier": "not look-up",
+   "energy": 30,
+   "energy_req": 30,
+   "cooldown": null,
+   "duration": [
+    "move",
+    16
+   ],
+   "name": "Counter Cleave",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form4sb",
+   "item": "ds:sukuna2",
+   "modifier": "airborne",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": null,
+   "duration": [
+    "move",
+    26
+   ],
+   "name": "Cleave",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form4sc",
+   "item": "ds:sukuna2",
+   "modifier": "sneak",
+   "energy": 100,
+   "energy_req": 100,
+   "cooldown": null,
+   "duration": [
+    "move",
+    41
+   ],
+   "name": "Spiderweb Cleave",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "sukunadomain1",
+   "item": "ds:sukuna3",
+   "modifier": "plain",
+   "energy": 500,
+   "energy_req": 500,
+   "cooldown": [
+    "domainCD",
+    12000
+   ],
+   "duration": [
+    "domainstart",
+    121
+   ],
+   "name": "Domain Expansion",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "sukunadomain2",
+   "item": "ds:sukuna3",
+   "modifier": "sneak",
+   "energy": 2500,
+   "energy_req": 2500,
+   "cooldown": [
+    "domainCD",
+    16000
+   ],
+   "duration": [
+    "domainstart",
+    121
+   ],
+   "name": "Domain Expansion",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "sukunadomain3",
+   "item": "ds:sukuna3",
+   "modifier": "airborne",
+   "energy": 1500,
+   "energy_req": 1500,
+   "cooldown": null,
+   "duration": [
+    "domainstart",
+    121
+   ],
+   "name": "Domain Expansion",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form8s",
+   "item": "ds:sukuna5",
+   "modifier": "plain",
+   "energy": 200,
+   "energy_req": 200,
+   "cooldown": null,
+   "duration": [
+    "move",
+    21
+   ],
+   "name": "World Cutting Slash",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form6s",
+   "item": "ds:sukuna5",
+   "modifier": "sneak",
+   "energy": 3333,
+   "energy_req": 3333,
+   "cooldown": null,
+   "duration": [
+    "move",
+    136
+   ],
+   "name": "World Cutting Slash",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "form7s",
+   "item": "ds:sukuna5",
+   "modifier": "airborne",
+   "energy": 3333,
+   "energy_req": 3333,
+   "cooldown": null,
+   "duration": [
+    "move",
+    136
+   ],
+   "name": "World Cutting Slash",
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  },
+  {
+   "form": "heian_awakening",
+   "item": "ds:heian_transformation",
+   "modifier": "not heian_era",
+   "energy": null,
+   "energy_req": null,
+   "cooldown": null,
+   "duration": null,
+   "name": null,
+   "function": null,
+   "timeline_max_tick": null,
+   "timeline_lines": 0
+  }
+ ]
+}
