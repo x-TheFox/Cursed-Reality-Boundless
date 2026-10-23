@@ -160,7 +160,7 @@ Each line is one feature branch → PR → merge after a green `./gradlew build`
 | 4 | `feat/move-engine` | Timeline extractor, `MoveScript` loader, server `MoveEngine`/`MoveInstance`, client cue player (sounds, player animations), MoveStart/End/State sync, tracking catch-up, `AbilityInput`, `/crb move play` | ✅ |
 | 5 | `feat/camera-engine` | Director (Bedrock free-camera semantics, all eases, presets, ownership/release), shakes, fades, impact frames, flash, FOV punch, HUD hiding, server-side move effects, dev harness | ✅ (hit-stop moves to combat-core) |
 | 6 | `feat/bedrock-particles` | Molang compiler, BedrockFX runtime (all JJA emitter shapes/rates/lifetimes, every facing mode, UV/flipbooks, gradients, curves, dynamic/parametric motion, collision, events, local space, blend modes), move-script particle cues | ✅ (animation-locator effects come with entity renderers) |
-| 7 | `feat/input-hud` | Combat Mode, keybinds, radial menu, HUD | ☐ |
+| 7 | `feat/input-hud` | Combat Mode (1-6 + wheel pages), rebindable keys, radial page menu, HUD (CE bar, skill icons, cooldowns, live variant preview), harness cast steps | ✅ |
 | 8 | `feat/combat-core` | M1 combos + clash, lag-comp hit tests, DamageKind, stun/i-frames, dash/evade/double jump/flash step, parry, Black Flash + The Zone, binds, CE regen/charge/burnout | ☐ |
 
 ### Vertical slice

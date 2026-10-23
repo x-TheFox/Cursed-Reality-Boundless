@@ -53,6 +53,13 @@ public final class CRBClient {
             double k = ScreenEffects.fovMultiplier();
             if (k != 1) e.setFOV(e.getFOV() * k);
         });
+        NeoForge.EVENT_BUS.addListener(io.github.xthefox.crb.client.input.CombatMode::preTick);
+        NeoForge.EVENT_BUS.addListener(io.github.xthefox.crb.client.input.CombatMode::onScroll);
+        NeoForge.EVENT_BUS.addListener((ClientTickEvent.Post e) -> {
+            // cooldowns count down locally between syncs so the HUD stays smooth
+            var player = Minecraft.getInstance().player;
+            if (player != null && !Minecraft.getInstance().isPaused()) player.getData(io.github.xthefox.crb.data.CRBAttachments.SORCERER).tickCooldowns();
+        });
         NeoForge.EVENT_BUS.addListener((ClientTickEvent.Post e) -> {
             if (Minecraft.getInstance().level != null && !Minecraft.getInstance().isPaused()) {
                 ClientMoves.tick();
@@ -61,6 +68,7 @@ public final class CRBClient {
         });
         NeoForge.EVENT_BUS.addListener((ClientPlayerNetworkEvent.LoggingOut e) -> {
             ClientMoves.clear();
+            io.github.xthefox.crb.client.input.CombatMode.reset();
             io.github.xthefox.crb.client.fx.BedrockFX.INSTANCE.clear();
             CinematicDirector.clear();
             ScreenEffects.reset();
@@ -69,7 +77,14 @@ public final class CRBClient {
 
     @SubscribeEvent
     static void guiLayers(RegisterGuiLayersEvent event) {
+        event.registerAbove(net.neoforged.neoforge.client.gui.VanillaGuiLayers.HOTBAR, CRB.id("combat_hud"),
+                io.github.xthefox.crb.client.hud.CombatHud::render);
         event.registerAboveAll(CRB.id("screen_effects"), ScreenEffects::render);
+    }
+
+    @SubscribeEvent
+    static void keys(net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent event) {
+        io.github.xthefox.crb.client.input.CRBKeys.register(event);
     }
 
     @SubscribeEvent
