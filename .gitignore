@@ -1,0 +1,12 @@
+.DS_Store
+.gradle/
+build/
+run/
+runs/
+out/
+*.iml
+.idea/
+__pycache__/
+*.pyc
+/tools/jja/.cache/
+/src/generated/
