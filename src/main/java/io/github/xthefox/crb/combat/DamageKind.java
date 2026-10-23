@@ -20,4 +20,10 @@ public enum DamageKind {
     public ResourceKey<DamageType> key() {
         return key;
     }
+
+    /** The kind behind one of our damage sources, or null for vanilla damage. */
+    public static DamageKind of(net.minecraft.world.damagesource.DamageSource src) {
+        for (DamageKind k : values()) if (src.is(k.key)) return k;
+        return null;
+    }
 }

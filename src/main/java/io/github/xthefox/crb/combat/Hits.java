@@ -27,7 +27,11 @@ public final class Hits {
      * {@code tag=!Frames}).
      */
     public static List<LivingEntity> sphere(LivingEntity attacker, Vec3 center, double radius) {
-        int rewind = rewindTicks(attacker);
+        return sphere(attacker, center, radius, rewindTicks(attacker));
+    }
+
+    /** As {@link #sphere(LivingEntity, Vec3, double)} with an explicit rewind (0 for server-side projectiles). */
+    public static List<LivingEntity> sphere(LivingEntity attacker, Vec3 center, double radius, int rewind) {
         long now = attacker.level().getGameTime();
         double r2 = radius * radius;
         AABB search = new AABB(center, center).inflate(radius + 3);

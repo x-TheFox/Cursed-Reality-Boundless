@@ -61,6 +61,18 @@ public final class ClientMoves {
             this.next = p.elapsed();
         }
 
+        /** A projectile runner: cues keyed on the projectile's remaining Deleter instead of elapsed time. */
+        Playing(int entityId, ResourceLocation id, MoveScript script, long now) {
+            this.entityId = entityId;
+            this.moveId = id;
+            this.script = script;
+            this.startOffset = 0;
+            this.localStart = now;
+            this.random = RandomSource.create(entityId);
+            this.tags = new HashSet<>();
+            this.scores = new HashMap<>();
+        }
+
         public Entity entity() {
             var level = Minecraft.getInstance().level;
             return level == null ? null : level.getEntity(entityId);
@@ -192,6 +204,16 @@ public final class ClientMoves {
         }
     }
 
+    /** A runner for a projectile entity; see {@link #fireAt}. */
+    public static Playing projectile(int entityId, ResourceLocation scriptId, MoveScript script) {
+        return new Playing(entityId, scriptId, script, ticks);
+    }
+
+    /** Fires the cues due at {@code key} (a projectile's remaining Deleter). */
+    public static void fireAt(Playing m, int key) {
+        fire(m, key);
+    }
+
     private static void fire(Playing m, int elapsed) {
         for (MoveScript.Cue cue : m.script.cues()) {
             if (cue.t() > elapsed) break; // cues are sorted by start tick
@@ -217,6 +239,11 @@ public final class ClientMoves {
                     && CueConditions.test(cue.cond(), m.tags, m.scores)) last = cue;
         }
         if (last != null && HANDLERS.containsKey("anim_resume")) HANDLERS.get("anim_resume").play(m, last, m.startOffset - last.t());
+    }
+
+    /** Helper for handlers: the entity a cue's position is relative to (caster or projectile), or null. */
+    public static Entity anchor(Playing m) {
+        return m.entity();
     }
 
     /** Helper for handlers: the caster as a living entity, or null if not loaded. */

@@ -53,6 +53,10 @@ public final class CombatDamage {
         if (!(target.level() instanceof ServerLevel level) || !target.isAlive()) return false;
         CombatState state = target.getData(CRBAttachments.COMBAT);
         if (state.invulnerable()) return false;
+        if (Infinity.blocks(target, attacker, hit.kind())) {
+            if (attacker.distanceToSqr(target) < 16) Infinity.push(target, attacker);
+            return false;
+        }
         DamageSource src = new DamageSource(level.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(hit.kind().key()),
                 attacker, attacker);
         target.invulnerableTime = 0;

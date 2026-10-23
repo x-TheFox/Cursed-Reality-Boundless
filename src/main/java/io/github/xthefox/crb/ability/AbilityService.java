@@ -24,7 +24,33 @@ public final class AbilityService {
     /** Inputs closer together than this are dropped (anti-spam; JJA's item use fires at most once per tick). */
     private static final int MIN_INPUT_INTERVAL = 2;
 
+    /** Scales a variant's cursed-energy cost for a player (1 = unchanged). */
+    @FunctionalInterface
+    public interface CostModifier {
+        float scale(ServerPlayer player, Variant variant);
+    }
+
+    /**
+     * Takes an ability press before variant selection (Infinity: pressing it while Infinity is up
+     * switches it off). Returns true if the press was handled.
+     */
+    @FunctionalInterface
+    public interface PressOverride {
+        boolean handle(ServerPlayer player, Ability ability, Modifiers modifiers);
+    }
+
+    private static final java.util.List<CostModifier> COST_MODIFIERS = new java.util.concurrent.CopyOnWriteArrayList<>();
+    private static final java.util.List<PressOverride> OVERRIDES = new java.util.concurrent.CopyOnWriteArrayList<>();
+
     private AbilityService() {}
+
+    public static void registerCostModifier(CostModifier m) {
+        COST_MODIFIERS.add(m);
+    }
+
+    public static void registerOverride(PressOverride o) {
+        OVERRIDES.add(o);
+    }
 
     /** A player as an {@link AbilityUser}. Requirement tags are full trait ids (e.g. {@code crb:six_eyes}). */
     public record PlayerUser(ServerPlayer player, SorcererData data, CombatState combat) implements AbilityUser {
@@ -38,6 +64,11 @@ public final class AbilityService {
         @Override public boolean has(String tag) {
             ResourceLocation id = ResourceLocation.tryParse(tag);
             return id != null && data.has(id);
+        }
+        @Override public float costScale(Variant v) {
+            float scale = 1f;
+            for (CostModifier m : COST_MODIFIERS) scale *= m.scale(player, v);
+            return scale;
         }
         @Override public boolean canAct() {
             return !combat.stunned() && !MoveEngine.isBusy(player) && player.isAlive() && !player.isSpectator();
@@ -61,15 +92,16 @@ public final class AbilityService {
         }
         if (ability.isEmpty()) return;
 
+        Modifiers mods = Modifiers.fromBits(input.modifierBits());
+        for (PressOverride o : OVERRIDES) if (o.handle(player, ability.get(), mods)) return;
         PlayerUser user = PlayerUser.of(player);
-        VariantResolver.Result r = VariantResolver.resolve(ability.get(), Modifiers.fromBits(input.modifierBits()), user,
-                CRBConfig.SERVER.cooldowns.get());
+        VariantResolver.Result r = VariantResolver.resolve(ability.get(), mods, user, CRBConfig.SERVER.cooldowns.get());
         if (!r.success()) {
             feedback(player, r);
             return;
         }
         Variant v = r.variant().orElseThrow();
-        data.addEnergy(-v.energyCost());
+        data.addEnergy(-user.cost(v));
         if (v.cooldownTicks() > 0) data.setCooldown(v.cooldownKey(), v.cooldownTicks());
         player.getData(CRBAttachments.COMBO).resetString(); // JJA: starting a move clears the M1 string
         MoveEngine.start(player, ResourceLocation.fromNamespaceAndPath("crb", v.moveId()), v.durationTicks(), v);
@@ -82,7 +114,8 @@ public final class AbilityService {
         Component msg = switch (r.failure()) {
             case ON_COOLDOWN -> Component.translatable("crb.ability.cooldown", name,
                     String.format("%.1f", player.getData(CRBAttachments.SORCERER).cooldown(r.variant().get().cooldownKey()) / 20f));
-            case NOT_ENOUGH_ENERGY -> Component.translatable("crb.ability.energy", name, r.variant().get().energyCost());
+            case NOT_ENOUGH_ENERGY -> Component.translatable("crb.ability.energy", name,
+                    (int) Math.ceil(r.variant().get().energyRequired() * PlayerUser.of(player).costScale(r.variant().get())));
             case LOCKED -> Component.translatable("crb.ability.locked");
             default -> Component.empty();
         };

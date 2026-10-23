@@ -1,0 +1,47 @@
+# Visual check: Limitless kit through Combat Mode keys (projectiles, Infinity, Blue Teleport)
+cmd gamerule sendCommandFeedback false
+cmd time set noon
+cmd weather clear
+cmd crb kit give @s crb:gojo
+cmd crb energy set @s 10000
+cmd crb cooldowns reset @s
+cmd summon minecraft:zombie ~ ~ ~14 {NoAI:1b,Health:1000f,Attributes:[{Name:"minecraft:generic.max_health",Base:1000}]}
+cmd summon minecraft:zombie ~3 ~ ~16 {NoAI:1b}
+look 0 5
+combat on
+wait 20
+shot 00_ready
+cast 2
+wait 12
+shot 01_lapse_launched
+wait 4
+shot 02_lapse_in_flight
+wait 8
+shot 03_lapse_imploding
+wait 20
+shot 04_lapse_pull
+wait 30
+cmd crb cooldowns reset @s
+cast 3
+wait 25
+shot 05_red
+wait 30
+cmd crb cooldowns reset @s
+cast 1
+wait 15
+shot 06_infinity
+cmd crb cooldowns reset @s
+page 2
+cast 1
+wait 2
+shot 07_blue_teleport
+wait 20
+page 1
+cmd crb cooldowns reset @s
+cast 5
+wait 60
+shot 08_purple_t60
+wait 10
+shot 09_purple_t70
+wait 40
+quit

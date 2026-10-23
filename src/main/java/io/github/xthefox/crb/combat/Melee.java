@@ -97,7 +97,8 @@ public final class Melee {
             CombatDamage.Hit hit = black
                     ? new CombatDamage.Hit(dmg * BLACK_FLASH_MULTIPLIER, style.kind(), BLACK_FLASH_STUN, 2.5, 9)
                     : new CombatDamage.Hit(dmg, style.kind(), finisher ? 16 : 6, finisher ? 3 : 1, finisher ? 9 : 6);
-            if (CombatDamage.deal(e, t, hit)) {
+            // canon: Black Flash's distortion reaches through Infinity
+            if (black ? Infinity.piercing(() -> CombatDamage.deal(e, t, hit)) : CombatDamage.deal(e, t, hit)) {
                 landed = true;
                 if (black) blackFlash(e, t);
             }
@@ -119,7 +120,7 @@ public final class Melee {
 
     // ------------------------------------------------------------------ one-shot cues
 
-    static JsonObject anim(String animation) {
+    public static JsonObject anim(String animation) {
         JsonObject o = new JsonObject();
         o.addProperty("type", "anim");
         o.addProperty("anim", animation);
@@ -127,7 +128,7 @@ public final class Melee {
         return o;
     }
 
-    static JsonObject sound(String sound, float volume, float pitch) {
+    public static JsonObject sound(String sound, float volume, float pitch) {
         JsonObject o = new JsonObject();
         o.addProperty("type", "sound");
         o.addProperty("sound", sound);
@@ -138,9 +139,9 @@ public final class Melee {
         return o;
     }
 
-    static void cue(LivingEntity e, JsonObject cue) {
+    /** Sends a one-shot presentation cue for {@code e} to it and everyone tracking it. */
+    public static void cue(LivingEntity e, JsonObject cue) {
         MovePayloads.Cue p = new MovePayloads.Cue(e.getId(), cue.toString());
-        PacketDistributor.sendToPlayersTrackingEntity(e, p);
-        if (e instanceof ServerPlayer sp && CRBNetwork.canReceive(sp, MovePayloads.Cue.TYPE)) PacketDistributor.sendToPlayer(sp, p);
+        CRBNetwork.sendTrackingAndSelf(e, p);
     }
 }

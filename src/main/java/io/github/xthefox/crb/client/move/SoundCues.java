@@ -10,6 +10,7 @@ import net.minecraft.client.resources.sounds.SoundInstance;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
 
@@ -44,7 +45,7 @@ public final class SoundCues {
     }
 
     static void play(ClientMoves.Playing m, MoveScript.Cue cue, int elapsed) {
-        LivingEntity caster = ClientMoves.caster(m);
+        Entity caster = ClientMoves.anchor(m);
         if (caster == null) return;
         String audience = cue.str("audience", "all");
         if (!audience.equals("all") && !m.localInAudience(cue, java.util.Set.of())) return;

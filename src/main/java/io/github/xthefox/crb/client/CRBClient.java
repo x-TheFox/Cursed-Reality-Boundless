@@ -36,6 +36,7 @@ public final class CRBClient {
             AnimationCues.register();
             CinematicCues.register();
             io.github.xthefox.crb.client.fx.BedrockFX.register();
+            io.github.xthefox.crb.client.fx.ClientProjectiles.register();
         });
         NeoForge.EVENT_BUS.addListener((ViewportEvent.ComputeCameraAngles e) -> {
             float[] s = ScreenEffects.shakeAngles();
@@ -65,6 +66,7 @@ public final class CRBClient {
             if (Minecraft.getInstance().level != null && !Minecraft.getInstance().isPaused()) {
                 ClientMoves.tick();
                 io.github.xthefox.crb.client.fx.BedrockFX.INSTANCE.tick();
+                io.github.xthefox.crb.client.fx.ClientProjectiles.cleanup();
             }
         });
         NeoForge.EVENT_BUS.addListener((ClientPlayerNetworkEvent.LoggingOut e) -> {
@@ -86,6 +88,13 @@ public final class CRBClient {
     @SubscribeEvent
     static void keys(net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent event) {
         io.github.xthefox.crb.client.input.CRBKeys.register(event);
+    }
+
+    @SubscribeEvent
+    static void renderers(net.neoforged.neoforge.client.event.EntityRenderersEvent.RegisterRenderers event) {
+        // invisible carriers: everything visible is the runner's particles
+        event.registerEntityRenderer(io.github.xthefox.crb.projectile.ProjectileTypes.TECHNIQUE_PROJECTILE.get(),
+                net.minecraft.client.renderer.entity.NoopRenderer::new);
     }
 
     @SubscribeEvent

@@ -2905,7 +2905,7 @@
  },
  "mobs/curses/beru/awakening": {
   "id": "crb:mobs/curses/beru/awakening",
-  "duration": 442,
+  "duration": 443,
   "cues": 87,
   "key": "cutscene"
  },
@@ -3058,6 +3058,12 @@
   "duration": 91,
   "cues": 10,
   "key": "cutscene"
+ },
+ "mobs/curses/kaiju/kaiju_curse": {
+  "id": "crb:mobs/curses/kaiju/kaiju_curse",
+  "duration": 1,
+  "cues": 0,
+  "key": "move"
  },
  "mobs/curses/kaiju/kick": {
   "id": "crb:mobs/curses/kaiju/kick",
@@ -4111,7 +4117,7 @@
  },
  "sukuna/attacks/worldslash/world_slash2": {
   "id": "crb:sukuna/attacks/worldslash/world_slash2",
-  "duration": 982,
+  "duration": 1002,
   "cues": 90,
   "key": "move"
  },

@@ -166,7 +166,9 @@ Each line is one feature branch → PR → merge after a green `./gradlew build`
 ### Vertical slice
 
 | 8b | `feat/combat-polish` | M1 clash, parry, grab binds, hit-stop, CE burnout, flash step, charge dash | ☐ |
-| 9 | `feat/char-gojo` | Limitless complete (all 23 variants + fists), **Six Eyes perception + efficiency (GJ1–2)**, **passive Infinity (GJ3)**, **Blue Teleport (GJ4)**, **Blue Flight (GJ5)**, restored Twilight/Phase Blue + Phase Red (GJ6), Levitate Purple (GJ7), quick Unlimited Void (GJ8), domain system + barrier + Unlimited Void, domain clash, Student/Shinjuku Gojo NPCs, `gojo` + `gojo_student` kits | ☐ |
+| 9a | `feat/char-gojo` | Generic JJA projectile system (named `ds:projectile` runners, helper explosions/roars, carving), Limitless keys 1–5 (19 JJA variants), Infinity, Spatial Blitz/Burst/Warp, **Six Eyes efficiency (GJ2)**, **passive Infinity (GJ3)**, **Blue Teleport (GJ4)** | ✅ |
+| 9b | `feat/domains` | Domain system + barrier + Unlimited Void, domain clash, quick Unlimited Void (GJ8) | ☐ |
+| 9c | `feat/gojo-ascension` | Limitless fists style, Six Eyes perception (GJ1), Blue Flight (GJ5), Twilight/Phase Blue + Phase Red (GJ6), Levitate Purple (GJ7), Student/Shinjuku Gojo NPCs | ☐ |
 
 ### Full roster (one branch each)
 
