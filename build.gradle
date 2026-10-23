@@ -53,6 +53,7 @@ neoForge {
             client()
             gameDirectory = project.file('run')
             systemProperty 'crb.devHarness', project.findProperty('crbHarness') ?: ''
+            systemProperty 'crb.fxDebug', project.findProperty('crbFxDebug') ?: 'false'
             programArguments.addAll '--quickPlayMultiplayer', 'localhost:25565', '--username', 'Dev'
         }
         gameTestServer {

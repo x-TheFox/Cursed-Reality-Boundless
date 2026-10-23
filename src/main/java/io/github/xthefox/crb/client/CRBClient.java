@@ -35,6 +35,7 @@ public final class CRBClient {
             SoundCues.register();
             AnimationCues.register();
             CinematicCues.register();
+            io.github.xthefox.crb.client.fx.BedrockFX.register();
         });
         NeoForge.EVENT_BUS.addListener((ViewportEvent.ComputeCameraAngles e) -> {
             float[] s = ScreenEffects.shakeAngles();
@@ -53,10 +54,14 @@ public final class CRBClient {
             if (k != 1) e.setFOV(e.getFOV() * k);
         });
         NeoForge.EVENT_BUS.addListener((ClientTickEvent.Post e) -> {
-            if (Minecraft.getInstance().level != null && !Minecraft.getInstance().isPaused()) ClientMoves.tick();
+            if (Minecraft.getInstance().level != null && !Minecraft.getInstance().isPaused()) {
+                ClientMoves.tick();
+                io.github.xthefox.crb.client.fx.BedrockFX.INSTANCE.tick();
+            }
         });
         NeoForge.EVENT_BUS.addListener((ClientPlayerNetworkEvent.LoggingOut e) -> {
             ClientMoves.clear();
+            io.github.xthefox.crb.client.fx.BedrockFX.INSTANCE.clear();
             CinematicDirector.clear();
             ScreenEffects.reset();
         });
@@ -70,6 +75,7 @@ public final class CRBClient {
     @SubscribeEvent
     static void reloadListeners(RegisterClientReloadListenersEvent event) {
         event.registerReloadListener(MoveScriptManager.INSTANCE);
+        event.registerReloadListener(io.github.xthefox.crb.client.fx.BedrockFX.INSTANCE);
         event.registerReloadListener((ResourceManagerReloadListener) rm -> SoundCues.reset());
     }
 }
