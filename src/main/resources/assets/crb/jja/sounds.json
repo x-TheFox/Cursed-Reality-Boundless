@@ -1,0 +1,1598 @@
+{
+ "ambient.weather.thunder": {
+  "category": "weather",
+  "event": "crb:ambient.weather.thunder"
+ },
+ "mob.200hollow": {
+  "category": "hostile",
+  "event": "crb:mob.200hollow"
+ },
+ "mob.alarm": {
+  "category": "hostile",
+  "event": "crb:mob.alarm"
+ },
+ "mob.ambient_glitch": {
+  "category": "hostile",
+  "event": "crb:mob.ambient_glitch"
+ },
+ "mob.asleep": {
+  "category": "hostile",
+  "event": "crb:mob.asleep"
+ },
+ "mob.atomicbreath1": {
+  "category": "hostile",
+  "event": "crb:mob.atomicbreath1"
+ },
+ "mob.atomicbreath2": {
+  "category": "hostile",
+  "event": "crb:mob.atomicbreath2"
+ },
+ "mob.attorney": {
+  "category": "hostile",
+  "event": "crb:mob.attorney"
+ },
+ "mob.bang": {
+  "category": "hostile",
+  "event": "crb:mob.bang"
+ },
+ "mob.bass": {
+  "category": "hostile",
+  "event": "crb:mob.bass"
+ },
+ "mob.blackflash": {
+  "category": "hostile",
+  "event": "crb:mob.blackflash"
+ },
+ "mob.blackflash2": {
+  "category": "hostile",
+  "event": "crb:mob.blackflash2"
+ },
+ "mob.blade1": {
+  "category": "hostile",
+  "event": "crb:mob.blade1"
+ },
+ "mob.blade2": {
+  "category": "hostile",
+  "event": "crb:mob.blade2"
+ },
+ "mob.blast1": {
+  "category": "hostile",
+  "event": "crb:mob.blast1"
+ },
+ "mob.blast2": {
+  "category": "hostile",
+  "event": "crb:mob.blast2"
+ },
+ "mob.blasted1": {
+  "category": "hostile",
+  "event": "crb:mob.blasted1"
+ },
+ "mob.blasted2": {
+  "category": "hostile",
+  "event": "crb:mob.blasted2"
+ },
+ "mob.blasted3": {
+  "category": "hostile",
+  "event": "crb:mob.blasted3"
+ },
+ "mob.blasted4": {
+  "category": "hostile",
+  "event": "crb:mob.blasted4"
+ },
+ "mob.blitz1": {
+  "category": "hostile",
+  "event": "crb:mob.blitz1"
+ },
+ "mob.blitz2": {
+  "category": "hostile",
+  "event": "crb:mob.blitz2"
+ },
+ "mob.blocked": {
+  "category": "hostile",
+  "event": "crb:mob.blocked"
+ },
+ "mob.blood": {
+  "category": "hostile",
+  "event": "crb:mob.blood"
+ },
+ "mob.blood1": {
+  "category": "hostile",
+  "event": "crb:mob.blood1"
+ },
+ "mob.blood2": {
+  "category": "hostile",
+  "event": "crb:mob.blood2"
+ },
+ "mob.blood3": {
+  "category": "hostile",
+  "event": "crb:mob.blood3"
+ },
+ "mob.blood4": {
+  "category": "hostile",
+  "event": "crb:mob.blood4"
+ },
+ "mob.bonk": {
+  "category": "hostile",
+  "event": "crb:mob.bonk"
+ },
+ "mob.brat": {
+  "category": "hostile",
+  "event": "crb:mob.brat"
+ },
+ "mob.brat2": {
+  "category": "hostile",
+  "event": "crb:mob.brat2"
+ },
+ "mob.bullet": {
+  "category": "hostile",
+  "event": "crb:mob.bullet"
+ },
+ "mob.burn": {
+  "category": "hostile",
+  "event": "crb:mob.burn"
+ },
+ "mob.burst": {
+  "category": "hostile",
+  "event": "crb:mob.burst"
+ },
+ "mob.button": {
+  "category": "hostile",
+  "event": "crb:mob.button"
+ },
+ "mob.cartoon1": {
+  "category": "hostile",
+  "event": "crb:mob.cartoon1"
+ },
+ "mob.cartoon2": {
+  "category": "hostile",
+  "event": "crb:mob.cartoon2"
+ },
+ "mob.cartoon4": {
+  "category": "hostile",
+  "event": "crb:mob.cartoon4"
+ },
+ "mob.cartoon_laugh": {
+  "category": "hostile",
+  "event": "crb:mob.cartoon_laugh"
+ },
+ "mob.cero": {
+  "category": "hostile",
+  "event": "crb:mob.cero"
+ },
+ "mob.chant": {
+  "category": "hostile",
+  "event": "crb:mob.chant"
+ },
+ "mob.chimera1": {
+  "category": "hostile",
+  "event": "crb:mob.chimera1"
+ },
+ "mob.clang1": {
+  "category": "hostile",
+  "event": "crb:mob.clang1"
+ },
+ "mob.clap": {
+  "category": "hostile",
+  "event": "crb:mob.clap"
+ },
+ "mob.cleave": {
+  "category": "hostile",
+  "event": "crb:mob.cleave"
+ },
+ "mob.comeatme": {
+  "category": "hostile",
+  "event": "crb:mob.comeatme"
+ },
+ "mob.crash": {
+  "category": "hostile",
+  "event": "crb:mob.crash"
+ },
+ "mob.creepy": {
+  "category": "hostile",
+  "event": "crb:mob.creepy"
+ },
+ "mob.crimsonsun": {
+  "category": "hostile",
+  "event": "crb:mob.crimsonsun"
+ },
+ "mob.curse.ambient": {
+  "category": "hostile",
+  "event": "crb:mob.curse.ambient"
+ },
+ "mob.cursed_energy": {
+  "category": "hostile",
+  "event": "crb:mob.cursed_energy"
+ },
+ "mob.cursed_speech": {
+  "category": "hostile",
+  "event": "crb:mob.cursed_speech"
+ },
+ "mob.cursed_tune": {
+  "category": "hostile",
+  "event": "crb:mob.cursed_tune"
+ },
+ "mob.deadlysentencing": {
+  "category": "hostile",
+  "event": "crb:mob.deadlysentencing"
+ },
+ "mob.deathgamble1": {
+  "category": "hostile",
+  "event": "crb:mob.deathgamble1"
+ },
+ "mob.disfigure1": {
+  "category": "hostile",
+  "event": "crb:mob.disfigure1"
+ },
+ "mob.disfigure2": {
+  "category": "hostile",
+  "event": "crb:mob.disfigure2"
+ },
+ "mob.disfigure3": {
+  "category": "hostile",
+  "event": "crb:mob.disfigure3"
+ },
+ "mob.dismantle": {
+  "category": "hostile",
+  "event": "crb:mob.dismantle"
+ },
+ "mob.distort1": {
+  "category": "hostile",
+  "event": "crb:mob.distort1"
+ },
+ "mob.distort2": {
+  "category": "hostile",
+  "event": "crb:mob.distort2"
+ },
+ "mob.distort3": {
+  "category": "hostile",
+  "event": "crb:mob.distort3"
+ },
+ "mob.drill": {
+  "category": "hostile",
+  "event": "crb:mob.drill"
+ },
+ "mob.dukelaugh": {
+  "category": "hostile",
+  "event": "crb:mob.dukelaugh"
+ },
+ "mob.electric1": {
+  "category": "hostile",
+  "event": "crb:mob.electric1"
+ },
+ "mob.electric3": {
+  "category": "hostile",
+  "event": "crb:mob.electric3"
+ },
+ "mob.electric4": {
+  "category": "hostile",
+  "event": "crb:mob.electric4"
+ },
+ "mob.electricity": {
+  "category": "hostile",
+  "event": "crb:mob.electricity"
+ },
+ "mob.elephant": {
+  "category": "hostile",
+  "event": "crb:mob.elephant"
+ },
+ "mob.enraged_yuji1": {
+  "category": "hostile",
+  "event": "crb:mob.enraged_yuji1"
+ },
+ "mob.enraged_yuji2": {
+  "category": "hostile",
+  "event": "crb:mob.enraged_yuji2"
+ },
+ "mob.eye": {
+  "category": "hostile",
+  "event": "crb:mob.eye"
+ },
+ "mob.fart": {
+  "category": "hostile",
+  "event": "crb:mob.fart"
+ },
+ "mob.first_blackflash": {
+  "category": "hostile",
+  "event": "crb:mob.first_blackflash"
+ },
+ "mob.flash": {
+  "category": "hostile",
+  "event": "crb:mob.flash"
+ },
+ "mob.forcedroles": {
+  "category": "hostile",
+  "event": "crb:mob.forcedroles"
+ },
+ "mob.fuga": {
+  "category": "hostile",
+  "event": "crb:mob.fuga"
+ },
+ "mob.fuga_appear": {
+  "category": "hostile",
+  "event": "crb:mob.fuga_appear"
+ },
+ "mob.fuga_clap": {
+  "category": "hostile",
+  "event": "crb:mob.fuga_clap"
+ },
+ "mob.fuga_form": {
+  "category": "hostile",
+  "event": "crb:mob.fuga_form"
+ },
+ "mob.fuga_hands": {
+  "category": "hostile",
+  "event": "crb:mob.fuga_hands"
+ },
+ "mob.fuga_shoot": {
+  "category": "hostile",
+  "event": "crb:mob.fuga_shoot"
+ },
+ "mob.gambaregambare1": {
+  "category": "hostile",
+  "event": "crb:mob.gambaregambare1"
+ },
+ "mob.gambaregambare2": {
+  "category": "hostile",
+  "event": "crb:mob.gambaregambare2"
+ },
+ "mob.gatling": {
+  "category": "hostile",
+  "event": "crb:mob.gatling"
+ },
+ "mob.get": {
+  "category": "hostile",
+  "event": "crb:mob.get"
+ },
+ "mob.getready": {
+  "category": "hostile",
+  "event": "crb:mob.getready"
+ },
+ "mob.glitch": {
+  "category": "hostile",
+  "event": "crb:mob.glitch"
+ },
+ "mob.glitch1": {
+  "category": "hostile",
+  "event": "crb:mob.glitch1"
+ },
+ "mob.glitch2": {
+  "category": "hostile",
+  "event": "crb:mob.glitch2"
+ },
+ "mob.glitch3": {
+  "category": "hostile",
+  "event": "crb:mob.glitch3"
+ },
+ "mob.glitch_intense1": {
+  "category": "hostile",
+  "event": "crb:mob.glitch_intense1"
+ },
+ "mob.glitch_intense2": {
+  "category": "hostile",
+  "event": "crb:mob.glitch_intense2"
+ },
+ "mob.glitch_start": {
+  "category": "hostile",
+  "event": "crb:mob.glitch_start"
+ },
+ "mob.glitchtalk1": {
+  "category": "hostile",
+  "event": "crb:mob.glitchtalk1"
+ },
+ "mob.glitchtalk2": {
+  "category": "hostile",
+  "event": "crb:mob.glitchtalk2"
+ },
+ "mob.glock": {
+  "category": "hostile",
+  "event": "crb:mob.glock"
+ },
+ "mob.gojo_high": {
+  "category": "hostile",
+  "event": "crb:mob.gojo_high"
+ },
+ "mob.gojo_red1": {
+  "category": "hostile",
+  "event": "crb:mob.gojo_red1"
+ },
+ "mob.gojo_red2": {
+  "category": "hostile",
+  "event": "crb:mob.gojo_red2"
+ },
+ "mob.heartbeat": {
+  "category": "hostile",
+  "event": "crb:mob.heartbeat"
+ },
+ "mob.heavy_swing": {
+  "category": "hostile",
+  "event": "crb:mob.heavy_swing"
+ },
+ "mob.hiddeninventorydialogue1": {
+  "category": "hostile",
+  "event": "crb:mob.hiddeninventorydialogue1"
+ },
+ "mob.hiddeninventorydialogue2": {
+  "category": "hostile",
+  "event": "crb:mob.hiddeninventorydialogue2"
+ },
+ "mob.hiddeninventorydialogue3": {
+  "category": "hostile",
+  "event": "crb:mob.hiddeninventorydialogue3"
+ },
+ "mob.hiddeninventorydialogue_start": {
+  "category": "hostile",
+  "event": "crb:mob.hiddeninventorydialogue_start"
+ },
+ "mob.hollow1": {
+  "category": "hostile",
+  "event": "crb:mob.hollow1"
+ },
+ "mob.hollow2": {
+  "category": "hostile",
+  "event": "crb:mob.hollow2"
+ },
+ "mob.honoredone": {
+  "category": "hostile",
+  "event": "crb:mob.honoredone"
+ },
+ "mob.idiot": {
+  "category": "hostile",
+  "event": "crb:mob.idiot"
+ },
+ "mob.impact": {
+  "category": "hostile",
+  "event": "crb:mob.impact"
+ },
+ "mob.impact1": {
+  "category": "hostile",
+  "event": "crb:mob.impact1"
+ },
+ "mob.impact2": {
+  "category": "hostile",
+  "event": "crb:mob.impact2"
+ },
+ "mob.improvisedpurple1": {
+  "category": "hostile",
+  "event": "crb:mob.improvisedpurple1"
+ },
+ "mob.improvisedpurple2": {
+  "category": "hostile",
+  "event": "crb:mob.improvisedpurple2"
+ },
+ "mob.infinitevoid1": {
+  "category": "hostile",
+  "event": "crb:mob.infinitevoid1"
+ },
+ "mob.infinitevoidfast": {
+  "category": "hostile",
+  "event": "crb:mob.infinitevoidfast"
+ },
+ "mob.infinitevoidfast2": {
+  "category": "hostile",
+  "event": "crb:mob.infinitevoidfast2"
+ },
+ "mob.infinitevoidsmall": {
+  "category": "hostile",
+  "event": "crb:mob.infinitevoidsmall"
+ },
+ "mob.infinity": {
+  "category": "hostile",
+  "event": "crb:mob.infinity"
+ },
+ "mob.innate1": {
+  "category": "hostile",
+  "event": "crb:mob.innate1"
+ },
+ "mob.innate2": {
+  "category": "hostile",
+  "event": "crb:mob.innate2"
+ },
+ "mob.innate3": {
+  "category": "hostile",
+  "event": "crb:mob.innate3"
+ },
+ "mob.innate4": {
+  "category": "hostile",
+  "event": "crb:mob.innate4"
+ },
+ "mob.instant_body": {
+  "category": "hostile",
+  "event": "crb:mob.instant_body"
+ },
+ "mob.instant_body_break": {
+  "category": "hostile",
+  "event": "crb:mob.instant_body_break"
+ },
+ "mob.jcut": {
+  "category": "hostile",
+  "event": "crb:mob.jcut"
+ },
+ "mob.jogodomain": {
+  "category": "hostile",
+  "event": "crb:mob.jogodomain"
+ },
+ "mob.kai": {
+  "category": "hostile",
+  "event": "crb:mob.kai"
+ },
+ "mob.kaiju": {
+  "category": "hostile",
+  "event": "crb:mob.kaiju"
+ },
+ "mob.kashimoscream": {
+  "category": "hostile",
+  "event": "crb:mob.kashimoscream"
+ },
+ "mob.knowyourplace": {
+  "category": "hostile",
+  "event": "crb:mob.knowyourplace"
+ },
+ "mob.kokusen": {
+  "category": "hostile",
+  "event": "crb:mob.kokusen"
+ },
+ "mob.kokusen2": {
+  "category": "hostile",
+  "event": "crb:mob.kokusen2"
+ },
+ "mob.kokusen3": {
+  "category": "hostile",
+  "event": "crb:mob.kokusen3"
+ },
+ "mob.magic1": {
+  "category": "hostile",
+  "event": "crb:mob.magic1"
+ },
+ "mob.magic2": {
+  "category": "hostile",
+  "event": "crb:mob.magic2"
+ },
+ "mob.magic3": {
+  "category": "hostile",
+  "event": "crb:mob.magic3"
+ },
+ "mob.magic4": {
+  "category": "hostile",
+  "event": "crb:mob.magic4"
+ },
+ "mob.mahito_02_domain1": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_02_domain1"
+ },
+ "mob.mahito_blackflash1": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_blackflash1"
+ },
+ "mob.mahito_blah": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_blah"
+ },
+ "mob.mahito_bodyrepel": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_bodyrepel"
+ },
+ "mob.mahito_domain1": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_domain1"
+ },
+ "mob.mahito_grunt1": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_grunt1"
+ },
+ "mob.mahito_grunt2": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_grunt2"
+ },
+ "mob.mahito_headon1": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_headon1"
+ },
+ "mob.mahito_headon2": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_headon2"
+ },
+ "mob.mahito_kiss": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_kiss"
+ },
+ "mob.mahito_stage2": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_stage2"
+ },
+ "mob.mahito_trick": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_trick"
+ },
+ "mob.mahito_trulycurse1": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_trulycurse1"
+ },
+ "mob.mahito_trulycurse2": {
+  "category": "hostile",
+  "event": "crb:mob.mahito_trulycurse2"
+ },
+ "mob.malevolentkitchen": {
+  "category": "hostile",
+  "event": "crb:mob.malevolentkitchen"
+ },
+ "mob.malevolentshrine1": {
+  "category": "hostile",
+  "event": "crb:mob.malevolentshrine1"
+ },
+ "mob.megunacutscene1": {
+  "category": "hostile",
+  "event": "crb:mob.megunacutscene1"
+ },
+ "mob.metal1": {
+  "category": "hostile",
+  "event": "crb:mob.metal1"
+ },
+ "mob.metal2": {
+  "category": "hostile",
+  "event": "crb:mob.metal2"
+ },
+ "mob.mountain_buster": {
+  "category": "hostile",
+  "event": "crb:mob.mountain_buster"
+ },
+ "mob.nue": {
+  "category": "hostile",
+  "event": "crb:mob.nue"
+ },
+ "mob.openspace": {
+  "category": "hostile",
+  "event": "crb:mob.openspace"
+ },
+ "mob.parry": {
+  "category": "hostile",
+  "event": "crb:mob.parry"
+ },
+ "mob.phone": {
+  "category": "hostile",
+  "event": "crb:mob.phone"
+ },
+ "mob.phone2": {
+  "category": "hostile",
+  "event": "crb:mob.phone2"
+ },
+ "mob.punch": {
+  "category": "hostile",
+  "event": "crb:mob.punch"
+ },
+ "mob.punch1": {
+  "category": "hostile",
+  "event": "crb:mob.punch1"
+ },
+ "mob.punch2": {
+  "category": "hostile",
+  "event": "crb:mob.punch2"
+ },
+ "mob.rapidcleave": {
+  "category": "hostile",
+  "event": "crb:mob.rapidcleave"
+ },
+ "mob.rapiddismantle": {
+  "category": "hostile",
+  "event": "crb:mob.rapiddismantle"
+ },
+ "mob.red1": {
+  "category": "hostile",
+  "event": "crb:mob.red1"
+ },
+ "mob.red2": {
+  "category": "hostile",
+  "event": "crb:mob.red2"
+ },
+ "mob.red3": {
+  "category": "hostile",
+  "event": "crb:mob.red3"
+ },
+ "mob.ring": {
+  "category": "hostile",
+  "event": "crb:mob.ring"
+ },
+ "mob.scopehim": {
+  "category": "hostile",
+  "event": "crb:mob.scopehim"
+ },
+ "mob.sekiro": {
+  "category": "hostile",
+  "event": "crb:mob.sekiro"
+ },
+ "mob.sharko": {
+  "category": "hostile",
+  "event": "crb:mob.sharko"
+ },
+ "mob.sharpen1": {
+  "category": "hostile",
+  "event": "crb:mob.sharpen1"
+ },
+ "mob.sharpen2": {
+  "category": "hostile",
+  "event": "crb:mob.sharpen2"
+ },
+ "mob.shi_yourself": {
+  "category": "hostile",
+  "event": "crb:mob.shi_yourself"
+ },
+ "mob.shock1": {
+  "category": "hostile",
+  "event": "crb:mob.shock1"
+ },
+ "mob.shock2": {
+  "category": "hostile",
+  "event": "crb:mob.shock2"
+ },
+ "mob.shocked1": {
+  "category": "hostile",
+  "event": "crb:mob.shocked1"
+ },
+ "mob.shocked2": {
+  "category": "hostile",
+  "event": "crb:mob.shocked2"
+ },
+ "mob.shocked3": {
+  "category": "hostile",
+  "event": "crb:mob.shocked3"
+ },
+ "mob.shootup": {
+  "category": "hostile",
+  "event": "crb:mob.shootup"
+ },
+ "mob.shrine_slashes": {
+  "category": "hostile",
+  "event": "crb:mob.shrine_slashes"
+ },
+ "mob.slash": {
+  "category": "hostile",
+  "event": "crb:mob.slash"
+ },
+ "mob.slash1": {
+  "category": "hostile",
+  "event": "crb:mob.slash1"
+ },
+ "mob.slice": {
+  "category": "hostile",
+  "event": "crb:mob.slice"
+ },
+ "mob.slice1": {
+  "category": "hostile",
+  "event": "crb:mob.slice1"
+ },
+ "mob.slice2": {
+  "category": "hostile",
+  "event": "crb:mob.slice2"
+ },
+ "mob.slice3": {
+  "category": "hostile",
+  "event": "crb:mob.slice3"
+ },
+ "mob.slice4": {
+  "category": "hostile",
+  "event": "crb:mob.slice4"
+ },
+ "mob.slicer2": {
+  "category": "hostile",
+  "event": "crb:mob.slicer2"
+ },
+ "mob.slots1": {
+  "category": "hostile",
+  "event": "crb:mob.slots1"
+ },
+ "mob.slots2": {
+  "category": "hostile",
+  "event": "crb:mob.slots2"
+ },
+ "mob.speech_blastaway": {
+  "category": "hostile",
+  "event": "crb:mob.speech_blastaway"
+ },
+ "mob.speech_break": {
+  "category": "hostile",
+  "event": "crb:mob.speech_break"
+ },
+ "mob.speech_die": {
+  "category": "hostile",
+  "event": "crb:mob.speech_die"
+ },
+ "mob.speech_dontmove": {
+  "category": "hostile",
+  "event": "crb:mob.speech_dontmove"
+ },
+ "mob.speech_getcrushed": {
+  "category": "hostile",
+  "event": "crb:mob.speech_getcrushed"
+ },
+ "mob.speech_heal": {
+  "category": "hostile",
+  "event": "crb:mob.speech_heal"
+ },
+ "mob.speech_plummet": {
+  "category": "hostile",
+  "event": "crb:mob.speech_plummet"
+ },
+ "mob.speech_return": {
+  "category": "hostile",
+  "event": "crb:mob.speech_return"
+ },
+ "mob.speech_runaway": {
+  "category": "hostile",
+  "event": "crb:mob.speech_runaway"
+ },
+ "mob.speech_sleep": {
+  "category": "hostile",
+  "event": "crb:mob.speech_sleep"
+ },
+ "mob.speech_stop": {
+  "category": "hostile",
+  "event": "crb:mob.speech_stop"
+ },
+ "mob.stomp": {
+  "category": "hostile",
+  "event": "crb:mob.stomp"
+ },
+ "mob.strike": {
+  "category": "hostile",
+  "event": "crb:mob.strike"
+ },
+ "mob.strong_punch1": {
+  "category": "hostile",
+  "event": "crb:mob.strong_punch1"
+ },
+ "mob.strong_punch2": {
+  "category": "hostile",
+  "event": "crb:mob.strong_punch2"
+ },
+ "mob.strong_punch3": {
+  "category": "hostile",
+  "event": "crb:mob.strong_punch3"
+ },
+ "mob.strongleft": {
+  "category": "hostile",
+  "event": "crb:mob.strongleft"
+ },
+ "mob.sukuna_laugh1": {
+  "category": "hostile",
+  "event": "crb:mob.sukuna_laugh1"
+ },
+ "mob.sukuna_laugh2": {
+  "category": "hostile",
+  "event": "crb:mob.sukuna_laugh2"
+ },
+ "mob.sukuna_taste": {
+  "category": "hostile",
+  "event": "crb:mob.sukuna_taste"
+ },
+ "mob.sukunaawaken1": {
+  "category": "hostile",
+  "event": "crb:mob.sukunaawaken1"
+ },
+ "mob.sukunaawaken2": {
+  "category": "hostile",
+  "event": "crb:mob.sukunaawaken2"
+ },
+ "mob.sukunaawaken3": {
+  "category": "hostile",
+  "event": "crb:mob.sukunaawaken3"
+ },
+ "mob.sukunamode": {
+  "category": "hostile",
+  "event": "crb:mob.sukunamode"
+ },
+ "mob.sword": {
+  "category": "hostile",
+  "event": "crb:mob.sword"
+ },
+ "mob.swordslash": {
+  "category": "hostile",
+  "event": "crb:mob.swordslash"
+ },
+ "mob.tear": {
+  "category": "hostile",
+  "event": "crb:mob.tear"
+ },
+ "mob.tinnitus": {
+  "category": "hostile",
+  "event": "crb:mob.tinnitus"
+ },
+ "mob.todo_asktype1": {
+  "category": "hostile",
+  "event": "crb:mob.todo_asktype1"
+ },
+ "mob.todo_asktype2": {
+  "category": "hostile",
+  "event": "crb:mob.todo_asktype2"
+ },
+ "mob.todo_asktype_good1": {
+  "category": "hostile",
+  "event": "crb:mob.todo_asktype_good1"
+ },
+ "mob.todo_asktype_good2": {
+  "category": "hostile",
+  "event": "crb:mob.todo_asktype_good2"
+ },
+ "mob.todo_asktype_good3": {
+  "category": "hostile",
+  "event": "crb:mob.todo_asktype_good3"
+ },
+ "mob.tree1": {
+  "category": "hostile",
+  "event": "crb:mob.tree1"
+ },
+ "mob.tree2": {
+  "category": "hostile",
+  "event": "crb:mob.tree2"
+ },
+ "mob.turbulence": {
+  "category": "hostile",
+  "event": "crb:mob.turbulence"
+ },
+ "mob.water": {
+  "category": "hostile",
+  "event": "crb:mob.water"
+ },
+ "mob.wcssay": {
+  "category": "hostile",
+  "event": "crb:mob.wcssay"
+ },
+ "mob.whoop1": {
+  "category": "hostile",
+  "event": "crb:mob.whoop1"
+ },
+ "mob.whoop2": {
+  "category": "hostile",
+  "event": "crb:mob.whoop2"
+ },
+ "mob.whoop3": {
+  "category": "hostile",
+  "event": "crb:mob.whoop3"
+ },
+ "mob.whoosh1": {
+  "category": "hostile",
+  "event": "crb:mob.whoosh1"
+ },
+ "mob.whoosh2": {
+  "category": "hostile",
+  "event": "crb:mob.whoosh2"
+ },
+ "mob.whoosh3": {
+  "category": "hostile",
+  "event": "crb:mob.whoosh3"
+ },
+ "mob.wind": {
+  "category": "hostile",
+  "event": "crb:mob.wind"
+ },
+ "mob.worm": {
+  "category": "hostile",
+  "event": "crb:mob.worm"
+ },
+ "mob.youdiehere": {
+  "category": "hostile",
+  "event": "crb:mob.youdiehere"
+ },
+ "mob.youjujutsusorcerers": {
+  "category": "hostile",
+  "event": "crb:mob.youjujutsusorcerers"
+ },
+ "mob.youvedoneitnow": {
+  "category": "hostile",
+  "event": "crb:mob.youvedoneitnow"
+ },
+ "mob.yuji_domain": {
+  "category": "hostile",
+  "event": "crb:mob.yuji_domain"
+ },
+ "music.200hollow2": {
+  "category": "music",
+  "event": "crb:music.200hollow2"
+ },
+ "music.adapt": {
+  "category": "music",
+  "event": "crb:music.adapt"
+ },
+ "music.alarm": {
+  "category": "music",
+  "event": "crb:music.alarm"
+ },
+ "music.alwaysbetonahakari": {
+  "category": "music",
+  "event": "crb:music.alwaysbetonahakari"
+ },
+ "music.atomic": {
+  "category": "music",
+  "event": "crb:music.atomic"
+ },
+ "music.atomicbreath1": {
+  "category": "music",
+  "event": "crb:music.atomicbreath1"
+ },
+ "music.atomicbreath2": {
+  "category": "music",
+  "event": "crb:music.atomicbreath2"
+ },
+ "music.attorney": {
+  "category": "music",
+  "event": "crb:music.attorney"
+ },
+ "music.bang": {
+  "category": "music",
+  "event": "crb:music.bang"
+ },
+ "music.bass1": {
+  "category": "music",
+  "event": "crb:music.bass1"
+ },
+ "music.bass2": {
+  "category": "music",
+  "event": "crb:music.bass2"
+ },
+ "music.bass3": {
+  "category": "music",
+  "event": "crb:music.bass3"
+ },
+ "music.bassboost": {
+  "category": "music",
+  "event": "crb:music.bassboost"
+ },
+ "music.blade1": {
+  "category": "music",
+  "event": "crb:music.blade1"
+ },
+ "music.blade2": {
+  "category": "music",
+  "event": "crb:music.blade2"
+ },
+ "music.blitz": {
+  "category": "music",
+  "event": "crb:music.blitz"
+ },
+ "music.brat": {
+  "category": "music",
+  "event": "crb:music.brat"
+ },
+ "music.brat2": {
+  "category": "music",
+  "event": "crb:music.brat2"
+ },
+ "music.buildup": {
+  "category": "music",
+  "event": "crb:music.buildup"
+ },
+ "music.carving_combo": {
+  "category": "music",
+  "event": "crb:music.carving_combo"
+ },
+ "music.cero": {
+  "category": "music",
+  "event": "crb:music.cero"
+ },
+ "music.chant": {
+  "category": "music",
+  "event": "crb:music.chant"
+ },
+ "music.chaos": {
+  "category": "music",
+  "event": "crb:music.chaos"
+ },
+ "music.chimera": {
+  "category": "music",
+  "event": "crb:music.chimera"
+ },
+ "music.chimera2": {
+  "category": "music",
+  "event": "crb:music.chimera2"
+ },
+ "music.chimeragarden": {
+  "category": "music",
+  "event": "crb:music.chimeragarden"
+ },
+ "music.claphands": {
+  "category": "music",
+  "event": "crb:music.claphands"
+ },
+ "music.crimsonsun": {
+  "category": "music",
+  "event": "crb:music.crimsonsun"
+ },
+ "music.deadlysentencing2": {
+  "category": "music",
+  "event": "crb:music.deadlysentencing2"
+ },
+ "music.deathgamble2": {
+  "category": "music",
+  "event": "crb:music.deathgamble2"
+ },
+ "music.deathgambleend": {
+  "category": "music",
+  "event": "crb:music.deathgambleend"
+ },
+ "music.deathgamblesfx1": {
+  "category": "music",
+  "event": "crb:music.deathgamblesfx1"
+ },
+ "music.distort1": {
+  "category": "music",
+  "event": "crb:music.distort1"
+ },
+ "music.distort2": {
+  "category": "music",
+  "event": "crb:music.distort2"
+ },
+ "music.distort3": {
+  "category": "music",
+  "event": "crb:music.distort3"
+ },
+ "music.domainbreak": {
+  "category": "music",
+  "event": "crb:music.domainbreak"
+ },
+ "music.domainclash1": {
+  "category": "music",
+  "event": "crb:music.domainclash1"
+ },
+ "music.domainclashing": {
+  "category": "music",
+  "event": "crb:music.domainclashing"
+ },
+ "music.dukelaugh": {
+  "category": "music",
+  "event": "crb:music.dukelaugh"
+ },
+ "music.energy": {
+  "category": "music",
+  "event": "crb:music.energy"
+ },
+ "music.enuma": {
+  "category": "music",
+  "event": "crb:music.enuma"
+ },
+ "music.eye": {
+  "category": "music",
+  "event": "crb:music.eye"
+ },
+ "music.flashstep": {
+  "category": "music",
+  "event": "crb:music.flashstep"
+ },
+ "music.fuga_music": {
+  "category": "music",
+  "event": "crb:music.fuga_music"
+ },
+ "music.fuga_shrine": {
+  "category": "music",
+  "event": "crb:music.fuga_shrine"
+ },
+ "music.gavel": {
+  "category": "music",
+  "event": "crb:music.gavel"
+ },
+ "music.glitch1": {
+  "category": "music",
+  "event": "crb:music.glitch1"
+ },
+ "music.glitch2": {
+  "category": "music",
+  "event": "crb:music.glitch2"
+ },
+ "music.glitch3": {
+  "category": "music",
+  "event": "crb:music.glitch3"
+ },
+ "music.glitch_intense1": {
+  "category": "music",
+  "event": "crb:music.glitch_intense1"
+ },
+ "music.glitch_intense2": {
+  "category": "music",
+  "event": "crb:music.glitch_intense2"
+ },
+ "music.glitch_start": {
+  "category": "music",
+  "event": "crb:music.glitch_start"
+ },
+ "music.glitchtalk1": {
+  "category": "music",
+  "event": "crb:music.glitchtalk1"
+ },
+ "music.glitchtalk2": {
+  "category": "music",
+  "event": "crb:music.glitchtalk2"
+ },
+ "music.gojoblackflash": {
+  "category": "music",
+  "event": "crb:music.gojoblackflash"
+ },
+ "music.heian_awakening": {
+  "category": "music",
+  "event": "crb:music.heian_awakening"
+ },
+ "music.hiddeninventorydialogue_end": {
+  "category": "music",
+  "event": "crb:music.hiddeninventorydialogue_end"
+ },
+ "music.hollow1": {
+  "category": "music",
+  "event": "crb:music.hollow1"
+ },
+ "music.hollow2": {
+  "category": "music",
+  "event": "crb:music.hollow2"
+ },
+ "music.hollow3": {
+  "category": "music",
+  "event": "crb:music.hollow3"
+ },
+ "music.improvisedpurple1": {
+  "category": "music",
+  "event": "crb:music.improvisedpurple1"
+ },
+ "music.improvisedpurple2": {
+  "category": "music",
+  "event": "crb:music.improvisedpurple2"
+ },
+ "music.incomplete_shrine": {
+  "category": "music",
+  "event": "crb:music.incomplete_shrine"
+ },
+ "music.infinitevoid2": {
+  "category": "music",
+  "event": "crb:music.infinitevoid2"
+ },
+ "music.infinitevoid_fast": {
+  "category": "music",
+  "event": "crb:music.infinitevoid_fast"
+ },
+ "music.infinitevoidmusic": {
+  "category": "music",
+  "event": "crb:music.infinitevoidmusic"
+ },
+ "music.innate1": {
+  "category": "music",
+  "event": "crb:music.innate1"
+ },
+ "music.innate2": {
+  "category": "music",
+  "event": "crb:music.innate2"
+ },
+ "music.innate3": {
+  "category": "music",
+  "event": "crb:music.innate3"
+ },
+ "music.innate4": {
+  "category": "music",
+  "event": "crb:music.innate4"
+ },
+ "music.itadoriblackflash": {
+  "category": "music",
+  "event": "crb:music.itadoriblackflash"
+ },
+ "music.jackpot": {
+  "category": "music",
+  "event": "crb:music.jackpot"
+ },
+ "music.jackpot2": {
+  "category": "music",
+  "event": "crb:music.jackpot2"
+ },
+ "music.jogodomain2": {
+  "category": "music",
+  "event": "crb:music.jogodomain2"
+ },
+ "music.kaiju": {
+  "category": "music",
+  "event": "crb:music.kaiju"
+ },
+ "music.knowyourplace": {
+  "category": "music",
+  "event": "crb:music.knowyourplace"
+ },
+ "music.kokusen3": {
+  "category": "music",
+  "event": "crb:music.kokusen3"
+ },
+ "music.laser1": {
+  "category": "music",
+  "event": "crb:music.laser1"
+ },
+ "music.legendary": {
+  "category": "music",
+  "event": "crb:music.legendary"
+ },
+ "music.limitlesspurple1": {
+  "category": "music",
+  "event": "crb:music.limitlesspurple1"
+ },
+ "music.loudimpact": {
+  "category": "music",
+  "event": "crb:music.loudimpact"
+ },
+ "music.mahito_02_domain2": {
+  "category": "music",
+  "event": "crb:music.mahito_02_domain2"
+ },
+ "music.mahito_domain2": {
+  "category": "music",
+  "event": "crb:music.mahito_domain2"
+ },
+ "music.mahoraga": {
+  "category": "music",
+  "event": "crb:music.mahoraga"
+ },
+ "music.mahoragasummon": {
+  "category": "music",
+  "event": "crb:music.mahoragasummon"
+ },
+ "music.malevolent_kitchen": {
+  "category": "music",
+  "event": "crb:music.malevolent_kitchen"
+ },
+ "music.malevolentkitchen2": {
+  "category": "music",
+  "event": "crb:music.malevolentkitchen2"
+ },
+ "music.malevolentshrine2": {
+  "category": "music",
+  "event": "crb:music.malevolentshrine2"
+ },
+ "music.maximum1": {
+  "category": "music",
+  "event": "crb:music.maximum1"
+ },
+ "music.maximum2": {
+  "category": "music",
+  "event": "crb:music.maximum2"
+ },
+ "music.maximumtheme": {
+  "category": "music",
+  "event": "crb:music.maximumtheme"
+ },
+ "music.megunacutscene1": {
+  "category": "music",
+  "event": "crb:music.megunacutscene1"
+ },
+ "music.menuintro": {
+  "category": "music",
+  "event": "crb:music.menuintro"
+ },
+ "music.menuintro2": {
+  "category": "music",
+  "event": "crb:music.menuintro2"
+ },
+ "music.menutheme": {
+  "category": "music",
+  "event": "crb:music.menutheme"
+ },
+ "music.meteoric": {
+  "category": "music",
+  "event": "crb:music.meteoric"
+ },
+ "music.nuke": {
+  "category": "music",
+  "event": "crb:music.nuke"
+ },
+ "music.objection": {
+  "category": "music",
+  "event": "crb:music.objection"
+ },
+ "music.onrush": {
+  "category": "music",
+  "event": "crb:music.onrush"
+ },
+ "music.payday": {
+  "category": "music",
+  "event": "crb:music.payday"
+ },
+ "music.perfection": {
+  "category": "music",
+  "event": "crb:music.perfection"
+ },
+ "music.plus_ultra": {
+  "category": "music",
+  "event": "crb:music.plus_ultra"
+ },
+ "music.plus_ultra1": {
+  "category": "music",
+  "event": "crb:music.plus_ultra1"
+ },
+ "music.plus_ultra2": {
+  "category": "music",
+  "event": "crb:music.plus_ultra2"
+ },
+ "music.plus_ultra3": {
+  "category": "music",
+  "event": "crb:music.plus_ultra3"
+ },
+ "music.plus_ultra4": {
+  "category": "music",
+  "event": "crb:music.plus_ultra4"
+ },
+ "music.plus_ultra5": {
+  "category": "music",
+  "event": "crb:music.plus_ultra5"
+ },
+ "music.plus_ultra6": {
+  "category": "music",
+  "event": "crb:music.plus_ultra6"
+ },
+ "music.primedeath": {
+  "category": "music",
+  "event": "crb:music.primedeath"
+ },
+ "music.prowess": {
+  "category": "music",
+  "event": "crb:music.prowess"
+ },
+ "music.rare": {
+  "category": "music",
+  "event": "crb:music.rare"
+ },
+ "music.ready": {
+  "category": "music",
+  "event": "crb:music.ready"
+ },
+ "music.red2": {
+  "category": "music",
+  "event": "crb:music.red2"
+ },
+ "music.ring": {
+  "category": "music",
+  "event": "crb:music.ring"
+ },
+ "music.ryomensukuna": {
+  "category": "music",
+  "event": "crb:music.ryomensukuna"
+ },
+ "music.sekiro": {
+  "category": "music",
+  "event": "crb:music.sekiro"
+ },
+ "music.shadowgarden": {
+  "category": "music",
+  "event": "crb:music.shadowgarden"
+ },
+ "music.shrineformation": {
+  "category": "music",
+  "event": "crb:music.shrineformation"
+ },
+ "music.skyfall": {
+  "category": "music",
+  "event": "crb:music.skyfall"
+ },
+ "music.soul": {
+  "category": "music",
+  "event": "crb:music.soul"
+ },
+ "music.sparkle": {
+  "category": "music",
+  "event": "crb:music.sparkle"
+ },
+ "music.spinning": {
+  "category": "music",
+  "event": "crb:music.spinning"
+ },
+ "music.storm": {
+  "category": "music",
+  "event": "crb:music.storm"
+ },
+ "music.sukuna_laugh1": {
+  "category": "music",
+  "event": "crb:music.sukuna_laugh1"
+ },
+ "music.sukunablackflash": {
+  "category": "music",
+  "event": "crb:music.sukunablackflash"
+ },
+ "music.sukunavoice1": {
+  "category": "music",
+  "event": "crb:music.sukunavoice1"
+ },
+ "music.sukunavoice2": {
+  "category": "music",
+  "event": "crb:music.sukunavoice2"
+ },
+ "music.sukunavoice3": {
+  "category": "music",
+  "event": "crb:music.sukunavoice3"
+ },
+ "music.takada": {
+  "category": "music",
+  "event": "crb:music.takada"
+ },
+ "music.takada_bell": {
+  "category": "music",
+  "event": "crb:music.takada_bell"
+ },
+ "music.tear": {
+  "category": "music",
+  "event": "crb:music.tear"
+ },
+ "music.thunderclap1": {
+  "category": "music",
+  "event": "crb:music.thunderclap1"
+ },
+ "music.thunderclap2": {
+  "category": "music",
+  "event": "crb:music.thunderclap2"
+ },
+ "music.time3": {
+  "category": "music",
+  "event": "crb:music.time3"
+ },
+ "music.todo_blackflash1": {
+  "category": "music",
+  "event": "crb:music.todo_blackflash1"
+ },
+ "music.todo_blackflash2": {
+  "category": "music",
+  "event": "crb:music.todo_blackflash2"
+ },
+ "music.toji": {
+  "category": "music",
+  "event": "crb:music.toji"
+ },
+ "music.toji_awaken": {
+  "category": "music",
+  "event": "crb:music.toji_awaken"
+ },
+ "music.train": {
+  "category": "music",
+  "event": "crb:music.train"
+ },
+ "music.tukadonka": {
+  "category": "music",
+  "event": "crb:music.tukadonka"
+ },
+ "music.ultra1": {
+  "category": "music",
+  "event": "crb:music.ultra1"
+ },
+ "music.ultra2": {
+  "category": "music",
+  "event": "crb:music.ultra2"
+ },
+ "music.wcs": {
+  "category": "music",
+  "event": "crb:music.wcs"
+ },
+ "music.world_slash1": {
+  "category": "music",
+  "event": "crb:music.world_slash1"
+ },
+ "music.world_slash2": {
+  "category": "music",
+  "event": "crb:music.world_slash2"
+ },
+ "music.yutablackflash": {
+  "category": "music",
+  "event": "crb:music.yutablackflash"
+ },
+ "random.blocked": {
+  "category": "hostile",
+  "event": "crb:random.blocked"
+ },
+ "random.disfigure": {
+  "category": "hostile",
+  "event": "crb:random.disfigure"
+ },
+ "random.slice": {
+  "category": "hostile",
+  "event": "crb:random.slice"
+ },
+ "random.sprint": {
+  "category": "hostile",
+  "event": "crb:random.sprint"
+ },
+ "random.strong_punch": {
+  "category": "hostile",
+  "event": "crb:random.strong_punch"
+ },
+ "random.whoop": {
+  "category": "hostile",
+  "event": "crb:random.whoop"
+ },
+ "random.whoosh": {
+  "category": "hostile",
+  "event": "crb:random.whoosh"
+ }
+}

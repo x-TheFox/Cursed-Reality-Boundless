@@ -1,0 +1,1 @@
+{"format_version":"1.12.0","minecraft:geometry":[{"description":{"identifier":"geometry.inversionbox2","texture_width":512,"texture_height":512,"visible_bounds_width":64,"visible_bounds_height":76,"visible_bounds_offset":[0,26,0]},"bones":[{"name":"bone","pivot":[0,0,0],"cubes":[{"origin":[500,1000,500],"size":[-1000,-1000,-1000],"inflate":0.5,"uv":[2244,1122]}]}]}]}

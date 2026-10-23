@@ -21,6 +21,8 @@ RESEARCH = REPO / "architecture_and_research"
 
 _COMMENT_RE = re.compile(r'("(?:\\.|[^"\\])*")|//[^\n]*|/\*.*?\*/', re.S)
 _TRAILING_COMMA_RE = re.compile(r",(\s*[}\]])")
+# stray tokens Bedrock's parser tolerates, e.g. `"minecraft:particle_initial_speed": 175,s`
+_STRAY_TOKEN_RE = re.compile(r",[ \t]*[A-Za-z_]+[ \t]*(?=\r?\n\s*\")")
 
 
 def load_json(path: Path):
@@ -32,6 +34,7 @@ def load_json(path: Path):
         pass
     text = _COMMENT_RE.sub(lambda m: m.group(1) or "", text)
     text = _TRAILING_COMMA_RE.sub(r"\1", text)
+    text = _STRAY_TOKEN_RE.sub(",", text)
     return json.loads(text, strict=False)
 
 

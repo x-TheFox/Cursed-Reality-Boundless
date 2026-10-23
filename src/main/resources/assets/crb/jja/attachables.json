@@ -1,0 +1,3115 @@
+{
+ "ds:10shadows_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:9mm_ammo": {
+  "animations": {
+   "idle": "animation.ammo.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/ammo.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/yellow.png"
+  }
+ },
+ "ds:absorption1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:absorption2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:absorption3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:absorption_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:amberbeast2": {
+  "animations": {
+   "idle": "animation.amberbeast.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/amberbeast.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/entity/amberbeast2.png"
+  }
+ },
+ "ds:amberbeast2a": {
+  "animations": {
+   "idle": "animation.amberbeast2.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/amberbeast.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/entity/amberbeast2.png"
+  }
+ },
+ "ds:amberbeastfull": {
+  "animations": {
+   "idle": "animation.amberbeastfull.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/amberbeastfull.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/entity/amberbeastfull.png"
+  }
+ },
+ "ds:amberbeastfulla": {
+  "animations": {
+   "idle": "animation.amberbeastfull2.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/amberbeastfull.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/entity/amberbeastfull.png"
+  }
+ },
+ "ds:atomic_crystal": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/atomic_crystal.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/atomic_crystal.png",
+   "enchanted": null
+  }
+ },
+ "ds:atomic_sword": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/atomic_sword.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/atomic_sword.png",
+   "enchanted": null
+  }
+ },
+ "ds:basic_combat": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:beru_daggers": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/beru_daggers.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/beru_daggers.png",
+   "enchanted": null
+  }
+ },
+ "ds:birch_tree": {
+  "animations": {
+   "idle": "animation.birch_tree.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/birch_tree.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/birch_tree.png"
+  }
+ },
+ "ds:black_blade": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/black_blade.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/black_blade.png",
+   "enchanted": null
+  }
+ },
+ "ds:black_fists": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:blitz_crystal": {
+  "animations": {
+   "idle": "animation.blitz_crystal.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/crystal.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/blitz_crystal.png"
+  }
+ },
+ "ds:bluefist": {
+  "animations": {
+   "idle": "animation.bluefist.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:boogie_fists": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:boogie_woogie1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:boogie_woogie2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:boogie_woogie3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:boogie_woogie_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:butter_blade": {
+  "animations": {
+   "idle": "animation.butter_blade.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/butterjaffa_sword.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/butterjaffa_sword.png"
+  }
+ },
+ "ds:calamity_claws": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:cleave_fists": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:conflict_essence": {
+  "animations": {
+   "idle": "animation.conflict_essence.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/conflict_essence.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/entity/lovetrain/pachinko_v5.png"
+  }
+ },
+ "ds:core_component": {
+  "animations": {
+   "idle": "animation.component2.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/component.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/component.png"
+  }
+ },
+ "ds:core_of_creation": {
+  "animations": {
+   "idle": "animation.reality_shard.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/core_of_creation.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/entity/primesoul.png"
+  }
+ },
+ "ds:cough_syrup": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/cough_syrup.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/cough_syrup.png",
+   "enchanted": null
+  }
+ },
+ "ds:crescendo": {
+  "animations": {
+   "idle": "animation.crescendo.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/truesword.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/crescendo.png"
+  }
+ },
+ "ds:cursed_crystal": {
+  "animations": {
+   "idle": "animation.cursed_crystal.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/crystal.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/cursed_crystal.png"
+  }
+ },
+ "ds:cursed_eye": {
+  "animations": {
+   "idle": "animation.cursed_eye.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/cursed_eye.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/cursed_eye.png"
+  }
+ },
+ "ds:cursedenergy": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:dackmug": {
+  "animations": {
+   "idle": "animation.dackmug.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/dackmug.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/dackmug.png"
+  }
+ },
+ "ds:dash": {
+  "animations": {
+   "idle": "animation.dash.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:deathhorn": {
+  "animations": {
+   "idle": "animation.deathhorn.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/airhorn.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/airhorn.png"
+  }
+ },
+ "ds:delusional": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:delusional2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:devastator": {
+  "animations": {
+   "idle": "animation.devastator.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/devastator.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/devastator.png"
+  }
+ },
+ "ds:divergentfists": {
+  "animations": {
+   "idle": "animation.divergentfists.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:divergentfists_green": {
+  "animations": {
+   "idle": "animation.divergentfists_green.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:divergentfists_purple": {
+  "animations": {
+   "idle": "animation.divergentfists_purple.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:divergentfists_red": {
+  "animations": {
+   "idle": "animation.divergentfists_red.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:domainamplification": {
+  "animations": {
+   "idle": "animation.domainamplification.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:dread_bell": {
+  "animations": {
+   "idle": "animation.dread_bell.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/dread_bell.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/dread_bell.png"
+  }
+ },
+ "ds:equinox_blade": {
+  "animations": {
+   "idle": "animation.origin_edge.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/origin_edge.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/origin_slicer.png"
+  }
+ },
+ "ds:equinox_scythe": {
+  "animations": {
+   "idle": "animation.origin_slicer.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/origin_slicer.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/origin_slicer.png"
+  }
+ },
+ "ds:evade": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:executioners_sword": {
+  "animations": {
+   "idle": "animation.executioners_sword.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/execution_sword.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/execution_sword.png"
+  }
+ },
+ "ds:explode_staff": {
+  "animations": {
+   "idle": "animation.explode_staff.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/explode_staff.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/explode_staff.png"
+  }
+ },
+ "ds:explosive1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:explosive2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:explosive3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:explosive_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:extermination_sword": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:fat_sukuna": {
+  "animations": {
+   "idle": "animation.fat_sukuna.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:fist": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:flames1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:flames2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:flames3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:flames4": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:flames5": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:flames6": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:flames7": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:flames_fists": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:flames_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:four_fists": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:frog_cero": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {},
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:gamblers_hoodie": {
+  "animations": {
+   "idle": "animation.gamblers_hoodie.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/gamblers_hoodie.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/gamblers_fit.png"
+  }
+ },
+ "ds:gamblers_legs": {
+  "animations": {
+   "idle": "animation.gamblers_legs.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/gamblers_legs.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/gamblers_fit.png"
+  }
+ },
+ "ds:gavel1": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/gavel.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/gavel.png",
+   "enchanted": null
+  }
+ },
+ "ds:gavel2": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/gavel2.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/gavel.png",
+   "enchanted": null
+  }
+ },
+ "ds:gavel3": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/gavel3.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/gavel.png",
+   "enchanted": null
+  }
+ },
+ "ds:glock": {
+  "animations": {
+   "idle": "animation.glock.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/glock.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/glock.png"
+  }
+ },
+ "ds:glocks_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:gojo_cloak": {
+  "animations": {
+   "idle": "animation.gojo_cloak.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/gojo_cloak.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/gojocloak.png"
+  }
+ },
+ "ds:gojo_torso": {
+  "animations": {
+   "idle": "animation.gojo_torso.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/gojo_torso1.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/gojotorso.png"
+  }
+ },
+ "ds:hakarimode": {
+  "animations": {
+   "idle": "animation.hakarimode.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:hand_sword": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/hand_sword.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/hand_sword.png",
+   "enchanted": null
+  }
+ },
+ "ds:heavenly_restriction": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:heian_transformation": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:hiten": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:hr1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:hr2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:hr3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:hr_combat": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:idle_transfig1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:idle_transfig2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:idle_transfig3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:idle_transfig4": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:idle_transfig5": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:idle_transfig_combat1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:idle_transfig_combat2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:idle_transfig_combat3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:idle_transfiguration_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:instant_armour": {
+  "animations": {
+   "idle": "animation.instant_armour.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:instant_body_combat": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:inverted_spear": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/inverted_spear.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/inverted_spear.png",
+   "enchanted": null
+  }
+ },
+ "ds:jfk": {
+  "animations": {
+   "idle": "animation.jfk.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/jfk.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/jfk.png"
+  }
+ },
+ "ds:jfk_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:job_application": {
+  "animations": {
+   "idle": "animation.job.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:jogo_fit": {
+  "animations": {
+   "idle": "animation.jogo_fit.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/jogo_fit.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/jogo_fit.png"
+  }
+ },
+ "ds:judge_fit": {
+  "animations": {
+   "idle": "animation.judge_fit.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/judge_fit.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/entity/judge_fit.png"
+  }
+ },
+ "ds:judgeman1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:judgeman2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:judgeman_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:kamutoke": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:kashimo_fit": {
+  "animations": {
+   "idle": "animation.kashimo_fit.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/kashimo_fit.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/kashimo_fit.png"
+  }
+ },
+ "ds:katana": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/katana.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/katana.png",
+   "enchanted": null
+  }
+ },
+ "ds:keycard": {
+  "animations": {
+   "idle": "animation.keycard.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/keycard.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/keycard.png"
+  }
+ },
+ "ds:kings_cloak": {
+  "animations": {
+   "idle": "animation.kings_cloak.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/kings_cloak.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/kings_cloak.png"
+  }
+ },
+ "ds:kusakabe_cloak": {
+  "animations": {
+   "idle": "animation.kusakabe_cloak.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/kusakabe_cloak.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/kusakabe_fit.png"
+  }
+ },
+ "ds:kusakabe_fit": {
+  "animations": {
+   "idle": "animation.kusakabe_fit.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/kusakabe_fit.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/kusakabe_fit.png"
+  }
+ },
+ "ds:legacy_scythe": {
+  "animations": {
+   "idle": "animation.legacy_scythe.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/legacy_scythe.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/astaroth_lament.png"
+  }
+ },
+ "ds:lightning1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lightning2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lightning3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lightning4": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lightning5": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lightning6": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lightning7": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lightning_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:limitless1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:limitless2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:limitless3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:limitless4": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:limitless5": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:limitless6": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:limitless_fists": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:limitless_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lovetrain1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lovetrain2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lovetrain3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lovetrain4": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lovetrain5": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lovetrain6": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lovetrain_fists": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:lovetrain_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:mahito_fit": {
+  "animations": {
+   "idle": "animation.mahito_fit.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/mahito_fit.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/entity/mahito_fit.png"
+  }
+ },
+ "ds:megaphone": {
+  "animations": {
+   "idle": "animation.megaphone.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/megaphone.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/megaphone.png"
+  }
+ },
+ "ds:miracles_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:mountain_buster": {
+  "animations": {
+   "idle": "animation.mountain_buster.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/mountain_buster.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/mountain_buster.png"
+  }
+ },
+ "ds:mysterious_tablet": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/tablet.geo.json"
+  },
+  "scripts": {},
+  "textures": {
+   "default": "crb:textures/models/tablet.png"
+  }
+ },
+ "ds:mysterious_torch": {
+  "animations": {},
+  "geometry": {
+   "awakened": "crb:geo/mysterious_torch.geo.json",
+   "default": "crb:geo/mysterious_torch.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "awakened": "crb:textures/models/mysterious_torch2.png",
+   "default": "crb:textures/models/mysterious_torch.png"
+  }
+ },
+ "ds:nyoi_staff": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/nyoi_staff.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/nyoi_staff.png",
+   "enchanted": null
+  }
+ },
+ "ds:omega_scythe": {
+  "animations": {
+   "idle": "animation.omega_scythe.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/omega_scythe.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/omega_scythe.png"
+  }
+ },
+ "ds:origin_orb": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/orb.geo.json"
+  },
+  "scripts": {},
+  "textures": {
+   "default": "crb:textures/entity/lovetrain/pachinko_v5.png",
+   "enchanted": null
+  }
+ },
+ "ds:painkiller1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:painkiller_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:phone": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/phone.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/phone.png",
+   "enchanted": null
+  }
+ },
+ "ds:pigs_crown": {
+  "animations": {
+   "idle": "animation.pigs_crown.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/pigs_crown.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/pigs_crown.png"
+  }
+ },
+ "ds:playful_cloud": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:playful_cloud_sharpened": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/sharpened_cloud.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.leg_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/playful_cloud2.png",
+   "enchanted": null
+  }
+ },
+ "ds:promotion": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {},
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:reality_shard1": {
+  "animations": {
+   "idle": "animation.reality_shard.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/reality_shard.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/glocks.png",
+   "enchanted": null
+  }
+ },
+ "ds:reality_shard2": {
+  "animations": {
+   "idle": "animation.reality_shard.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/reality_shard.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/glocks.png",
+   "enchanted": null
+  }
+ },
+ "ds:reality_shard3": {
+  "animations": {
+   "idle": "animation.reality_shard.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/reality_shard.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/glocks.png",
+   "enchanted": null
+  }
+ },
+ "ds:reality_shard4": {
+  "animations": {
+   "idle": "animation.reality_shard.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/reality_shard.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/glocks.png"
+  }
+ },
+ "ds:rodofdiscord": {
+  "animations": {
+   "idle": "animation.rodofdiscord.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/rodofdiscord.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/airhorn.png"
+  }
+ },
+ "ds:rough_crystal": {
+  "animations": {
+   "idle": "animation.rough_crystal.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/crystal.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/rough_crystal.png"
+  }
+ },
+ "ds:settings": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shadow_style_katana": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/entity/textureoff.png",
+   "enchanted": null
+  }
+ },
+ "ds:shadow_wheel": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shikigami1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shikigami10": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shikigami11": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shikigami12": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shikigami2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shikigami3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shikigami4": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shikigami5": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shikigami6": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shikigami7": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:shikigami8": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:sight_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:slaughter_demon": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/slaughter_demon.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/slaughter_demon.png",
+   "enchanted": null
+  }
+ },
+ "ds:sorcerers_outfit": {
+  "animations": {
+   "idle": "animation.outfitmale_sorcerer.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/outfitmale_sorcerer2.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/entity/outfitmale_sorcerer.png"
+  }
+ },
+ "ds:soul_shrine1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:soul_shrine2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:soul_sword": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/soul_sword.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/soul_sword.png",
+   "enchanted": null
+  }
+ },
+ "ds:speech1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:speech2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:speech3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:speech4": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:speech_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:stable_transfigured_human": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/transfigured_human_item1.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/entity/transfigured_human1.png",
+   "enchanted": null
+  }
+ },
+ "ds:stats_book": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/book.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/stats_book.png",
+   "enchanted": null
+  }
+ },
+ "ds:strange_vile": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/strange_vile.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/models/strange_vile.png",
+   "enchanted": null
+  }
+ },
+ "ds:sukuna1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:sukuna2": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:sukuna3": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:sukuna4": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:sukuna5": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:sukuna_finger": {
+  "animations": {
+   "idle": "animation.sukuna_finger.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/sukuna_finger.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/sukuna_finger.png"
+  }
+ },
+ "ds:sukuna_fists": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:sukuna_robes": {
+  "animations": {
+   "idle": "animation.sukuna_robes.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/sukuna_robes.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/sukuna_robes.png"
+  }
+ },
+ "ds:sukuna_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:sukuna_torso": {
+  "animations": {
+   "idle": "animation.sukuna_torso.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/sukuna_torso.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/sukuna_torso.png"
+  }
+ },
+ "ds:the_shard": {
+  "animations": {
+   "idle": "animation.the_shard.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/the_shard.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/the_shard.png",
+   "enchanted": null
+  }
+ },
+ "ds:truegrimoire": {
+  "animations": {
+   "idle": "animation.truegrimoire.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/truegrimoire.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/truegrimoire.png"
+  }
+ },
+ "ds:truephaser": {
+  "animations": {
+   "idle": "animation.truephaser.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/truephaser.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/truesword.png"
+  }
+ },
+ "ds:truesword": {
+  "animations": {
+   "idle": "animation.truesword.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/truesword.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/truesword.png"
+  }
+ },
+ "ds:undying_crystal": {
+  "animations": {
+   "idle": "animation.undying_crystal.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/crystal.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/undying_crystal.png"
+  }
+ },
+ "ds:unstable_transfigured_human": {
+  "animations": {},
+  "geometry": {
+   "default": "crb:geo/transfigured_human_item2.geo.json"
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": "crb:textures/entity/transfigured_human2.png",
+   "enchanted": null
+  }
+ },
+ "ds:void_katana": {
+  "animations": {
+   "idle": "animation.void_katana.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/soulking_katana.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/soulking_katana.png"
+  }
+ },
+ "ds:water_fists": {
+  "animations": {
+   "idle": "animation.water_fists.idle"
+  },
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": null
+  }
+ },
+ "ds:windup1": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:windup_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:yuji_fists": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ },
+ "ds:yuji_fit": {
+  "animations": {
+   "idle": "animation.yuji_fit.idle"
+  },
+  "geometry": {
+   "default": "crb:geo/yuji_fit.geo.json"
+  },
+  "scripts": {
+   "animate": [
+    {
+     "idle": "query.is_alive"
+    }
+   ]
+  },
+  "textures": {
+   "default": "crb:textures/models/yuji_fit.png"
+  }
+ },
+ "ds:yuji_technique": {
+  "animations": {},
+  "geometry": {
+   "default": null
+  },
+  "scripts": {
+   "parent_setup": "variable.boot_layer_visible = 0.0;"
+  },
+  "textures": {
+   "default": null,
+   "enchanted": null
+  }
+ }
+}
