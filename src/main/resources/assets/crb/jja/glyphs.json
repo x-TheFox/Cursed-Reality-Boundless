@@ -1,0 +1,3627 @@
+{
+ "E300": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/00.png"
+ },
+ "E301": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/01.png"
+ },
+ "E302": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/02.png"
+ },
+ "E303": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/03.png"
+ },
+ "E304": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/04.png"
+ },
+ "E305": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/05.png"
+ },
+ "E306": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/06.png"
+ },
+ "E307": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/07.png"
+ },
+ "E308": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/08.png"
+ },
+ "E309": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/09.png"
+ },
+ "E30A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/0a.png"
+ },
+ "E30B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/0b.png"
+ },
+ "E30C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/0c.png"
+ },
+ "E30D": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/0d.png"
+ },
+ "E30E": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/0e.png"
+ },
+ "E30F": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/0f.png"
+ },
+ "E310": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/10.png"
+ },
+ "E311": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/11.png"
+ },
+ "E312": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/12.png"
+ },
+ "E313": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/13.png"
+ },
+ "E314": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/14.png"
+ },
+ "E315": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/15.png"
+ },
+ "E316": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/16.png"
+ },
+ "E324": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/24.png"
+ },
+ "E325": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/25.png"
+ },
+ "E326": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/26.png"
+ },
+ "E327": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/27.png"
+ },
+ "E328": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/28.png"
+ },
+ "E329": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/29.png"
+ },
+ "E32A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/2a.png"
+ },
+ "E330": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/30.png"
+ },
+ "E331": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/31.png"
+ },
+ "E332": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/32.png"
+ },
+ "E333": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/33.png"
+ },
+ "E334": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/34.png"
+ },
+ "E335": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/35.png"
+ },
+ "E336": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/36.png"
+ },
+ "E337": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/37.png"
+ },
+ "E338": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/38.png"
+ },
+ "E339": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/39.png"
+ },
+ "E33A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/3a.png"
+ },
+ "E33B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/3b.png"
+ },
+ "E33C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/3c.png"
+ },
+ "E33D": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/3d.png"
+ },
+ "E33E": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/3e.png"
+ },
+ "E340": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/40.png"
+ },
+ "E341": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/41.png"
+ },
+ "E342": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/42.png"
+ },
+ "E343": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/43.png"
+ },
+ "E344": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/44.png"
+ },
+ "E345": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/45.png"
+ },
+ "E346": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/46.png"
+ },
+ "E347": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/47.png"
+ },
+ "E348": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/48.png"
+ },
+ "E349": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/49.png"
+ },
+ "E34A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/4a.png"
+ },
+ "E34B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/4b.png"
+ },
+ "E34C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/4c.png"
+ },
+ "E34D": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/4d.png"
+ },
+ "E34E": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/4e.png"
+ },
+ "E34F": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/4f.png"
+ },
+ "E350": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/50.png"
+ },
+ "E351": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/51.png"
+ },
+ "E352": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/52.png"
+ },
+ "E353": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/53.png"
+ },
+ "E354": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/54.png"
+ },
+ "E355": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/55.png"
+ },
+ "E356": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/56.png"
+ },
+ "E357": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/57.png"
+ },
+ "E358": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/58.png"
+ },
+ "E359": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/59.png"
+ },
+ "E35A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/5a.png"
+ },
+ "E35B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/5b.png"
+ },
+ "E35C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/5c.png"
+ },
+ "E35D": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/5d.png"
+ },
+ "E35E": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/5e.png"
+ },
+ "E35F": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/5f.png"
+ },
+ "E364": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/64.png"
+ },
+ "E365": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/65.png"
+ },
+ "E366": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/66.png"
+ },
+ "E367": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/67.png"
+ },
+ "E368": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/68.png"
+ },
+ "E369": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/69.png"
+ },
+ "E370": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/70.png"
+ },
+ "E371": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/71.png"
+ },
+ "E372": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/72.png"
+ },
+ "E373": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/73.png"
+ },
+ "E374": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/74.png"
+ },
+ "E375": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/75.png"
+ },
+ "E376": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/76.png"
+ },
+ "E377": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/77.png"
+ },
+ "E378": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/78.png"
+ },
+ "E381": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/81.png"
+ },
+ "E382": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/82.png"
+ },
+ "E383": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/83.png"
+ },
+ "E384": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/84.png"
+ },
+ "E385": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/85.png"
+ },
+ "E386": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/86.png"
+ },
+ "E387": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/87.png"
+ },
+ "E388": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/88.png"
+ },
+ "E389": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/89.png"
+ },
+ "E38A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/8a.png"
+ },
+ "E38B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/8b.png"
+ },
+ "E38C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/8c.png"
+ },
+ "E390": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/90.png"
+ },
+ "E391": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/91.png"
+ },
+ "E392": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/92.png"
+ },
+ "E393": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/93.png"
+ },
+ "E394": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/94.png"
+ },
+ "E395": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/95.png"
+ },
+ "E396": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/96.png"
+ },
+ "E397": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/97.png"
+ },
+ "E398": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/98.png"
+ },
+ "E399": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/99.png"
+ },
+ "E39A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/9a.png"
+ },
+ "E39B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/9b.png"
+ },
+ "E39C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/9c.png"
+ },
+ "E39D": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/9d.png"
+ },
+ "E39E": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/9e.png"
+ },
+ "E39F": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/9f.png"
+ },
+ "E3A0": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/a0.png"
+ },
+ "E3A1": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/a1.png"
+ },
+ "E3A2": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/a2.png"
+ },
+ "E3A3": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/a3.png"
+ },
+ "E3A4": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/a4.png"
+ },
+ "E3A5": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/a5.png"
+ },
+ "E3A6": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/a6.png"
+ },
+ "E3A7": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/a7.png"
+ },
+ "E3A8": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/a8.png"
+ },
+ "E3A9": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/a9.png"
+ },
+ "E3AA": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/aa.png"
+ },
+ "E3AB": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/ab.png"
+ },
+ "E3AC": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/ac.png"
+ },
+ "E3AD": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/ad.png"
+ },
+ "E3AE": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/ae.png"
+ },
+ "E3AF": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/af.png"
+ },
+ "E3B0": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/b0.png"
+ },
+ "E3B1": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/b1.png"
+ },
+ "E3B2": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/b2.png"
+ },
+ "E3B3": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/b3.png"
+ },
+ "E3B4": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/b4.png"
+ },
+ "E3B5": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/b5.png"
+ },
+ "E3B6": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/b6.png"
+ },
+ "E3B7": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/b7.png"
+ },
+ "E3B8": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/b8.png"
+ },
+ "E3B9": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/b9.png"
+ },
+ "E3BA": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/ba.png"
+ },
+ "E3BB": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/bb.png"
+ },
+ "E3BC": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/bc.png"
+ },
+ "E3BD": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/bd.png"
+ },
+ "E3BE": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/be.png"
+ },
+ "E3BF": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/bf.png"
+ },
+ "E3C7": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/c7.png"
+ },
+ "E3C8": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/c8.png"
+ },
+ "E3C9": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/c9.png"
+ },
+ "E3CA": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/ca.png"
+ },
+ "E3CB": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/cb.png"
+ },
+ "E3CC": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/cc.png"
+ },
+ "E3D4": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/d4.png"
+ },
+ "E3D5": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/d5.png"
+ },
+ "E3D6": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/d6.png"
+ },
+ "E3D7": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/d7.png"
+ },
+ "E3D8": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/d8.png"
+ },
+ "E3D9": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/d9.png"
+ },
+ "E3DA": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/da.png"
+ },
+ "E3DB": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/db.png"
+ },
+ "E3DC": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/dc.png"
+ },
+ "E3DD": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/dd.png"
+ },
+ "E3DE": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/de.png"
+ },
+ "E3DF": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/df.png"
+ },
+ "E3E0": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/e0.png"
+ },
+ "E3E1": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/e1.png"
+ },
+ "E3E2": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/e2.png"
+ },
+ "E3E3": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/e3.png"
+ },
+ "E3E4": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/e4.png"
+ },
+ "E3E5": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/e5.png"
+ },
+ "E3E6": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/e6.png"
+ },
+ "E3E7": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/e7.png"
+ },
+ "E3E8": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/e8.png"
+ },
+ "E3F0": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/f0.png"
+ },
+ "E3F1": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/f1.png"
+ },
+ "E3F2": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/f2.png"
+ },
+ "E3F3": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/f3.png"
+ },
+ "E3F4": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/f4.png"
+ },
+ "E3F5": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/f5.png"
+ },
+ "E3F6": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/f6.png"
+ },
+ "E3F7": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/f7.png"
+ },
+ "E3F8": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/f8.png"
+ },
+ "E3F9": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/f9.png"
+ },
+ "E3FA": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/fa.png"
+ },
+ "E3FB": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/fb.png"
+ },
+ "E3FC": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/fc.png"
+ },
+ "E3FD": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/e3/fd.png"
+ },
+ "E3FE": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/e3/fe.png"
+ },
+ "E400": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/00.png"
+ },
+ "E401": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/01.png"
+ },
+ "E402": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/02.png"
+ },
+ "E403": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/03.png"
+ },
+ "E404": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/04.png"
+ },
+ "E405": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/05.png"
+ },
+ "E406": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/06.png"
+ },
+ "E407": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/07.png"
+ },
+ "E408": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/08.png"
+ },
+ "E409": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/09.png"
+ },
+ "E40A": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/0a.png"
+ },
+ "E40B": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/0b.png"
+ },
+ "E40C": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/0c.png"
+ },
+ "E40D": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/0d.png"
+ },
+ "E40E": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/0e.png"
+ },
+ "E410": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/10.png"
+ },
+ "E411": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/11.png"
+ },
+ "E412": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/12.png"
+ },
+ "E413": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/13.png"
+ },
+ "E414": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/14.png"
+ },
+ "E415": {
+  "impact": true,
+  "size": 295,
+  "texture": "crb:textures/glyph/e4/15.png"
+ },
+ "E500": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/00.png"
+ },
+ "E501": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/01.png"
+ },
+ "E502": {
+  "impact": false,
+  "size": 27,
+  "texture": "crb:textures/glyph/e5/02.png"
+ },
+ "E503": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/03.png"
+ },
+ "E504": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/04.png"
+ },
+ "E505": {
+  "impact": false,
+  "size": 27,
+  "texture": "crb:textures/glyph/e5/05.png"
+ },
+ "E506": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/06.png"
+ },
+ "E507": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/07.png"
+ },
+ "E508": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/08.png"
+ },
+ "E509": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/09.png"
+ },
+ "E50A": {
+  "impact": false,
+  "size": 27,
+  "texture": "crb:textures/glyph/e5/0a.png"
+ },
+ "E50B": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/0b.png"
+ },
+ "E50C": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/0c.png"
+ },
+ "E50D": {
+  "impact": false,
+  "size": 27,
+  "texture": "crb:textures/glyph/e5/0d.png"
+ },
+ "E50E": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/0e.png"
+ },
+ "E510": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/10.png"
+ },
+ "E511": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/11.png"
+ },
+ "E512": {
+  "impact": false,
+  "size": 27,
+  "texture": "crb:textures/glyph/e5/12.png"
+ },
+ "E513": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/13.png"
+ },
+ "E514": {
+  "impact": false,
+  "size": 26,
+  "texture": "crb:textures/glyph/e5/14.png"
+ },
+ "E515": {
+  "impact": false,
+  "size": 27,
+  "texture": "crb:textures/glyph/e5/15.png"
+ },
+ "E600": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/00.png"
+ },
+ "E601": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/01.png"
+ },
+ "E602": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/02.png"
+ },
+ "E603": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/03.png"
+ },
+ "E604": {
+  "impact": true,
+  "size": 14,
+  "texture": "crb:textures/glyph/e6/04.png"
+ },
+ "E605": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/05.png"
+ },
+ "E606": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/06.png"
+ },
+ "E607": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/07.png"
+ },
+ "E608": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/08.png"
+ },
+ "E609": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/09.png"
+ },
+ "E60A": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/0a.png"
+ },
+ "E60B": {
+  "impact": true,
+  "size": 14,
+  "texture": "crb:textures/glyph/e6/0b.png"
+ },
+ "E60C": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/0c.png"
+ },
+ "E60D": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/0d.png"
+ },
+ "E60E": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/0e.png"
+ },
+ "E610": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/10.png"
+ },
+ "E611": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/11.png"
+ },
+ "E612": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/12.png"
+ },
+ "E613": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/13.png"
+ },
+ "E614": {
+  "impact": true,
+  "size": 14,
+  "texture": "crb:textures/glyph/e6/14.png"
+ },
+ "E615": {
+  "impact": true,
+  "size": 13,
+  "texture": "crb:textures/glyph/e6/15.png"
+ },
+ "E700": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/00.png"
+ },
+ "E701": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/01.png"
+ },
+ "E702": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/02.png"
+ },
+ "E703": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/03.png"
+ },
+ "E704": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/04.png"
+ },
+ "E705": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/05.png"
+ },
+ "E706": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/06.png"
+ },
+ "E707": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/07.png"
+ },
+ "E708": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/08.png"
+ },
+ "E709": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/09.png"
+ },
+ "E70A": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/0a.png"
+ },
+ "E70B": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/0b.png"
+ },
+ "E70C": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/0c.png"
+ },
+ "E70D": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/0d.png"
+ },
+ "E70E": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/0e.png"
+ },
+ "E70F": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/0f.png"
+ },
+ "E710": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/10.png"
+ },
+ "E711": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/11.png"
+ },
+ "E712": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/12.png"
+ },
+ "E713": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/13.png"
+ },
+ "E714": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/14.png"
+ },
+ "E715": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/15.png"
+ },
+ "E71A": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/1a.png"
+ },
+ "E71B": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/1b.png"
+ },
+ "E720": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/20.png"
+ },
+ "E721": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/21.png"
+ },
+ "E722": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/22.png"
+ },
+ "E723": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/23.png"
+ },
+ "E724": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/24.png"
+ },
+ "E725": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/25.png"
+ },
+ "E726": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/26.png"
+ },
+ "E727": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/27.png"
+ },
+ "E728": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/28.png"
+ },
+ "E729": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/29.png"
+ },
+ "E72A": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/2a.png"
+ },
+ "E72B": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/2b.png"
+ },
+ "E72C": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/2c.png"
+ },
+ "E72D": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/2d.png"
+ },
+ "E72E": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/2e.png"
+ },
+ "E72F": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/2f.png"
+ },
+ "E730": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/30.png"
+ },
+ "E731": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/31.png"
+ },
+ "E732": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/32.png"
+ },
+ "E733": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/33.png"
+ },
+ "E734": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/34.png"
+ },
+ "E735": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/35.png"
+ },
+ "E736": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/36.png"
+ },
+ "E737": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/37.png"
+ },
+ "E738": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/38.png"
+ },
+ "E739": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/39.png"
+ },
+ "E73A": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/3a.png"
+ },
+ "E73B": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/3b.png"
+ },
+ "E73C": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/3c.png"
+ },
+ "E73D": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/3d.png"
+ },
+ "E73E": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/3e.png"
+ },
+ "E740": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/40.png"
+ },
+ "E741": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/41.png"
+ },
+ "E742": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/42.png"
+ },
+ "E743": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/43.png"
+ },
+ "E744": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/44.png"
+ },
+ "E745": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/45.png"
+ },
+ "E746": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/46.png"
+ },
+ "E747": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/47.png"
+ },
+ "E748": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/48.png"
+ },
+ "E749": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/49.png"
+ },
+ "E74A": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/4a.png"
+ },
+ "E74B": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/4b.png"
+ },
+ "E74C": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/4c.png"
+ },
+ "E74D": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/4d.png"
+ },
+ "E74E": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/4e.png"
+ },
+ "E74F": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/4f.png"
+ },
+ "E750": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/50.png"
+ },
+ "E751": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/51.png"
+ },
+ "E752": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/52.png"
+ },
+ "E753": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/53.png"
+ },
+ "E754": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/54.png"
+ },
+ "E755": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/55.png"
+ },
+ "E756": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/56.png"
+ },
+ "E757": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/57.png"
+ },
+ "E758": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/58.png"
+ },
+ "E759": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/59.png"
+ },
+ "E75A": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/5a.png"
+ },
+ "E75B": {
+  "impact": true,
+  "size": 495,
+  "texture": "crb:textures/glyph/e7/5b.png"
+ },
+ "E75C": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/5c.png"
+ },
+ "E75D": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/5d.png"
+ },
+ "E75E": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/5e.png"
+ },
+ "E75F": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/5f.png"
+ },
+ "E760": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/60.png"
+ },
+ "E770": {
+  "impact": true,
+  "size": 496,
+  "texture": "crb:textures/glyph/e7/70.png"
+ },
+ "E800": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/00.png"
+ },
+ "E801": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/01.png"
+ },
+ "E802": {
+  "impact": true,
+  "size": 111,
+  "texture": "crb:textures/glyph/e8/02.png"
+ },
+ "E803": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/03.png"
+ },
+ "E804": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/04.png"
+ },
+ "E805": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/05.png"
+ },
+ "E806": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/06.png"
+ },
+ "E807": {
+  "impact": true,
+  "size": 111,
+  "texture": "crb:textures/glyph/e8/07.png"
+ },
+ "E810": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/10.png"
+ },
+ "E811": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/11.png"
+ },
+ "E812": {
+  "impact": true,
+  "size": 111,
+  "texture": "crb:textures/glyph/e8/12.png"
+ },
+ "E813": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/13.png"
+ },
+ "E820": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/20.png"
+ },
+ "E821": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/21.png"
+ },
+ "E822": {
+  "impact": true,
+  "size": 111,
+  "texture": "crb:textures/glyph/e8/22.png"
+ },
+ "E823": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/23.png"
+ },
+ "E824": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/24.png"
+ },
+ "E825": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/25.png"
+ },
+ "E826": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/26.png"
+ },
+ "E830": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/30.png"
+ },
+ "E831": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/31.png"
+ },
+ "E832": {
+  "impact": true,
+  "size": 111,
+  "texture": "crb:textures/glyph/e8/32.png"
+ },
+ "E833": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/33.png"
+ },
+ "E834": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/34.png"
+ },
+ "E835": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/35.png"
+ },
+ "E836": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/36.png"
+ },
+ "E837": {
+  "impact": true,
+  "size": 111,
+  "texture": "crb:textures/glyph/e8/37.png"
+ },
+ "E838": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/38.png"
+ },
+ "E839": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/39.png"
+ },
+ "E83A": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/3a.png"
+ },
+ "E83B": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/3b.png"
+ },
+ "E83C": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/3c.png"
+ },
+ "E83D": {
+  "impact": true,
+  "size": 111,
+  "texture": "crb:textures/glyph/e8/3d.png"
+ },
+ "E83E": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/3e.png"
+ },
+ "E83F": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/3f.png"
+ },
+ "E840": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/40.png"
+ },
+ "E850": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/50.png"
+ },
+ "E860": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/60.png"
+ },
+ "E870": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/70.png"
+ },
+ "E880": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/80.png"
+ },
+ "E890": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/90.png"
+ },
+ "E8A0": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/a0.png"
+ },
+ "E8B0": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/b0.png"
+ },
+ "E8C0": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/c0.png"
+ },
+ "E8D0": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/d0.png"
+ },
+ "E8E0": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/e0.png"
+ },
+ "E8F0": {
+  "impact": true,
+  "size": 110,
+  "texture": "crb:textures/glyph/e8/f0.png"
+ },
+ "E900": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/00.png"
+ },
+ "E901": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/01.png"
+ },
+ "E902": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/02.png"
+ },
+ "E903": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/03.png"
+ },
+ "E904": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/04.png"
+ },
+ "E905": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/05.png"
+ },
+ "E906": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/06.png"
+ },
+ "E907": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/07.png"
+ },
+ "E908": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/08.png"
+ },
+ "E909": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/09.png"
+ },
+ "E90A": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/0a.png"
+ },
+ "E90B": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/0b.png"
+ },
+ "E90C": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/0c.png"
+ },
+ "E90D": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/0d.png"
+ },
+ "E90E": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/0e.png"
+ },
+ "E90F": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/0f.png"
+ },
+ "E910": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/10.png"
+ },
+ "E911": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/11.png"
+ },
+ "E912": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/12.png"
+ },
+ "E913": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/13.png"
+ },
+ "E914": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/14.png"
+ },
+ "E915": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/15.png"
+ },
+ "E916": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/16.png"
+ },
+ "E917": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/17.png"
+ },
+ "E918": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/18.png"
+ },
+ "E919": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/19.png"
+ },
+ "E91A": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/1a.png"
+ },
+ "E91B": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/1b.png"
+ },
+ "E91C": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/1c.png"
+ },
+ "E91D": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/1d.png"
+ },
+ "E91E": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/1e.png"
+ },
+ "E91F": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/1f.png"
+ },
+ "E920": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/20.png"
+ },
+ "E921": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/21.png"
+ },
+ "E922": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/22.png"
+ },
+ "E923": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/23.png"
+ },
+ "E924": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/24.png"
+ },
+ "E925": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/25.png"
+ },
+ "E926": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/26.png"
+ },
+ "E927": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/27.png"
+ },
+ "E928": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/28.png"
+ },
+ "E929": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/29.png"
+ },
+ "E92A": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/2a.png"
+ },
+ "E92B": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/2b.png"
+ },
+ "E92C": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/2c.png"
+ },
+ "E92D": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/2d.png"
+ },
+ "E92E": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/2e.png"
+ },
+ "E92F": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/2f.png"
+ },
+ "E930": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/30.png"
+ },
+ "E931": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/31.png"
+ },
+ "E932": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/32.png"
+ },
+ "E933": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/33.png"
+ },
+ "E934": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/34.png"
+ },
+ "E935": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/35.png"
+ },
+ "E936": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/36.png"
+ },
+ "E937": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/37.png"
+ },
+ "E938": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/38.png"
+ },
+ "E939": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/39.png"
+ },
+ "E93A": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/3a.png"
+ },
+ "E93B": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/3b.png"
+ },
+ "E93C": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/3c.png"
+ },
+ "E93D": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/3d.png"
+ },
+ "E93E": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/3e.png"
+ },
+ "E93F": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/3f.png"
+ },
+ "E940": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/40.png"
+ },
+ "E941": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/41.png"
+ },
+ "E942": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/42.png"
+ },
+ "E943": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/43.png"
+ },
+ "E944": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/44.png"
+ },
+ "E945": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/45.png"
+ },
+ "E946": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/46.png"
+ },
+ "E947": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/47.png"
+ },
+ "E948": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/48.png"
+ },
+ "E949": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/49.png"
+ },
+ "E94A": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/4a.png"
+ },
+ "E94B": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/4b.png"
+ },
+ "E94C": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/4c.png"
+ },
+ "E94D": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/4d.png"
+ },
+ "E94E": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/4e.png"
+ },
+ "E94F": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/4f.png"
+ },
+ "E966": {
+  "impact": true,
+  "size": 64,
+  "texture": "crb:textures/glyph/e9/66.png"
+ },
+ "F100": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/00.png"
+ },
+ "F101": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/01.png"
+ },
+ "F102": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/02.png"
+ },
+ "F103": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/03.png"
+ },
+ "F104": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/04.png"
+ },
+ "F105": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/05.png"
+ },
+ "F106": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/06.png"
+ },
+ "F107": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/07.png"
+ },
+ "F108": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/08.png"
+ },
+ "F109": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/09.png"
+ },
+ "F10A": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/0a.png"
+ },
+ "F10B": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/0b.png"
+ },
+ "F10C": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/0c.png"
+ },
+ "F10D": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/0d.png"
+ },
+ "F10E": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/0e.png"
+ },
+ "F10F": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/0f.png"
+ },
+ "F110": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/10.png"
+ },
+ "F111": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/11.png"
+ },
+ "F112": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/12.png"
+ },
+ "F113": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/13.png"
+ },
+ "F114": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/14.png"
+ },
+ "F115": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/15.png"
+ },
+ "F116": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/16.png"
+ },
+ "F117": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/17.png"
+ },
+ "F118": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/18.png"
+ },
+ "F119": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/19.png"
+ },
+ "F11A": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/1a.png"
+ },
+ "F11B": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/1b.png"
+ },
+ "F11C": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/1c.png"
+ },
+ "F11D": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/1d.png"
+ },
+ "F11E": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/1e.png"
+ },
+ "F11F": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/1f.png"
+ },
+ "F120": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/20.png"
+ },
+ "F121": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/21.png"
+ },
+ "F122": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/22.png"
+ },
+ "F123": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/23.png"
+ },
+ "F124": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/24.png"
+ },
+ "F125": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/25.png"
+ },
+ "F126": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/26.png"
+ },
+ "F127": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/27.png"
+ },
+ "F128": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/28.png"
+ },
+ "F129": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/29.png"
+ },
+ "F12A": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/2a.png"
+ },
+ "F12B": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/2b.png"
+ },
+ "F12C": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/2c.png"
+ },
+ "F12D": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/2d.png"
+ },
+ "F12E": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/2e.png"
+ },
+ "F12F": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/2f.png"
+ },
+ "F130": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/30.png"
+ },
+ "F131": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/31.png"
+ },
+ "F132": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/32.png"
+ },
+ "F133": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/33.png"
+ },
+ "F134": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/34.png"
+ },
+ "F135": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/35.png"
+ },
+ "F136": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/36.png"
+ },
+ "F137": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/37.png"
+ },
+ "F138": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/38.png"
+ },
+ "F139": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/39.png"
+ },
+ "F13A": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/3a.png"
+ },
+ "F13B": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/3b.png"
+ },
+ "F13C": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/3c.png"
+ },
+ "F13D": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/3d.png"
+ },
+ "F13E": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/3e.png"
+ },
+ "F13F": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/3f.png"
+ },
+ "F140": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/40.png"
+ },
+ "F141": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/41.png"
+ },
+ "F142": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/42.png"
+ },
+ "F143": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/43.png"
+ },
+ "F144": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/44.png"
+ },
+ "F145": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/45.png"
+ },
+ "F146": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/46.png"
+ },
+ "F147": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/47.png"
+ },
+ "F148": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/48.png"
+ },
+ "F149": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/49.png"
+ },
+ "F14A": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/4a.png"
+ },
+ "F14B": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/4b.png"
+ },
+ "F14C": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/4c.png"
+ },
+ "F14D": {
+  "impact": true,
+  "size": 98,
+  "texture": "crb:textures/glyph/f1/4d.png"
+ },
+ "F14E": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/4e.png"
+ },
+ "F14F": {
+  "impact": true,
+  "size": 99,
+  "texture": "crb:textures/glyph/f1/4f.png"
+ },
+ "F2C0": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/c0.png"
+ },
+ "F2C1": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/c1.png"
+ },
+ "F2C2": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/c2.png"
+ },
+ "F2C3": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/c3.png"
+ },
+ "F2C4": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/c4.png"
+ },
+ "F2C5": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/c5.png"
+ },
+ "F2C6": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/c6.png"
+ },
+ "F2C7": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/c7.png"
+ },
+ "F2C8": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/c8.png"
+ },
+ "F2C9": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/c9.png"
+ },
+ "F2CA": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/ca.png"
+ },
+ "F2CB": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/cb.png"
+ },
+ "F2CC": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/cc.png"
+ },
+ "F2CD": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/cd.png"
+ },
+ "F2CE": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/ce.png"
+ },
+ "F2CF": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/cf.png"
+ },
+ "F2D0": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/d0.png"
+ },
+ "F2D1": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/d1.png"
+ },
+ "F2D2": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/d2.png"
+ },
+ "F2D3": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/d3.png"
+ },
+ "F2D4": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/d4.png"
+ },
+ "F2D5": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/d5.png"
+ },
+ "F2D6": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/d6.png"
+ },
+ "F2D7": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/d7.png"
+ },
+ "F2D8": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/d8.png"
+ },
+ "F2D9": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/d9.png"
+ },
+ "F2DA": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/da.png"
+ },
+ "F2E0": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/e0.png"
+ },
+ "F2E1": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/e1.png"
+ },
+ "F2E2": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/e2.png"
+ },
+ "F2E3": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/e3.png"
+ },
+ "F2E4": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/e4.png"
+ },
+ "F2E5": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/e5.png"
+ },
+ "F2E6": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/e6.png"
+ },
+ "F2E7": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/e7.png"
+ },
+ "F2E8": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/e8.png"
+ },
+ "F2E9": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/e9.png"
+ },
+ "F2EA": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/ea.png"
+ },
+ "F2EB": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/eb.png"
+ },
+ "F2EC": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/ec.png"
+ },
+ "F2F0": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/f0.png"
+ },
+ "F2F1": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/f1.png"
+ },
+ "F2F2": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/f2.png"
+ },
+ "F2F3": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/f3.png"
+ },
+ "F2F4": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/f4.png"
+ },
+ "F2F5": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/f5.png"
+ },
+ "F2F6": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/f6.png"
+ },
+ "F2F7": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/f7.png"
+ },
+ "F2F8": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/f8.png"
+ },
+ "F2F9": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/f9.png"
+ },
+ "F2FA": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/fa.png"
+ },
+ "F2FB": {
+  "impact": true,
+  "size": 38,
+  "texture": "crb:textures/glyph/f2/fb.png"
+ },
+ "F2FC": {
+  "impact": true,
+  "size": 39,
+  "texture": "crb:textures/glyph/f2/fc.png"
+ },
+ "F300": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/00.png"
+ },
+ "F301": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/01.png"
+ },
+ "F302": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/02.png"
+ },
+ "F303": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/03.png"
+ },
+ "F304": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/04.png"
+ },
+ "F305": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/05.png"
+ },
+ "F306": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/06.png"
+ },
+ "F307": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/07.png"
+ },
+ "F308": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/08.png"
+ },
+ "F309": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/09.png"
+ },
+ "F30A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/0a.png"
+ },
+ "F30B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/0b.png"
+ },
+ "F30C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/0c.png"
+ },
+ "F30D": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/0d.png"
+ },
+ "F30E": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/0e.png"
+ },
+ "F30F": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/0f.png"
+ },
+ "F310": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/10.png"
+ },
+ "F311": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/11.png"
+ },
+ "F312": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/12.png"
+ },
+ "F313": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/13.png"
+ },
+ "F314": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/14.png"
+ },
+ "F315": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/15.png"
+ },
+ "F316": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/16.png"
+ },
+ "F317": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/17.png"
+ },
+ "F318": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/18.png"
+ },
+ "F319": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/19.png"
+ },
+ "F31A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/1a.png"
+ },
+ "F31B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/1b.png"
+ },
+ "F31C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/1c.png"
+ },
+ "F31D": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/1d.png"
+ },
+ "F31E": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/1e.png"
+ },
+ "F31F": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/1f.png"
+ },
+ "F320": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/20.png"
+ },
+ "F321": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/21.png"
+ },
+ "F322": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/22.png"
+ },
+ "F323": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/23.png"
+ },
+ "F324": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/24.png"
+ },
+ "F325": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/25.png"
+ },
+ "F326": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/26.png"
+ },
+ "F327": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/27.png"
+ },
+ "F328": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/28.png"
+ },
+ "F329": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/29.png"
+ },
+ "F32A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/2a.png"
+ },
+ "F32B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/2b.png"
+ },
+ "F32C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/2c.png"
+ },
+ "F32D": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/2d.png"
+ },
+ "F32E": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/2e.png"
+ },
+ "F32F": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/2f.png"
+ },
+ "F330": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/30.png"
+ },
+ "F331": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/31.png"
+ },
+ "F332": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/32.png"
+ },
+ "F333": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/33.png"
+ },
+ "F334": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/34.png"
+ },
+ "F335": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/35.png"
+ },
+ "F336": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/36.png"
+ },
+ "F337": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/37.png"
+ },
+ "F338": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/38.png"
+ },
+ "F339": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/39.png"
+ },
+ "F33A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/3a.png"
+ },
+ "F33B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/3b.png"
+ },
+ "F33C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/3c.png"
+ },
+ "F33D": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/3d.png"
+ },
+ "F33E": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/3e.png"
+ },
+ "F33F": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/3f.png"
+ },
+ "F340": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/40.png"
+ },
+ "F341": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/41.png"
+ },
+ "F342": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/42.png"
+ },
+ "F343": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/43.png"
+ },
+ "F344": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/44.png"
+ },
+ "F345": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/45.png"
+ },
+ "F346": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/46.png"
+ },
+ "F347": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/47.png"
+ },
+ "F348": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/48.png"
+ },
+ "F349": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/49.png"
+ },
+ "F34A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/4a.png"
+ },
+ "F34B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/4b.png"
+ },
+ "F34C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/4c.png"
+ },
+ "F34D": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/4d.png"
+ },
+ "F34E": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/4e.png"
+ },
+ "F34F": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/4f.png"
+ },
+ "F350": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/50.png"
+ },
+ "F351": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/51.png"
+ },
+ "F352": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/52.png"
+ },
+ "F353": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/53.png"
+ },
+ "F354": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/54.png"
+ },
+ "F355": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/55.png"
+ },
+ "F356": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/56.png"
+ },
+ "F357": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/57.png"
+ },
+ "F358": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/58.png"
+ },
+ "F359": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/59.png"
+ },
+ "F35A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/5a.png"
+ },
+ "F35B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/5b.png"
+ },
+ "F35C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/5c.png"
+ },
+ "F35D": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/5d.png"
+ },
+ "F35E": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/5e.png"
+ },
+ "F35F": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/5f.png"
+ },
+ "F360": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/60.png"
+ },
+ "F361": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/61.png"
+ },
+ "F362": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/62.png"
+ },
+ "F363": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/63.png"
+ },
+ "F364": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/64.png"
+ },
+ "F365": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/65.png"
+ },
+ "F366": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/66.png"
+ },
+ "F367": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/67.png"
+ },
+ "F368": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/68.png"
+ },
+ "F369": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/69.png"
+ },
+ "F36A": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/6a.png"
+ },
+ "F36B": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/6b.png"
+ },
+ "F36C": {
+  "impact": true,
+  "size": 689,
+  "texture": "crb:textures/glyph/f3/6c.png"
+ },
+ "F370": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/70.png"
+ },
+ "F380": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/80.png"
+ },
+ "F390": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/90.png"
+ },
+ "F3A0": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/a0.png"
+ },
+ "F3B0": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/b0.png"
+ },
+ "F3C0": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/c0.png"
+ },
+ "F3D0": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/d0.png"
+ },
+ "F3E0": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/e0.png"
+ },
+ "F3F0": {
+  "impact": true,
+  "size": 688,
+  "texture": "crb:textures/glyph/f3/f0.png"
+ }
+}

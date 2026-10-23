@@ -72,6 +72,10 @@ dependencies {
     implementation "foundry.veil:veil-neoforge-${minecraft_version}:${veil_version}"
     implementation "net.tslat.smartbrainlib:SmartBrainLib-neoforge-${minecraft_version}:${sbl_version}"
 
+    // Jar-in-jar'd by Player Animation Library at runtime; unit tests load animations directly.
+    testRuntimeOnly('com.zigythebird:mochafloats:4.1.0') { transitive = false }
+    testRuntimeOnly 'org.javassist:javassist:3.30.2-GA'
+
     testImplementation 'org.junit.jupiter:junit-jupiter:5.11.3'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

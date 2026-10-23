@@ -1,0 +1,1837 @@
+{
+ "geometry.agito": {
+  "bones": 26,
+  "file": "crb:geo/agito.geo.json",
+  "source": "models/entity/shikigami/block.geo.json"
+ },
+ "geometry.airhorn": {
+  "bones": 4,
+  "file": "crb:geo/airhorn.geo.json",
+  "source": "models/entity/weapons/airhorn.geo.json"
+ },
+ "geometry.amberbeast": {
+  "bones": 7,
+  "file": "crb:geo/amberbeast.geo.json",
+  "source": "models/entity/amberbeast1.geo.json"
+ },
+ "geometry.amberbeastfull": {
+  "bones": 15,
+  "file": "crb:geo/amberbeastfull.geo.json",
+  "source": "models/entity/amberbeastfull.geo.json"
+ },
+ "geometry.ammo": {
+  "bones": 5,
+  "file": "crb:geo/ammo.geo.json",
+  "source": "models/entity/weapons/ammo.geo.json"
+ },
+ "geometry.astaroth_lament": {
+  "bones": 17,
+  "file": "crb:geo/astaroth_lament.geo.json",
+  "source": "models/entity/astaroth_lament.geo.json"
+ },
+ "geometry.atomic_crystal": {
+  "bones": 9,
+  "file": "crb:geo/atomic_crystal.geo.json",
+  "source": "models/entity/relics/atomic_crystal.geo.json"
+ },
+ "geometry.atomic_sword": {
+  "bones": 1,
+  "file": "crb:geo/atomic_sword.geo.json",
+  "source": "models/entity/at.json"
+ },
+ "geometry.attractor": {
+  "bones": 11,
+  "file": "crb:geo/attractor.geo.json",
+  "source": "models/entity/attractor.geo.json"
+ },
+ "geometry.awakened_uniform": {
+  "bones": 20,
+  "file": "crb:geo/awakened_uniform.geo.json",
+  "source": "models/entity/awakened_uniform.json"
+ },
+ "geometry.azureflames_curse": {
+  "bones": 19,
+  "file": "crb:geo/azureflames_curse.geo.json",
+  "source": "models/entity/curses/azureflames_curse.geo.json"
+ },
+ "geometry.bag_head": {
+  "bones": 11,
+  "file": "crb:geo/bag_head.geo.json",
+  "source": "models/entity/entities/bag_head.geo.json"
+ },
+ "geometry.bdayseal_plushie": {
+  "bones": 15,
+  "file": "crb:geo/bdayseal_plushie.geo.json",
+  "source": "models/blocks/bdayseal_plushie.geo.json"
+ },
+ "geometry.belt": {
+  "bones": 11,
+  "file": "crb:geo/belt.geo.json",
+  "source": "models/entity/belt.geo.json"
+ },
+ "geometry.beru": {
+  "bones": 94,
+  "file": "crb:geo/beru.geo.json",
+  "source": "models/entity/curses/beru.geo.json"
+ },
+ "geometry.beru_daggers": {
+  "bones": 2,
+  "file": "crb:geo/beru_daggers.geo.json",
+  "source": "models/entity/weapons/beru_daggers.geo.json"
+ },
+ "geometry.birch_tree": {
+  "bones": 1,
+  "file": "crb:geo/birch_tree.geo.json",
+  "source": "models/entity/birch_tree.geo.json"
+ },
+ "geometry.black_blade": {
+  "bones": 3,
+  "file": "crb:geo/black_blade.geo.json",
+  "source": "models/entity/weapons/black_blade.geo.json"
+ },
+ "geometry.bluelemon": {
+  "bones": 26,
+  "file": "crb:geo/bluelemon.geo.json",
+  "source": "models/entity/bluelemon.geo.json"
+ },
+ "geometry.body_clankers": {
+  "bones": 15,
+  "file": "crb:geo/body_clankers.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/body_clankers.json",
+  "source": "models/entity/mahito/body_clankers.geo.json"
+ },
+ "geometry.body_drill": {
+  "bones": 16,
+  "file": "crb:geo/body_drill.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/body_drill.json",
+  "source": "models/entity/mahito/drill.geo.json"
+ },
+ "geometry.body_explode": {
+  "bones": 25,
+  "file": "crb:geo/body_explode.geo.json",
+  "source": "models/entity/body_explode.json"
+ },
+ "geometry.body_metal": {
+  "bones": 33,
+  "file": "crb:geo/body_metal.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/body_metal.json",
+  "source": "models/entity/mahito/body_metal.geo.json"
+ },
+ "geometry.body_repel": {
+  "bones": 7,
+  "file": "crb:geo/body_repel.geo.json",
+  "source": "models/entity/mahito/body_repel.geo.json"
+ },
+ "geometry.body_transfigure": {
+  "bones": 67,
+  "file": "crb:geo/body_transfigure.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/body_transfigure.json",
+  "source": "models/entity/mahito/body_transfigure.geo.json"
+ },
+ "geometry.book": {
+  "bones": 8,
+  "file": "crb:geo/book.geo.json",
+  "source": "models/entity/book.geo.json"
+ },
+ "geometry.brute1": {
+  "bones": 7,
+  "file": "crb:geo/brute1.geo.json",
+  "source": "models/entity/curses/brute1.geo.json"
+ },
+ "geometry.brute2": {
+  "bones": 7,
+  "file": "crb:geo/brute2.geo.json",
+  "source": "models/entity/curses/brute2.geo.json"
+ },
+ "geometry.brute3": {
+  "bones": 7,
+  "file": "crb:geo/brute3.geo.json",
+  "source": "models/entity/curses/brute3.geo.json"
+ },
+ "geometry.brute4": {
+  "bones": 7,
+  "file": "crb:geo/brute4.geo.json",
+  "source": "models/entity/curses/brute4.geo.json"
+ },
+ "geometry.bull": {
+  "bones": 25,
+  "file": "crb:geo/bull.geo.json",
+  "source": "models/entity/shikigami/bull.geo.json"
+ },
+ "geometry.butter_plushie": {
+  "bones": 6,
+  "file": "crb:geo/butter_plushie.geo.json",
+  "source": "models/blocks/butter_plushie.geo.json"
+ },
+ "geometry.butterjaffa_sword": {
+  "bones": 4,
+  "file": "crb:geo/butterjaffa_sword.geo.json",
+  "source": "models/entity/weapons/butterjaffa_sword.geo.json"
+ },
+ "geometry.calamity_claws": {
+  "bones": 4,
+  "file": "crb:geo/calamity_claws.geo.json",
+  "source": "models/entity/weapons/calamity_claws.geo.json"
+ },
+ "geometry.cargo1": {
+  "bones": 1,
+  "file": "crb:geo/cargo1.geo.json",
+  "source": "models/entity/lovetrain/cargo.geo.json"
+ },
+ "geometry.centipede": {
+  "bones": 46,
+  "file": "crb:geo/centipede.geo.json",
+  "source": "models/entity/curses/centipede.geo.json"
+ },
+ "geometry.centipede2": {
+  "bones": 47,
+  "file": "crb:geo/centipede2.geo.json",
+  "source": "models/entity/curses/centipede_large.geo.json"
+ },
+ "geometry.chaos": {
+  "bones": 30,
+  "file": "crb:geo/chaos.geo.json",
+  "source": "models/entity/chaos.geo.json"
+ },
+ "geometry.chimera_spine": {
+  "bones": 26,
+  "file": "crb:geo/chimera_spine.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/chimera_spine.json",
+  "source": "models/entity/shikigami/chimera_spine.geo.json"
+ },
+ "geometry.chosso_plushie": {
+  "bones": 15,
+  "file": "crb:geo/chosso_plushie.geo.json",
+  "source": "models/blocks/chosso_plushie.json"
+ },
+ "geometry.component": {
+  "bones": 4,
+  "file": "crb:geo/component.geo.json",
+  "source": "models/entity/component.geo.json"
+ },
+ "geometry.component2": {
+  "bones": 2,
+  "file": "crb:geo/component2.geo.json",
+  "source": "models/entity/component2.geo.json"
+ },
+ "geometry.conflict_essence": {
+  "bones": 20,
+  "file": "crb:geo/conflict_essence.geo.json",
+  "source": "models/entity/ce.json"
+ },
+ "geometry.conflict_essence2": {
+  "bones": 17,
+  "file": "crb:geo/conflict_essence2.geo.json",
+  "source": "models/entity/ce2.json"
+ },
+ "geometry.core_of_creation": {
+  "bones": 7,
+  "file": "crb:geo/core_of_creation.geo.json",
+  "source": "models/entity/cr.json"
+ },
+ "geometry.cough_syrup": {
+  "bones": 8,
+  "file": "crb:geo/cough_syrup.geo.json",
+  "source": "models/entity/cough_syrup.geo.json"
+ },
+ "geometry.creepy": {
+  "bones": 11,
+  "file": "crb:geo/creepy.geo.json",
+  "source": "models/entity/curses/creepy.geo.json"
+ },
+ "geometry.crystal": {
+  "bones": 9,
+  "file": "crb:geo/crystal.geo.json",
+  "source": "models/entity/relics/crystal.geo.json"
+ },
+ "geometry.crystal_drop": {
+  "bones": 2,
+  "file": "crb:geo/crystal_drop.geo.json",
+  "source": "models/entity/relics/crystal_drop.geo.json"
+ },
+ "geometry.cube_area": {
+  "bones": 1,
+  "file": "crb:geo/cube_area.geo.json",
+  "source": "models/entity/cube_area.geo.json"
+ },
+ "geometry.cube_area2": {
+  "bones": 1,
+  "file": "crb:geo/cube_area2.geo.json",
+  "source": "models/entity/cube_area2.geo.json"
+ },
+ "geometry.curse_warder": {
+  "bones": 1,
+  "file": "crb:geo/curse_warder.geo.json",
+  "source": "models/entity/curse_warder.geo.json"
+ },
+ "geometry.cursed_closet": {
+  "bones": 4,
+  "file": "crb:geo/cursed_closet.geo.json",
+  "source": "models/entity/cursed_closet.geo.json"
+ },
+ "geometry.cursed_doll": {
+  "bones": 12,
+  "file": "crb:geo/cursed_doll.geo.json",
+  "source": "models/entity/cursed_doll.geo.json"
+ },
+ "geometry.cursed_egg": {
+  "bones": 2,
+  "file": "crb:geo/cursed_egg.geo.json",
+  "source": "models/entity/entities/cursed_egg.geo.json"
+ },
+ "geometry.cursed_eye": {
+  "bones": 23,
+  "file": "crb:geo/cursed_eye.geo.json",
+  "source": "models/entity/relics/cursed_eye.geo.json"
+ },
+ "geometry.cursed_eye_drop": {
+  "bones": 16,
+  "file": "crb:geo/cursed_eye_drop.geo.json",
+  "source": "models/entity/relics/cursed_eye_drop.geo.json"
+ },
+ "geometry.dackmug": {
+  "bones": 5,
+  "file": "crb:geo/dackmug.geo.json",
+  "source": "models/entity/dackmug.geo.json"
+ },
+ "geometry.danser_plushie": {
+  "bones": 16,
+  "file": "crb:geo/danser_plushie.geo.json",
+  "source": "models/blocks/danser_plushie.geo.json"
+ },
+ "geometry.deadly_sentencing": {
+  "bones": 35,
+  "file": "crb:geo/deadly_sentencing.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/deadly_sentencing.json",
+  "source": "models/entity/judgeman/deadly_sentencing.geo.json"
+ },
+ "geometry.deadly_sentencing_clashing": {
+  "bones": 25,
+  "file": "crb:geo/deadly_sentencing_clashing.geo.json",
+  "source": "models/entity/judgeman/deadly_sentencing_clashing.geo.json"
+ },
+ "geometry.deathgamble": {
+  "bones": 224,
+  "file": "crb:geo/deathgamble.geo.json",
+  "source": "models/entity/lovetrain/deathgamble.geo.json"
+ },
+ "geometry.devastator": {
+  "bones": 6,
+  "file": "crb:geo/devastator.geo.json",
+  "source": "models/entity/weapons/devastator.geo.json"
+ },
+ "geometry.divergent": {
+  "bones": 20,
+  "file": "crb:geo/divergent.geo.json",
+  "source": "models/entity/divergent.geo.json"
+ },
+ "geometry.divergentfists": {
+  "bones": 18,
+  "file": "crb:geo/divergentfists.geo.json",
+  "source": "models/entity/particles/divergentfists.geo.json"
+ },
+ "geometry.divine_wolf": {
+  "bones": 25,
+  "file": "crb:geo/divine_wolf.geo.json",
+  "source": "models/entity/shikigami/divine_wolf.geo.json"
+ },
+ "geometry.domain_barrier": {
+  "bones": 1,
+  "file": "crb:geo/domain_barrier.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/domain_barrier.json",
+  "source": "models/entity/domain_stuff/domain_barrier.geo.json"
+ },
+ "geometry.domain_barrier_inside": {
+  "bones": 1,
+  "file": "crb:geo/domain_barrier_inside.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/domain_barrier_inside.json",
+  "source": "models/entity/domain_stuff/domain_barrier_inside.geo.json"
+ },
+ "geometry.domain_inside_barrier": {
+  "bones": 1,
+  "file": "crb:geo/domain_inside_barrier.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/domain_inside_barrier.json",
+  "source": "models/entity/domain_inside_barrier.geo.json"
+ },
+ "geometry.dread_bell": {
+  "bones": 7,
+  "file": "crb:geo/dread_bell.geo.json",
+  "source": "models/entity/relics/dread_bell.geo.json"
+ },
+ "geometry.dread_bell_drop": {
+  "bones": 2,
+  "file": "crb:geo/dread_bell_drop.geo.json",
+  "source": "models/entity/relics/dread_bell_drop.geo.json"
+ },
+ "geometry.dual_souls": {
+  "bones": 11,
+  "file": "crb:geo/dual_souls.geo.json",
+  "source": "models/entity/mahito/dual_souls.geo.json"
+ },
+ "geometry.duke": {
+  "bones": 12,
+  "file": "crb:geo/duke.geo.json",
+  "source": "models/entity/duke.geo.json"
+ },
+ "geometry.dummy": {
+  "bones": 19,
+  "file": "crb:geo/dummy.geo.json",
+  "source": "models/entity/dummy.geo.json"
+ },
+ "geometry.ember_insect": {
+  "bones": 8,
+  "file": "crb:geo/ember_insect.geo.json",
+  "source": "models/entity/curses/ember_insect.geo.json"
+ },
+ "geometry.equinox_wings": {
+  "bones": 6,
+  "file": "crb:geo/equinox_wings.geo.json",
+  "source": "models/entity/wign.geo.json"
+ },
+ "geometry.equinox_wings2": {
+  "bones": 20,
+  "file": "crb:geo/equinox_wings2.geo.json",
+  "source": "models/entity/wign2.geo.json"
+ },
+ "geometry.evidence": {
+  "bones": 4,
+  "file": "crb:geo/evidence.geo.json",
+  "source": "models/entity/judgeman/evidence.geo.json"
+ },
+ "geometry.execution_sword": {
+  "bones": 13,
+  "file": "crb:geo/execution_sword.geo.json",
+  "source": "models/entity/weapons/executioners_sword.geo.json"
+ },
+ "geometry.explode_staff": {
+  "bones": 5,
+  "file": "crb:geo/explode_staff.geo.json",
+  "source": "models/entity/explode_staff.geo.json"
+ },
+ "geometry.extermination_sword": {
+  "bones": 7,
+  "file": "crb:geo/extermination_sword.geo.json",
+  "source": "models/entity/shikigami/extermination_sword.geo.json"
+ },
+ "geometry.extermination_swordretracted": {
+  "bones": 7,
+  "file": "crb:geo/extermination_swordretracted.geo.json",
+  "source": "models/entity/shikigami/extermination_swordretracted.geo.json"
+ },
+ "geometry.exterminationsword_drop": {
+  "bones": 7,
+  "file": "crb:geo/exterminationsword_drop.geo.json",
+  "source": "models/entity/shikigami/exterminationsword_drop.geo.json"
+ },
+ "geometry.eyes": {
+  "bones": 3,
+  "file": "crb:geo/eyes.geo.json",
+  "source": "models/entity/eyes.geo.json"
+ },
+ "geometry.finger_bearer": {
+  "bones": 76,
+  "file": "crb:geo/finger_bearer.geo.json",
+  "source": "models/entity/entities/finger_bearer.geo.json"
+ },
+ "geometry.flyhead1": {
+  "bones": 7,
+  "file": "crb:geo/flyhead1.geo.json",
+  "source": "models/entity/curses/flyhead1.geo.json"
+ },
+ "geometry.flyhead2": {
+  "bones": 7,
+  "file": "crb:geo/flyhead2.geo.json",
+  "source": "models/entity/curses/flyhead2.geo.json"
+ },
+ "geometry.flyhead3": {
+  "bones": 13,
+  "file": "crb:geo/flyhead3.geo.json",
+  "source": "models/entity/curses/flyhead3.geo.json"
+ },
+ "geometry.forest_scene": {
+  "bones": 141,
+  "file": "crb:geo/forest_scene.geo.json",
+  "source": "models/entity/forest_scene.geo.json"
+ },
+ "geometry.frogdog_plushie": {
+  "bones": 7,
+  "file": "crb:geo/frogdog_plushie.geo.json",
+  "source": "models/blocks/frogdog_plushie.geo.json"
+ },
+ "geometry.front_vfx_locators": {
+  "bones": 1,
+  "file": "crb:geo/front_vfx_locators.geo.json",
+  "source": "models/entity/front_vfx_locators.geo.json"
+ },
+ "geometry.fuga_scythe": {
+  "bones": 14,
+  "file": "crb:geo/fuga_scythe.geo.json",
+  "source": "models/entity/sukuna/fuga_scythe.geo.json"
+ },
+ "geometry.fuga_spear": {
+  "bones": 7,
+  "file": "crb:geo/fuga_spear.geo.json",
+  "source": "models/entity/sukuna/fuga_spear.json"
+ },
+ "geometry.gamblers_hoodie": {
+  "bones": 10,
+  "file": "crb:geo/gamblers_hoodie.geo.json",
+  "source": "models/entity/fits/gamblers_hoodie.geo.json"
+ },
+ "geometry.gamblers_legs": {
+  "bones": 10,
+  "file": "crb:geo/gamblers_legs.geo.json",
+  "source": "models/entity/fits/gamblers_legs.geo.json"
+ },
+ "geometry.gavel": {
+  "bones": 9,
+  "file": "crb:geo/gavel.geo.json",
+  "source": "models/entity/weapons/gavel.geo.json"
+ },
+ "geometry.gavel2": {
+  "bones": 9,
+  "file": "crb:geo/gavel2.geo.json",
+  "source": "models/entity/weapons/gavel2.geo.json"
+ },
+ "geometry.gavel3": {
+  "bones": 7,
+  "file": "crb:geo/gavel3.geo.json",
+  "source": "models/entity/weapons/gavel3.geo.json"
+ },
+ "geometry.gavel_throw": {
+  "bones": 5,
+  "file": "crb:geo/gavel_throw.geo.json",
+  "source": "models/entity/weapons/gavel_thrown.geo.json"
+ },
+ "geometry.geto_plushie": {
+  "bones": 11,
+  "file": "crb:geo/geto_plushie.geo.json",
+  "source": "models/blocks/geto_plushie.geo.json"
+ },
+ "geometry.geyser": {
+  "bones": 3,
+  "file": "crb:geo/geyser.geo.json",
+  "source": "models/entity/disaster_flames/geyser.geo.json"
+ },
+ "geometry.glitch_plushie": {
+  "bones": 6,
+  "file": "crb:geo/glitch_plushie.geo.json",
+  "source": "models/blocks/glitch_plushie.geo.json"
+ },
+ "geometry.glock": {
+  "bones": 5,
+  "file": "crb:geo/glock.geo.json",
+  "source": "models/entity/weapons/glock.geo.json"
+ },
+ "geometry.glocks": {
+  "bones": 49,
+  "file": "crb:geo/glocks.geo.json",
+  "source": "models/entity/glocks.geo.json"
+ },
+ "geometry.gojo_cloak": {
+  "bones": 14,
+  "file": "crb:geo/gojo_cloak.geo.json",
+  "source": "models/entity/fits/gojo_cloak.geo.json"
+ },
+ "geometry.gojo_plushie": {
+  "bones": 7,
+  "file": "crb:geo/gojo_plushie.geo.json",
+  "source": "models/blocks/gojo_plushie.geo.json"
+ },
+ "geometry.gojo_torso1": {
+  "bones": 50,
+  "file": "crb:geo/gojo_torso1.geo.json",
+  "source": "models/entity/fits/gojo_torso.geo.json"
+ },
+ "geometry.grasshopper_curse": {
+  "bones": 49,
+  "file": "crb:geo/grasshopper_curse.geo.json",
+  "source": "models/entity/curses/grasshopper_curse.geo.json"
+ },
+ "geometry.gremlin_curse1": {
+  "bones": 7,
+  "file": "crb:geo/gremlin_curse1.geo.json",
+  "source": "models/entity/curses/gremlin_curse1.geo.json"
+ },
+ "geometry.hair": {
+  "bones": 3,
+  "file": "crb:geo/hair.geo.json",
+  "source": "models/entity/hair.geo.json"
+ },
+ "geometry.hair_curse": {
+  "bones": 13,
+  "file": "crb:geo/hair_curse.geo.json",
+  "source": "models/entity/curses/hair_curse.geo.json"
+ },
+ "geometry.hair_female": {
+  "bones": 3,
+  "file": "crb:geo/hair_female.geo.json",
+  "source": "models/entity/hair_female.geo.json"
+ },
+ "geometry.hakari": {
+  "bones": 12,
+  "file": "crb:geo/hakari.geo.json",
+  "source": "models/entity/entities/hakari.geo.json"
+ },
+ "geometry.hand_sword": {
+  "bones": 12,
+  "file": "crb:geo/hand_sword.geo.json",
+  "source": "models/entity/weapons/hand_sword.geo.json"
+ },
+ "geometry.haruta": {
+  "bones": 11,
+  "file": "crb:geo/haruta.geo.json",
+  "source": "models/entity/entities/haruta.geo.json"
+ },
+ "geometry.hazy_moon": {
+  "bones": 19,
+  "file": "crb:geo/hazy_moon.geo.json",
+  "source": "models/entity/weapons/hazy_moon.geo.json"
+ },
+ "geometry.heart": {
+  "bones": 8,
+  "file": "crb:geo/heart.geo.json",
+  "source": "models/entity/heart.geo.json"
+ },
+ "geometry.heart_wound": {
+  "bones": 5,
+  "file": "crb:geo/heart_wound.geo.json",
+  "source": "models/entity/heart_wound.geo.json"
+ },
+ "geometry.heian_shrine": {
+  "bones": 195,
+  "file": "crb:geo/heian_shrine.geo.json",
+  "source": "models/entity/sukuna/heian_shrine.geo.json"
+ },
+ "geometry.heian_sukuna": {
+  "bones": 62,
+  "file": "crb:geo/heian_sukuna.geo.json",
+  "source": "models/entity/sukuna/heian_sukuna.geo.json"
+ },
+ "geometry.heian_sukuna_plushie": {
+  "bones": 15,
+  "file": "crb:geo/heian_sukuna_plushie.geo.json",
+  "source": "models/blocks/heian_sukuna_plushie.geo.json"
+ },
+ "geometry.heroic_plushie": {
+  "bones": 7,
+  "file": "crb:geo/heroic_plushie.geo.json",
+  "source": "models/blocks/heroic_plushie.geo.json"
+ },
+ "geometry.heroic_plushie2": {
+  "bones": 8,
+  "file": "crb:geo/heroic_plushie2.geo.json",
+  "source": "models/blocks/heroic_plushie2.geo.json"
+ },
+ "geometry.higuruma": {
+  "bones": 10,
+  "file": "crb:geo/higuruma.geo.json",
+  "source": "models/entity/entities/higuruma.geo.json"
+ },
+ "geometry.higuruma_plushie": {
+  "bones": 15,
+  "file": "crb:geo/higuruma_plushie.geo.json",
+  "source": "models/blocks/higuruma_plushie.geo.json"
+ },
+ "geometry.hiten": {
+  "bones": 8,
+  "file": "crb:geo/hiten.geo.json",
+  "source": "models/entity/weapons/hiten.geo.json"
+ },
+ "geometry.hiten_left": {
+  "bones": 8,
+  "file": "crb:geo/hiten_left.geo.json",
+  "source": "models/entity/weapons/hiten_left.geo.json"
+ },
+ "geometry.hiten_spear": {
+  "bones": 5,
+  "file": "crb:geo/hiten_spear.geo.json",
+  "source": "models/entity/weapons/hiten_spear.geo.json"
+ },
+ "geometry.hollow_basket": {
+  "bones": 17,
+  "file": "crb:geo/hollow_basket.geo.json",
+  "source": "models/entity/sukuna/hollow_basket.geo.json"
+ },
+ "geometry.impact_frame": {
+  "bones": 1,
+  "file": "crb:geo/impact_frame.geo.json",
+  "source": "models/entity/materials/impact_frame.geo.json"
+ },
+ "geometry.innate_sukuna": {
+  "bones": 16,
+  "file": "crb:geo/innate_sukuna.geo.json",
+  "source": "models/entity/entities/innate_sukuna.geo.json"
+ },
+ "geometry.instant_body": {
+  "bones": 44,
+  "file": "crb:geo/instant_body.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/instant_body.json",
+  "source": "models/entity/mahito/instant_body.geo.json"
+ },
+ "geometry.instant_body_formation": {
+  "bones": 41,
+  "file": "crb:geo/instant_body_formation.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/instant_body_formation.json",
+  "source": "models/entity/mahito/instant_body_formation.geo.json"
+ },
+ "geometry.inumaki": {
+  "bones": 21,
+  "file": "crb:geo/inumaki.geo.json",
+  "source": "models/entity/entities/inumaki.geo.json"
+ },
+ "geometry.inventory_curse": {
+  "bones": 34,
+  "file": "crb:geo/inventory_curse.geo.json",
+  "source": "models/entity/inventory_curse.geo.json"
+ },
+ "geometry.inventory_curse2": {
+  "bones": 34,
+  "file": "crb:geo/inventory_curse2.geo.json",
+  "source": "models/entity/inventory_curse2.geo.json"
+ },
+ "geometry.inversionbox": {
+  "bones": 1,
+  "file": "crb:geo/inversionbox.geo.json",
+  "source": "models/entity/materials/inversionbox.geo.json"
+ },
+ "geometry.inversionbox2": {
+  "bones": 1,
+  "file": "crb:geo/inversionbox2.geo.json",
+  "source": "models/entity/materials/inversionbox2.geo.json"
+ },
+ "geometry.inversionbox_big": {
+  "bones": 1,
+  "file": "crb:geo/inversionbox_big.geo.json",
+  "source": "models/entity/materials/inversionbox_big.geo.json"
+ },
+ "geometry.inverted_spear": {
+  "bones": 12,
+  "file": "crb:geo/inverted_spear.geo.json",
+  "source": "models/entity/weapons/inverted_spear.geo.json"
+ },
+ "geometry.inverted_spear_drop": {
+  "bones": 12,
+  "file": "crb:geo/inverted_spear_drop.geo.json",
+  "source": "models/entity/weapons/inverted_spear_drop.geo.json"
+ },
+ "geometry.iron_mountain": {
+  "bones": 24,
+  "file": "crb:geo/iron_mountain.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/iron_mountain.json",
+  "source": "models/entity/disaster_flames/iron_mountain.geo.json"
+ },
+ "geometry.iron_mountain_clashing": {
+  "bones": 15,
+  "file": "crb:geo/iron_mountain_clashing.geo.json",
+  "source": "models/entity/disaster_flames/iron_mountain_clashing.geo.json"
+ },
+ "geometry.jfk": {
+  "bones": 13,
+  "file": "crb:geo/jfk.geo.json",
+  "source": "models/entity/jfk.geo.json"
+ },
+ "geometry.jogo": {
+  "bones": 12,
+  "file": "crb:geo/jogo.geo.json",
+  "source": "models/entity/curses/jogo.geo.json"
+ },
+ "geometry.jogo_fit": {
+  "bones": 7,
+  "file": "crb:geo/jogo_fit.geo.json",
+  "source": "models/entity/fits/jogoat.json"
+ },
+ "geometry.joystick": {
+  "bones": 25,
+  "file": "crb:geo/joystick.geo.json",
+  "source": "models/entity/lovetrain/joystick.geo.json"
+ },
+ "geometry.judge_fit": {
+  "bones": 9,
+  "file": "crb:geo/judge_fit.geo.json",
+  "source": "models/entity/fits/judge_fit.geo.json"
+ },
+ "geometry.judgeman": {
+  "bones": 106,
+  "file": "crb:geo/judgeman.geo.json",
+  "source": "models/entity/judgeman/judgeman.geo.json"
+ },
+ "geometry.juzo": {
+  "bones": 11,
+  "file": "crb:geo/juzo.geo.json",
+  "source": "models/entity/entities/juzo.geo.json"
+ },
+ "geometry.kaiju_curse": {
+  "bones": 119,
+  "file": "crb:geo/kaiju_curse.geo.json",
+  "source": "models/entity/curses/kaiju_curse.geo.json"
+ },
+ "geometry.kamutoke": {
+  "bones": 4,
+  "file": "crb:geo/kamutoke.geo.json",
+  "source": "models/entity/weapons/kamutoke.geo.json"
+ },
+ "geometry.kamutoke_right": {
+  "bones": 6,
+  "file": "crb:geo/kamutoke_right.geo.json",
+  "source": "models/entity/weapons/kamutoke_right.geo.json"
+ },
+ "geometry.kashimo_fit": {
+  "bones": 7,
+  "file": "crb:geo/kashimo_fit.geo.json",
+  "source": "models/entity/fits/kashimo.json"
+ },
+ "geometry.kashimo_mob": {
+  "bones": 14,
+  "file": "crb:geo/kashimo_mob.geo.json",
+  "source": "models/entity/entities/kashimo_mob.geo.json"
+ },
+ "geometry.kashimo_plushie": {
+  "bones": 15,
+  "file": "crb:geo/kashimo_plushie.geo.json",
+  "source": "models/blocks/kashimo_plushie.json"
+ },
+ "geometry.katana": {
+  "bones": 42,
+  "file": "crb:geo/katana.geo.json",
+  "source": "models/entity/weapons/katana.geo.json"
+ },
+ "geometry.katana2": {
+  "bones": 52,
+  "file": "crb:geo/katana2.geo.json",
+  "source": "models/entity/weapons/katana2.geo.json"
+ },
+ "geometry.katana2_sheathed": {
+  "bones": 52,
+  "file": "crb:geo/katana2_sheathed.geo.json",
+  "source": "models/entity/weapons/katana2_sheathed.geo.json"
+ },
+ "geometry.katana3": {
+  "bones": 53,
+  "file": "crb:geo/katana3.geo.json",
+  "source": "models/entity/weapons/katana3.geo.json"
+ },
+ "geometry.katana_renders": {
+  "bones": 44,
+  "file": "crb:geo/katana_renders.geo.json",
+  "source": "models/entity/katana_renders.geo.json"
+ },
+ "geometry.ken_takakura_uniform": {
+  "bones": 6,
+  "file": "crb:geo/ken_takakura_uniform.geo.json",
+  "source": "models/entity/ken_takakura_uniform.json"
+ },
+ "geometry.kenjaku_plushie": {
+  "bones": 15,
+  "file": "crb:geo/kenjaku_plushie.geo.json",
+  "source": "models/blocks/kenjaku_plushie.geo.json"
+ },
+ "geometry.keycard": {
+  "bones": 23,
+  "file": "crb:geo/keycard.geo.json",
+  "source": "models/entity/keycard.geo.json"
+ },
+ "geometry.killer_bunny": {
+  "bones": 9,
+  "file": "crb:geo/killer_bunny.geo.json",
+  "source": "models/entity/shikigami/rabbit.geo.json"
+ },
+ "geometry.kings_cloak": {
+  "bones": 13,
+  "file": "crb:geo/kings_cloak.geo.json",
+  "source": "models/entity/fits/kings_cloak.json"
+ },
+ "geometry.kiss_fish": {
+  "bones": 4,
+  "file": "crb:geo/kiss_fish.geo.json",
+  "source": "models/entity/curses/kiss_fish.geo.json"
+ },
+ "geometry.knife": {
+  "bones": 2,
+  "file": "crb:geo/knife.geo.json",
+  "source": "models/entity/knife.json"
+ },
+ "geometry.knives1": {
+  "bones": 2,
+  "file": "crb:geo/knives1.geo.json",
+  "source": "models/entity/knives1.json"
+ },
+ "geometry.kokun": {
+  "bones": 7,
+  "file": "crb:geo/kokun.geo.json",
+  "source": "models/entity/entities/kokun.geo.json"
+ },
+ "geometry.kusakabe": {
+  "bones": 8,
+  "file": "crb:geo/kusakabe.geo.json",
+  "source": "models/entity/entities/kusakabe.geo.json"
+ },
+ "geometry.kusakabe_cloak": {
+  "bones": 6,
+  "file": "crb:geo/kusakabe_cloak.geo.json",
+  "source": "models/entity/fits/kusakabe_cloak.json"
+ },
+ "geometry.kusakabe_fit": {
+  "bones": 6,
+  "file": "crb:geo/kusakabe_fit.geo.json",
+  "source": "models/entity/fits/kusakabe_fit.json"
+ },
+ "geometry.leech_curse": {
+  "bones": 6,
+  "file": "crb:geo/leech_curse.geo.json",
+  "source": "models/entity/curses/leech_curse.geo.json"
+ },
+ "geometry.legacy_scythe": {
+  "bones": 5,
+  "file": "crb:geo/legacy_scythe.geo.json",
+  "source": "models/entity/legacy_scythe.geo.json"
+ },
+ "geometry.lemon_plushie": {
+  "bones": 6,
+  "file": "crb:geo/lemon_plushie.geo.json",
+  "source": "models/blocks/lemon_plushie.geo.json"
+ },
+ "geometry.lizard_curse": {
+  "bones": 24,
+  "file": "crb:geo/lizard_curse.geo.json",
+  "source": "models/entity/curses/lizard_curse.geo.json"
+ },
+ "geometry.locator_players": {
+  "bones": 60,
+  "file": "crb:geo/locator_players.geo.json",
+  "source": "models/entity/locator_player.geo.json"
+ },
+ "geometry.longshroom_curse": {
+  "bones": 14,
+  "file": "crb:geo/longshroom_curse.geo.json",
+  "source": "models/entity/curses/longshroom_curse.geo.json"
+ },
+ "geometry.lost_hiten": {
+  "bones": 2,
+  "file": "crb:geo/lost_hiten.geo.json",
+  "source": "models/blocks/lost_hiten.geo.json"
+ },
+ "geometry.luminosity_emblem": {
+  "bones": 5,
+  "file": "crb:geo/luminosity_emblem.geo.json",
+  "source": "models/entity/luminosity_emblem.geo.json"
+ },
+ "geometry.luminosity_staff": {
+  "bones": 4,
+  "file": "crb:geo/luminosity_staff.geo.json",
+  "source": "models/entity/luminosity_staff.geo.json"
+ },
+ "geometry.magroic_plushie": {
+  "bones": 6,
+  "file": "crb:geo/magroic_plushie.geo.json",
+  "source": "models/blocks/magroic_plushie.geo.json"
+ },
+ "geometry.magroic_trident": {
+  "bones": 4,
+  "file": "crb:geo/magroic_trident.geo.json",
+  "source": "models/entity/f.geo.json"
+ },
+ "geometry.mahito": {
+  "bones": 16,
+  "file": "crb:geo/mahito.geo.json",
+  "source": "models/entity/entities/mahito.geo.json"
+ },
+ "geometry.mahito_afraid_face": {
+  "bones": 4,
+  "file": "crb:geo/mahito_afraid_face.geo.json",
+  "source": "models/entity/entities/mahito_face_afraid.json"
+ },
+ "geometry.mahito_clump1": {
+  "bones": 7,
+  "file": "crb:geo/mahito_clump1.geo.json",
+  "source": "models/entity/mahito/mahito_clump1.geo.json"
+ },
+ "geometry.mahito_clump2": {
+  "bones": 7,
+  "file": "crb:geo/mahito_clump2.geo.json",
+  "source": "models/entity/mahito/mahito_clump2.geo.json"
+ },
+ "geometry.mahito_clump3": {
+  "bones": 7,
+  "file": "crb:geo/mahito_clump3.geo.json",
+  "source": "models/entity/mahito/mahito_clump3.geo.json"
+ },
+ "geometry.mahito_clump4": {
+  "bones": 7,
+  "file": "crb:geo/mahito_clump4.geo.json",
+  "source": "models/entity/mahito/mahito_clump4.geo.json"
+ },
+ "geometry.mahito_fit": {
+  "bones": 5,
+  "file": "crb:geo/mahito_fit.geo.json",
+  "source": "models/entity/fits/mahito_fit.json"
+ },
+ "geometry.mahito_fit_mob": {
+  "bones": 6,
+  "file": "crb:geo/mahito_fit_mob.geo.json",
+  "source": "models/entity/fits/mahito_fit_mob.json"
+ },
+ "geometry.mahito_plushie": {
+  "bones": 6,
+  "file": "crb:geo/mahito_plushie.geo.json",
+  "source": "models/blocks/mahito_plushie.geo.json"
+ },
+ "geometry.mahoraga": {
+  "bones": 48,
+  "file": "crb:geo/mahoraga.geo.json",
+  "source": "models/entity/shikigami/rabbits.geo.json"
+ },
+ "geometry.mahoraga_ritual1": {
+  "bones": 205,
+  "file": "crb:geo/mahoraga_ritual1.geo.json",
+  "source": "models/entity/shikigami/mahoraga_ritual1.geo.json"
+ },
+ "geometry.mahoraga_wheel": {
+  "bones": 6,
+  "file": "crb:geo/mahoraga_wheel.geo.json",
+  "source": "models/entity/shikigami/mahoraga_wheel.geo.json"
+ },
+ "geometry.mahoraga_wheel1": {
+  "bones": 6,
+  "file": "crb:geo/mahoraga_wheel1.geo.json",
+  "source": "models/entity/shikigami/mahoraga_wheel1.geo.json"
+ },
+ "geometry.mahoraga_wheel2": {
+  "bones": 7,
+  "file": "crb:geo/mahoraga_wheel2.geo.json",
+  "source": "models/entity/shikigami/mahoraga_wheel2.geo.json"
+ },
+ "geometry.maki": {
+  "bones": 22,
+  "file": "crb:geo/maki.geo.json",
+  "source": "models/entity/maki.geo.json"
+ },
+ "geometry.maki_plushie": {
+  "bones": 15,
+  "file": "crb:geo/maki_plushie.geo.json",
+  "source": "models/blocks/maki_plushie.geo.json"
+ },
+ "geometry.malevolent_shrine": {
+  "bones": 126,
+  "file": "crb:geo/malevolent_shrine.geo.json",
+  "source": "models/entity/sukuna/malevolent_shrine.geo.json"
+ },
+ "geometry.manga_yuji_plushie": {
+  "bones": 15,
+  "file": "crb:geo/manga_yuji_plushie.geo.json",
+  "source": "models/blocks/manga_yuji_plushie.json"
+ },
+ "geometry.mango": {
+  "bones": 1,
+  "file": "crb:geo/mango.geo.json",
+  "source": "models/entity/mango.geo.json"
+ },
+ "geometry.maxelephant": {
+  "bones": 44,
+  "file": "crb:geo/maxelephant.geo.json",
+  "source": "models/entity/shikigami/elephant.geo.json"
+ },
+ "geometry.maximum_meteor": {
+  "bones": 45,
+  "file": "crb:geo/maximum_meteor.geo.json",
+  "source": "models/entity/disaster_flames/meteor.geo.json"
+ },
+ "geometry.megaphone": {
+  "bones": 4,
+  "file": "crb:geo/megaphone.geo.json",
+  "source": "models/entity/megaphone.geo.json"
+ },
+ "geometry.meguma_plushie": {
+  "bones": 15,
+  "file": "crb:geo/meguma_plushie.geo.json",
+  "source": "models/blocks/meguma_plushie.json"
+ },
+ "geometry.megumi": {
+  "bones": 9,
+  "file": "crb:geo/megumi.geo.json",
+  "source": "models/entity/entities/megumi.geo.json"
+ },
+ "geometry.megumi_phase2": {
+  "bones": 7,
+  "file": "crb:geo/megumi_phase2.geo.json",
+  "source": "models/entity/entities/megumi_phase2.geo.json"
+ },
+ "geometry.megumi_v2": {
+  "bones": 11,
+  "file": "crb:geo/megumi_v2.geo.json",
+  "source": "models/entity/entities/megumi_v2.geo.json"
+ },
+ "geometry.megumi_v3": {
+  "bones": 10,
+  "file": "crb:geo/megumi_v3.geo.json",
+  "source": "models/entity/entities/megumi_v3.geo.json"
+ },
+ "geometry.mei_plushie": {
+  "bones": 15,
+  "file": "crb:geo/mei_plushie.geo.json",
+  "source": "models/blocks/mei_plushie.geo.json"
+ },
+ "geometry.miracle": {
+  "bones": 3,
+  "file": "crb:geo/miracle.geo.json",
+  "source": "models/entity/miracle.geo.json"
+ },
+ "geometry.miwa": {
+  "bones": 8,
+  "file": "crb:geo/miwa.geo.json",
+  "source": "models/entity/entities/miwa.geo.json"
+ },
+ "geometry.miwa_fit": {
+  "bones": 7,
+  "file": "crb:geo/miwa_fit.geo.json",
+  "source": "models/entity/fits/miwa_fit.geo.json"
+ },
+ "geometry.mob_model": {
+  "bones": 31,
+  "file": "crb:geo/mob_model.geo.json",
+  "source": "models/entity/mob_model.geo.json"
+ },
+ "geometry.molten_hands": {
+  "bones": 3,
+  "file": "crb:geo/molten_hands.geo.json",
+  "source": "models/entity/disaster_flames/molten_hands.geo.json"
+ },
+ "geometry.mountain_buster": {
+  "bones": 2,
+  "file": "crb:geo/mountain_buster.geo.json",
+  "source": "models/entity/weapons/mountain_buster.geo.json"
+ },
+ "geometry.mouth": {
+  "bones": 9,
+  "file": "crb:geo/mouth.geo.json",
+  "source": "models/entity/curses/mouth.json"
+ },
+ "geometry.mouth_handsigns": {
+  "bones": 75,
+  "file": "crb:geo/mouth_handsigns.geo.json",
+  "source": "models/entity/mahito/perfection_hands/mouth_handsigns.geo.json"
+ },
+ "geometry.murder_manifestation": {
+  "bones": 61,
+  "file": "crb:geo/murder_manifestation.geo.json",
+  "source": "models/entity/mahito/murder_manifestation.geo.json"
+ },
+ "geometry.mushroom_curse": {
+  "bones": 31,
+  "file": "crb:geo/mushroom_curse.geo.json",
+  "source": "models/entity/curses/mushroom_curse.geo.json"
+ },
+ "geometry.mushroom_curse2": {
+  "bones": 31,
+  "file": "crb:geo/mushroom_curse2.geo.json",
+  "source": "models/entity/curses/mushroom_curse2.geo.json"
+ },
+ "geometry.mysterious_artifact": {
+  "bones": 22,
+  "file": "crb:geo/mysterious_artifact.geo.json",
+  "source": "models/entity/mysterious_artifact.geo.json"
+ },
+ "geometry.mysterious_torch": {
+  "bones": 3,
+  "file": "crb:geo/mysterious_torch.geo.json",
+  "source": "models/entity/mysterious_torch.geo.json"
+ },
+ "geometry.nanami_plushie": {
+  "bones": 15,
+  "file": "crb:geo/nanami_plushie.geo.json",
+  "source": "models/blocks/nanami_plushie.json"
+ },
+ "geometry.no_model": {
+  "bones": 1,
+  "file": "crb:geo/no_model.geo.json",
+  "source": "models/entity/no_model.json"
+ },
+ "geometry.nobara_plushie": {
+  "bones": 15,
+  "file": "crb:geo/nobara_plushie.geo.json",
+  "source": "models/blocks/nobara_plushie.geo.json"
+ },
+ "geometry.nue": {
+  "bones": 23,
+  "file": "crb:geo/nue.geo.json",
+  "source": "models/entity/shikigami/nue.geo.json"
+ },
+ "geometry.nyoi_staff": {
+  "bones": 6,
+  "file": "crb:geo/nyoi_staff.geo.json",
+  "source": "models/entity/weapons/nyoi_staff.geo.json"
+ },
+ "geometry.okarun_glasses": {
+  "bones": 3,
+  "file": "crb:geo/okarun_glasses.geo.json",
+  "source": "models/entity/okarun_glasses.json"
+ },
+ "geometry.okarunmask": {
+  "bones": 53,
+  "file": "crb:geo/okarunmask.geo.json",
+  "source": "models/entity/okarunmask.geo.json"
+ },
+ "geometry.omega_scythe": {
+  "bones": 14,
+  "file": "crb:geo/omega_scythe.geo.json",
+  "source": "models/entity/weapons/omega_scythe.geo.json"
+ },
+ "geometry.orb": {
+  "bones": 17,
+  "file": "crb:geo/orb.geo.json",
+  "source": "models/entity/orb.geo.json"
+ },
+ "geometry.organs": {
+  "bones": 8,
+  "file": "crb:geo/organs.geo.json",
+  "source": "models/entity/organs.geo.json"
+ },
+ "geometry.origin_edge": {
+  "bones": 6,
+  "file": "crb:geo/origin_edge.geo.json",
+  "source": "models/entity/weapons/origin_edge.geo.json"
+ },
+ "geometry.origin_slicer": {
+  "bones": 8,
+  "file": "crb:geo/origin_slicer.geo.json",
+  "source": "models/entity/weapons/origin_slicer.geo.json"
+ },
+ "geometry.outfitmale_sorcerer": {
+  "bones": 7,
+  "file": "crb:geo/outfitmale_sorcerer.geo.json",
+  "source": "models/entity/entities/outfitmale_sorcerer.json"
+ },
+ "geometry.outfitmale_sorcerer2": {
+  "bones": 9,
+  "file": "crb:geo/outfitmale_sorcerer2.geo.json",
+  "source": "models/entity/fits/outfitmale_sorcerer2.json"
+ },
+ "geometry.pachinko1": {
+  "bones": 18,
+  "file": "crb:geo/pachinko1.geo.json",
+  "source": "models/entity/lovetrain/pachinko.geo.json"
+ },
+ "geometry.pachinko_hand": {
+  "bones": 17,
+  "file": "crb:geo/pachinko_hand.geo.json",
+  "source": "models/entity/lovetrain/pachinko_hand.geo.json"
+ },
+ "geometry.particle_locator": {
+  "bones": 2,
+  "file": "crb:geo/particle_locator.geo.json",
+  "source": "models/entity/particle_locator.geo.json"
+ },
+ "geometry.perfection_domain": {
+  "bones": 196,
+  "file": "crb:geo/perfection_domain.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/perfection_domain.json",
+  "source": "models/entity/mahito/perfection_hands/perfection_domain.geo.json"
+ },
+ "geometry.perfection_domain2": {
+  "bones": 195,
+  "file": "crb:geo/perfection_domain2.geo.json",
+  "source": "models/entity/mahito/perfection_hands/perfection_domain2.geo.json"
+ },
+ "geometry.perfection_holding_hands": {
+  "bones": 37,
+  "file": "crb:geo/perfection_holding_hands.geo.json",
+  "source": "models/entity/mahito/perfection_hands/perfection_holding_hands.geo.json"
+ },
+ "geometry.perfection_intro_hands": {
+  "bones": 91,
+  "file": "crb:geo/perfection_intro_hands.geo.json",
+  "source": "models/entity/mahito/perfection_hands/perfection_intro_hands.geo.json"
+ },
+ "geometry.perfection_intro_hands2": {
+  "bones": 38,
+  "file": "crb:geo/perfection_intro_hands2.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/perfection_intro_hands2.json",
+  "source": "models/entity/mahito/perfection_hands/perfection_intro_hands2.geo.json"
+ },
+ "geometry.perfection_intro_hands_outline": {
+  "bones": 91,
+  "file": "crb:geo/perfection_intro_hands_outline.geo.json",
+  "source": "models/entity/mahito/perfection_hands/perfection_intro_hands_outline.geo.json"
+ },
+ "geometry.phone": {
+  "bones": 9,
+  "file": "crb:geo/phone.geo.json",
+  "source": "models/entity/phone.geo.json"
+ },
+ "geometry.pigs_crown": {
+  "bones": 3,
+  "file": "crb:geo/pigs_crown.geo.json",
+  "source": "models/entity/fits/pigs_crown.geo.json"
+ },
+ "geometry.playermodel": {
+  "bones": 18,
+  "file": "crb:geo/playermodel.geo.json",
+  "source": "models/entity/humanoidmodel.geo.json"
+ },
+ "geometry.playful_cloud": {
+  "bones": 57,
+  "file": "crb:geo/playful_cloud.geo.json",
+  "source": "models/entity/weapons/playful_cloud.geo.json"
+ },
+ "geometry.playful_cloud_drop": {
+  "bones": 43,
+  "file": "crb:geo/playful_cloud_drop.geo.json",
+  "source": "models/entity/weapons/playful_cloud_drop.geo.json"
+ },
+ "geometry.primekatana": {
+  "bones": 49,
+  "file": "crb:geo/primekatana.geo.json",
+  "source": "models/entity/weapons/primekatana.geo.json"
+ },
+ "geometry.primekatana3": {
+  "bones": 49,
+  "file": "crb:geo/primekatana3.geo.json",
+  "source": "models/entity/weapons/primekatana3.geo.json"
+ },
+ "geometry.primekatana_sheathed": {
+  "bones": 49,
+  "file": "crb:geo/primekatana_sheathed.geo.json",
+  "source": "models/entity/weapons/primekatana_sheathed..json"
+ },
+ "geometry.primesoul": {
+  "bones": 11,
+  "file": "crb:geo/primesoul.geo.json",
+  "source": "models/entity/heroicprime.json"
+ },
+ "geometry.principle_yaga": {
+  "bones": 11,
+  "file": "crb:geo/principle_yaga.geo.json",
+  "source": "models/entity/entities/principle_yaga.geo.json"
+ },
+ "geometry.projectile": {
+  "bones": 7,
+  "file": "crb:geo/projectile.geo.json",
+  "source": "models/entity/projectile.geo.json"
+ },
+ "geometry.propmodel": {
+  "bones": 13,
+  "file": "crb:geo/propmodel.geo.json",
+  "source": "models/entity/propmodel.geo.json"
+ },
+ "geometry.q_uniform": {
+  "bones": 7,
+  "file": "crb:geo/q_uniform.geo.json",
+  "source": "models/entity/entities/q_uniform.geo.json"
+ },
+ "geometry.q_uniform2": {
+  "bones": 7,
+  "file": "crb:geo/q_uniform2.geo.json",
+  "source": "models/entity/entities/q_uniform2.geo.json"
+ },
+ "geometry.ray": {
+  "bones": 7,
+  "file": "crb:geo/ray.geo.json",
+  "source": "models/entity/curses/ray.geo.json"
+ },
+ "geometry.reality_shard": {
+  "bones": 5,
+  "file": "crb:geo/reality_shard.geo.json",
+  "source": "models/entity/reality_shard.geo.json"
+ },
+ "geometry.reality_shard2": {
+  "bones": 2,
+  "file": "crb:geo/reality_shard2.geo.json",
+  "source": "models/entity/reality_shard2.geo.json"
+ },
+ "geometry.resonant_chamber": {
+  "bones": 3,
+  "file": "crb:geo/resonant_chamber.geo.json",
+  "source": "models/entity/resonant_chamber.geo.json"
+ },
+ "geometry.rift_prison": {
+  "bones": 11,
+  "file": "crb:geo/rift_prison.geo.json",
+  "source": "models/entity/rift_prison.geo.json"
+ },
+ "geometry.rift_stabilizer": {
+  "bones": 16,
+  "file": "crb:geo/rift_stabilizer.geo.json",
+  "source": "models/entity/zombie.geo.json"
+ },
+ "geometry.riko_amanai": {
+  "bones": 26,
+  "file": "crb:geo/riko_amanai.geo.json",
+  "source": "models/entity/entities/riko_amanai.geo.json"
+ },
+ "geometry.rippedfinger": {
+  "bones": 5,
+  "file": "crb:geo/rippedfinger.geo.json",
+  "source": "models/entity/finger.geo.json"
+ },
+ "geometry.rock": {
+  "bones": 26,
+  "file": "crb:geo/rock.geo.json",
+  "source": "models/entity/rock.geo.json"
+ },
+ "geometry.rock2": {
+  "bones": 26,
+  "file": "crb:geo/rock2.geo.json",
+  "source": "models/entity/rock2.geo.json"
+ },
+ "geometry.rock_item": {
+  "bones": 4,
+  "file": "crb:geo/rock_item.geo.json",
+  "source": "models/entity/rock_item.geo.json"
+ },
+ "geometry.rock_item2": {
+  "bones": 4,
+  "file": "crb:geo/rock_item2.geo.json",
+  "source": "models/entity/rock_item2.geo.json"
+ },
+ "geometry.rock_wall": {
+  "bones": 13,
+  "file": "crb:geo/rock_wall.geo.json",
+  "source": "models/entity/rock_wall.geo.json"
+ },
+ "geometry.rodofdiscord": {
+  "bones": 1,
+  "file": "crb:geo/rodofdiscord.geo.json",
+  "source": "models/entity/weapons/rodofdiscord.geo.json"
+ },
+ "geometry.rounddeer": {
+  "bones": 24,
+  "file": "crb:geo/rounddeer.geo.json",
+  "source": "models/entity/shikigami/rounddeer.geo.json"
+ },
+ "geometry.serpent": {
+  "bones": 26,
+  "file": "crb:geo/serpent.geo.json",
+  "source": "models/entity/shikigami/serpent.json"
+ },
+ "geometry.shadowtoads": {
+  "bones": 97,
+  "file": "crb:geo/shadowtoads.geo.json",
+  "source": "models/entity/shikigami/shadowtoads.geo.json"
+ },
+ "geometry.sharko": {
+  "bones": 28,
+  "file": "crb:geo/sharko.geo.json",
+  "source": "models/entity/curses/sharko.geo.json"
+ },
+ "geometry.sharpened_cloud": {
+  "bones": 15,
+  "file": "crb:geo/sharpened_cloud.geo.json",
+  "source": "models/entity/weapons/sharpened_cloud.geo.json"
+ },
+ "geometry.sharpened_cloud_drop": {
+  "bones": 15,
+  "file": "crb:geo/sharpened_cloud_drop.geo.json",
+  "source": "models/entity/weapons/sharpened_cloud_drop.geo.json"
+ },
+ "geometry.sharpened_cloud_impaled": {
+  "bones": 7,
+  "file": "crb:geo/sharpened_cloud_impaled.geo.json",
+  "source": "models/entity/weapons/sharpened_cloud_impaled.geo.json"
+ },
+ "geometry.shutter_doors": {
+  "bones": 3,
+  "file": "crb:geo/shutter_doors.geo.json",
+  "source": "models/entity/lovetrain/shutter_doors.geo.json"
+ },
+ "geometry.six_souls": {
+  "bones": 15,
+  "file": "crb:geo/six_souls.geo.json",
+  "source": "models/entity/mahito/six_souls.geo.json"
+ },
+ "geometry.sixeyes": {
+  "bones": 13,
+  "file": "crb:geo/sixeyes.geo.json",
+  "source": "models/entity/sixeyes.geo.json"
+ },
+ "geometry.sixeyes2": {
+  "bones": 13,
+  "file": "crb:geo/sixeyes2.geo.json",
+  "source": "models/entity/sixeyes2.geo.json"
+ },
+ "geometry.sixeyesb": {
+  "bones": 13,
+  "file": "crb:geo/sixeyesb.geo.json",
+  "source": "models/entity/sixeyesb.geo.json"
+ },
+ "geometry.slaughter_demon": {
+  "bones": 32,
+  "file": "crb:geo/slaughter_demon.geo.json",
+  "source": "models/entity/weapons/slaughter_demon.geo.json"
+ },
+ "geometry.slots": {
+  "bones": 14,
+  "file": "crb:geo/slots.geo.json",
+  "source": "models/entity/lovetrain/slots.geo.json"
+ },
+ "geometry.snail_curse": {
+  "bones": 12,
+  "file": "crb:geo/snail_curse.geo.json",
+  "source": "models/entity/curses/snail_curse.geo.json"
+ },
+ "geometry.soul_isomer": {
+  "bones": 13,
+  "file": "crb:geo/soul_isomer.geo.json",
+  "source": "models/entity/mahito/soul_isomer.geo.json"
+ },
+ "geometry.soul_sword": {
+  "bones": 5,
+  "file": "crb:geo/soul_sword.geo.json",
+  "source": "models/entity/weapons/soul_sword.geo.json"
+ },
+ "geometry.soul_sword_back": {
+  "bones": 6,
+  "file": "crb:geo/soul_sword_back.geo.json",
+  "source": "models/entity/weapons/soul_sword_back.geo.json"
+ },
+ "geometry.soul_sword_drop": {
+  "bones": 21,
+  "file": "crb:geo/soul_sword_drop.geo.json",
+  "source": "models/entity/weapons/soul_sword_drop.geo.json"
+ },
+ "geometry.soulking": {
+  "bones": 10,
+  "file": "crb:geo/soulking.geo.json",
+  "source": "models/entity/boss1.json"
+ },
+ "geometry.soulking_katana": {
+  "bones": 53,
+  "file": "crb:geo/soulking_katana.geo.json",
+  "source": "models/entity/soulking_katana.geo.json"
+ },
+ "geometry.soulking_plushie": {
+  "bones": 6,
+  "file": "crb:geo/soulking_plushie.geo.json",
+  "source": "models/blocks/soulking_plushie.geo.json"
+ },
+ "geometry.special_charm": {
+  "bones": 6,
+  "file": "crb:geo/special_charm.geo.json",
+  "source": "models/entity/special_charm.geo.json"
+ },
+ "geometry.special_charm2": {
+  "bones": 6,
+  "file": "crb:geo/special_charm2.geo.json",
+  "source": "models/entity/special_charm2.geo.json"
+ },
+ "geometry.speech_tattoos": {
+  "bones": 3,
+  "file": "crb:geo/speech_tattoos.geo.json",
+  "source": "models/entity/speech_tattoos.json"
+ },
+ "geometry.storm_spear": {
+  "bones": 26,
+  "file": "crb:geo/storm_spear.geo.json",
+  "source": "models/entity/door.geo.json"
+ },
+ "geometry.strange_vile": {
+  "bones": 8,
+  "file": "crb:geo/strange_vile.geo.json",
+  "source": "models/entity/strange_vile.geo.json"
+ },
+ "geometry.strange_vile_drop": {
+  "bones": 2,
+  "file": "crb:geo/strange_vile_drop.geo.json",
+  "source": "models/entity/strange_vile_drop.geo.json"
+ },
+ "geometry.student_gojo": {
+  "bones": 11,
+  "file": "crb:geo/student_gojo.geo.json",
+  "source": "models/entity/entities/student_gojo.geo.json"
+ },
+ "geometry.student_gojo2": {
+  "bones": 11,
+  "file": "crb:geo/student_gojo2.geo.json",
+  "source": "models/entity/entities/student_gojo2.geo.json"
+ },
+ "geometry.sukuna_finger": {
+  "bones": 9,
+  "file": "crb:geo/sukuna_finger.geo.json",
+  "source": "models/entity/relics/sukuna_finger.geo.json"
+ },
+ "geometry.sukuna_finger_drop": {
+  "bones": 3,
+  "file": "crb:geo/sukuna_finger_drop.geo.json",
+  "source": "models/entity/relics/sukuna_finger_drop.geo.json"
+ },
+ "geometry.sukuna_innate_domain": {
+  "bones": 469,
+  "file": "crb:geo/sukuna_innate_domain.geo.json",
+  "source": "models/entity/sukuna/sukuna_innate_domain.json"
+ },
+ "geometry.sukuna_markings": {
+  "bones": 18,
+  "file": "crb:geo/sukuna_markings.geo.json",
+  "source": "models/entity/sukuna_markings.geo.json"
+ },
+ "geometry.sukuna_markings2": {
+  "bones": 18,
+  "file": "crb:geo/sukuna_markings2.geo.json",
+  "source": "models/entity/sukuna_markings2.geo.json"
+ },
+ "geometry.sukuna_plushie": {
+  "bones": 15,
+  "file": "crb:geo/sukuna_plushie.geo.json",
+  "source": "models/blocks/sukuna_plushie.geo.json"
+ },
+ "geometry.sukuna_robes": {
+  "bones": 6,
+  "file": "crb:geo/sukuna_robes.geo.json",
+  "source": "models/entity/fits/sukuna_robes.json"
+ },
+ "geometry.sukuna_torso": {
+  "bones": 55,
+  "file": "crb:geo/sukuna_torso.geo.json",
+  "source": "models/entity/fits/sukuna_torso.geo.json"
+ },
+ "geometry.tablet": {
+  "bones": 4,
+  "file": "crb:geo/tablet.geo.json",
+  "source": "models/entity/tablet.geo.json"
+ },
+ "geometry.takada_chan": {
+  "bones": 25,
+  "file": "crb:geo/takada_chan.geo.json",
+  "source": "models/entity/entities/takada_chan.geo.json"
+ },
+ "geometry.takada_chan_face": {
+  "bones": 3,
+  "file": "crb:geo/takada_chan_face.geo.json",
+  "source": "models/entity/entities/takada_chan_face.geo.json"
+ },
+ "geometry.the_shard": {
+  "bones": 5,
+  "file": "crb:geo/the_shard.geo.json",
+  "source": "models/entity/the_shard.geo.json"
+ },
+ "geometry.toad": {
+  "bones": 25,
+  "file": "crb:geo/toad.geo.json",
+  "source": "models/entity/shikigami/toad.geo.json"
+ },
+ "geometry.toad2": {
+  "bones": 26,
+  "file": "crb:geo/toad2.geo.json",
+  "source": "models/entity/shikigami/toad2.geo.json"
+ },
+ "geometry.tobi_plushie": {
+  "bones": 23,
+  "file": "crb:geo/tobi_plushie.geo.json",
+  "source": "models/blocks/tobi_plushie.json"
+ },
+ "geometry.todo": {
+  "bones": 60,
+  "file": "crb:geo/todo.geo.json",
+  "source": "models/entity/entities/todo.geo.json"
+ },
+ "geometry.toji": {
+  "bones": 56,
+  "file": "crb:geo/toji.geo.json",
+  "source": "models/entity/entities/toji.geo.json"
+ },
+ "geometry.toji_apple": {
+  "bones": 56,
+  "file": "crb:geo/toji_apple.geo.json",
+  "source": "models/entity/entities/toji_apple.geo.json"
+ },
+ "geometry.toji_plushie": {
+  "bones": 11,
+  "file": "crb:geo/toji_plushie.geo.json",
+  "source": "models/blocks/toji_plushie.geo.json"
+ },
+ "geometry.toji_reawakened": {
+  "bones": 14,
+  "file": "crb:geo/toji_reawakened.geo.json",
+  "source": "models/entity/entities/toji_reawakened.geo.json"
+ },
+ "geometry.torn_limb": {
+  "bones": 4,
+  "file": "crb:geo/torn_limb.geo.json",
+  "source": "models/entity/torn_limb.geo.json"
+ },
+ "geometry.totality": {
+  "bones": 24,
+  "file": "crb:geo/totality.geo.json",
+  "source": "models/entity/shikigami/totality.geo.json"
+ },
+ "geometry.transfigured_human_bullet": {
+  "bones": 2,
+  "file": "crb:geo/transfigured_human_bullet.geo.json",
+  "source": "models/entity/mahito/transfigured_human_bullet.geo.json"
+ },
+ "geometry.transfigured_human_item1": {
+  "bones": 9,
+  "file": "crb:geo/transfigured_human_item1.geo.json",
+  "source": "models/entity/mahito/transfigured_human_item1.json"
+ },
+ "geometry.transfigured_human_item2": {
+  "bones": 9,
+  "file": "crb:geo/transfigured_human_item2.geo.json",
+  "source": "models/entity/mahito/transfigured_human_item2.json"
+ },
+ "geometry.transfigured_human_mob1": {
+  "bones": 7,
+  "file": "crb:geo/transfigured_human_mob1.geo.json",
+  "source": "models/entity/mahito/transfigured_british.json"
+ },
+ "geometry.transfigured_human_mob2": {
+  "bones": 8,
+  "file": "crb:geo/transfigured_human_mob2.geo.json",
+  "source": "models/entity/mahito/transfigured_biden.json"
+ },
+ "geometry.transfigured_human_mob3": {
+  "bones": 7,
+  "file": "crb:geo/transfigured_human_mob3.geo.json",
+  "source": "models/entity/mahito/transfigured_ghoul.json"
+ },
+ "geometry.transfigured_human_mob4": {
+  "bones": 8,
+  "file": "crb:geo/transfigured_human_mob4.geo.json",
+  "source": "models/entity/mahito/transfigured_sloth.json"
+ },
+ "geometry.transfigured_human_mob5": {
+  "bones": 7,
+  "file": "crb:geo/transfigured_human_mob5.geo.json",
+  "source": "models/entity/mahito/transfigured_eye.json"
+ },
+ "geometry.transfigured_human_mob6": {
+  "bones": 7,
+  "file": "crb:geo/transfigured_human_mob6.geo.json",
+  "source": "models/entity/mahito/transfigured_wizowsky.json"
+ },
+ "geometry.transfigured_human_mob7": {
+  "bones": 7,
+  "file": "crb:geo/transfigured_human_mob7.geo.json",
+  "source": "models/entity/mahito/transfigured_stretch.json"
+ },
+ "geometry.transfigured_human_mob8": {
+  "bones": 7,
+  "file": "crb:geo/transfigured_human_mob8.geo.json",
+  "source": "models/entity/mahito/transfigured_fatahh.json"
+ },
+ "geometry.transfigured_human_proj": {
+  "bones": 19,
+  "file": "crb:geo/transfigured_human_proj.geo.json",
+  "poly_mesh": "crb:jja/poly_mesh/transfigured_human_proj.json",
+  "source": "models/entity/mahito/transfigured_human_proj.geo.json"
+ },
+ "geometry.transfigured_human_worm": {
+  "bones": 6,
+  "file": "crb:geo/transfigured_human_worm.geo.json",
+  "source": "models/entity/mahito/transfigured_human_worm.geo.json"
+ },
+ "geometry.truegrimoire": {
+  "bones": 2,
+  "file": "crb:geo/truegrimoire.geo.json",
+  "source": "models/entity/weapons/truegrimoire.geo.json"
+ },
+ "geometry.truephaser": {
+  "bones": 4,
+  "file": "crb:geo/truephaser.geo.json",
+  "source": "models/entity/weapons/truephaser.geo.json"
+ },
+ "geometry.truesword": {
+  "bones": 1,
+  "file": "crb:geo/truesword.geo.json",
+  "source": "models/entity/weapons/truesword.geo.json"
+ },
+ "geometry.uraume_plushie": {
+  "bones": 15,
+  "file": "crb:geo/uraume_plushie.geo.json",
+  "source": "models/blocks/refrigerator_uraume_plushie.geo.json"
+ },
+ "geometry.uzkownik_plushie": {
+  "bones": 11,
+  "file": "crb:geo/uzkownik_plushie.geo.json",
+  "source": "models/blocks/Uzkownik_plushie.geo.json"
+ },
+ "geometry.void_eye": {
+  "bones": 17,
+  "file": "crb:geo/void_eye.geo.json",
+  "source": "models/entity/void_eye.geo.json"
+ },
+ "geometry.void_reactor": {
+  "bones": 10,
+  "file": "crb:geo/void_reactor.geo.json",
+  "source": "models/entity/fist.geo.json"
+ },
+ "geometry.void_servant": {
+  "bones": 23,
+  "file": "crb:geo/void_servant.geo.json",
+  "source": "models/entity/void_servant.geo.json"
+ },
+ "geometry.volcano_head": {
+  "bones": 4,
+  "file": "crb:geo/volcano_head.geo.json",
+  "source": "models/entity/curses/volcano_head.geo.json"
+ },
+ "geometry.watcher": {
+  "bones": 53,
+  "file": "crb:geo/watcher.geo.json",
+  "source": "models/entity/curses/watcher.geo.json"
+ },
+ "geometry.windhorn": {
+  "bones": 1,
+  "file": "crb:geo/windhorn.geo.json",
+  "source": "models/entity/windhorn.geo.json"
+ },
+ "geometry.woman_model": {
+  "bones": 22,
+  "file": "crb:geo/woman_model.geo.json",
+  "source": "models/entity/woman_model.geo.json"
+ },
+ "geometry.woman_model2": {
+  "bones": 20,
+  "file": "crb:geo/woman_model2.geo.json",
+  "source": "models/entity/woman_model2.geo.json"
+ },
+ "geometry.xero_plushie": {
+  "bones": 6,
+  "file": "crb:geo/xero_plushie.geo.json",
+  "source": "models/blocks/xero_plushie.geo.json"
+ },
+ "geometry.yuji": {
+  "bones": 8,
+  "file": "crb:geo/yuji.geo.json",
+  "source": "models/entity/yuji.geo.json"
+ },
+ "geometry.yuji_domain": {
+  "bones": 2,
+  "file": "crb:geo/yuji_domain.geo.json",
+  "source": "models/entity/yuji_domain.geo.json"
+ },
+ "geometry.yuji_domain_clashing": {
+  "bones": 1,
+  "file": "crb:geo/yuji_domain_clashing.geo.json",
+  "source": "models/entity/yuji_domain_clashing.geo.json"
+ },
+ "geometry.yuji_face": {
+  "bones": 7,
+  "file": "crb:geo/yuji_face.geo.json",
+  "source": "models/entity/yuji_face.geo.json"
+ },
+ "geometry.yuji_fit": {
+  "bones": 7,
+  "file": "crb:geo/yuji_fit.geo.json",
+  "source": "models/entity/fits/yuji_fit.geo.json"
+ },
+ "geometry.yuji_plushie": {
+  "bones": 15,
+  "file": "crb:geo/yuji_plushie.geo.json",
+  "source": "models/blocks/yuji_plushie.json"
+ },
+ "geometry.yuji_rage": {
+  "bones": 7,
+  "file": "crb:geo/yuji_rage.geo.json",
+  "source": "models/entity/yuji_rage.geo.json"
+ },
+ "geometry.yuki_plushie": {
+  "bones": 15,
+  "file": "crb:geo/yuki_plushie.geo.json",
+  "source": "models/blocks/yuki_plushie.geo.json"
+ },
+ "geometry.yuta_plushie": {
+  "bones": 15,
+  "file": "crb:geo/yuta_plushie.geo.json",
+  "source": "models/blocks/yuta_plushie.json"
+ }
+}

@@ -128,19 +128,14 @@ All scripts are Python 3 (`python3 -I tools/jja/<script>.py`), deterministic and
 |---|---|---|
 | `catalog.py` ✅ | both packs | research catalog |
 | `movesets.py` ✅ | `*_click`, `*_moves` | `catalog/movesets.{md,json}` |
-| `convert_models.py` | `models/**/*.geo.json` | `assets/crb/geo/…` (GeckoLib) |
-| `convert_animations.py` | `animations/*.json` | `assets/crb/animations/…` (entities) and `assets/crb/player_animations/…` (players) |
-| `convert_textures.py` | `textures/**` | `assets/crb/textures/…`, item model JSONs from `item_texture.json` |
-| `convert_sounds.py` | `sounds/**`, `sound_definitions.json` | `assets/crb/sounds/…`, `sounds.json` (volume, pitch, stream, attenuation) |
-| `convert_particles.py` | `particles/*.json` | `assets/crb/bedrock_particles/…` (validated, minified; consumed by BedrockFX) |
-| `slice_impact_frames.py` | `font/glyph_*.png` | `assets/crb/textures/impact/<page>/<index>.png` + index (non-empty cells only) |
-| `convert_lang.py` | `texts/en_US.lang` | `assets/crb/lang/en_us.json` |
-| `timelines.py` | move mcfunctions | `data/crb/move_scripts/**` |
-| `convert_structures.py` | `structures/*.mcstructure` | `data/crb/structure/…` (Bedrock→Java block mapping) |
-| `convert_loot.py` | `loot_tables/**` | `data/crb/loot_table/…` |
-| `validate.py` | generated resources | fails the build if a script references a missing sound/particle/animation/texture |
+| `convert.py` ✅ | resource pack | `assets/crb/`: `textures/**` (1,065), `geo/*.geo.json` (364 GeckoLib models, one per geometry), `animations/*.animation.json` (1,464 for GeckoLib), `player_animations/*.json` (1,317 re-boned for Player Animation Library), `sounds/**` + `sounds.json` (395 files, 399 events), `bedrock_particles/<ns>/*.json` (3,468), `textures/glyph/<page>/*.png` (725 impact-frame/UI cells), `models/item/*.json` (216), `lang/en_us.json`, and `jja/*.json` indexes (entities, geometry, animations, particles, sounds, glyphs, attachables, render/animation controllers, poly meshes) |
+| `timelines.py` | move mcfunctions | `data/crb/move_scripts/**` (move-engine branch) |
+| `convert_structures.py` | `structures/*.mcstructure` | `data/crb/structure/…` (world branch) |
+| `convert_loot.py` | `loot_tables/**` | `data/crb/loot_table/…` (world branch) |
 
-`./gradlew build` runs the JUnit suite and `validate.py` (an `Exec` task, skipped when Python is missing).
+Run `python3 tools/jja/convert.py` (needs Pillow). It is deterministic, and everything it skipped or could not resolve is listed in [`catalog/conversion_report.md`](architecture_and_research/catalog/conversion_report.md).
+
+`./gradlew build` validates the converted assets in JUnit (`ConvertedAssetsTest`: legal paths, parseable JSON, every reference resolves; `LibraryLoadingTest`: every model parses and bakes in GeckoLib, every animation parses in GeckoLib and Player Animation Library), so Python is only needed to regenerate.
 
 ## 6. Cinematic engine
 
@@ -161,7 +156,7 @@ Each line is one feature branch → PR → merge after a green `./gradlew build`
 |---|---|---|---|
 | 1 | `docs/phase1-research` | Research docs, catalog tools, this plan | ✅ |
 | 2 | `feat/core-architecture` | Gradle/MDG, deps, entrypoint, config, custom registries, attachments, payload registration skeleton, technique-ownership SavedData, kit format + loader, `/crb` admin commands, 19 shipped kits, JUnit + GameTests | ✅ |
-| 3 | `feat/asset-pipeline` | Model/animation/texture/sound/lang/particle/impact-frame converters + converted assets | ☐ |
+| 3 | `feat/asset-pipeline` | Model/animation/texture/sound/lang/particle/impact-frame converters + converted assets | ✅ |
 | 4 | `feat/move-engine` | Timeline extractor, `MoveScript` loader, server `MoveInstance`, client `MovePresenter`, MoveStart/End sync, tracking catch-up | ☐ |
 | 5 | `feat/camera-engine` | Director, splines, eases, shake, fades, impact frames, hit-stop, FOV | ☐ |
 | 6 | `feat/bedrock-particles` | BedrockFX runtime (emitters, curves, Molang, flipbooks, collision) | ☐ |
@@ -197,6 +192,15 @@ Each line is one feature branch → PR → merge after a green `./gradlew build`
 | 28 | `feat/char-choso` | **Blood Manipulation (G2)** |
 | 29 | `feat/char-yuta` | **Queen of Curses + Copy (G3)** |
 | 30 | `feat/hinted-roster` | Tier-3 stretch kits (Nobara, Nanami, Geto, Kenjaku, Uraume, Yuki, Mei Mei) |
+
+## 7b. Asset gaps found during conversion
+
+Missing from the JJA pack itself (broken or silent in Bedrock too). Each is synthesised in the branch that first needs it:
+
+* **Poly meshes** (15 models incl. domain barriers, Instant Spirit Body, Mahito transfigurations, Iron Mountain): GeckoLib cannot read them; meshes are split into `jja/poly_mesh/` for a custom render layer (camera/rendering branch).
+* **Vanilla Bedrock animations** JJA entities inherit (`animation.humanoid.*`, `animation.piglin.*`, 80 refs): replaced by generic Java biped/quadruped animation controllers.
+* **Never-defined animations** (29, mostly idle loops such as `animation.simple_domain.idle`, `animation.okarunmask.*`), **geometries** (`geometry.tsunami`, `geometry.simple_domain`), **textures** (e.g. `fat_sukuna`, `body_transfigure`), and **19 sounds** (e.g. `kashimodomain`, `oisatoru`, `whoosh4/5`): designed from neighbouring assets.
+* **19 FMOD `.fsb` sounds**: vanilla overrides (player attack/hurt, bat takeoff) in a proprietary codec; not needed because combat code controls those sounds.
 
 ## 8. Gap designs (summary)
 

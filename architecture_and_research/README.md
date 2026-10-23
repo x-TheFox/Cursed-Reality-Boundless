@@ -15,4 +15,6 @@ Phase 1 reverse-engineering of the Jujutsu Awakening Bedrock addon. Start with [
 python3 -I tools/jja/catalog.py && python3 -I tools/jja/movesets.py
 ```
 
+`catalog/conversion_report.md` lists every asset the converter skipped or could not resolve.
+
 The roll tables (`catalog/roll_tables.md`) were extracted once from `menu_traitshow`, `menu_techniqueshow` and `ce_item`.

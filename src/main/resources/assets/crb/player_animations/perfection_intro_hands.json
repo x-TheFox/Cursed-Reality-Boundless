@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","animations":{"animation.perfection_intro_hands":{"animation_length":10,"override_previous_animation":true,"bones":{"torso":{"position":{"0.0":[0,0,0],"0.5":[0,5,0],"10.0":[0,5,0]}}}},"animation.perfection_intro_hands2":{"animation_length":10,"override_previous_animation":true,"bones":{"torso":{"position":{"0.0":[0,10,0],"10.0":[0,10,0]}}}}}}
