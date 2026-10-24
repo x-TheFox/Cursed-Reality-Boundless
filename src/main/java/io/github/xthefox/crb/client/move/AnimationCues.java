@@ -66,6 +66,7 @@ public final class AnimationCues {
 
     public static void play(Entity entity, String animation, float startTick) {
         if (entity == null || animation.isEmpty()) return;
+        AnimationEffects.INSTANCE.onAnimation(entity, animation, startTick);
         if (entity instanceof AbstractClientPlayer player) {
             controller(player).triggerAnimation(ResourceLocation.fromNamespaceAndPath(CRB.MOD_ID, animation), startTick);
             return;
@@ -81,6 +82,7 @@ public final class AnimationCues {
     private static void onEnd(ClientMoves.Playing m, MoveLogic.EndReason reason) {
         // a finished move lets its last animation play out, as in Bedrock; cancelled moves snap back
         if (reason == MoveLogic.EndReason.FINISHED) return;
+        AnimationEffects.INSTANCE.stop(m.entityId);
         if (m.entity() instanceof AbstractClientPlayer player) controller(player).stopTriggeredAnimation();
     }
 

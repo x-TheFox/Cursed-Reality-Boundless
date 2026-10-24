@@ -31,6 +31,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import BP, REPO, RP, files, load_json, try_load  # noqa: E402
+import playeranim  # noqa: E402
 
 ASSETS = REPO / "src" / "main" / "resources" / "assets" / "crb"
 INDEX = ASSETS / "jja"
@@ -268,6 +269,46 @@ def _player_copy(anim: dict) -> dict | None:
     return out
 
 
+def _bake_effects(effects: dict, anims: dict) -> dict:
+    """Animation keyframe particles/sounds with short names resolved and player locators positioned."""
+    particle_ids, sound_ids = {}, {}
+    player_geos = []
+    geo_ids = set()
+    for src in files(RP / "entity", ".json"):
+        desc = try_load(src).get("minecraft:client_entity", {}).get("description", {})
+        for k, v in (desc.get("particle_effects") or {}).items():
+            particle_ids.setdefault(k, v)
+        for k, v in (desc.get("sound_effects") or {}).items():
+            sound_ids.setdefault(k, v.get("effect") if isinstance(v, dict) else v)
+        if desc.get("identifier") == "minecraft:player":
+            g = desc.get("geometry") or {}
+            # the locator model first, then the plain player model, then the rest
+            order = ["locator_players", "default"] + [k for k in g if k not in ("locator_players", "default")]
+            geo_ids.update(g.values())
+            player_order = [g[k] for k in order if k in g]
+    geos = {}
+    for src in files(RP / "models", ".json"):
+        d = try_load(src)
+        if "__error__" in d:
+            continue
+        items = d.get("minecraft:geometry")
+        if isinstance(items, list):
+            for g in items:
+                geos[g.get("description", {}).get("identifier")] = g
+        for k, g in d.items():
+            if k.startswith("geometry.") and isinstance(g, dict):
+                geos[k.split(":")[0]] = g
+    player_geos = [geos[i] for i in player_order if i in geos]
+    locators = playeranim.locator_table(player_geos)
+    out = {}
+    for name, raw in effects.items():
+        baked = playeranim.bake_effects(name, raw, anims.get(name), locators, particle_ids, sound_ids)
+        if baked:
+            out[name] = baked
+    REPORT["animation_effects"] = [f"{len(out)} animations with effects, {len(locators)} player locators"]
+    return dict(sorted(out.items()))
+
+
 def convert_animations():
     out = ASSETS / "animations"
     pout = ASSETS / "player_animations"
@@ -275,6 +316,7 @@ def convert_animations():
     reset(pout)
     index = {}
     effects = {}
+    all_anims = {}
     player_count = 0
     for src in files(RP / "animations", ".json"):
         d = try_load(src)
@@ -292,6 +334,7 @@ def convert_animations():
             fx = {k: a[k] for k in ANIMATION_EFFECT_KEYS if a.get(k)}
             if fx:
                 effects[name] = fx
+            all_anims.setdefault(name, a)
             gecko[name] = _molang_compat({k: v for k, v in a.items() if k not in ANIMATION_EFFECT_KEYS})
         dump(out / f"{stem}.animation.json", {"format_version": "1.8.0", "animations": gecko})
         players = {}
@@ -303,7 +346,7 @@ def convert_animations():
             else:
                 index[name] = {"file": f"{NS}:animations/{stem}.animation.json", "length": a.get("animation_length"),
                                "loop": a.get("loop", False)}
-            pc = _player_copy(_molang_compat(a))
+            pc = playeranim.bake(a)
             if pc is not None:
                 players[name] = pc
         if players:
@@ -312,7 +355,7 @@ def convert_animations():
                 index.setdefault(name, {})["player"] = f"{NS}:{name}"
             player_count += len(players)
     dump(INDEX / "animations.json", dict(sorted(index.items())), pretty=True)
-    dump(INDEX / "animation_effects.json", dict(sorted(effects.items())))
+    dump(INDEX / "animation_effects.json", _bake_effects(effects, all_anims))
     print(f"animations: {len(index)} ({player_count} also as player animations)")
     return index
 
