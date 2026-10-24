@@ -82,12 +82,14 @@ public final class CRBClient {
         NeoForge.EVENT_BUS.addListener((ClientTickEvent.Post e) -> {
             if (Minecraft.getInstance().level != null && !Minecraft.getInstance().isPaused()) {
                 ClientMoves.tick();
+                io.github.xthefox.crb.client.move.AnimationEffects.INSTANCE.tick();
                 io.github.xthefox.crb.client.fx.BedrockFX.INSTANCE.tick();
                 io.github.xthefox.crb.client.fx.ClientProjectiles.cleanup();
             }
         });
         NeoForge.EVENT_BUS.addListener((ClientPlayerNetworkEvent.LoggingOut e) -> {
             ClientMoves.clear();
+            io.github.xthefox.crb.client.move.AnimationEffects.INSTANCE.clear();
             io.github.xthefox.crb.client.input.CombatMode.reset();
             io.github.xthefox.crb.client.fx.BedrockFX.INSTANCE.clear();
             CinematicDirector.clear();
@@ -117,6 +119,7 @@ public final class CRBClient {
     @SubscribeEvent
     static void reloadListeners(RegisterClientReloadListenersEvent event) {
         event.registerReloadListener(MoveScriptManager.INSTANCE);
+        event.registerReloadListener(io.github.xthefox.crb.client.move.AnimationEffects.INSTANCE);
         event.registerReloadListener(io.github.xthefox.crb.client.fx.BedrockFX.INSTANCE);
         event.registerReloadListener((ResourceManagerReloadListener) rm -> SoundCues.reset());
     }

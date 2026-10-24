@@ -1,0 +1,33 @@
+# Visual check: baked player animations (whole-body motion carries the limbs)
+cmd gamerule sendCommandFeedback false
+cmd time set noon
+cmd kill @e[type=!player]
+cmd effect give @s minecraft:resistance 600 10 true
+look 0 0
+view front
+wait 20
+shot 00_rest
+cmd crb move play @s crb:fighting/invertedspear/ankle_cutter
+waitmove 4
+shot 01_ankle_t4
+waitmove 8
+shot 02_ankle_t8
+waitmove 12
+shot 03_ankle_t12
+wait 20
+cmd crb move play @s crb:fighting/hand_sword/handshake_spin
+waitmove 6
+shot 04_spin_t6
+waitmove 12
+shot 05_spin_t12
+waitmove 20
+shot 06_spin_t20
+wait 20
+cmd crb move play @s crb:idle_transfig/blade_ab2
+waitmove 6
+shot 07_blade_t6
+waitmove 12
+shot 08_blade_t12
+wait 30
+view first
+quit

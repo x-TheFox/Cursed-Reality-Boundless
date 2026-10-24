@@ -133,14 +133,12 @@
  "animation.amberbeast.idle": {
   "file": "crb:animations/amberbeast.animation.json",
   "length": 0.29,
-  "loop": true,
-  "player": "crb:animation.amberbeast.idle"
+  "loop": true
  },
  "animation.amberbeast2.idle": {
   "file": "crb:animations/amberbeast.animation.json",
   "length": 0.29,
-  "loop": true,
-  "player": "crb:animation.amberbeast2.idle"
+  "loop": true
  },
  "animation.amberbeastfull.idle": {
   "file": "crb:animations/amberbeast.animation.json",
@@ -406,8 +404,7 @@
  "animation.beru.invisible": {
   "file": "crb:animations/beru.animation.json",
   "length": 0.5,
-  "loop": true,
-  "player": "crb:animation.beru.invisible"
+  "loop": true
  },
  "animation.beru.kick": {
   "file": "crb:animations/beru.animation.json",
@@ -568,8 +565,7 @@
  "animation.big_pachinko": {
   "file": "crb:animations/lovetrain.animation.json",
   "length": 5.16667,
-  "loop": true,
-  "player": "crb:animation.big_pachinko"
+  "loop": true
  },
  "animation.birch_tree": {
   "file": "crb:animations/mobility.animation.json",
@@ -1097,14 +1093,12 @@
  "animation.centipede.move": {
   "file": "crb:animations/centipede.animation.json",
   "length": 0.375,
-  "loop": true,
-  "player": "crb:animation.centipede.move"
+  "loop": true
  },
  "animation.centipede.move2": {
   "file": "crb:animations/centipede.animation.json",
   "length": 0.2083,
-  "loop": true,
-  "player": "crb:animation.centipede.move2"
+  "loop": true
  },
  "animation.centipede.pierce1": {
   "file": "crb:animations/centipede.animation.json",
@@ -1198,8 +1192,7 @@
  "animation.clankers_idle": {
   "file": "crb:animations/mahito_effects.animation.json",
   "length": 80,
-  "loop": true,
-  "player": "crb:animation.clankers_idle"
+  "loop": true
  },
  "animation.cleave": {
   "file": "crb:animations/sukuna_moves.animation.json",
@@ -1353,8 +1346,7 @@
  "animation.cursed_closet.open": {
   "file": "crb:animations/cursed_closet.animation.json",
   "length": 1.5417,
-  "loop": false,
-  "player": "crb:animation.cursed_closet.open"
+  "loop": false
  },
  "animation.cursed_closet.opened": {
   "file": "crb:animations/cursed_closet.animation.json",
@@ -1621,8 +1613,7 @@
  "animation.deadly_sentencing": {
   "file": "crb:animations/deadly_sentencing.animation.json",
   "length": 6,
-  "loop": false,
-  "player": "crb:animation.deadly_sentencing"
+  "loop": false
  },
  "animation.deadly_sentencing_clashing": {
   "file": "crb:animations/clashing_animations.animation.json",
@@ -2055,8 +2046,7 @@
  "animation.dismantle_projectile": {
   "file": "crb:animations/dismantle.animation.json",
   "length": 1,
-  "loop": true,
-  "player": "crb:animation.dismantle_projectile"
+  "loop": true
  },
  "animation.dismantle_projectile2": {
   "file": "crb:animations/dismantle.animation.json",
@@ -2782,8 +2772,7 @@
  "animation.flame_arrow": {
   "file": "crb:animations/divine_flames.animation.json",
   "length": 0.25,
-  "loop": true,
-  "player": "crb:animation.flame_arrow"
+  "loop": true
  },
  "animation.flame_repulsion": {
   "file": "crb:animations/disaster_flames.animation.json",
@@ -2812,8 +2801,7 @@
  "animation.flames.ab3b": {
   "file": "crb:animations/disaster_flames.animation.json",
   "length": 0.0833,
-  "loop": true,
-  "player": "crb:animation.flames.ab3b"
+  "loop": true
  },
  "animation.flames.ab4": {
   "file": "crb:animations/disaster_flames.animation.json",
@@ -4282,8 +4270,7 @@
  "animation.invisible": {
   "file": "crb:animations/invisible.animation.json",
   "length": 0.25,
-  "loop": true,
-  "player": "crb:animation.invisible"
+  "loop": true
  },
  "animation.iron_mountain.ambience": {
   "file": "crb:animations/iron_mountain.animation.json",
@@ -4811,8 +4798,7 @@
  "animation.leech_curse.idle": {
   "file": "crb:animations/leech_curse.animation.json",
   "length": 2,
-  "loop": true,
-  "player": "crb:animation.leech_curse.idle"
+  "loop": true
  },
  "animation.leech_curse.move": {
   "file": "crb:animations/leech_curse.animation.json",
@@ -5686,8 +5672,7 @@
  "animation.mahoraga_ritual1": {
   "file": "crb:animations/mahoraga_ritual1.animation.json",
   "length": 11.29167,
-  "loop": true,
-  "player": "crb:animation.mahoraga_ritual1"
+  "loop": true
  },
  "animation.mahoraga_summon": {
   "file": "crb:animations/10shadows.animation.json",
@@ -5777,14 +5762,12 @@
  "animation.maxelephant.move": {
   "file": "crb:animations/maxelephant.animation.json",
   "length": 1,
-  "loop": true,
-  "player": "crb:animation.maxelephant.move"
+  "loop": true
  },
  "animation.maxelephant.static": {
   "file": "crb:animations/maxelephant.animation.json",
   "length": 1,
-  "loop": true,
-  "player": "crb:animation.maxelephant.static"
+  "loop": true
  },
  "animation.maxelephant.stomp": {
   "file": "crb:animations/maxelephant.animation.json",
@@ -5819,8 +5802,7 @@
  "animation.meteor2": {
   "file": "crb:animations/meteor.animation.json",
   "length": 0.2083,
-  "loop": true,
-  "player": "crb:animation.meteor2"
+  "loop": true
  },
  "animation.molten_crush": {
   "file": "crb:animations/disaster_flames.animation.json",
@@ -6006,8 +5988,7 @@
  "animation.perfection_clashing": {
   "file": "crb:animations/clashing_animations.animation.json",
   "length": 10,
-  "loop": true,
-  "player": "crb:animation.perfection_clashing"
+  "loop": true
  },
  "animation.perfection_domain.idle": {
   "file": "crb:animations/perfection_domain.animation.json",
@@ -6022,8 +6003,7 @@
  "animation.perfection_domain2.start": {
   "file": "crb:animations/perfection_domain.animation.json",
   "length": 20,
-  "loop": false,
-  "player": "crb:animation.perfection_domain2.start"
+  "loop": false
  },
  "animation.perfection_intro_hands": {
   "file": "crb:animations/perfection_intro_hands.animation.json",
@@ -6236,8 +6216,7 @@
  "animation.plus_ultra.stars_scene": {
   "file": "crb:animations/boogie_woogie.animation.json",
   "length": 10,
-  "loop": false,
-  "player": "crb:animation.plus_ultra.stars_scene"
+  "loop": false
  },
  "animation.plus_ultra.start": {
   "file": "crb:animations/boogie_woogie.animation.json",
@@ -6829,8 +6808,7 @@
  "animation.rotate": {
   "file": "crb:animations/rotate.animation.json",
   "length": null,
-  "loop": true,
-  "player": "crb:animation.rotate"
+  "loop": true
  },
  "animation.rounddeer.move": {
   "file": "crb:animations/rounddeer.animation.json",
@@ -8232,44 +8210,37 @@
  "animation.void_reactor.activation": {
   "file": "crb:animations/void_reactor.animation.json",
   "length": 5.25,
-  "loop": true,
-  "player": "crb:animation.void_reactor.activation"
+  "loop": true
  },
  "animation.void_reactor.active": {
   "file": "crb:animations/void_reactor.animation.json",
   "length": 0.5,
-  "loop": true,
-  "player": "crb:animation.void_reactor.active"
+  "loop": true
  },
  "animation.void_reactor.complete": {
   "file": "crb:animations/void_reactor.animation.json",
   "length": 5,
-  "loop": true,
-  "player": "crb:animation.void_reactor.complete"
+  "loop": true
  },
  "animation.void_reactor.error1": {
   "file": "crb:animations/void_reactor.animation.json",
   "length": 8,
-  "loop": true,
-  "player": "crb:animation.void_reactor.error1"
+  "loop": true
  },
  "animation.void_reactor.error2": {
   "file": "crb:animations/void_reactor.animation.json",
   "length": 4.0208,
-  "loop": true,
-  "player": "crb:animation.void_reactor.error2"
+  "loop": true
  },
  "animation.void_reactor.error3": {
   "file": "crb:animations/void_reactor.animation.json",
   "length": 2,
-  "loop": true,
-  "player": "crb:animation.void_reactor.error3"
+  "loop": true
  },
  "animation.void_reactor.error4": {
   "file": "crb:animations/void_reactor.animation.json",
   "length": 4.025,
-  "loop": true,
-  "player": "crb:animation.void_reactor.error4"
+  "loop": true
  },
  "animation.void_reactor.idle": {
   "file": "crb:animations/void_reactor.animation.json",
@@ -8403,8 +8374,7 @@
  "animation.worm.explode": {
   "file": "crb:animations/transfigured_human_worm.animation.json",
   "length": 1,
-  "loop": true,
-  "player": "crb:animation.worm.explode"
+  "loop": true
  },
  "animation.worm.idle": {
   "file": "crb:animations/transfigured_human_worm.animation.json",
@@ -8414,14 +8384,12 @@
  "animation.worm.idle2": {
   "file": "crb:animations/transfigured_human_worm.animation.json",
   "length": 0.375,
-  "loop": true,
-  "player": "crb:animation.worm.idle2"
+  "loop": true
  },
  "animation.worm.idle3": {
   "file": "crb:animations/transfigured_human_worm.animation.json",
   "length": 0.375,
-  "loop": true,
-  "player": "crb:animation.worm.idle3"
+  "loop": true
  },
  "animation.wrong_way1": {
   "file": "crb:animations/heavenlyrestriction.animation.json",
@@ -8622,8 +8590,7 @@
  "animation.yuji_domain_clashing": {
   "file": "crb:animations/clashing_animations.animation.json",
   "length": 0.0833,
-  "loop": true,
-  "player": "crb:animation.yuji_domain_clashing"
+  "loop": true
  },
  "animation.yuji_domain_hold": {
   "file": "crb:animations/black_fists.animation.json",

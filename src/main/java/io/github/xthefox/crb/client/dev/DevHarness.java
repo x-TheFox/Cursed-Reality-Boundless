@@ -20,6 +20,7 @@ import java.util.Deque;
  * <p>Script lines (blank lines and {@code #} comments ignored):
  * <pre>
  * wait 40                 # ticks
+ * view front               # camera: first | back | front (third person)
  * waitmove 56             # until the local player's active move reaches elapsed tick 56
  * cmd crb kit give @s crb:gojo
  * look 90 10              # yaw pitch
@@ -109,6 +110,11 @@ public final class DevHarness {
                     boolean ok = io.github.xthefox.crb.client.fx.BedrockFX.INSTANCE.spawn(a[0], pos, mc.player.getYRot(), null);
                     if (!ok) CRB.LOG.warn("Dev harness: unknown effect {}", a[0]);
                 }
+                case "view" -> mc.options.setCameraType(switch (arg.trim()) {
+                    case "front" -> net.minecraft.client.CameraType.THIRD_PERSON_FRONT;
+                    case "back" -> net.minecraft.client.CameraType.THIRD_PERSON_BACK;
+                    default -> net.minecraft.client.CameraType.FIRST_PERSON;
+                });
                 case "combat" -> io.github.xthefox.crb.client.input.CombatMode.setEnabled(arg.trim().equals("on"));
                 case "page" -> io.github.xthefox.crb.client.input.CombatMode.setPage(Integer.parseInt(arg.trim()) - 1);
                 case "cast" -> {
