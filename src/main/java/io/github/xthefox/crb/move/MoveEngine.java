@@ -57,12 +57,13 @@ public final class MoveEngine {
         m.tags().addAll(extraTags);
         m.scores().putAll(extraScores);
         h.current = m;
-        broadcast(m, 0);
-        MoveEffects.INSTANCE.apply(m, 0);
-        MoveSim.INSTANCE.apply(m, 0);
-        MoveLogics.get(moveId).tick(m, 0);
+        broadcast(m);
+        process(m);
         return m;
     }
+
+    /** Longest a move may run past its scripted length (holds wait for a press). */
+    static final int MAX_OVERRUN = 1200;
 
     /** Called every server tick for every living entity with an active move. */
     public static void tick(LivingEntity e) {
@@ -73,30 +74,60 @@ public final class MoveEngine {
             end(e, MoveLogic.EndReason.DIED);
             return;
         }
+        if (m.lastTick == e.level().getGameTime()) return; // started this tick: already processed
         MoveLogic logic = MoveLogics.get(m.moveId());
         if (logic.cancelledByStun() && e.getData(CRBAttachments.COMBAT).stunned()) {
             end(e, MoveLogic.EndReason.STUNNED);
             return;
         }
-        int t = m.elapsed();
-        if (t >= m.duration()) {
+        if (m.counter < 1) {
             end(e, MoveLogic.EndReason.FINISHED);
             return;
         }
-        if (t > 0) {
-            MoveEffects.INSTANCE.apply(m, t);
-            MoveSim.INSTANCE.apply(m, t);
-            try {
-                logic.tick(m, t);
-            } catch (RuntimeException ex) {
-                CRB.LOG.error("Move {} logic failed at tick {}; cancelling", m.moveId(), t, ex);
-                end(e, MoveLogic.EndReason.CANCELLED);
-                return;
-            }
+        if (m.elapsed() > m.duration() + MoveSim.INSTANCE.maxCounter(m.moveId()) + MAX_OVERRUN) {
+            end(e, MoveLogic.EndReason.CANCELLED);
+            return;
         }
-        if (h.current == m && m.consumeStateDirty()) {
-            sendTrackingAndSelf(e, new MovePayloads.State(e.getId(), List.copyOf(m.tags()), Map.copyOf(m.scores())));
+        process(m);
+    }
+
+    /**
+     * One JJA tick at the current countdown value: effects, the simulation lines in file order
+     * (which may set the countdown), the Java logic, then the countdown drops by one.
+     */
+    private static void process(MoveInstance m) {
+        LivingEntity e = m.caster();
+        Holder h = e.getData(CRBAttachments.MOVE);
+        m.lastTick = e.level().getGameTime();
+        refreshLive(m);
+        try {
+            MoveEffects.INSTANCE.apply(m);
+            MoveSim.INSTANCE.apply(m);
+            if (h.current != m) return;
+            MoveLogics.get(m.moveId()).tick(m, m.elapsed());
+        } catch (RuntimeException ex) {
+            CRB.LOG.error("Move {} failed at counter {}; cancelling", m.moveId(), m.counter, ex);
+            end(e, MoveLogic.EndReason.CANCELLED);
+            return;
         }
+        if (h.current != m) return;
+        m.inputs.clear();
+        m.counter--;
+        boolean jumped = m.jumped;
+        m.jumped = false;
+        if (m.consumeStateDirty() || jumped) {
+            sendTrackingAndSelf(e, new MovePayloads.State(e.getId(), List.copyOf(m.tags()), Map.copyOf(m.scores()),
+                    jumped ? m.counter : Integer.MIN_VALUE));
+        }
+    }
+
+    /** JJA scores the move lines read (`Sneaking=1..`, `detect_jump=1`, `Stun=1..`, `Energy=..`). */
+    private static void refreshLive(MoveInstance m) {
+        LivingEntity e = m.caster();
+        m.live.put("Sneaking", e.isShiftKeyDown() ? 1 : 0);
+        m.live.put("detect_jump", e.onGround() ? 0 : 1);
+        m.live.put("Stun", e.getData(CRBAttachments.COMBAT).stun());
+        if (e.hasData(CRBAttachments.SORCERER)) m.live.put("Energy", e.getData(CRBAttachments.SORCERER).energy());
     }
 
     public static void end(LivingEntity e, MoveLogic.EndReason reason) {
@@ -115,17 +146,17 @@ public final class MoveEngine {
     public static void syncTo(ServerPlayer viewer, LivingEntity caster) {
         active(caster).ifPresent(m -> {
             if (CRBNetwork.canReceive(viewer, MovePayloads.Start.TYPE)) {
-                PacketDistributor.sendToPlayer(viewer, startPayload(m, m.elapsed()));
+                PacketDistributor.sendToPlayer(viewer, startPayload(m));
             }
         });
     }
 
-    private static void broadcast(MoveInstance m, int elapsed) {
-        sendTrackingAndSelf(m.caster(), startPayload(m, elapsed));
+    private static void broadcast(MoveInstance m) {
+        sendTrackingAndSelf(m.caster(), startPayload(m));
     }
 
-    private static MovePayloads.Start startPayload(MoveInstance m, int elapsed) {
-        return new MovePayloads.Start(m.caster().getId(), m.moveId(), elapsed, m.duration(), m.seed(),
+    private static MovePayloads.Start startPayload(MoveInstance m) {
+        return new MovePayloads.Start(m.caster().getId(), m.moveId(), m.counter, m.duration(), m.seed(),
                 List.copyOf(m.tags()), Map.copyOf(m.scores()));
     }
 

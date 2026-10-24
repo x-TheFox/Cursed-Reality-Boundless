@@ -1,1 +1,0 @@
-{"source":"ce/basket_passive","key":"move","duration":1,"cues":[{"t":1,"until":1,"type":"sound","sound":"beacon.deactivate","audience":"all","at":[{"rel":[0.0,0.0,0.0]}],"volume":1.0,"pitch":3.0,"cond":["hasitem={item=ds:cursedenergy}","score:ab=0","score:scroll=6","tag=itemUse:ds:cursedenergy"]}]}

@@ -1,1 +1,1 @@
-{"source":"mobs/sorcerers/yuji/yuji","key":"move","duration":1,"cues":[{"t":1,"until":1,"type":"effect","effect":"slowness","audience":"self","seconds":1,"amplifier":1,"cond":["score:DashCD=-201","score:DashCD_mob=0","score:Hit=0","score:Move=0","score:cutscene=0","score:flashstep=0","tag=customDashCD"]}]}
+{"source":"mobs/sorcerers/yuji/yuji","key":"move","start":1001,"cues":[]}

@@ -1,1 +1,0 @@
-{"source":"bosses/file/boss/chaos_phase","key":"move","duration":1,"cues":[{"t":1,"until":1,"type":"particle","particle":"ds:chaos_aura","at":[{"rel":[0.0,5.0,0.0]}],"cond":["score:chance=1.."]}]}

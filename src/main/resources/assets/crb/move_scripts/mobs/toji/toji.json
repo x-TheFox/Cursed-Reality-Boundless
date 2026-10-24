@@ -1,1 +1,1 @@
-{"source":"mobs/toji/toji","key":"move","duration":1,"cues":[{"t":1,"until":1,"type":"sound","sound":"armor.equip.iron","audience":"all","at":[{"rel":[0.0,0.0,0.0]}],"volume":1.0,"pitch":1.25,"cond":["hasitem={item=bucket,location=slot.weapon.mainhand}","if:entity","score:Disabled=0..10","score:Hit=0","score:cutscene=0","score:flashstep=0","unless:entity"]}]}
+{"source":"mobs/toji/toji","key":"move","start":44,"cues":[]}

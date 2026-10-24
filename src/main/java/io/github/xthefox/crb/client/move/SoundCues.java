@@ -45,7 +45,7 @@ public final class SoundCues {
     }
 
     static void play(ClientMoves.Playing m, MoveScript.Cue cue, int elapsed) {
-        Entity caster = ClientMoves.anchor(m);
+        Entity caster = ClientMoves.anchor(m, cue);
         if (caster == null) return;
         String audience = cue.str("audience", "all");
         if (!audience.equals("all") && !m.localInAudience(cue, java.util.Set.of())) return;

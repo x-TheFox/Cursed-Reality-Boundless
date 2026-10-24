@@ -43,7 +43,13 @@ public final class Melee {
     public static void press(ServerPlayer p) {
         CombatState state = p.getData(CRBAttachments.COMBAT);
         ComboState c = p.getData(CRBAttachments.COMBO);
-        if (state.stunned() || state.movementLocked() || MoveEngine.isBusy(p) || c.disabled > 0 || c.m1Timer > 0) return;
+        var running = MoveEngine.active(p);
+        if (running.isPresent()) {
+            // JJA moves that read `punch=1` (follow-ups, finishers) get the click
+            if (io.github.xthefox.crb.move.MoveSim.INSTANCE.readsInput(running.get().moveId(), "input:punch")) running.get().input("input:punch");
+            return;
+        }
+        if (state.stunned() || state.movementLocked() || c.disabled > 0 || c.m1Timer > 0) return;
         CombatStyle style = CombatStyle.of(p);
         c.m1Count = c.m1Count >= 4 ? 1 : c.m1Count + 1;
         c.m1Timer = style.windup(c.m1Count);

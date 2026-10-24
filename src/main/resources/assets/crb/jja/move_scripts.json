@@ -1,4256 +1,4118 @@
 {
  "absorption/absorption1": {
   "id": "crb:absorption/absorption1",
-  "duration": 34,
+  "start": 34,
   "cues": 25,
   "key": "move"
  },
  "absorption/absorption2": {
   "id": "crb:absorption/absorption2",
-  "duration": 21,
+  "start": 21,
   "cues": 10,
   "key": "move"
  },
  "absorption/absorption3": {
   "id": "crb:absorption/absorption3",
-  "duration": 8,
+  "start": 8,
   "cues": 9,
   "key": "move"
  },
  "absorption/absorption4": {
   "id": "crb:absorption/absorption4",
-  "duration": 36,
+  "start": 36,
   "cues": 26,
   "key": "move"
  },
  "absorption/absorption5": {
   "id": "crb:absorption/absorption5",
-  "duration": 31,
+  "start": 31,
   "cues": 12,
   "key": "move"
  },
  "absorption/absorption6": {
   "id": "crb:absorption/absorption6",
-  "duration": 47,
+  "start": 47,
   "cues": 11,
   "key": "move"
  },
  "absorption/absorption7": {
   "id": "crb:absorption/absorption7",
-  "duration": 31,
+  "start": 31,
   "cues": 36,
   "key": "move"
  },
  "absorption/absorption8": {
   "id": "crb:absorption/absorption8",
-  "duration": 71,
+  "start": 71,
   "cues": 31,
   "key": "move"
  },
  "april_fools": {
   "id": "crb:april_fools",
-  "duration": 441,
+  "start": 402,
   "cues": 48,
-  "key": "move"
- },
- "astaroth": {
-  "id": "crb:astaroth",
-  "duration": 1,
-  "cues": 1,
   "key": "move"
  },
  "astaroth_ab1": {
   "id": "crb:astaroth_ab1",
-  "duration": 31,
+  "start": 31,
   "cues": 14,
   "key": "move"
  },
  "astaroth_ab2": {
   "id": "crb:astaroth_ab2",
-  "duration": 101,
+  "start": 92,
   "cues": 10,
   "key": "move"
  },
  "astaroth_ab3": {
   "id": "crb:astaroth_ab3",
-  "duration": 31,
+  "start": 11,
   "cues": 7,
   "key": "move"
  },
  "astaroth_ab4": {
   "id": "crb:astaroth_ab4",
-  "duration": 51,
-  "cues": 20,
+  "start": 44,
+  "cues": 21,
   "key": "move"
  },
  "astaroth_ab5": {
   "id": "crb:astaroth_ab5",
-  "duration": 66,
+  "start": 17,
   "cues": 13,
   "key": "move"
  },
  "astaroth_awaken": {
   "id": "crb:astaroth_awaken",
-  "duration": 340,
-  "cues": 4,
+  "start": 341,
+  "cues": 6,
   "key": "cutscene"
  },
  "astaroth_dying": {
   "id": "crb:astaroth_dying",
-  "duration": 300,
+  "start": 151,
   "cues": 8,
   "key": "cutscene"
  },
- "benedictus": {
-  "id": "crb:benedictus",
-  "duration": 1,
-  "cues": 1,
-  "key": "move"
- },
  "benedictus_ab1": {
   "id": "crb:benedictus_ab1",
-  "duration": 21,
+  "start": 17,
   "cues": 5,
   "key": "move"
  },
  "benedictus_ab2": {
   "id": "crb:benedictus_ab2",
-  "duration": 21,
-  "cues": 6,
+  "start": 21,
+  "cues": 7,
   "key": "move"
  },
  "benedictus_ab3": {
   "id": "crb:benedictus_ab3",
-  "duration": 101,
+  "start": 101,
   "cues": 14,
   "key": "move"
  },
  "benedictus_awaken": {
   "id": "crb:benedictus_awaken",
-  "duration": 460,
-  "cues": 5,
+  "start": 461,
+  "cues": 7,
   "key": "cutscene"
  },
  "benedictus_dying": {
   "id": "crb:benedictus_dying",
-  "duration": 100,
+  "start": 96,
   "cues": 11,
   "key": "cutscene"
  },
  "blackflash1": {
   "id": "crb:blackflash1",
-  "duration": 10,
-  "cues": 27,
+  "start": 10,
+  "cues": 28,
   "key": "blackflashing"
  },
  "blackflash2": {
   "id": "crb:blackflash2",
-  "duration": 10,
-  "cues": 27,
+  "start": 10,
+  "cues": 30,
   "key": "blackflashing"
  },
  "blackflash3": {
   "id": "crb:blackflash3",
-  "duration": 10,
-  "cues": 29,
+  "start": 10,
+  "cues": 32,
   "key": "blackflashing"
  },
  "blackflash4": {
   "id": "crb:blackflash4",
-  "duration": 10,
-  "cues": 30,
+  "start": 10,
+  "cues": 32,
   "key": "blackflashing"
  },
  "blackflash_finisher_gojo": {
   "id": "crb:blackflash_finisher_gojo",
-  "duration": 421,
-  "cues": 90,
+  "start": 421,
+  "cues": 101,
   "key": "cutscene"
  },
  "boogie_woogie/ask_brother": {
   "id": "crb:boogie_woogie/ask_brother",
-  "duration": 10002,
-  "cues": 41,
+  "start": 10002,
+  "cues": 59,
   "key": "move"
  },
  "boogie_woogie/boogie1": {
   "id": "crb:boogie_woogie/boogie1",
-  "duration": 9,
+  "start": 9,
   "cues": 5,
   "key": "move"
  },
  "boogie_woogie/boogie2": {
   "id": "crb:boogie_woogie/boogie2",
-  "duration": 9,
+  "start": 9,
   "cues": 5,
   "key": "move"
  },
  "boogie_woogie/boogie3": {
   "id": "crb:boogie_woogie/boogie3",
-  "duration": 31,
-  "cues": 3,
+  "start": 31,
+  "cues": 16,
   "key": "move"
  },
  "boogie_woogie/boogie4": {
   "id": "crb:boogie_woogie/boogie4",
-  "duration": 35,
-  "cues": 9,
+  "start": 35,
+  "cues": 10,
   "key": "move"
  },
  "boogie_woogie/boogie_bc1": {
   "id": "crb:boogie_woogie/boogie_bc1",
-  "duration": 9,
+  "start": 9,
   "cues": 5,
   "key": "move"
  },
  "boogie_woogie/boogie_bc2": {
   "id": "crb:boogie_woogie/boogie_bc2",
-  "duration": 11,
-  "cues": 4,
+  "start": 11,
+  "cues": 49,
   "key": "move"
  },
  "boogie_woogie/boogie_bc3": {
   "id": "crb:boogie_woogie/boogie_bc3",
-  "duration": 31,
-  "cues": 2,
+  "start": 31,
+  "cues": 16,
   "key": "move"
  },
  "boogie_woogie/boogie_bc4": {
   "id": "crb:boogie_woogie/boogie_bc4",
-  "duration": 1002,
-  "cues": 41,
+  "start": 1001,
+  "cues": 76,
   "key": "move"
  },
  "boogie_woogie/combat1": {
   "id": "crb:boogie_woogie/combat1",
-  "duration": 31,
-  "cues": 7,
+  "start": 31,
+  "cues": 13,
   "key": "move"
  },
  "boogie_woogie/combat2": {
   "id": "crb:boogie_woogie/combat2",
-  "duration": 27,
-  "cues": 10,
+  "start": 26,
+  "cues": 15,
   "key": "move"
  },
  "boogie_woogie/combat3": {
   "id": "crb:boogie_woogie/combat3",
-  "duration": 37,
+  "start": 36,
   "cues": 30,
   "key": "move"
  },
  "boogie_woogie/combat4": {
   "id": "crb:boogie_woogie/combat4",
-  "duration": 31,
-  "cues": 17,
+  "start": 31,
+  "cues": 27,
   "key": "move"
  },
  "boogie_woogie/plus_ultra": {
   "id": "crb:boogie_woogie/plus_ultra",
-  "duration": 10002,
-  "cues": 203,
+  "start": 10002,
+  "cues": 246,
   "key": "move"
  },
  "bosses/file/3beam": {
   "id": "crb:bosses/file/3beam",
-  "duration": 61,
+  "start": 54,
   "cues": 10,
   "key": "move"
  },
  "bosses/file/balls": {
   "id": "crb:bosses/file/balls",
-  "duration": 41,
+  "start": 36,
   "cues": 6,
   "key": "move"
  },
  "bosses/file/ballspam": {
   "id": "crb:bosses/file/ballspam",
-  "duration": 101,
+  "start": 91,
   "cues": 6,
   "key": "move"
  },
  "bosses/file/boss/airhorn": {
   "id": "crb:bosses/file/boss/airhorn",
-  "duration": 51,
+  "start": 51,
   "cues": 7,
   "key": "move"
  },
  "bosses/file/boss/blade/combo1": {
   "id": "crb:bosses/file/boss/blade/combo1",
-  "duration": 91,
-  "cues": 43,
+  "start": 84,
+  "cues": 56,
   "key": "move"
  },
  "bosses/file/boss/blade/combo2": {
   "id": "crb:bosses/file/boss/blade/combo2",
-  "duration": 31,
-  "cues": 19,
+  "start": 26,
+  "cues": 25,
   "key": "move"
  },
  "bosses/file/boss/blade/ranged1": {
   "id": "crb:bosses/file/boss/blade/ranged1",
-  "duration": 91,
+  "start": 91,
   "cues": 13,
   "key": "move"
  },
  "bosses/file/boss/blade/ranged2": {
   "id": "crb:bosses/file/boss/blade/ranged2",
-  "duration": 66,
+  "start": 65,
   "cues": 17,
   "key": "move"
  },
  "bosses/file/boss/blade/ult1": {
   "id": "crb:bosses/file/boss/blade/ult1",
-  "duration": 76,
-  "cues": 9,
+  "start": 76,
+  "cues": 12,
   "key": "move"
  },
  "bosses/file/boss/blade/ult2": {
   "id": "crb:bosses/file/boss/blade/ult2",
-  "duration": 76,
-  "cues": 13,
+  "start": 76,
+  "cues": 16,
   "key": "move"
  },
  "bosses/file/boss/cero": {
   "id": "crb:bosses/file/boss/cero",
-  "duration": 24,
+  "start": 24,
   "cues": 8,
   "key": "move"
  },
  "bosses/file/boss/chaos_beam": {
   "id": "crb:bosses/file/boss/chaos_beam",
-  "duration": 61,
+  "start": 54,
   "cues": 10,
   "key": "move"
  },
  "bosses/file/boss/chaos_laser": {
   "id": "crb:bosses/file/boss/chaos_laser",
-  "duration": 66,
-  "cues": 8,
-  "key": "move"
- },
- "bosses/file/boss/chaos_phase": {
-  "id": "crb:bosses/file/boss/chaos_phase",
-  "duration": 1,
-  "cues": 1,
+  "start": 66,
+  "cues": 9,
   "key": "move"
  },
  "bosses/file/boss/final_cero": {
   "id": "crb:bosses/file/boss/final_cero",
-  "duration": 91,
+  "start": 91,
   "cues": 14,
   "key": "move"
  },
  "bosses/file/boss/final_cutscene": {
   "id": "crb:bosses/file/boss/final_cutscene",
-  "duration": 10006,
-  "cues": 97,
+  "start": 10006,
+  "cues": 126,
   "key": "cutscene"
  },
  "bosses/file/boss/final_phase": {
   "id": "crb:bosses/file/boss/final_phase",
-  "duration": 2001,
-  "cues": 54,
+  "start": 2001,
+  "cues": 58,
   "key": "cutscene"
  },
  "bosses/file/boss/katana/combo1": {
   "id": "crb:bosses/file/boss/katana/combo1",
-  "duration": 37,
-  "cues": 28,
+  "start": 37,
+  "cues": 37,
   "key": "move"
  },
  "bosses/file/boss/katana/combo2": {
   "id": "crb:bosses/file/boss/katana/combo2",
-  "duration": 31,
+  "start": 31,
   "cues": 9,
   "key": "move"
  },
  "bosses/file/boss/katana/ranged1": {
   "id": "crb:bosses/file/boss/katana/ranged1",
-  "duration": 47,
-  "cues": 25,
+  "start": 46,
+  "cues": 29,
   "key": "move"
  },
  "bosses/file/boss/katana/ranged2": {
   "id": "crb:bosses/file/boss/katana/ranged2",
-  "duration": 47,
-  "cues": 23,
+  "start": 47,
+  "cues": 30,
   "key": "move"
  },
  "bosses/file/boss/katana/ult1": {
   "id": "crb:bosses/file/boss/katana/ult1",
-  "duration": 31,
+  "start": 31,
   "cues": 13,
   "key": "move"
  },
  "bosses/file/boss/katana/ult2": {
   "id": "crb:bosses/file/boss/katana/ult2",
-  "duration": 71,
-  "cues": 27,
+  "start": 71,
+  "cues": 29,
   "key": "move"
  },
  "bosses/file/boss/phase3": {
   "id": "crb:bosses/file/boss/phase3",
-  "duration": 201,
+  "start": 61,
   "cues": 3,
   "key": "cutscene"
  },
  "bosses/file/boss/phase5": {
   "id": "crb:bosses/file/boss/phase5",
-  "duration": 601,
-  "cues": 5,
+  "start": 601,
+  "cues": 9,
   "key": "cutscene"
  },
  "bosses/file/boss/phase6": {
   "id": "crb:bosses/file/boss/phase6",
-  "duration": 201,
-  "cues": 6,
+  "start": 201,
+  "cues": 10,
   "key": "cutscene"
- },
- "bosses/file/boss/primesoul": {
-  "id": "crb:bosses/file/boss/primesoul",
-  "duration": 1,
-  "cues": 1,
-  "key": "move"
  },
  "bosses/file/boss/primesoul_awaken": {
   "id": "crb:bosses/file/boss/primesoul_awaken",
-  "duration": 1201,
-  "cues": 34,
+  "start": 1201,
+  "cues": 36,
   "key": "cutscene"
  },
  "bosses/file/boss/roar": {
   "id": "crb:bosses/file/boss/roar",
-  "duration": 51,
-  "cues": 7,
+  "start": 51,
+  "cues": 8,
   "key": "move"
  },
  "bosses/file/boss/scythe/combo1": {
   "id": "crb:bosses/file/boss/scythe/combo1",
-  "duration": 91,
-  "cues": 27,
+  "start": 84,
+  "cues": 36,
   "key": "move"
  },
  "bosses/file/boss/scythe/combo1_fast": {
   "id": "crb:bosses/file/boss/scythe/combo1_fast",
-  "duration": 51,
-  "cues": 27,
+  "start": 48,
+  "cues": 36,
   "key": "move"
  },
  "bosses/file/boss/scythe/combo2": {
   "id": "crb:bosses/file/boss/scythe/combo2",
-  "duration": 81,
-  "cues": 31,
+  "start": 77,
+  "cues": 43,
   "key": "move"
  },
  "bosses/file/boss/scythe/ranged1": {
   "id": "crb:bosses/file/boss/scythe/ranged1",
-  "duration": 41,
+  "start": 41,
   "cues": 7,
   "key": "move"
  },
  "bosses/file/boss/scythe/ranged2": {
   "id": "crb:bosses/file/boss/scythe/ranged2",
-  "duration": 76,
+  "start": 76,
   "cues": 19,
   "key": "move"
  },
  "bosses/file/boss/scythe/ult1": {
   "id": "crb:bosses/file/boss/scythe/ult1",
-  "duration": 1001,
-  "cues": 19,
+  "start": 1001,
+  "cues": 20,
   "key": "move"
  },
  "bosses/file/boss/scythe/ult2": {
   "id": "crb:bosses/file/boss/scythe/ult2",
-  "duration": 57,
+  "start": 57,
   "cues": 16,
   "key": "move"
  },
  "bosses/file/boss/scythe/ult3": {
   "id": "crb:bosses/file/boss/scythe/ult3",
-  "duration": 146,
+  "start": 146,
   "cues": 56,
   "key": "move"
  },
  "bosses/file/boss/spear/combo1": {
   "id": "crb:bosses/file/boss/spear/combo1",
-  "duration": 31,
-  "cues": 27,
+  "start": 24,
+  "cues": 36,
   "key": "move"
  },
  "bosses/file/boss/spear/ranged1": {
   "id": "crb:bosses/file/boss/spear/ranged1",
-  "duration": 51,
+  "start": 50,
   "cues": 29,
   "key": "move"
  },
  "bosses/file/boss/spear/ranged2": {
   "id": "crb:bosses/file/boss/spear/ranged2",
-  "duration": 76,
-  "cues": 1,
+  "start": 66,
+  "cues": 13,
   "key": "move"
  },
  "bosses/file/boss/spear/ult1": {
   "id": "crb:bosses/file/boss/spear/ult1",
-  "duration": 111,
+  "start": 82,
   "cues": 34,
   "key": "move"
  },
  "bosses/file/boss/spear/ult2": {
   "id": "crb:bosses/file/boss/spear/ult2",
-  "duration": 61,
+  "start": 41,
   "cues": 12,
   "key": "move"
  },
  "bosses/file/boss/summon_orbs": {
   "id": "crb:bosses/file/boss/summon_orbs",
-  "duration": 31,
+  "start": 31,
   "cues": 10,
-  "key": "move"
- },
- "bosses/file/boss/summons/bluelemon": {
-  "id": "crb:bosses/file/boss/summons/bluelemon",
-  "duration": 1,
-  "cues": 1,
   "key": "move"
  },
  "bosses/file/boss/summons/bluelemon_ab0": {
   "id": "crb:bosses/file/boss/summons/bluelemon_ab0",
-  "duration": 27,
-  "cues": 4,
+  "start": 27,
+  "cues": 13,
   "key": "move"
  },
  "bosses/file/boss/summons/bluelemon_ab1": {
   "id": "crb:bosses/file/boss/summons/bluelemon_ab1",
-  "duration": 1001,
-  "cues": 19,
+  "start": 1001,
+  "cues": 22,
   "key": "move"
  },
  "bosses/file/boss/summons/bluelemon_ab2": {
   "id": "crb:bosses/file/boss/summons/bluelemon_ab2",
-  "duration": 1001,
-  "cues": 68,
+  "start": 1001,
+  "cues": 69,
   "key": "move"
  },
  "bosses/file/boss/summons/bluelemon_ab3": {
   "id": "crb:bosses/file/boss/summons/bluelemon_ab3",
-  "duration": 1001,
-  "cues": 17,
+  "start": 1001,
+  "cues": 18,
   "key": "move"
  },
  "bosses/file/boss/summons/bluelemon_ab4": {
   "id": "crb:bosses/file/boss/summons/bluelemon_ab4",
-  "duration": 1001,
-  "cues": 46,
+  "start": 1001,
+  "cues": 63,
   "key": "move"
  },
  "bosses/file/boss/summons/bluelemon_ab5": {
   "id": "crb:bosses/file/boss/summons/bluelemon_ab5",
-  "duration": 51,
+  "start": 36,
   "cues": 14,
   "key": "move"
  },
  "bosses/file/boss/summons/bluelemon_ab6": {
   "id": "crb:bosses/file/boss/summons/bluelemon_ab6",
-  "duration": 1002,
-  "cues": 57,
+  "start": 1001,
+  "cues": 58,
   "key": "move"
  },
  "bosses/file/boss/summons/butter_ab1": {
   "id": "crb:bosses/file/boss/summons/butter_ab1",
-  "duration": 26,
+  "start": 16,
   "cues": 3,
   "key": "move"
  },
  "bosses/file/boss/summons/butter_ab2": {
   "id": "crb:bosses/file/boss/summons/butter_ab2",
-  "duration": 41,
+  "start": 32,
   "cues": 12,
-  "key": "move"
- },
- "bosses/file/boss/summons/butterjaffa": {
-  "id": "crb:bosses/file/boss/summons/butterjaffa",
-  "duration": 1,
-  "cues": 1,
-  "key": "move"
- },
- "bosses/file/boss/summons/frogdog": {
-  "id": "crb:bosses/file/boss/summons/frogdog",
-  "duration": 1,
-  "cues": 1,
   "key": "move"
  },
  "bosses/file/boss/summons/frogdog_ab1": {
   "id": "crb:bosses/file/boss/summons/frogdog_ab1",
-  "duration": 31,
-  "cues": 8,
+  "start": 29,
+  "cues": 9,
   "key": "move"
  },
  "bosses/file/boss/summons/frogdog_ab2": {
   "id": "crb:bosses/file/boss/summons/frogdog_ab2",
-  "duration": 61,
-  "cues": 8,
-  "key": "move"
- },
- "bosses/file/boss/summons/glitchyturtle": {
-  "id": "crb:bosses/file/boss/summons/glitchyturtle",
-  "duration": 1,
-  "cues": 1,
+  "start": 59,
+  "cues": 12,
   "key": "move"
  },
  "bosses/file/boss/summons/glitchyturtle_ab1": {
   "id": "crb:bosses/file/boss/summons/glitchyturtle_ab1",
-  "duration": 36,
+  "start": 21,
   "cues": 6,
   "key": "move"
  },
  "bosses/file/boss/summons/glitchyturtle_ab2": {
   "id": "crb:bosses/file/boss/summons/glitchyturtle_ab2",
-  "duration": 76,
+  "start": 76,
   "cues": 14,
   "key": "move"
  },
  "bosses/file/boss/summons/glitchyturtle_ab3": {
   "id": "crb:bosses/file/boss/summons/glitchyturtle_ab3",
-  "duration": 81,
-  "cues": 8,
-  "key": "move"
- },
- "bosses/file/boss/summons/magroic": {
-  "id": "crb:bosses/file/boss/summons/magroic",
-  "duration": 1,
-  "cues": 1,
+  "start": 81,
+  "cues": 9,
   "key": "move"
  },
  "bosses/file/boss/summons/magroic_ab1": {
   "id": "crb:bosses/file/boss/summons/magroic_ab1",
-  "duration": 36,
-  "cues": 23,
+  "start": 30,
+  "cues": 26,
   "key": "move"
  },
  "bosses/file/boss/summons/magroic_ab2": {
   "id": "crb:bosses/file/boss/summons/magroic_ab2",
-  "duration": 31,
-  "cues": 6,
+  "start": 19,
+  "cues": 9,
   "key": "move"
  },
  "bosses/file/boss/summons/magroic_ab3": {
   "id": "crb:bosses/file/boss/summons/magroic_ab3",
-  "duration": 102,
-  "cues": 21,
+  "start": 101,
+  "cues": 22,
   "key": "move"
  },
  "bosses/file/boss/summons/magroic_ab4": {
   "id": "crb:bosses/file/boss/summons/magroic_ab4",
-  "duration": 21,
+  "start": 16,
   "cues": 9,
   "key": "move"
  },
  "bosses/file/boss/summons/minion_dying": {
   "id": "crb:bosses/file/boss/summons/minion_dying",
-  "duration": 301,
+  "start": 241,
   "cues": 4,
   "key": "cutscene"
  },
  "bosses/file/boss/summons/soulking": {
   "id": "crb:bosses/file/boss/summons/soulking",
-  "duration": 26,
-  "cues": 4,
+  "start": 26,
+  "cues": 3,
   "key": "move"
  },
  "bosses/file/boss/summons/soulking_ab1": {
   "id": "crb:bosses/file/boss/summons/soulking_ab1",
-  "duration": 27,
+  "start": 27,
   "cues": 4,
   "key": "move"
  },
  "bosses/file/boss/summons/soulking_ab2": {
   "id": "crb:bosses/file/boss/summons/soulking_ab2",
-  "duration": 41,
+  "start": 37,
   "cues": 7,
   "key": "move"
  },
  "bosses/file/boss/summons/soulking_ab3": {
   "id": "crb:bosses/file/boss/summons/soulking_ab3",
-  "duration": 42,
+  "start": 42,
   "cues": 6,
   "key": "move"
  },
  "bosses/file/boss/summons/soulking_ab3b": {
   "id": "crb:bosses/file/boss/summons/soulking_ab3b",
-  "duration": 82,
+  "start": 82,
   "cues": 29,
   "key": "move"
  },
  "bosses/file/boss/summons/soulking_ab4": {
   "id": "crb:bosses/file/boss/summons/soulking_ab4",
-  "duration": 27,
-  "cues": 9,
+  "start": 27,
+  "cues": 10,
   "key": "move"
  },
  "bosses/file/boss/summons/xeroscoof": {
   "id": "crb:bosses/file/boss/summons/xeroscoof",
-  "duration": 300,
-  "cues": 2,
+  "start": 300,
+  "cues": 1,
   "key": "cutscene"
  },
  "bosses/file/boss/switch_weapon": {
   "id": "crb:bosses/file/boss/switch_weapon",
-  "duration": 61,
+  "start": 51,
   "cues": 6,
   "key": "move"
  },
  "bosses/file/prison_break": {
   "id": "crb:bosses/file/prison_break",
-  "duration": 1001,
-  "cues": 43,
+  "start": 1001,
+  "cues": 44,
   "key": "move"
  },
  "bosses/file/pulse": {
   "id": "crb:bosses/file/pulse",
-  "duration": 41,
+  "start": 17,
   "cues": 13,
-  "key": "move"
- },
- "bosses/file/weps/crescendo": {
-  "id": "crb:bosses/file/weps/crescendo",
-  "duration": 1,
-  "cues": 4,
   "key": "move"
  },
  "bosses/file/weps/devastator": {
   "id": "crb:bosses/file/weps/devastator",
-  "duration": 31,
-  "cues": 15,
-  "key": "move"
- },
- "bosses/file/weps/equinox_blade": {
-  "id": "crb:bosses/file/weps/equinox_blade",
-  "duration": 1,
-  "cues": 1,
-  "key": "move"
- },
- "bosses/file/weps/equinox_scythe": {
-  "id": "crb:bosses/file/weps/equinox_scythe",
-  "duration": 1,
-  "cues": 1,
+  "start": 31,
+  "cues": 14,
   "key": "move"
  },
  "bosses/file/weps/explode_staff": {
   "id": "crb:bosses/file/weps/explode_staff",
-  "duration": 11,
+  "start": 11,
   "cues": 6,
   "key": "move"
  },
- "bosses/file/weps/legacy_scythe": {
-  "id": "crb:bosses/file/weps/legacy_scythe",
-  "duration": 1,
-  "cues": 9,
+ "bosses/file/weps/frog_cero": {
+  "id": "crb:bosses/file/weps/frog_cero",
+  "start": 16,
+  "cues": 0,
   "key": "move"
  },
  "bosses/file/weps/the_shard": {
   "id": "crb:bosses/file/weps/the_shard",
-  "duration": 171,
-  "cues": 11,
+  "start": 171,
+  "cues": 14,
   "key": "move"
  },
  "bosses/file/weps/truesword": {
   "id": "crb:bosses/file/weps/truesword",
-  "duration": 62,
+  "start": 62,
   "cues": 4,
+  "key": "move"
+ },
+ "bosses/finger_bearer": {
+  "id": "crb:bosses/finger_bearer",
+  "start": 2,
+  "cues": 0,
   "key": "move"
  },
  "bosses/finger_bearer/barrage": {
   "id": "crb:bosses/finger_bearer/barrage",
-  "duration": 56,
+  "start": 56,
   "cues": 8,
   "key": "move"
  },
  "bosses/finger_bearer/energy_bolt": {
   "id": "crb:bosses/finger_bearer/energy_bolt",
-  "duration": 56,
+  "start": 56,
   "cues": 14,
   "key": "move"
  },
  "bosses/finger_bearer/energy_slash": {
   "id": "crb:bosses/finger_bearer/energy_slash",
-  "duration": 46,
+  "start": 46,
   "cues": 15,
   "key": "move"
  },
  "bosses/finger_bearer/energy_spit": {
   "id": "crb:bosses/finger_bearer/energy_spit",
-  "duration": 16,
+  "start": 16,
   "cues": 8,
   "key": "move"
  },
  "bosses/finger_bearer/finger_arrow": {
   "id": "crb:bosses/finger_bearer/finger_arrow",
-  "duration": 41,
+  "start": 41,
   "cues": 12,
   "key": "move"
  },
  "bosses/finger_bearer/ground_slam": {
   "id": "crb:bosses/finger_bearer/ground_slam",
-  "duration": 36,
+  "start": 36,
   "cues": 15,
   "key": "move"
  },
  "bosses/finger_bearer/kick1": {
   "id": "crb:bosses/finger_bearer/kick1",
-  "duration": 26,
-  "cues": 7,
+  "start": 26,
+  "cues": 8,
   "key": "move"
  },
  "bosses/finger_bearer/kick_shoot": {
   "id": "crb:bosses/finger_bearer/kick_shoot",
-  "duration": 56,
-  "cues": 41,
+  "start": 56,
+  "cues": 43,
   "key": "move"
  },
  "bosses/finger_bearer/mugetsu": {
   "id": "crb:bosses/finger_bearer/mugetsu",
-  "duration": 31,
+  "start": 31,
   "cues": 8,
   "key": "move"
  },
  "bosses/finger_bearer/palm_blast": {
   "id": "crb:bosses/finger_bearer/palm_blast",
-  "duration": 31,
+  "start": 31,
   "cues": 13,
   "key": "move"
  },
  "bosses/finger_bearer/phase": {
   "id": "crb:bosses/finger_bearer/phase",
-  "duration": 130,
+  "start": 127,
   "cues": 33,
   "key": "cutscene"
  },
  "bosses/finger_bearer/punch1": {
   "id": "crb:bosses/finger_bearer/punch1",
-  "duration": 26,
-  "cues": 8,
+  "start": 26,
+  "cues": 9,
   "key": "move"
  },
  "bosses/finger_bearer/punch2": {
   "id": "crb:bosses/finger_bearer/punch2",
-  "duration": 36,
-  "cues": 14,
+  "start": 36,
+  "cues": 15,
   "key": "move"
  },
  "bosses/finger_bearer/shockwave": {
   "id": "crb:bosses/finger_bearer/shockwave",
-  "duration": 31,
+  "start": 31,
   "cues": 23,
   "key": "move"
  },
  "bosses/finger_bearer/taunt": {
   "id": "crb:bosses/finger_bearer/taunt",
-  "duration": 65,
+  "start": 65,
   "cues": 2,
   "key": "move"
  },
  "bosses/finger_bearer/tp_punch": {
   "id": "crb:bosses/finger_bearer/tp_punch",
-  "duration": 45,
+  "start": 42,
   "cues": 10,
   "key": "move"
  },
  "bosses/toji_v2": {
   "id": "crb:bosses/toji_v2",
-  "duration": 1,
-  "cues": 1,
+  "start": 2,
+  "cues": 0,
   "key": "move"
  },
  "bosses/toji_v2/jetstream": {
   "id": "crb:bosses/toji_v2/jetstream",
-  "duration": 59,
-  "cues": 7,
+  "start": 61,
+  "cues": 34,
   "key": "move"
  },
  "bosses/toji_v2/shockwave_blow": {
   "id": "crb:bosses/toji_v2/shockwave_blow",
-  "duration": 16,
+  "start": 16,
   "cues": 5,
   "key": "move"
  },
  "bosses/toji_v2/sprint_barrage": {
   "id": "crb:bosses/toji_v2/sprint_barrage",
-  "duration": 126,
+  "start": 126,
   "cues": 18,
   "key": "move"
  },
  "bosses/toji_v2/sprint_push": {
   "id": "crb:bosses/toji_v2/sprint_push",
-  "duration": 31,
-  "cues": 15,
+  "start": 31,
+  "cues": 17,
   "key": "move"
  },
  "cancel_attack": {
   "id": "crb:cancel_attack",
-  "duration": 2,
+  "start": 2,
   "cues": 2,
   "key": "domainstart"
  },
  "ce/basket_enable": {
   "id": "crb:ce/basket_enable",
-  "duration": 21,
+  "start": 16,
   "cues": 6,
-  "key": "move"
- },
- "ce/basket_passive": {
-  "id": "crb:ce/basket_passive",
-  "duration": 1,
-  "cues": 1,
-  "key": "move"
- },
- "ce/divergent_passive": {
-  "id": "crb:ce/divergent_passive",
-  "duration": 1,
-  "cues": 1,
   "key": "move"
  },
  "ce/divergentfist": {
   "id": "crb:ce/divergentfist",
-  "duration": 41,
+  "start": 41,
   "cues": 15,
   "key": "move"
  },
  "ce/domainamp": {
   "id": "crb:ce/domainamp",
-  "duration": 7,
+  "start": 7,
   "cues": 8,
-  "key": "move"
- },
- "ce/domainamp_passive": {
-  "id": "crb:ce/domainamp_passive",
-  "duration": 1,
-  "cues": 1,
   "key": "move"
  },
  "ce/rct_obtain": {
   "id": "crb:ce/rct_obtain",
-  "duration": 201,
+  "start": 201,
   "cues": 19,
   "key": "cutscene"
  },
  "ce/rctself": {
   "id": "crb:ce/rctself",
-  "duration": 41,
+  "start": 41,
   "cues": 18,
   "key": "move"
  },
  "ce/simpledomain": {
   "id": "crb:ce/simpledomain",
-  "duration": 61,
-  "cues": 13,
+  "start": 61,
+  "cues": 14,
   "key": "move"
  },
  "dash": {
   "id": "crb:dash",
-  "duration": 12,
-  "cues": 28,
+  "start": 12,
+  "cues": 32,
   "key": "Dash"
  },
  "delusional/ab1": {
   "id": "crb:delusional/ab1",
-  "duration": 42,
-  "cues": 8,
+  "start": 42,
+  "cues": 11,
   "key": "move"
  },
  "delusional/ab2": {
   "id": "crb:delusional/ab2",
-  "duration": 1001,
-  "cues": 37,
+  "start": 1001,
+  "cues": 43,
   "key": "move"
  },
  "delusional/ab3": {
   "id": "crb:delusional/ab3",
-  "duration": 61,
-  "cues": 20,
+  "start": 61,
+  "cues": 32,
   "key": "move"
  },
  "delusional/ab4": {
   "id": "crb:delusional/ab4",
-  "duration": 1001,
-  "cues": 49,
+  "start": 1001,
+  "cues": 81,
   "key": "move"
  },
  "delusional/ab5": {
   "id": "crb:delusional/ab5",
-  "duration": 985,
-  "cues": 22,
+  "start": 985,
+  "cues": 43,
   "key": "move"
  },
  "delusional/delusional_cutscene": {
   "id": "crb:delusional/delusional_cutscene",
-  "duration": 211,
+  "start": 192,
   "cues": 20,
   "key": "move"
  },
  "duke_ab1": {
   "id": "crb:duke_ab1",
-  "duration": 41,
+  "start": 21,
   "cues": 12,
   "key": "move"
  },
  "duke_ab2": {
   "id": "crb:duke_ab2",
-  "duration": 31,
-  "cues": 13,
+  "start": 11,
+  "cues": 14,
   "key": "move"
  },
  "duke_ab3": {
   "id": "crb:duke_ab3",
-  "duration": 31,
-  "cues": 13,
+  "start": 25,
+  "cues": 14,
   "key": "move"
  },
  "duke_ab4": {
   "id": "crb:duke_ab4",
-  "duration": 31,
+  "start": 31,
   "cues": 28,
   "key": "move"
  },
  "duke_ab5": {
   "id": "crb:duke_ab5",
-  "duration": 101,
+  "start": 92,
   "cues": 10,
   "key": "move"
  },
  "duke_awaken": {
   "id": "crb:duke_awaken",
-  "duration": 480,
-  "cues": 7,
+  "start": 471,
+  "cues": 10,
   "key": "cutscene"
  },
  "duke_counter": {
   "id": "crb:duke_counter",
-  "duration": 41,
+  "start": 38,
   "cues": 5,
   "key": "move"
  },
  "duke_dying": {
   "id": "crb:duke_dying",
-  "duration": 100,
+  "start": 96,
   "cues": 11,
   "key": "cutscene"
  },
  "dukeparry": {
   "id": "crb:dukeparry",
-  "duration": 38,
+  "start": 38,
   "cues": 10,
-  "key": "move"
- },
- "energyrefill": {
-  "id": "crb:energyrefill",
-  "duration": 1,
-  "cues": 22,
   "key": "move"
  },
  "evade": {
   "id": "crb:evade",
-  "duration": 21,
-  "cues": 15,
+  "start": 21,
+  "cues": 18,
   "key": "Evasive"
  },
  "explosive/explosive1": {
   "id": "crb:explosive/explosive1",
-  "duration": 31,
+  "start": 31,
   "cues": 13,
   "key": "move"
  },
  "explosive/explosive2": {
   "id": "crb:explosive/explosive2",
-  "duration": 31,
+  "start": 31,
   "cues": 23,
   "key": "move"
  },
  "explosive/explosive3": {
   "id": "crb:explosive/explosive3",
-  "duration": 16,
+  "start": 16,
   "cues": 8,
   "key": "move"
  },
  "explosive/explosive4": {
   "id": "crb:explosive/explosive4",
-  "duration": 41,
+  "start": 41,
   "cues": 12,
   "key": "move"
  },
  "explosive/explosive5": {
   "id": "crb:explosive/explosive5",
-  "duration": 61,
+  "start": 61,
   "cues": 14,
   "key": "move"
  },
  "explosive/explosive6": {
   "id": "crb:explosive/explosive6",
-  "duration": 46,
+  "start": 46,
   "cues": 15,
   "key": "move"
  },
  "explosive/explosive7": {
   "id": "crb:explosive/explosive7",
-  "duration": 31,
+  "start": 31,
   "cues": 8,
   "key": "move"
  },
  "fighting/basic/downslam": {
   "id": "crb:fighting/basic/downslam",
-  "duration": 17,
-  "cues": 14,
+  "start": 17,
+  "cues": 16,
   "key": "move"
  },
  "fighting/basic/rush": {
   "id": "crb:fighting/basic/rush",
-  "duration": 31,
-  "cues": 14,
+  "start": 31,
+  "cues": 16,
   "key": "move"
  },
  "fighting/basic/strong_punch": {
   "id": "crb:fighting/basic/strong_punch",
-  "duration": 21,
-  "cues": 13,
+  "start": 21,
+  "cues": 15,
   "key": "move"
  },
  "fighting/black_blade/dark_flourish": {
   "id": "crb:fighting/black_blade/dark_flourish",
-  "duration": 26,
+  "start": 19,
   "cues": 12,
   "key": "move"
  },
  "fighting/black_blade/overhead": {
   "id": "crb:fighting/black_blade/overhead",
-  "duration": 26,
-  "cues": 6,
+  "start": 19,
+  "cues": 7,
   "key": "move"
  },
  "fighting/black_blade/shadow_assault": {
   "id": "crb:fighting/black_blade/shadow_assault",
-  "duration": 61,
-  "cues": 25,
+  "start": 31,
+  "cues": 26,
   "key": "move"
  },
  "fighting/black_blade/shadow_dance": {
   "id": "crb:fighting/black_blade/shadow_dance",
-  "duration": 1196,
-  "cues": 46,
+  "start": 1196,
+  "cues": 53,
   "key": "move"
  },
  "fighting/black_blade/umbral_rush": {
   "id": "crb:fighting/black_blade/umbral_rush",
-  "duration": 41,
-  "cues": 19,
+  "start": 38,
+  "cues": 23,
   "key": "move"
  },
  "fighting/calamity_claws/cruel_combo": {
   "id": "crb:fighting/calamity_claws/cruel_combo",
-  "duration": 1002,
-  "cues": 67,
+  "start": 1002,
+  "cues": 73,
   "key": "move"
  },
  "fighting/calamity_claws/left_right": {
   "id": "crb:fighting/calamity_claws/left_right",
-  "duration": 47,
+  "start": 46,
   "cues": 38,
   "key": "move"
  },
  "fighting/calamity_claws/palm_strike": {
   "id": "crb:fighting/calamity_claws/palm_strike",
-  "duration": 32,
-  "cues": 5,
+  "start": 32,
+  "cues": 18,
   "key": "move"
  },
  "fighting/calamity_claws/shoulder_bash": {
   "id": "crb:fighting/calamity_claws/shoulder_bash",
-  "duration": 37,
-  "cues": 10,
+  "start": 5,
+  "cues": 20,
   "key": "move"
  },
  "fighting/calamity_claws/vicious_claws": {
   "id": "crb:fighting/calamity_claws/vicious_claws",
-  "duration": 102,
-  "cues": 81,
+  "start": 101,
+  "cues": 153,
   "key": "move"
  },
  "fighting/executionsword/blinding_strike": {
   "id": "crb:fighting/executionsword/blinding_strike",
-  "duration": 199,
-  "cues": 29,
+  "start": 199,
+  "cues": 32,
   "key": "move"
  },
  "fighting/executionsword/falling_light": {
   "id": "crb:fighting/executionsword/falling_light",
-  "duration": 16,
-  "cues": 13,
+  "start": 16,
+  "cues": 14,
   "key": "move"
  },
  "fighting/executionsword/flashing_light": {
   "id": "crb:fighting/executionsword/flashing_light",
-  "duration": 31,
-  "cues": 21,
+  "start": 31,
+  "cues": 23,
   "key": "move"
  },
  "fighting/executionsword/piercing_strike": {
   "id": "crb:fighting/executionsword/piercing_strike",
-  "duration": 19,
-  "cues": 25,
+  "start": 19,
+  "cues": 28,
   "key": "move"
  },
  "fighting/executionsword/swift_flash": {
   "id": "crb:fighting/executionsword/swift_flash",
-  "duration": 36,
-  "cues": 14,
+  "start": 36,
+  "cues": 19,
   "key": "move"
  },
  "fighting/exterminationsword/curse_exorcism": {
   "id": "crb:fighting/exterminationsword/curse_exorcism",
-  "duration": 81,
-  "cues": 12,
+  "start": 81,
+  "cues": 17,
   "key": "move"
  },
  "fighting/exterminationsword/ext_combo": {
   "id": "crb:fighting/exterminationsword/ext_combo",
-  "duration": 61,
-  "cues": 15,
+  "start": 61,
+  "cues": 16,
   "key": "move"
  },
  "fighting/exterminationsword/pierce_flourish": {
   "id": "crb:fighting/exterminationsword/pierce_flourish",
-  "duration": 61,
+  "start": 61,
   "cues": 8,
   "key": "move"
  },
  "fighting/exterminationsword/severing_slash": {
   "id": "crb:fighting/exterminationsword/severing_slash",
-  "duration": 21,
+  "start": 21,
   "cues": 6,
   "key": "move"
  },
  "fighting/hand_sword/blunt_force": {
   "id": "crb:fighting/hand_sword/blunt_force",
-  "duration": 16,
-  "cues": 10,
+  "start": 16,
+  "cues": 15,
   "key": "move"
  },
  "fighting/hand_sword/handshake_spin": {
   "id": "crb:fighting/hand_sword/handshake_spin",
-  "duration": 31,
-  "cues": 9,
+  "start": 28,
+  "cues": 15,
   "key": "move"
  },
  "fighting/hand_sword/prominence": {
   "id": "crb:fighting/hand_sword/prominence",
-  "duration": 21,
+  "start": 18,
   "cues": 9,
   "key": "move"
  },
  "fighting/hand_sword/throw1": {
   "id": "crb:fighting/hand_sword/throw1",
-  "duration": 31,
+  "start": 31,
   "cues": 9,
   "key": "move"
  },
  "fighting/hiten/air_passage": {
   "id": "crb:fighting/hiten/air_passage",
-  "duration": 21,
-  "cues": 11,
+  "start": 18,
+  "cues": 12,
   "key": "move"
  },
  "fighting/hiten/cyclone_drill": {
   "id": "crb:fighting/hiten/cyclone_drill",
-  "duration": 31,
-  "cues": 20,
+  "start": 26,
+  "cues": 22,
   "key": "move"
  },
  "fighting/hiten/heavenly_wind": {
   "id": "crb:fighting/hiten/heavenly_wind",
-  "duration": 51,
-  "cues": 51,
+  "start": 49,
+  "cues": 59,
   "key": "move"
  },
  "fighting/hiten/impaling_gale": {
   "id": "crb:fighting/hiten/impaling_gale",
-  "duration": 61,
+  "start": 61,
   "cues": 21,
   "key": "move"
  },
  "fighting/hiten/rampaging_tempest": {
   "id": "crb:fighting/hiten/rampaging_tempest",
-  "duration": 66,
+  "start": 56,
   "cues": 11,
   "key": "move"
  },
  "fighting/hiten/whirling_winds": {
   "id": "crb:fighting/hiten/whirling_winds",
-  "duration": 37,
-  "cues": 25,
+  "start": 27,
+  "cues": 31,
   "key": "move"
  },
  "fighting/hr/bone_splitter": {
   "id": "crb:fighting/hr/bone_splitter",
-  "duration": 122,
+  "start": 122,
   "cues": 37,
   "key": "move"
  },
  "fighting/hr/deadly_clash": {
   "id": "crb:fighting/hr/deadly_clash",
-  "duration": 51,
+  "start": 11,
   "cues": 10,
   "key": "cutscene"
  },
  "fighting/hr/deadly_strike": {
   "id": "crb:fighting/hr/deadly_strike",
-  "duration": 26,
+  "start": 26,
   "cues": 14,
   "key": "move"
  },
  "fighting/hr/dive_kick": {
   "id": "crb:fighting/hr/dive_kick",
-  "duration": 23,
+  "start": 4,
   "cues": 33,
   "key": "move"
  },
  "fighting/hr/hr1": {
   "id": "crb:fighting/hr/hr1",
-  "duration": 19,
+  "start": 11,
   "cues": 20,
   "key": "move"
  },
  "fighting/hr/hr10": {
   "id": "crb:fighting/hr/hr10",
-  "duration": 66,
-  "cues": 32,
+  "start": 66,
+  "cues": 33,
   "key": "move"
  },
  "fighting/hr/hr11": {
   "id": "crb:fighting/hr/hr11",
-  "duration": 52,
+  "start": 52,
   "cues": 23,
   "key": "move"
  },
  "fighting/hr/hr12": {
   "id": "crb:fighting/hr/hr12",
-  "duration": 91,
-  "cues": 48,
+  "start": 91,
+  "cues": 50,
   "key": "move"
  },
  "fighting/hr/hr2": {
   "id": "crb:fighting/hr/hr2",
-  "duration": 61,
+  "start": 61,
   "cues": 65,
   "key": "move"
  },
  "fighting/hr/hr3": {
   "id": "crb:fighting/hr/hr3",
-  "duration": 111,
+  "start": 111,
   "cues": 38,
   "key": "move"
  },
  "fighting/hr/hr4": {
   "id": "crb:fighting/hr/hr4",
-  "duration": 351,
-  "cues": 122,
+  "start": 351,
+  "cues": 199,
   "key": "move"
  },
  "fighting/hr/hr5": {
   "id": "crb:fighting/hr/hr5",
-  "duration": 66,
+  "start": 66,
   "cues": 17,
   "key": "move"
  },
  "fighting/hr/hr6": {
   "id": "crb:fighting/hr/hr6",
-  "duration": 41,
+  "start": 41,
   "cues": 46,
   "key": "move"
  },
  "fighting/hr/hr7": {
   "id": "crb:fighting/hr/hr7",
-  "duration": 61,
+  "start": 61,
   "cues": 82,
   "key": "move"
  },
  "fighting/hr/hr8": {
   "id": "crb:fighting/hr/hr8",
-  "duration": 91,
+  "start": 91,
   "cues": 14,
   "key": "move"
  },
  "fighting/hr/hr9": {
   "id": "crb:fighting/hr/hr9",
-  "duration": 17,
+  "start": 17,
   "cues": 14,
   "key": "move"
  },
  "fighting/invertedspear/ankle_cutter": {
   "id": "crb:fighting/invertedspear/ankle_cutter",
-  "duration": 16,
-  "cues": 6,
+  "start": 16,
+  "cues": 8,
   "key": "move"
  },
  "fighting/invertedspear/deep_pierce": {
   "id": "crb:fighting/invertedspear/deep_pierce",
-  "duration": 26,
+  "start": 26,
   "cues": 13,
   "key": "move"
  },
  "fighting/invertedspear/domain_breaker": {
   "id": "crb:fighting/invertedspear/domain_breaker",
-  "duration": 41,
+  "start": 41,
   "cues": 14,
   "key": "move"
  },
  "fighting/invertedspear/flash_slashes": {
   "id": "crb:fighting/invertedspear/flash_slashes",
-  "duration": 36,
-  "cues": 14,
+  "start": 36,
+  "cues": 24,
   "key": "move"
  },
  "fighting/invertedspear/wrong_way": {
   "id": "crb:fighting/invertedspear/wrong_way",
-  "duration": 2002,
-  "cues": 88,
+  "start": 2001,
+  "cues": 89,
   "key": "move"
  },
  "fighting/kamutoke/electrified_discharge": {
   "id": "crb:fighting/kamutoke/electrified_discharge",
-  "duration": 47,
-  "cues": 23,
+  "start": 3,
+  "cues": 33,
   "key": "move"
  },
  "fighting/kamutoke/electro_beam": {
   "id": "crb:fighting/kamutoke/electro_beam",
-  "duration": 42,
+  "start": 41,
   "cues": 12,
   "key": "move"
  },
  "fighting/kamutoke/kamutoke_m1s": {
   "id": "crb:fighting/kamutoke/kamutoke_m1s",
-  "duration": 7,
+  "start": 7,
   "cues": 4,
   "key": "move"
  },
  "fighting/kamutoke/lightning_strike": {
   "id": "crb:fighting/kamutoke/lightning_strike",
-  "duration": 22,
+  "start": 22,
   "cues": 8,
   "key": "move"
  },
  "fighting/kamutoke/storm_slice": {
   "id": "crb:fighting/kamutoke/storm_slice",
-  "duration": 22,
-  "cues": 3,
-  "key": "move"
- },
- "fighting/katana/katana_m1s": {
-  "id": "crb:fighting/katana/katana_m1s",
-  "duration": 1,
-  "cues": 1,
+  "start": 21,
+  "cues": 14,
   "key": "move"
  },
  "fighting/katana/prominence": {
   "id": "crb:fighting/katana/prominence",
-  "duration": 21,
+  "start": 18,
   "cues": 9,
   "key": "move"
  },
  "fighting/katana/quickdraw": {
   "id": "crb:fighting/katana/quickdraw",
-  "duration": 21,
+  "start": 18,
   "cues": 8,
   "key": "move"
  },
  "fighting/katana/rapid_cuts": {
   "id": "crb:fighting/katana/rapid_cuts",
-  "duration": 36,
-  "cues": 23,
-  "key": "move"
- },
- "fighting/mahito_blade_m1s": {
-  "id": "crb:fighting/mahito_blade_m1s",
-  "duration": 1,
-  "cues": 2,
-  "key": "move"
- },
- "fighting/mahito_heavy_m1s": {
-  "id": "crb:fighting/mahito_heavy_m1s",
-  "duration": 1,
-  "cues": 2,
+  "start": 35,
+  "cues": 25,
   "key": "move"
  },
  "fighting/mandibles/dagger_blitz": {
   "id": "crb:fighting/mandibles/dagger_blitz",
-  "duration": 26,
+  "start": 24,
   "cues": 23,
   "key": "move"
  },
  "fighting/mandibles/eviscerate": {
   "id": "crb:fighting/mandibles/eviscerate",
-  "duration": 26,
+  "start": 24,
   "cues": 25,
   "key": "move"
  },
  "fighting/mandibles/falling_tempest": {
   "id": "crb:fighting/mandibles/falling_tempest",
-  "duration": 1001,
-  "cues": 94,
+  "start": 1001,
+  "cues": 117,
   "key": "move"
  },
  "fighting/mandibles/mutilate": {
   "id": "crb:fighting/mandibles/mutilate",
-  "duration": 26,
+  "start": 24,
   "cues": 42,
   "key": "move"
  },
  "fighting/mandibles/vanishing_fangs": {
   "id": "crb:fighting/mandibles/vanishing_fangs",
-  "duration": 1001,
-  "cues": 57,
+  "start": 1001,
+  "cues": 105,
   "key": "move"
  },
  "fighting/mountain_buster": {
   "id": "crb:fighting/mountain_buster",
-  "duration": 81,
-  "cues": 8,
+  "start": 81,
+  "cues": 7,
   "key": "move"
  },
  "fighting/nyoistaff/destructive_blows": {
   "id": "crb:fighting/nyoistaff/destructive_blows",
-  "duration": 51,
+  "start": 51,
   "cues": 15,
   "key": "move"
  },
  "fighting/nyoistaff/low_blow": {
   "id": "crb:fighting/nyoistaff/low_blow",
-  "duration": 21,
+  "start": 21,
   "cues": 5,
   "key": "move"
  },
  "fighting/nyoistaff/pole_strike": {
   "id": "crb:fighting/nyoistaff/pole_strike",
-  "duration": 16,
+  "start": 16,
   "cues": 11,
   "key": "move"
  },
  "fighting/nyoistaff/shockwave_strike": {
   "id": "crb:fighting/nyoistaff/shockwave_strike",
-  "duration": 51,
+  "start": 51,
   "cues": 37,
   "key": "move"
  },
  "fighting/playfulcloud/cranial_crush": {
   "id": "crb:fighting/playfulcloud/cranial_crush",
-  "duration": 46,
+  "start": 46,
   "cues": 19,
   "key": "move"
  },
  "fighting/playfulcloud/flash_blow": {
   "id": "crb:fighting/playfulcloud/flash_blow",
-  "duration": 31,
+  "start": 31,
   "cues": 23,
   "key": "move"
  },
  "fighting/playfulcloud/giant_killer": {
   "id": "crb:fighting/playfulcloud/giant_killer",
-  "duration": 22,
-  "cues": 25,
+  "start": 22,
+  "cues": 27,
   "key": "move"
  },
  "fighting/playfulcloud/onrush": {
   "id": "crb:fighting/playfulcloud/onrush",
-  "duration": 141,
+  "start": 141,
   "cues": 110,
   "key": "move"
  },
  "fighting/playfulcloud/playful_strike": {
   "id": "crb:fighting/playfulcloud/playful_strike",
-  "duration": 26,
+  "start": 26,
   "cues": 13,
   "key": "move"
  },
  "fighting/playfulcloud/sharpen": {
   "id": "crb:fighting/playfulcloud/sharpen",
-  "duration": 181,
-  "cues": 21,
+  "start": 181,
+  "cues": 22,
   "key": "cutscene"
  },
  "fighting/shadow_style_katana/batto": {
   "id": "crb:fighting/shadow_style_katana/batto",
-  "duration": 40,
-  "cues": 8,
+  "start": 33,
+  "cues": 10,
   "key": "move"
  },
  "fighting/shadow_style_katana/flashstrike": {
   "id": "crb:fighting/shadow_style_katana/flashstrike",
-  "duration": 40,
-  "cues": 17,
+  "start": 39,
+  "cues": 19,
   "key": "move"
  },
  "fighting/shadow_style_katana/hazy_moon": {
   "id": "crb:fighting/shadow_style_katana/hazy_moon",
-  "duration": 101,
-  "cues": 28,
+  "start": 101,
+  "cues": 30,
   "key": "move"
  },
  "fighting/shadow_style_katana/intersection": {
   "id": "crb:fighting/shadow_style_katana/intersection",
-  "duration": 21,
-  "cues": 2,
+  "start": 19,
+  "cues": 14,
   "key": "move"
  },
  "fighting/shadow_style_katana/judgement_cuts": {
   "id": "crb:fighting/shadow_style_katana/judgement_cuts",
-  "duration": 10,
-  "cues": 4,
-  "key": "move"
- },
- "fighting/shadow_style_katana/katana_m1s": {
-  "id": "crb:fighting/shadow_style_katana/katana_m1s",
-  "duration": 1,
-  "cues": 1,
+  "start": 8,
+  "cues": 15,
   "key": "move"
  },
  "fighting/sharpenedcloud/overwhelming_intensity": {
   "id": "crb:fighting/sharpenedcloud/overwhelming_intensity",
-  "duration": 1002,
-  "cues": 66,
+  "start": 1001,
+  "cues": 67,
   "key": "move"
  },
  "fighting/sharpenedcloud/puncture": {
   "id": "crb:fighting/sharpenedcloud/puncture",
-  "duration": 21,
+  "start": 21,
   "cues": 16,
   "key": "move"
  },
  "fighting/sharpenedcloud/repetitive_slashes": {
   "id": "crb:fighting/sharpenedcloud/repetitive_slashes",
-  "duration": 76,
+  "start": 76,
   "cues": 45,
   "key": "move"
  },
  "fighting/sharpenedcloud/target_practise": {
   "id": "crb:fighting/sharpenedcloud/target_practise",
-  "duration": 46,
+  "start": 46,
   "cues": 30,
   "key": "move"
  },
  "fighting/sharpenedcloud/vorpal_strike": {
   "id": "crb:fighting/sharpenedcloud/vorpal_strike",
-  "duration": 41,
-  "cues": 7,
+  "start": 41,
+  "cues": 11,
   "key": "move"
  },
  "fighting/slaughter_demon/critical_slashes": {
   "id": "crb:fighting/slaughter_demon/critical_slashes",
-  "duration": 36,
+  "start": 30,
   "cues": 15,
   "key": "move"
  },
  "fighting/slaughter_demon/deadly_piercing": {
   "id": "crb:fighting/slaughter_demon/deadly_piercing",
-  "duration": 1001,
-  "cues": 21,
+  "start": 1001,
+  "cues": 33,
   "key": "move"
  },
  "fighting/slaughter_demon/thousand_cuts": {
   "id": "crb:fighting/slaughter_demon/thousand_cuts",
-  "duration": 46,
-  "cues": 35,
+  "start": 42,
+  "cues": 41,
   "key": "move"
  },
  "fighting/slaughter_demon/viper_fang": {
   "id": "crb:fighting/slaughter_demon/viper_fang",
-  "duration": 51,
-  "cues": 18,
+  "start": 51,
+  "cues": 21,
   "key": "move"
  },
  "fighting/slaughter_demon/wide_cut": {
   "id": "crb:fighting/slaughter_demon/wide_cut",
-  "duration": 21,
-  "cues": 7,
+  "start": 6,
+  "cues": 8,
   "key": "move"
  },
  "fighting/soul_sword/crossway_slashes": {
   "id": "crb:fighting/soul_sword/crossway_slashes",
-  "duration": 63,
-  "cues": 7,
+  "start": 63,
+  "cues": 43,
   "key": "move"
  },
  "fighting/soul_sword/judgement_cut": {
   "id": "crb:fighting/soul_sword/judgement_cut",
-  "duration": 61,
-  "cues": 22,
+  "start": 61,
+  "cues": 24,
   "key": "move"
  },
  "fighting/soul_sword/soul_slice": {
   "id": "crb:fighting/soul_sword/soul_slice",
-  "duration": 26,
+  "start": 26,
   "cues": 9,
   "key": "move"
  },
  "fighting/soul_sword/soul_slice2": {
   "id": "crb:fighting/soul_sword/soul_slice2",
-  "duration": 26,
+  "start": 26,
   "cues": 12,
   "key": "move"
  },
  "fighting/soul_sword/throughout_heaven": {
   "id": "crb:fighting/soul_sword/throughout_heaven",
-  "duration": 1002,
-  "cues": 29,
+  "start": 1001,
+  "cues": 34,
   "key": "move"
  },
  "fighting/yuji/dive_kick": {
   "id": "crb:fighting/yuji/dive_kick",
-  "duration": 23,
+  "start": 4,
   "cues": 27,
   "key": "move"
  },
  "fighting/yuji/divergent_strike": {
   "id": "crb:fighting/yuji/divergent_strike",
-  "duration": 26,
+  "start": 26,
   "cues": 54,
   "key": "move"
  },
  "fighting/yuji/fierce_barrage": {
   "id": "crb:fighting/yuji/fierce_barrage",
-  "duration": 51,
+  "start": 51,
   "cues": 49,
   "key": "move"
  },
  "fighting/yuji/manji_kick": {
   "id": "crb:fighting/yuji/manji_kick",
-  "duration": 16,
+  "start": 16,
   "cues": 13,
   "key": "move"
  },
  "fighting/yuji/skyfall": {
   "id": "crb:fighting/yuji/skyfall",
-  "duration": 636,
-  "cues": 180,
+  "start": 636,
+  "cues": 182,
   "key": "cutscene"
  },
  "fighting/yuji/triple_kick": {
   "id": "crb:fighting/yuji/triple_kick",
-  "duration": 101,
-  "cues": 26,
+  "start": 101,
+  "cues": 27,
   "key": "move"
  },
  "flames/firepalm": {
   "id": "crb:flames/firepalm",
-  "duration": 21,
+  "start": 21,
   "cues": 20,
   "key": "move"
  },
  "flames/flamechoke": {
   "id": "crb:flames/flamechoke",
-  "duration": 36,
+  "start": 36,
   "cues": 22,
   "key": "move"
  },
  "flames/flames1": {
   "id": "crb:flames/flames1",
-  "duration": 41,
+  "start": 41,
   "cues": 6,
   "key": "move"
  },
  "flames/flames1b": {
   "id": "crb:flames/flames1b",
-  "duration": 31,
+  "start": 31,
   "cues": 5,
   "key": "move"
  },
  "flames/flames1c": {
   "id": "crb:flames/flames1c",
-  "duration": 61,
+  "start": 61,
   "cues": 20,
   "key": "move"
  },
  "flames/flames1d": {
   "id": "crb:flames/flames1d",
-  "duration": 9999,
-  "cues": 78,
+  "start": 9999,
+  "cues": 79,
   "key": "move"
  },
  "flames/flames1e": {
   "id": "crb:flames/flames1e",
-  "duration": 152,
+  "start": 152,
   "cues": 25,
   "key": "move"
  },
  "flames/flames2": {
   "id": "crb:flames/flames2",
-  "duration": 11,
-  "cues": 3,
+  "start": 11,
+  "cues": 6,
   "key": "move"
  },
  "flames/flames2b": {
   "id": "crb:flames/flames2b",
-  "duration": 11,
+  "start": 11,
   "cues": 5,
   "key": "move"
  },
  "flames/flames2c": {
   "id": "crb:flames/flames2c",
-  "duration": 14,
+  "start": 14,
   "cues": 5,
   "key": "move"
  },
  "flames/flames3": {
   "id": "crb:flames/flames3",
-  "duration": 66,
+  "start": 66,
   "cues": 29,
   "key": "move"
  },
  "flames/flames3b": {
   "id": "crb:flames/flames3b",
-  "duration": 46,
+  "start": 46,
   "cues": 15,
   "key": "move"
  },
  "flames/flames3c": {
   "id": "crb:flames/flames3c",
-  "duration": 26,
+  "start": 26,
   "cues": 7,
   "key": "move"
  },
  "flames/flames3d": {
   "id": "crb:flames/flames3d",
-  "duration": 26,
+  "start": 26,
   "cues": 19,
   "key": "move"
  },
  "flames/flames4": {
   "id": "crb:flames/flames4",
-  "duration": 21,
-  "cues": 47,
+  "start": 21,
+  "cues": 48,
   "key": "move"
  },
  "flames/flames4b": {
   "id": "crb:flames/flames4b",
-  "duration": 46,
+  "start": 46,
   "cues": 45,
   "key": "move"
  },
  "flames/flames4c": {
   "id": "crb:flames/flames4c",
-  "duration": 31,
-  "cues": 50,
+  "start": 31,
+  "cues": 52,
   "key": "move"
  },
  "flames/flames4d": {
   "id": "crb:flames/flames4d",
-  "duration": 141,
-  "cues": 72,
+  "start": 141,
+  "cues": 119,
   "key": "move"
  },
  "flames/flames5": {
   "id": "crb:flames/flames5",
-  "duration": 21,
+  "start": 21,
   "cues": 2,
   "key": "move"
  },
  "flames/flames5b": {
   "id": "crb:flames/flames5b",
-  "duration": 21,
+  "start": 21,
   "cues": 16,
   "key": "move"
  },
  "flames/flames5c": {
   "id": "crb:flames/flames5c",
-  "duration": 36,
+  "start": 36,
   "cues": 16,
   "key": "move"
  },
  "flames/flames5d": {
   "id": "crb:flames/flames5d",
-  "duration": 51,
-  "cues": 1,
+  "start": 51,
+  "cues": 19,
   "key": "move"
  },
  "flames/flames6": {
   "id": "crb:flames/flames6",
-  "duration": 81,
+  "start": 81,
   "cues": 17,
   "key": "move"
  },
  "flames/flames6b": {
   "id": "crb:flames/flames6b",
-  "duration": 41,
-  "cues": 20,
+  "start": 41,
+  "cues": 80,
   "key": "move"
  },
  "flames/flames6c": {
   "id": "crb:flames/flames6c",
-  "duration": 321,
-  "cues": 15,
+  "start": 321,
+  "cues": 28,
   "key": "move"
  },
  "flames/flames7": {
   "id": "crb:flames/flames7",
-  "duration": 101,
-  "cues": 8,
+  "start": 101,
+  "cues": 15,
   "key": "domainstart"
  },
  "flames/inferno_kick": {
   "id": "crb:flames/inferno_kick",
-  "duration": 56,
-  "cues": 40,
+  "start": 56,
+  "cues": 42,
   "key": "move"
  },
  "flames/inferno_punch": {
   "id": "crb:flames/inferno_punch",
-  "duration": 41,
+  "start": 41,
   "cues": 29,
   "key": "move"
  },
  "flames/inferno_strike": {
   "id": "crb:flames/inferno_strike",
-  "duration": 56,
+  "start": 56,
   "cues": 57,
   "key": "move"
  },
  "flames/jogo_domain": {
   "id": "crb:flames/jogo_domain",
-  "duration": 201,
-  "cues": 22,
+  "start": 201,
+  "cues": 23,
   "key": "domain"
- },
- "glock": {
-  "id": "crb:glock",
-  "duration": 1,
-  "cues": 1,
-  "key": "move"
  },
  "hr/bone_splitter": {
   "id": "crb:hr/bone_splitter",
-  "duration": 122,
-  "cues": 40,
+  "start": 122,
+  "cues": 42,
   "key": "move"
  },
  "hr/deadly_clash": {
   "id": "crb:hr/deadly_clash",
-  "duration": 51,
+  "start": 51,
   "cues": 21,
   "key": "cutscene"
  },
  "hr/deadly_strike": {
   "id": "crb:hr/deadly_strike",
-  "duration": 26,
+  "start": 26,
   "cues": 15,
   "key": "move"
  },
  "hr/dive_kick": {
   "id": "crb:hr/dive_kick",
-  "duration": 23,
+  "start": 4,
   "cues": 34,
   "key": "move"
  },
  "hr/hr1": {
   "id": "crb:hr/hr1",
-  "duration": 19,
+  "start": 19,
   "cues": 20,
   "key": "move"
  },
  "hr/hr10": {
   "id": "crb:hr/hr10",
-  "duration": 66,
+  "start": 66,
   "cues": 32,
   "key": "move"
  },
  "hr/hr11": {
   "id": "crb:hr/hr11",
-  "duration": 52,
+  "start": 52,
   "cues": 25,
   "key": "move"
  },
  "hr/hr12": {
   "id": "crb:hr/hr12",
-  "duration": 91,
-  "cues": 47,
+  "start": 91,
+  "cues": 48,
   "key": "move"
  },
  "hr/hr2": {
   "id": "crb:hr/hr2",
-  "duration": 61,
+  "start": 61,
   "cues": 70,
   "key": "move"
  },
  "hr/hr3": {
   "id": "crb:hr/hr3",
-  "duration": 111,
+  "start": 111,
   "cues": 44,
   "key": "move"
  },
  "hr/hr4": {
   "id": "crb:hr/hr4",
-  "duration": 351,
-  "cues": 137,
+  "start": 351,
+  "cues": 214,
   "key": "move"
  },
  "hr/hr5": {
   "id": "crb:hr/hr5",
-  "duration": 66,
+  "start": 66,
   "cues": 19,
   "key": "move"
  },
  "hr/hr6": {
   "id": "crb:hr/hr6",
-  "duration": 41,
+  "start": 41,
   "cues": 47,
   "key": "move"
  },
  "hr/hr7": {
   "id": "crb:hr/hr7",
-  "duration": 61,
-  "cues": 83,
+  "start": 61,
+  "cues": 89,
   "key": "move"
  },
  "hr/hr8": {
   "id": "crb:hr/hr8",
-  "duration": 91,
+  "start": 91,
   "cues": 16,
   "key": "move"
  },
  "hr/hr9": {
   "id": "crb:hr/hr9",
-  "duration": 17,
+  "start": 17,
   "cues": 15,
   "key": "move"
  },
  "idle_transfig/base_ab1": {
   "id": "crb:idle_transfig/base_ab1",
-  "duration": 24,
-  "cues": 6,
+  "start": 24,
+  "cues": 7,
   "key": "move"
  },
  "idle_transfig/base_ab2": {
   "id": "crb:idle_transfig/base_ab2",
-  "duration": 26,
+  "start": 26,
   "cues": 31,
   "key": "move"
  },
  "idle_transfig/base_ab3": {
   "id": "crb:idle_transfig/base_ab3",
-  "duration": 16,
-  "cues": 1,
+  "start": 16,
+  "cues": 19,
   "key": "move"
  },
  "idle_transfig/base_ab4": {
   "id": "crb:idle_transfig/base_ab4",
-  "duration": 1002,
-  "cues": 48,
+  "start": 1001,
+  "cues": 51,
   "key": "move"
  },
  "idle_transfig/blade_ab1": {
   "id": "crb:idle_transfig/blade_ab1",
-  "duration": 25,
-  "cues": 8,
+  "start": 25,
+  "cues": 16,
   "key": "move"
  },
  "idle_transfig/blade_ab2": {
   "id": "crb:idle_transfig/blade_ab2",
-  "duration": 25,
-  "cues": 12,
+  "start": 25,
+  "cues": 17,
   "key": "move"
  },
  "idle_transfig/blade_ab3": {
   "id": "crb:idle_transfig/blade_ab3",
-  "duration": 42,
-  "cues": 12,
+  "start": 41,
+  "cues": 17,
   "key": "move"
  },
  "idle_transfig/blade_ab4": {
   "id": "crb:idle_transfig/blade_ab4",
-  "duration": 42,
-  "cues": 26,
+  "start": 42,
+  "cues": 31,
   "key": "move"
  },
  "idle_transfig/body_ab1": {
   "id": "crb:idle_transfig/body_ab1",
-  "duration": 31,
-  "cues": 7,
+  "start": 31,
+  "cues": 20,
   "key": "move"
  },
  "idle_transfig/body_ab2": {
   "id": "crb:idle_transfig/body_ab2",
-  "duration": 41,
-  "cues": 20,
+  "start": 41,
+  "cues": 23,
   "key": "move"
  },
  "idle_transfig/body_ab3": {
   "id": "crb:idle_transfig/body_ab3",
-  "duration": 86,
-  "cues": 16,
+  "start": 86,
+  "cues": 34,
   "key": "move"
  },
  "idle_transfig/body_ab4": {
   "id": "crb:idle_transfig/body_ab4",
-  "duration": 76,
-  "cues": 60,
+  "start": 71,
+  "cues": 100,
   "key": "move"
  },
  "idle_transfig/body_ab5": {
   "id": "crb:idle_transfig/body_ab5",
-  "duration": 101,
-  "cues": 11,
+  "start": 101,
+  "cues": 17,
   "key": "move"
  },
  "idle_transfig/heavy_ab1": {
   "id": "crb:idle_transfig/heavy_ab1",
-  "duration": 32,
+  "start": 32,
   "cues": 19,
   "key": "move"
  },
  "idle_transfig/heavy_ab2": {
   "id": "crb:idle_transfig/heavy_ab2",
-  "duration": 52,
-  "cues": 15,
+  "start": 52,
+  "cues": 33,
   "key": "move"
  },
  "idle_transfig/heavy_ab3": {
   "id": "crb:idle_transfig/heavy_ab3",
-  "duration": 39,
-  "cues": 44,
+  "start": 39,
+  "cues": 46,
   "key": "move"
  },
  "idle_transfig/heavy_ab4": {
   "id": "crb:idle_transfig/heavy_ab4",
-  "duration": 62,
-  "cues": 32,
+  "start": 62,
+  "cues": 50,
   "key": "move"
  },
  "idle_transfig/human_ab1": {
   "id": "crb:idle_transfig/human_ab1",
-  "duration": 31,
-  "cues": 19,
+  "start": 31,
+  "cues": 39,
   "key": "move"
  },
  "idle_transfig/human_ab2": {
   "id": "crb:idle_transfig/human_ab2",
-  "duration": 31,
+  "start": 31,
   "cues": 11,
   "key": "move"
  },
  "idle_transfig/human_ab3": {
   "id": "crb:idle_transfig/human_ab3",
-  "duration": 41,
+  "start": 41,
   "cues": 17,
   "key": "move"
  },
  "idle_transfig/human_ab4": {
   "id": "crb:idle_transfig/human_ab4",
-  "duration": 61,
-  "cues": 21,
+  "start": 61,
+  "cues": 22,
   "key": "move"
  },
  "idle_transfig/human_ab5": {
   "id": "crb:idle_transfig/human_ab5",
-  "duration": 22,
+  "start": 21,
   "cues": 2,
   "key": "move"
  },
  "idle_transfig/instant_body/ab1": {
   "id": "crb:idle_transfig/instant_body/ab1",
-  "duration": 22,
-  "cues": 6,
+  "start": 21,
+  "cues": 7,
   "key": "move"
  },
  "idle_transfig/instant_body/ab2": {
   "id": "crb:idle_transfig/instant_body/ab2",
-  "duration": 32,
-  "cues": 21,
+  "start": 32,
+  "cues": 43,
   "key": "move"
  },
  "idle_transfig/instant_body/ab3": {
   "id": "crb:idle_transfig/instant_body/ab3",
-  "duration": 1002,
-  "cues": 32,
+  "start": 1002,
+  "cues": 34,
   "key": "move"
  },
  "idle_transfig/instant_body/ab4": {
   "id": "crb:idle_transfig/instant_body/ab4",
-  "duration": 1001,
-  "cues": 46,
+  "start": 1001,
+  "cues": 61,
   "key": "move"
  },
  "idle_transfig/instant_body/ab5": {
   "id": "crb:idle_transfig/instant_body/ab5",
-  "duration": 1000,
-  "cues": 129,
+  "start": 1000,
+  "cues": 132,
   "key": "move"
  },
  "idle_transfig/instant_body/ab6": {
   "id": "crb:idle_transfig/instant_body/ab6",
-  "duration": 176,
-  "cues": 10,
+  "start": 176,
+  "cues": 244,
   "key": "move"
  },
  "idle_transfig/instant_body_cutscene": {
   "id": "crb:idle_transfig/instant_body_cutscene",
-  "duration": 252,
+  "start": 252,
   "cues": 23,
   "key": "cutscene"
  },
  "idle_transfig/mahito_domain": {
   "id": "crb:idle_transfig/mahito_domain",
-  "duration": 422,
-  "cues": 29,
+  "start": 422,
+  "cues": 31,
   "key": "domain"
  },
  "idle_transfig/mahito_domain_start": {
   "id": "crb:idle_transfig/mahito_domain_start",
-  "duration": 962,
-  "cues": 14,
+  "start": 1000,
+  "cues": 15,
   "key": "domainstart"
  },
  "idle_transfig/mahito_domain_start2": {
   "id": "crb:idle_transfig/mahito_domain_start2",
-  "duration": 10002,
-  "cues": 31,
+  "start": 10001,
+  "cues": 37,
   "key": "domainstart"
  },
  "idle_transfig/mahito_stage2": {
   "id": "crb:idle_transfig/mahito_stage2",
-  "duration": 82,
+  "start": 82,
   "cues": 8,
   "key": "cutscene"
  },
  "idle_transfig/soul_ab2": {
   "id": "crb:idle_transfig/soul_ab2",
-  "duration": 22,
+  "start": 21,
   "cues": 2,
   "key": "move"
  },
  "idle_transfig/soul_ab3": {
   "id": "crb:idle_transfig/soul_ab3",
-  "duration": 61,
-  "cues": 11,
+  "start": 61,
+  "cues": 24,
   "key": "move"
  },
  "idle_transfig/soul_isomer_atk1": {
   "id": "crb:idle_transfig/soul_isomer_atk1",
-  "duration": 41,
-  "cues": 9,
+  "start": 41,
+  "cues": 11,
   "key": "move"
  },
  "idle_transfig/soul_isomer_atk2": {
   "id": "crb:idle_transfig/soul_isomer_atk2",
-  "duration": 46,
-  "cues": 4,
+  "start": 46,
+  "cues": 9,
   "key": "move"
  },
  "idle_transfig/sukuna_warning_cutscene": {
   "id": "crb:idle_transfig/sukuna_warning_cutscene",
-  "duration": 121,
-  "cues": 45,
+  "start": 121,
+  "cues": 46,
   "key": "cutscene"
  },
  "idle_transfig/transfigure_cube": {
   "id": "crb:idle_transfig/transfigure_cube",
-  "duration": 13,
-  "cues": 5,
+  "start": 131,
+  "cues": 13,
   "key": "move"
  },
  "idle_transfig/transfigure_wall": {
   "id": "crb:idle_transfig/transfigure_wall",
-  "duration": 13,
+  "start": 2,
   "cues": 17,
   "key": "move"
  },
  "idle_transfig/yuji_rage_cutscene": {
   "id": "crb:idle_transfig/yuji_rage_cutscene",
-  "duration": 401,
-  "cues": 12,
+  "start": 401,
+  "cues": 14,
   "key": "cutscene"
  },
  "infinity_dash": {
   "id": "crb:infinity_dash",
-  "duration": 12,
-  "cues": 7,
+  "start": 9,
+  "cues": 9,
   "key": "Dash"
  },
  "judgeman/deadlysentencing": {
   "id": "crb:judgeman/deadlysentencing",
-  "duration": 9991,
-  "cues": 149,
+  "start": 91,
+  "cues": 158,
   "key": "domain"
  },
  "judgeman/deadlysentencing_start": {
   "id": "crb:judgeman/deadlysentencing_start",
-  "duration": 102,
-  "cues": 8,
+  "start": 102,
+  "cues": 15,
   "key": "domainstart"
  },
  "judgeman/gavel1_ab1": {
   "id": "crb:judgeman/gavel1_ab1",
-  "duration": 20,
-  "cues": 11,
+  "start": 20,
+  "cues": 16,
   "key": "move"
  },
  "judgeman/gavel1_ab2": {
   "id": "crb:judgeman/gavel1_ab2",
-  "duration": 26,
+  "start": 26,
   "cues": 2,
   "key": "move"
  },
  "judgeman/gavel1_ab3": {
   "id": "crb:judgeman/gavel1_ab3",
-  "duration": 41,
-  "cues": 30,
+  "start": 41,
+  "cues": 45,
   "key": "move"
  },
  "judgeman/gavel1_ab4": {
   "id": "crb:judgeman/gavel1_ab4",
-  "duration": 106,
-  "cues": 47,
-  "key": "move"
- },
- "judgeman/gavel1_m1s": {
-  "id": "crb:judgeman/gavel1_m1s",
-  "duration": 1,
-  "cues": 1,
+  "start": 106,
+  "cues": 68,
   "key": "move"
  },
  "judgeman/gavel2_ab1": {
   "id": "crb:judgeman/gavel2_ab1",
-  "duration": 21,
-  "cues": 10,
+  "start": 21,
+  "cues": 15,
   "key": "move"
  },
  "judgeman/gavel2_ab2": {
   "id": "crb:judgeman/gavel2_ab2",
-  "duration": 20,
-  "cues": 10,
+  "start": 20,
+  "cues": 15,
   "key": "move"
  },
  "judgeman/gavel2_ab3": {
   "id": "crb:judgeman/gavel2_ab3",
-  "duration": 51,
-  "cues": 25,
+  "start": 51,
+  "cues": 35,
   "key": "move"
  },
  "judgeman/gavel2_ab4": {
   "id": "crb:judgeman/gavel2_ab4",
-  "duration": 101,
+  "start": 101,
   "cues": 43,
   "key": "move"
  },
  "judgeman/gavel3_ab1": {
   "id": "crb:judgeman/gavel3_ab1",
-  "duration": 36,
-  "cues": 9,
+  "start": 36,
+  "cues": 15,
   "key": "move"
  },
  "judgeman/gavel3_ab2": {
   "id": "crb:judgeman/gavel3_ab2",
-  "duration": 45,
-  "cues": 26,
+  "start": 45,
+  "cues": 36,
   "key": "move"
  },
  "judgeman/gavel3_ab3": {
   "id": "crb:judgeman/gavel3_ab3",
-  "duration": 36,
+  "start": 36,
   "cues": 17,
   "key": "move"
  },
  "judgeman/gavel3_ab4": {
   "id": "crb:judgeman/gavel3_ab4",
-  "duration": 81,
+  "start": 81,
   "cues": 26,
-  "key": "move"
- },
- "judgeman/gavel3_m1s": {
-  "id": "crb:judgeman/gavel3_m1s",
-  "duration": 1,
-  "cues": 1,
   "key": "move"
  },
  "judgeman/gavel_switch": {
   "id": "crb:judgeman/gavel_switch",
-  "duration": 11,
+  "start": 11,
   "cues": 4,
   "key": "move"
  },
  "judgeman/judgeman1": {
   "id": "crb:judgeman/judgeman1",
-  "duration": 16,
-  "cues": 2,
+  "start": 16,
+  "cues": 14,
   "key": "move"
  },
  "judgeman/judgeman2": {
   "id": "crb:judgeman/judgeman2",
-  "duration": 36,
+  "start": 36,
   "cues": 8,
   "key": "move"
  },
  "judgeman/judgeman3": {
   "id": "crb:judgeman/judgeman3",
-  "duration": 41,
+  "start": 41,
   "cues": 4,
-  "key": "move"
- },
- "kaiguy": {
-  "id": "crb:kaiguy",
-  "duration": 1,
-  "cues": 1,
   "key": "move"
  },
  "kaiguy_ab1": {
   "id": "crb:kaiguy_ab1",
-  "duration": 21,
-  "cues": 15,
+  "start": 21,
+  "cues": 17,
   "key": "move"
  },
  "kaiguy_ab2": {
   "id": "crb:kaiguy_ab2",
-  "duration": 21,
+  "start": 21,
   "cues": 8,
   "key": "move"
  },
  "kaiguy_ab3": {
   "id": "crb:kaiguy_ab3",
-  "duration": 41,
+  "start": 41,
   "cues": 14,
   "key": "move"
  },
  "kaiguy_ab4": {
   "id": "crb:kaiguy_ab4",
-  "duration": 31,
-  "cues": 12,
+  "start": 31,
+  "cues": 14,
   "key": "move"
  },
  "kaiguy_awaken": {
   "id": "crb:kaiguy_awaken",
-  "duration": 311,
-  "cues": 5,
+  "start": 311,
+  "cues": 7,
   "key": "cutscene"
  },
  "kaiguy_dying": {
   "id": "crb:kaiguy_dying",
-  "duration": 96,
+  "start": 96,
   "cues": 11,
   "key": "cutscene"
  },
  "kashimo/amberbeast": {
   "id": "crb:kashimo/amberbeast",
-  "duration": 11,
+  "start": 11,
   "cues": 4,
   "key": "Dash"
  },
  "kashimo/beast_awaken": {
   "id": "crb:kashimo/beast_awaken",
-  "duration": 131,
-  "cues": 46,
+  "start": 131,
+  "cues": 48,
   "key": "move"
  },
  "kashimo/kashimo_domain1": {
   "id": "crb:kashimo/kashimo_domain1",
-  "duration": 341,
+  "start": 341,
   "cues": 28,
   "key": "domain"
  },
  "kashimo/lightning1a": {
   "id": "crb:kashimo/lightning1a",
-  "duration": 21,
+  "start": 21,
   "cues": 26,
   "key": "move"
  },
  "kashimo/lightning1b": {
   "id": "crb:kashimo/lightning1b",
-  "duration": 82,
+  "start": 82,
   "cues": 38,
   "key": "move"
  },
  "kashimo/lightning1c": {
   "id": "crb:kashimo/lightning1c",
-  "duration": 41,
+  "start": 41,
   "cues": 45,
   "key": "move"
  },
  "kashimo/lightning1r": {
   "id": "crb:kashimo/lightning1r",
-  "duration": 21,
+  "start": 21,
   "cues": 21,
   "key": "move"
  },
  "kashimo/lightning2": {
   "id": "crb:kashimo/lightning2",
-  "duration": 72,
+  "start": 72,
   "cues": 17,
   "key": "move"
  },
  "kashimo/lightning2r": {
   "id": "crb:kashimo/lightning2r",
-  "duration": 36,
+  "start": 36,
   "cues": 16,
   "key": "move"
  },
  "kashimo/lightning3r": {
   "id": "crb:kashimo/lightning3r",
-  "duration": 81,
+  "start": 81,
   "cues": 47,
   "key": "move"
  },
  "kashimo/lightning4r": {
   "id": "crb:kashimo/lightning4r",
-  "duration": 91,
-  "cues": 65,
+  "start": 91,
+  "cues": 67,
   "key": "move"
  },
  "kashimo/lightning6": {
   "id": "crb:kashimo/lightning6",
-  "duration": 101,
-  "cues": 8,
+  "start": 101,
+  "cues": 15,
   "key": "domainstart"
  },
  "kashimo/lightning_am1": {
   "id": "crb:kashimo/lightning_am1",
-  "duration": 41,
+  "start": 41,
   "cues": 7,
   "key": "move"
  },
  "kashimo/lightning_am2": {
   "id": "crb:kashimo/lightning_am2",
-  "duration": 81,
+  "start": 81,
   "cues": 59,
   "key": "move"
  },
  "kashimo/lightning_am3": {
   "id": "crb:kashimo/lightning_am3",
-  "duration": 106,
-  "cues": 28,
+  "start": 106,
+  "cues": 36,
   "key": "move"
  },
  "kashimo/lightning_am4": {
   "id": "crb:kashimo/lightning_am4",
-  "duration": 21,
+  "start": 21,
   "cues": 12,
   "key": "move"
  },
  "kashimo/lightning_am5": {
   "id": "crb:kashimo/lightning_am5",
-  "duration": 121,
-  "cues": 43,
+  "start": 121,
+  "cues": 44,
   "key": "move"
  },
  "kashimo/lightning_am6": {
   "id": "crb:kashimo/lightning_am6",
-  "duration": 201,
-  "cues": 54,
+  "start": 201,
+  "cues": 56,
   "key": "move"
  },
  "kashimo/lightning_cloak": {
   "id": "crb:kashimo/lightning_cloak",
-  "duration": 11,
+  "start": 11,
   "cues": 6,
   "key": "Dash"
  },
  "knives1": {
   "id": "crb:knives1",
-  "duration": 21,
+  "start": 12,
   "cues": 5,
   "key": "move"
  },
  "knives3": {
   "id": "crb:knives3",
-  "duration": 21,
+  "start": 12,
   "cues": 5,
-  "key": "move"
- },
- "limitless/blue_h2h": {
-  "id": "crb:limitless/blue_h2h",
-  "duration": 1,
-  "cues": 1,
   "key": "move"
  },
  "limitless/bluefists": {
   "id": "crb:limitless/bluefists",
-  "duration": 21,
+  "start": 21,
   "cues": 7,
   "key": "move"
  },
  "limitless/fury_barrage": {
   "id": "crb:limitless/fury_barrage",
-  "duration": 121,
-  "cues": 21,
+  "start": 121,
+  "cues": 28,
   "key": "move"
  },
  "limitless/gojo_domain": {
   "id": "crb:limitless/gojo_domain",
-  "duration": 761,
+  "start": 761,
   "cues": 46,
   "key": "domain"
  },
  "limitless/gojo_domain_quick": {
   "id": "crb:limitless/gojo_domain_quick",
-  "duration": 101,
+  "start": 101,
   "cues": 19,
   "key": "domain"
  },
  "limitless/infinity_backhand": {
   "id": "crb:limitless/infinity_backhand",
-  "duration": 31,
+  "start": 31,
   "cues": 21,
   "key": "move"
  },
  "limitless/levitate_purple": {
   "id": "crb:limitless/levitate_purple",
-  "duration": 119,
-  "cues": 20,
+  "start": 119,
+  "cues": 21,
   "key": "move"
  },
  "limitless/limitless1": {
   "id": "crb:limitless/limitless1",
-  "duration": 15,
+  "start": 15,
   "cues": 5,
   "key": "move"
  },
  "limitless/limitless1b": {
   "id": "crb:limitless/limitless1b",
-  "duration": 81,
+  "start": 81,
   "cues": 18,
   "key": "move"
  },
  "limitless/limitless1c": {
   "id": "crb:limitless/limitless1c",
-  "duration": 15,
-  "cues": 11,
+  "start": 15,
+  "cues": 12,
   "key": "move"
  },
  "limitless/limitless2": {
   "id": "crb:limitless/limitless2",
-  "duration": 15,
+  "start": 15,
   "cues": 6,
   "key": "move"
  },
  "limitless/limitless2b": {
   "id": "crb:limitless/limitless2b",
-  "duration": 141,
+  "start": 141,
   "cues": 6,
   "key": "move"
  },
  "limitless/limitless2c": {
   "id": "crb:limitless/limitless2c",
-  "duration": 21,
-  "cues": 8,
+  "start": 21,
+  "cues": 14,
   "key": "move"
  },
  "limitless/limitless2e": {
   "id": "crb:limitless/limitless2e",
-  "duration": 66,
-  "cues": 18,
+  "start": 66,
+  "cues": 37,
   "key": "move"
  },
  "limitless/limitless3": {
   "id": "crb:limitless/limitless3",
-  "duration": 41,
-  "cues": 27,
+  "start": 41,
+  "cues": 28,
   "key": "move"
  },
  "limitless/limitless3b": {
   "id": "crb:limitless/limitless3b",
-  "duration": 16,
+  "start": 16,
   "cues": 8,
   "key": "move"
  },
  "limitless/limitless3c": {
   "id": "crb:limitless/limitless3c",
-  "duration": 51,
+  "start": 51,
   "cues": 10,
   "key": "move"
  },
  "limitless/limitless3e": {
   "id": "crb:limitless/limitless3e",
-  "duration": 66,
-  "cues": 19,
+  "start": 66,
+  "cues": 52,
   "key": "move"
  },
  "limitless/limitless4": {
   "id": "crb:limitless/limitless4",
-  "duration": 16,
+  "start": 16,
   "cues": 9,
   "key": "move"
  },
  "limitless/limitless4b": {
   "id": "crb:limitless/limitless4b",
-  "duration": 15,
+  "start": 15,
   "cues": 10,
   "key": "move"
  },
  "limitless/limitless4c": {
   "id": "crb:limitless/limitless4c",
-  "duration": 36,
+  "start": 36,
   "cues": 14,
   "key": "move"
  },
  "limitless/limitless5": {
   "id": "crb:limitless/limitless5",
-  "duration": 101,
+  "start": 101,
   "cues": 18,
   "key": "move"
  },
  "limitless/limitless5b": {
   "id": "crb:limitless/limitless5b",
-  "duration": 481,
-  "cues": 56,
+  "start": 481,
+  "cues": 68,
   "key": "move"
  },
  "limitless/limitless5c": {
   "id": "crb:limitless/limitless5c",
-  "duration": 321,
-  "cues": 70,
+  "start": 321,
+  "cues": 79,
   "key": "move"
  },
  "limitless/limitless5d": {
   "id": "crb:limitless/limitless5d",
-  "duration": 481,
+  "start": 481,
   "cues": 65,
   "key": "move"
  },
  "limitless/limitless6": {
   "id": "crb:limitless/limitless6",
-  "duration": 102,
-  "cues": 8,
+  "start": 102,
+  "cues": 15,
   "key": "domainstart"
  },
  "limitless/limitless6a": {
   "id": "crb:limitless/limitless6a",
-  "duration": 102,
-  "cues": 8,
+  "start": 102,
+  "cues": 15,
   "key": "domainstart"
  },
  "limitless/limitless6b": {
   "id": "crb:limitless/limitless6b",
-  "duration": 101,
+  "start": 101,
   "cues": 29,
   "key": "move"
  },
  "limitless/pointblank": {
   "id": "crb:limitless/pointblank",
-  "duration": 91,
-  "cues": 19,
+  "start": 91,
+  "cues": 20,
   "key": "move"
  },
  "limitless/shockwave_punch": {
   "id": "crb:limitless/shockwave_punch",
-  "duration": 21,
+  "start": 21,
   "cues": 16,
   "key": "move"
  },
  "limitless/spec1": {
   "id": "crb:limitless/spec1",
-  "duration": 71,
-  "cues": 16,
+  "start": 71,
+  "cues": 17,
   "key": "move"
  },
  "limitless/spec2": {
   "id": "crb:limitless/spec2",
-  "duration": 102,
-  "cues": 11,
+  "start": 102,
+  "cues": 12,
   "key": "move"
  },
  "lovetrain/brutal_barrage": {
   "id": "crb:lovetrain/brutal_barrage",
-  "duration": 81,
+  "start": 81,
   "cues": 25,
   "key": "move"
  },
  "lovetrain/devastating_blow": {
   "id": "crb:lovetrain/devastating_blow",
-  "duration": 25,
+  "start": 25,
   "cues": 33,
   "key": "move"
  },
  "lovetrain/fever_combo": {
   "id": "crb:lovetrain/fever_combo",
-  "duration": 110,
+  "start": 110,
   "cues": 37,
   "key": "move"
  },
  "lovetrain/hakari_dance": {
   "id": "crb:lovetrain/hakari_dance",
-  "duration": 431,
+  "start": 431,
   "cues": 64,
   "key": "cutscene"
  },
  "lovetrain/idledeathgamble": {
   "id": "crb:lovetrain/idledeathgamble",
-  "duration": 101,
-  "cues": 10,
+  "start": 101,
+  "cues": 17,
   "key": "domainstart"
  },
  "lovetrain/idledeathgamble2": {
   "id": "crb:lovetrain/idledeathgamble2",
-  "duration": 441,
-  "cues": 124,
+  "start": 441,
+  "cues": 126,
   "key": "domain"
  },
  "lovetrain/lovetrain1": {
   "id": "crb:lovetrain/lovetrain1",
-  "duration": 21,
+  "start": 21,
   "cues": 3,
   "key": "move"
  },
  "lovetrain/lovetrain1b": {
   "id": "crb:lovetrain/lovetrain1b",
-  "duration": 21,
+  "start": 21,
   "cues": 3,
   "key": "move"
  },
  "lovetrain/lovetrain1c": {
   "id": "crb:lovetrain/lovetrain1c",
-  "duration": 21,
+  "start": 21,
   "cues": 4,
   "key": "move"
  },
  "lovetrain/lovetrain2": {
   "id": "crb:lovetrain/lovetrain2",
-  "duration": 36,
-  "cues": 57,
+  "start": 36,
+  "cues": 59,
   "key": "move"
  },
  "lovetrain/lovetrain2b": {
   "id": "crb:lovetrain/lovetrain2b",
-  "duration": 21,
+  "start": 21,
   "cues": 14,
   "key": "move"
  },
  "lovetrain/lovetrain2c": {
   "id": "crb:lovetrain/lovetrain2c",
-  "duration": 36,
+  "start": 36,
   "cues": 50,
   "key": "move"
  },
  "lovetrain/lovetrain3": {
   "id": "crb:lovetrain/lovetrain3",
-  "duration": 21,
+  "start": 21,
   "cues": 4,
   "key": "move"
  },
  "lovetrain/lovetrain3b": {
   "id": "crb:lovetrain/lovetrain3b",
-  "duration": 31,
-  "cues": 8,
+  "start": 31,
+  "cues": 12,
   "key": "move"
  },
  "lovetrain/lovetrain4": {
   "id": "crb:lovetrain/lovetrain4",
-  "duration": 37,
+  "start": 37,
   "cues": 30,
   "key": "move"
  },
  "lovetrain/lucky_fist": {
   "id": "crb:lovetrain/lucky_fist",
-  "duration": 28,
+  "start": 28,
   "cues": 37,
   "key": "move"
  },
- "m1move": {
-  "id": "crb:m1move",
-  "duration": 1,
-  "cues": 0,
-  "key": "cutscene"
- },
  "mobs/cursed_doll/dash_punch": {
   "id": "crb:mobs/cursed_doll/dash_punch",
-  "duration": 31,
+  "start": 31,
   "cues": 10,
   "key": "move"
  },
  "mobs/cursed_doll/punch": {
   "id": "crb:mobs/cursed_doll/punch",
-  "duration": 11,
+  "start": 11,
   "cues": 6,
   "key": "move"
  },
  "mobs/cursed_doll/spasm": {
   "id": "crb:mobs/cursed_doll/spasm",
-  "duration": 76,
+  "start": 76,
   "cues": 14,
   "key": "move"
  },
  "mobs/cursed_doll/uppercut": {
   "id": "crb:mobs/cursed_doll/uppercut",
-  "duration": 16,
+  "start": 16,
   "cues": 8,
   "key": "move"
  },
  "mobs/curses/azure_flames/azure_spray": {
   "id": "crb:mobs/curses/azure_flames/azure_spray",
-  "duration": 41,
+  "start": 41,
   "cues": 5,
   "key": "move"
  },
  "mobs/curses/azure_flames/flamethrower": {
   "id": "crb:mobs/curses/azure_flames/flamethrower",
-  "duration": 41,
+  "start": 41,
   "cues": 5,
   "key": "move"
  },
  "mobs/curses/azure_flames/slamdown": {
   "id": "crb:mobs/curses/azure_flames/slamdown",
-  "duration": 31,
+  "start": 31,
   "cues": 16,
   "key": "move"
  },
  "mobs/curses/beru/awaken": {
   "id": "crb:mobs/curses/beru/awaken",
-  "duration": 336,
+  "start": 335,
   "cues": 55,
   "key": "cutscene"
  },
  "mobs/curses/beru/awakening": {
   "id": "crb:mobs/curses/beru/awakening",
-  "duration": 443,
-  "cues": 87,
+  "start": 9,
+  "cues": 89,
   "key": "cutscene"
  },
  "mobs/curses/beru/beru_clashing": {
   "id": "crb:mobs/curses/beru/beru_clashing",
-  "duration": 10001,
-  "cues": 44,
+  "start": 9992,
+  "cues": 72,
   "key": "cutscene"
- },
- "mobs/curses/beru/beru_curse": {
-  "id": "crb:mobs/curses/beru/beru_curse",
-  "duration": 1,
-  "cues": 5,
-  "key": "move"
  },
  "mobs/curses/beru/clash_start": {
   "id": "crb:mobs/curses/beru/clash_start",
-  "duration": 51,
-  "cues": 11,
+  "start": 48,
+  "cues": 12,
   "key": "move"
  },
  "mobs/curses/beru/fly_slam": {
   "id": "crb:mobs/curses/beru/fly_slam",
-  "duration": 36,
+  "start": 35,
   "cues": 27,
   "key": "move"
  },
  "mobs/curses/beru/heart_pierce": {
   "id": "crb:mobs/curses/beru/heart_pierce",
-  "duration": 158,
-  "cues": 9,
+  "start": 158,
+  "cues": 12,
   "key": "move"
  },
  "mobs/curses/beru/kick": {
   "id": "crb:mobs/curses/beru/kick",
-  "duration": 36,
-  "cues": 5,
+  "start": 18,
+  "cues": 7,
   "key": "move"
  },
  "mobs/curses/beru/punch": {
   "id": "crb:mobs/curses/beru/punch",
-  "duration": 36,
-  "cues": 5,
+  "start": 18,
+  "cues": 7,
   "key": "move"
  },
  "mobs/curses/beru/slam_stab": {
   "id": "crb:mobs/curses/beru/slam_stab",
-  "duration": 51,
-  "cues": 24,
+  "start": 51,
+  "cues": 30,
   "key": "move"
  },
  "mobs/curses/beru/slice": {
   "id": "crb:mobs/curses/beru/slice",
-  "duration": 22,
-  "cues": 5,
+  "start": 16,
+  "cues": 7,
   "key": "move"
  },
  "mobs/curses/beru/slices": {
   "id": "crb:mobs/curses/beru/slices",
-  "duration": 22,
-  "cues": 6,
+  "start": 16,
+  "cues": 8,
   "key": "move"
  },
  "mobs/curses/beru/speedblitz": {
   "id": "crb:mobs/curses/beru/speedblitz",
-  "duration": 56,
-  "cues": 10,
+  "start": 56,
+  "cues": 11,
   "key": "move"
  },
  "mobs/curses/beru/speedblitz2": {
   "id": "crb:mobs/curses/beru/speedblitz2",
-  "duration": 65,
-  "cues": 11,
+  "start": 65,
+  "cues": 12,
   "key": "move"
  },
  "mobs/curses/beru/takedown": {
   "id": "crb:mobs/curses/beru/takedown",
-  "duration": 21,
+  "start": 21,
   "cues": 26,
   "key": "move"
  },
  "mobs/curses/brute_slam": {
   "id": "crb:mobs/curses/brute_slam",
-  "duration": 25,
+  "start": 25,
   "cues": 14,
   "key": "move"
  },
  "mobs/curses/centipede/pierce1": {
   "id": "crb:mobs/curses/centipede/pierce1",
-  "duration": 31,
+  "start": 31,
   "cues": 5,
   "key": "move"
  },
  "mobs/curses/centipede/pierce2": {
   "id": "crb:mobs/curses/centipede/pierce2",
-  "duration": 22,
+  "start": 16,
   "cues": 5,
   "key": "move"
  },
  "mobs/curses/centipede/scream": {
   "id": "crb:mobs/curses/centipede/scream",
-  "duration": 51,
+  "start": 41,
   "cues": 7,
   "key": "move"
  },
  "mobs/curses/centipede/spin": {
   "id": "crb:mobs/curses/centipede/spin",
-  "duration": 22,
+  "start": 15,
   "cues": 10,
   "key": "move"
  },
  "mobs/curses/grasshopper/barrage": {
   "id": "crb:mobs/curses/grasshopper/barrage",
-  "duration": 46,
+  "start": 46,
   "cues": 8,
   "key": "move"
  },
  "mobs/curses/grasshopper/fly": {
   "id": "crb:mobs/curses/grasshopper/fly",
-  "duration": 26,
-  "cues": 2,
+  "start": 26,
+  "cues": 4,
   "key": "move"
  },
  "mobs/curses/grasshopper/poison_spit": {
   "id": "crb:mobs/curses/grasshopper/poison_spit",
-  "duration": 11,
+  "start": 11,
   "cues": 2,
   "key": "move"
  },
  "mobs/curses/grasshopper/sting": {
   "id": "crb:mobs/curses/grasshopper/sting",
-  "duration": 26,
+  "start": 26,
   "cues": 5,
   "key": "move"
  },
  "mobs/curses/kaiju/atomic_breath": {
   "id": "crb:mobs/curses/kaiju/atomic_breath",
-  "duration": 601,
+  "start": 576,
   "cues": 11,
   "key": "move"
  },
  "mobs/curses/kaiju/claw": {
   "id": "crb:mobs/curses/kaiju/claw",
-  "duration": 22,
-  "cues": 10,
+  "start": 17,
+  "cues": 18,
   "key": "move"
  },
  "mobs/curses/kaiju/death_anim": {
   "id": "crb:mobs/curses/kaiju/death_anim",
-  "duration": 91,
+  "start": 91,
   "cues": 10,
   "key": "cutscene"
  },
- "mobs/curses/kaiju/kaiju_curse": {
-  "id": "crb:mobs/curses/kaiju/kaiju_curse",
-  "duration": 1,
-  "cues": 0,
-  "key": "move"
- },
  "mobs/curses/kaiju/kick": {
   "id": "crb:mobs/curses/kaiju/kick",
-  "duration": 44,
-  "cues": 3,
+  "start": 35,
+  "cues": 7,
   "key": "move"
  },
  "mobs/curses/kaiju/punch": {
   "id": "crb:mobs/curses/kaiju/punch",
-  "duration": 101,
-  "cues": 35,
+  "start": 46,
+  "cues": 43,
   "key": "move"
  },
  "mobs/curses/kaiju/roar": {
   "id": "crb:mobs/curses/kaiju/roar",
-  "duration": 151,
-  "cues": 4,
+  "start": 129,
+  "cues": 5,
   "key": "move"
  },
  "mobs/curses/kaiju/spawn_roar": {
   "id": "crb:mobs/curses/kaiju/spawn_roar",
-  "duration": 151,
-  "cues": 4,
+  "start": 129,
+  "cues": 5,
   "key": "move"
  },
  "mobs/curses/kaiju/stomp": {
   "id": "crb:mobs/curses/kaiju/stomp",
-  "duration": 44,
-  "cues": 20,
+  "start": 32,
+  "cues": 24,
   "key": "move"
  },
  "mobs/curses/kaiju/stomp2": {
   "id": "crb:mobs/curses/kaiju/stomp2",
-  "duration": 44,
-  "cues": 54,
+  "start": 42,
+  "cues": 66,
   "key": "move"
  },
  "mobs/curses/kaiju/tail_whip": {
   "id": "crb:mobs/curses/kaiju/tail_whip",
-  "duration": 81,
-  "cues": 11,
+  "start": 34,
+  "cues": 15,
   "key": "move"
  },
  "mobs/curses/sharko/hit": {
   "id": "crb:mobs/curses/sharko/hit",
-  "duration": 16,
+  "start": 16,
   "cues": 5,
   "key": "move"
  },
  "mobs/curses/sharko/hit_x2": {
   "id": "crb:mobs/curses/sharko/hit_x2",
-  "duration": 26,
+  "start": 26,
   "cues": 9,
   "key": "move"
  },
  "mobs/curses/sharko/kick": {
   "id": "crb:mobs/curses/sharko/kick",
-  "duration": 21,
+  "start": 21,
   "cues": 9,
   "key": "move"
  },
  "mobs/curses/sharko/leap": {
   "id": "crb:mobs/curses/sharko/leap",
-  "duration": 21,
+  "start": 21,
   "cues": 8,
   "key": "move"
  },
  "mobs/curses/sharko/roar": {
   "id": "crb:mobs/curses/sharko/roar",
-  "duration": 31,
+  "start": 31,
   "cues": 6,
-  "key": "move"
- },
- "mobs/curses/sharko/sharko": {
-  "id": "crb:mobs/curses/sharko/sharko",
-  "duration": 1,
-  "cues": 3,
   "key": "move"
  },
  "mobs/curses/sharko/shoot": {
   "id": "crb:mobs/curses/sharko/shoot",
-  "duration": 31,
+  "start": 31,
   "cues": 6,
   "key": "move"
  },
  "mobs/hidden_inventory_cutscene": {
   "id": "crb:mobs/hidden_inventory_cutscene",
-  "duration": 5002,
-  "cues": 62,
+  "start": 5001,
+  "cues": 70,
   "key": "cutscene"
  },
  "mobs/higuruma": {
   "id": "crb:mobs/higuruma",
-  "duration": 1,
-  "cues": 3,
+  "start": 2,
+  "cues": 0,
+  "key": "move"
+ },
+ "mobs/jogo": {
+  "id": "crb:mobs/jogo",
+  "start": 2,
+  "cues": 0,
   "key": "move"
  },
  "mobs/kashimo": {
   "id": "crb:mobs/kashimo",
-  "duration": 2,
+  "start": 4,
+  "cues": 0,
+  "key": "move"
+ },
+ "mobs/kusakabe": {
+  "id": "crb:mobs/kusakabe",
+  "start": 2,
+  "cues": 0,
+  "key": "move"
+ },
+ "mobs/maki_culling": {
+  "id": "crb:mobs/maki_culling",
+  "start": 2,
   "cues": 0,
   "key": "move"
  },
  "mobs/maki_phase": {
   "id": "crb:mobs/maki_phase",
-  "duration": 41,
+  "start": 31,
   "cues": 2,
   "key": "cutscene"
  },
  "mobs/megumi": {
   "id": "crb:mobs/megumi",
-  "duration": 20,
+  "start": 5,
   "cues": 1,
+  "key": "move"
+ },
+ "mobs/miwa": {
+  "id": "crb:mobs/miwa",
+  "start": 2,
+  "cues": 0,
   "key": "move"
  },
  "mobs/shinjuku_gojo": {
   "id": "crb:mobs/shinjuku_gojo",
-  "duration": 1,
-  "cues": 1,
+  "start": 993,
+  "cues": 0,
   "key": "move"
  },
  "mobs/sorcerers/inumaki/inumaki": {
   "id": "crb:mobs/sorcerers/inumaki/inumaki",
-  "duration": 1,
-  "cues": 1,
+  "start": 42,
+  "cues": 0,
+  "key": "move"
+ },
+ "mobs/sorcerers/student_gojo/blue_m1s": {
+  "id": "crb:mobs/sorcerers/student_gojo/blue_m1s",
+  "start": 4,
+  "cues": 0,
   "key": "move"
  },
  "mobs/sorcerers/student_gojo/high": {
   "id": "crb:mobs/sorcerers/student_gojo/high",
-  "duration": 51,
+  "start": 51,
   "cues": 11,
   "key": "move"
  },
  "mobs/sorcerers/student_gojo/levitate_purple": {
   "id": "crb:mobs/sorcerers/student_gojo/levitate_purple",
-  "duration": 119,
-  "cues": 11,
+  "start": 119,
+  "cues": 12,
   "key": "move"
  },
  "mobs/sorcerers/student_gojo/student_gojo": {
   "id": "crb:mobs/sorcerers/student_gojo/student_gojo",
-  "duration": 1,
-  "cues": 2,
+  "start": 102,
+  "cues": 1,
   "key": "move"
  },
  "mobs/sorcerers/student_gojo/student_gojo2": {
   "id": "crb:mobs/sorcerers/student_gojo/student_gojo2",
-  "duration": 50,
-  "cues": 4,
+  "start": 102,
+  "cues": 2,
+  "key": "move"
+ },
+ "mobs/sorcerers/todo/todo": {
+  "id": "crb:mobs/sorcerers/todo/todo",
+  "start": 2,
+  "cues": 0,
   "key": "move"
  },
  "mobs/sorcerers/yuji/yuji": {
   "id": "crb:mobs/sorcerers/yuji/yuji",
-  "duration": 1,
-  "cues": 1,
+  "start": 1001,
+  "cues": 0,
   "key": "move"
  },
  "mobs/sorcerers/yuji_awakened/yuji_awakened": {
   "id": "crb:mobs/sorcerers/yuji_awakened/yuji_awakened",
-  "duration": 1,
-  "cues": 2,
+  "start": 1001,
+  "cues": 0,
+  "key": "move"
+ },
+ "mobs/todo": {
+  "id": "crb:mobs/todo",
+  "start": 2,
+  "cues": 0,
   "key": "move"
  },
  "mobs/toji/flyheads": {
   "id": "crb:mobs/toji/flyheads",
-  "duration": 51,
-  "cues": 2,
+  "start": 6,
+  "cues": 1,
   "key": "move"
  },
  "mobs/toji/phase": {
   "id": "crb:mobs/toji/phase",
-  "duration": 41,
+  "start": 18,
   "cues": 5,
   "key": "cutscene"
  },
  "mobs/toji/toji": {
   "id": "crb:mobs/toji/toji",
-  "duration": 1,
-  "cues": 1,
+  "start": 44,
+  "cues": 0,
   "key": "move"
  },
  "reactor": {
   "id": "crb:reactor",
-  "duration": 2,
-  "cues": 14,
+  "start": 2,
+  "cues": 1,
   "key": "move"
  },
  "reactor_activation": {
   "id": "crb:reactor_activation",
-  "duration": 202,
+  "start": 202,
   "cues": 19,
   "key": "move"
  },
  "reactor_destabilize": {
   "id": "crb:reactor_destabilize",
-  "duration": 61,
+  "start": 61,
   "cues": 14,
   "key": "move"
  },
  "reactor_destabilizing_final": {
   "id": "crb:reactor_destabilizing_final",
-  "duration": 10002,
-  "cues": 71,
+  "start": 10001,
+  "cues": 74,
   "key": "move"
  },
  "reactor_stabilized": {
   "id": "crb:reactor_stabilized",
-  "duration": 201,
+  "start": 201,
   "cues": 7,
   "key": "move"
  },
  "shikigami/megumi_domain": {
   "id": "crb:shikigami/megumi_domain",
-  "duration": 201,
-  "cues": 17,
+  "start": 201,
+  "cues": 21,
   "key": "domain"
  },
  "shikigami/megumi_domain2": {
   "id": "crb:shikigami/megumi_domain2",
-  "duration": 461,
+  "start": 461,
   "cues": 28,
   "key": "domain"
  },
- "shikigami/shikigami/agito": {
-  "id": "crb:shikigami/shikigami/agito",
-  "duration": 1,
-  "cues": 5,
-  "key": "move"
- },
  "shikigami/shikigami/agito/atk1": {
   "id": "crb:shikigami/shikigami/agito/atk1",
-  "duration": 21,
+  "start": 21,
   "cues": 6,
   "key": "move"
  },
  "shikigami/shikigami/agito/atk2": {
   "id": "crb:shikigami/shikigami/agito/atk2",
-  "duration": 31,
+  "start": 31,
   "cues": 6,
   "key": "move"
  },
  "shikigami/shikigami/agito/atk3": {
   "id": "crb:shikigami/shikigami/agito/atk3",
-  "duration": 96,
+  "start": 21,
   "cues": 23,
   "key": "move"
  },
  "shikigami/shikigami/agito/atk4": {
   "id": "crb:shikigami/shikigami/agito/atk4",
-  "duration": 71,
+  "start": 21,
   "cues": 26,
   "key": "move"
  },
  "shikigami/shikigami/divinedog": {
   "id": "crb:shikigami/shikigami/divinedog",
-  "duration": 21,
+  "start": 21,
   "cues": 8,
   "key": "move"
  },
  "shikigami/shikigami/divinedogboss": {
   "id": "crb:shikigami/shikigami/divinedogboss",
-  "duration": 21,
+  "start": 21,
   "cues": 8,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/aircannon": {
   "id": "crb:shikigami/shikigami/mahoraga/aircannon",
-  "duration": 28,
+  "start": 28,
   "cues": 7,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/airswipe": {
   "id": "crb:shikigami/shikigami/mahoraga/airswipe",
-  "duration": 28,
+  "start": 28,
   "cues": 3,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/barrage": {
   "id": "crb:shikigami/shikigami/mahoraga/barrage",
-  "duration": 21,
+  "start": 21,
   "cues": 8,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/barrage_win_challenger": {
   "id": "crb:shikigami/shikigami/mahoraga/barrage_win_challenger",
-  "duration": 41,
+  "start": 41,
   "cues": 23,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/barrage_win_makora": {
   "id": "crb:shikigami/shikigami/mahoraga/barrage_win_makora",
-  "duration": 41,
+  "start": 41,
   "cues": 17,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/barrage_windup": {
   "id": "crb:shikigami/shikigami/mahoraga/barrage_windup",
-  "duration": 41,
+  "start": 41,
   "cues": 2,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/charge_punch": {
   "id": "crb:shikigami/shikigami/mahoraga/charge_punch",
-  "duration": 30,
-  "cues": 7,
+  "start": 30,
+  "cues": 8,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/combo1": {
   "id": "crb:shikigami/shikigami/mahoraga/combo1",
-  "duration": 1001,
-  "cues": 24,
+  "start": 1001,
+  "cues": 26,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/cutscene2": {
   "id": "crb:shikigami/shikigami/mahoraga/cutscene2",
-  "duration": 141,
+  "start": 56,
   "cues": 11,
   "key": "cutscene"
  },
  "shikigami/shikigami/mahoraga/cutscene2_start": {
   "id": "crb:shikigami/shikigami/mahoraga/cutscene2_start",
-  "duration": 21,
-  "cues": 6,
+  "start": 21,
+  "cues": 7,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/distraction": {
   "id": "crb:shikigami/shikigami/mahoraga/distraction",
-  "duration": 16,
-  "cues": 4,
+  "start": 16,
+  "cues": 5,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/grab_drag": {
   "id": "crb:shikigami/shikigami/mahoraga/grab_drag",
-  "duration": 61,
+  "start": 61,
   "cues": 14,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/ground_pound": {
   "id": "crb:shikigami/shikigami/mahoraga/ground_pound",
-  "duration": 29,
+  "start": 29,
   "cues": 13,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/grow_punch": {
   "id": "crb:shikigami/shikigami/mahoraga/grow_punch",
-  "duration": 51,
+  "start": 51,
   "cues": 24,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/kick1": {
   "id": "crb:shikigami/shikigami/mahoraga/kick1",
-  "duration": 31,
-  "cues": 2,
+  "start": 31,
+  "cues": 3,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/kick2": {
   "id": "crb:shikigami/shikigami/mahoraga/kick2",
-  "duration": 75,
-  "cues": 20,
+  "start": 75,
+  "cues": 21,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/punch1": {
   "id": "crb:shikigami/shikigami/mahoraga/punch1",
-  "duration": 31,
-  "cues": 2,
+  "start": 31,
+  "cues": 3,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/rocktoss": {
   "id": "crb:shikigami/shikigami/mahoraga/rocktoss",
-  "duration": 28,
+  "start": 28,
   "cues": 9,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/slamdown": {
   "id": "crb:shikigami/shikigami/mahoraga/slamdown",
-  "duration": 96,
+  "start": 21,
   "cues": 23,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/slash1": {
   "id": "crb:shikigami/shikigami/mahoraga/slash1",
-  "duration": 21,
+  "start": 21,
   "cues": 5,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/slash_double": {
   "id": "crb:shikigami/shikigami/mahoraga/slash_double",
-  "duration": 35,
+  "start": 35,
   "cues": 13,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/slash_down": {
   "id": "crb:shikigami/shikigami/mahoraga/slash_down",
-  "duration": 21,
+  "start": 21,
   "cues": 13,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/sprint_slashes": {
   "id": "crb:shikigami/shikigami/mahoraga/sprint_slashes",
-  "duration": 26,
-  "cues": 13,
+  "start": 26,
+  "cues": 14,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/stomp": {
   "id": "crb:shikigami/shikigami/mahoraga/stomp",
-  "duration": 31,
-  "cues": 14,
+  "start": 31,
+  "cues": 15,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/tp_headslam": {
   "id": "crb:shikigami/shikigami/mahoraga/tp_headslam",
-  "duration": 28,
+  "start": 28,
   "cues": 7,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga/water_burst": {
   "id": "crb:shikigami/shikigami/mahoraga/water_burst",
-  "duration": 35,
+  "start": 35,
   "cues": 15,
   "key": "move"
  },
  "shikigami/shikigami/mahoraga_adapt": {
   "id": "crb:shikigami/shikigami/mahoraga_adapt",
-  "duration": 81,
+  "start": 81,
   "cues": 13,
   "key": "cutscene"
  },
  "shikigami/shikigami/mahoraga_adapt2": {
   "id": "crb:shikigami/shikigami/mahoraga_adapt2",
-  "duration": 81,
+  "start": 81,
   "cues": 5,
   "key": "cutscene"
  },
  "shikigami/shikigami/mahoraga_clash_barrage": {
   "id": "crb:shikigami/shikigami/mahoraga_clash_barrage",
-  "duration": 140,
+  "start": 140,
   "cues": 1,
   "key": "cutscene"
  },
  "shikigami/shikigami/mahoragaboss": {
   "id": "crb:shikigami/shikigami/mahoragaboss",
-  "duration": 26,
+  "start": 8,
   "cues": 2,
   "key": "move"
  },
  "shikigami/shikigami/mahoragatamed": {
   "id": "crb:shikigami/shikigami/mahoragatamed",
-  "duration": 26,
+  "start": 8,
   "cues": 2,
   "key": "move"
  },
  "shikigami/shikigami/maxelephant": {
   "id": "crb:shikigami/shikigami/maxelephant",
-  "duration": 71,
+  "start": 71,
   "cues": 22,
   "key": "move"
  },
  "shikigami/shikigami/maxelephantboss": {
   "id": "crb:shikigami/shikigami/maxelephantboss",
-  "duration": 71,
+  "start": 71,
   "cues": 22,
   "key": "move"
  },
  "shikigami/shikigami/nueboss": {
   "id": "crb:shikigami/shikigami/nueboss",
-  "duration": 51,
+  "start": 51,
   "cues": 5,
   "key": "move"
  },
  "shikigami/shikigami/piercingox": {
   "id": "crb:shikigami/shikigami/piercingox",
-  "duration": 41,
+  "start": 41,
   "cues": 1,
   "key": "move"
  },
  "shikigami/shikigami/rounddeer": {
   "id": "crb:shikigami/shikigami/rounddeer",
-  "duration": 21,
+  "start": 21,
   "cues": 5,
   "key": "move"
  },
  "shikigami/shikigami/rounddeerboss": {
   "id": "crb:shikigami/shikigami/rounddeerboss",
-  "duration": 21,
+  "start": 21,
   "cues": 5,
   "key": "move"
  },
  "shikigami/shikigami/serpent": {
   "id": "crb:shikigami/shikigami/serpent",
-  "duration": 31,
+  "start": 31,
   "cues": 15,
   "key": "move"
  },
  "shikigami/shikigami/serpentboss": {
   "id": "crb:shikigami/shikigami/serpentboss",
-  "duration": 31,
+  "start": 31,
   "cues": 15,
   "key": "move"
  },
  "shikigami/shikigami/shadowdog": {
   "id": "crb:shikigami/shikigami/shadowdog",
-  "duration": 21,
+  "start": 21,
   "cues": 8,
   "key": "move"
  },
  "shikigami/shikigami/shadowserpent": {
   "id": "crb:shikigami/shikigami/shadowserpent",
-  "duration": 31,
+  "start": 31,
   "cues": 15,
   "key": "move"
  },
  "shikigami/shikigami/toad": {
   "id": "crb:shikigami/shikigami/toad",
-  "duration": 155,
+  "start": 155,
   "cues": 1,
   "key": "move"
  },
  "shikigami/shikigami/totality": {
   "id": "crb:shikigami/shikigami/totality",
-  "duration": 21,
+  "start": 21,
   "cues": 8,
   "key": "move"
  },
  "shikigami/shikigami1": {
   "id": "crb:shikigami/shikigami1",
-  "duration": 40,
-  "cues": 5,
+  "start": 40,
+  "cues": 10,
   "key": "move"
  },
  "shikigami/shikigami10": {
   "id": "crb:shikigami/shikigami10",
-  "duration": 40,
-  "cues": 5,
+  "start": 40,
+  "cues": 16,
   "key": "move"
  },
  "shikigami/shikigami10_fight": {
   "id": "crb:shikigami/shikigami10_fight",
-  "duration": 706,
+  "start": 706,
   "cues": 26,
   "key": "move"
  },
  "shikigami/shikigami10b": {
   "id": "crb:shikigami/shikigami10b",
-  "duration": 41,
+  "start": 41,
   "cues": 11,
   "key": "move"
  },
  "shikigami/shikigami11": {
   "id": "crb:shikigami/shikigami11",
-  "duration": 41,
-  "cues": 5,
+  "start": 41,
+  "cues": 16,
   "key": "move"
  },
  "shikigami/shikigami12": {
   "id": "crb:shikigami/shikigami12",
-  "duration": 102,
-  "cues": 8,
+  "start": 102,
+  "cues": 15,
   "key": "domainstart"
  },
  "shikigami/shikigami12b": {
   "id": "crb:shikigami/shikigami12b",
-  "duration": 102,
-  "cues": 8,
+  "start": 102,
+  "cues": 15,
   "key": "domainstart"
  },
  "shikigami/shikigami1_fight": {
   "id": "crb:shikigami/shikigami1_fight",
-  "duration": 40,
-  "cues": 4,
+  "start": 40,
+  "cues": 9,
   "key": "move"
  },
  "shikigami/shikigami2": {
   "id": "crb:shikigami/shikigami2",
-  "duration": 40,
-  "cues": 5,
+  "start": 40,
+  "cues": 11,
   "key": "move"
  },
  "shikigami/shikigami2_fight": {
   "id": "crb:shikigami/shikigami2_fight",
-  "duration": 40,
-  "cues": 4,
+  "start": 40,
+  "cues": 10,
   "key": "move"
  },
  "shikigami/shikigami2b": {
   "id": "crb:shikigami/shikigami2b",
-  "duration": 22,
-  "cues": 2,
+  "start": 22,
+  "cues": 4,
   "key": "move"
  },
  "shikigami/shikigami3": {
   "id": "crb:shikigami/shikigami3",
-  "duration": 40,
-  "cues": 5,
+  "start": 40,
+  "cues": 11,
   "key": "move"
  },
  "shikigami/shikigami3_fight": {
   "id": "crb:shikigami/shikigami3_fight",
-  "duration": 40,
-  "cues": 4,
+  "start": 40,
+  "cues": 10,
   "key": "move"
  },
  "shikigami/shikigami4": {
   "id": "crb:shikigami/shikigami4",
-  "duration": 21,
+  "start": 21,
   "cues": 4,
   "key": "move"
  },
  "shikigami/shikigami4_fight": {
   "id": "crb:shikigami/shikigami4_fight",
-  "duration": 41,
-  "cues": 4,
+  "start": 41,
+  "cues": 10,
   "key": "move"
  },
  "shikigami/shikigami4b": {
   "id": "crb:shikigami/shikigami4b",
-  "duration": 21,
+  "start": 21,
   "cues": 4,
   "key": "move"
  },
  "shikigami/shikigami5": {
   "id": "crb:shikigami/shikigami5",
-  "duration": 40,
-  "cues": 5,
+  "start": 40,
+  "cues": 11,
   "key": "move"
  },
  "shikigami/shikigami5_fight": {
   "id": "crb:shikigami/shikigami5_fight",
-  "duration": 41,
-  "cues": 4,
+  "start": 41,
+  "cues": 10,
   "key": "move"
  },
  "shikigami/shikigami5b": {
   "id": "crb:shikigami/shikigami5b",
-  "duration": 21,
+  "start": 21,
   "cues": 1,
   "key": "move"
  },
  "shikigami/shikigami6": {
   "id": "crb:shikigami/shikigami6",
-  "duration": 31,
+  "start": 31,
   "cues": 2,
   "key": "move"
  },
  "shikigami/shikigami6_fight": {
   "id": "crb:shikigami/shikigami6_fight",
-  "duration": 40,
-  "cues": 4,
+  "start": 40,
+  "cues": 9,
   "key": "move"
  },
  "shikigami/shikigami7": {
   "id": "crb:shikigami/shikigami7",
-  "duration": 40,
-  "cues": 5,
+  "start": 40,
+  "cues": 11,
   "key": "move"
  },
  "shikigami/shikigami7_fight": {
   "id": "crb:shikigami/shikigami7_fight",
-  "duration": 40,
-  "cues": 4,
+  "start": 40,
+  "cues": 9,
   "key": "move"
  },
  "shikigami/shikigami7b": {
   "id": "crb:shikigami/shikigami7b",
-  "duration": 41,
+  "start": 41,
   "cues": 4,
   "key": "move"
  },
  "shikigami/shikigami7c": {
   "id": "crb:shikigami/shikigami7c",
-  "duration": 40,
+  "start": 40,
   "cues": 1,
   "key": "move"
  },
  "shikigami/shikigami8": {
   "id": "crb:shikigami/shikigami8",
-  "duration": 40,
-  "cues": 5,
+  "start": 40,
+  "cues": 11,
   "key": "move"
  },
  "shikigami/shikigami8_fight": {
   "id": "crb:shikigami/shikigami8_fight",
-  "duration": 40,
-  "cues": 4,
+  "start": 40,
+  "cues": 9,
   "key": "move"
  },
  "small_cts/painkiller_other": {
   "id": "crb:small_cts/painkiller_other",
-  "duration": 21,
-  "cues": 6,
+  "start": 18,
+  "cues": 21,
   "key": "move"
  },
  "small_cts/painkiller_self": {
   "id": "crb:small_cts/painkiller_self",
-  "duration": 21,
-  "cues": 6,
-  "key": "move"
- },
- "small_cts/sight": {
-  "id": "crb:small_cts/sight",
-  "duration": 1,
-  "cues": 2,
+  "start": 18,
+  "cues": 21,
   "key": "move"
  },
  "speech/ab1": {
   "id": "crb:speech/ab1",
-  "duration": 32,
-  "cues": 10,
+  "start": 2,
+  "cues": 13,
   "key": "move"
  },
  "speech/ab10": {
   "id": "crb:speech/ab10",
-  "duration": 72,
+  "start": 2,
   "cues": 14,
   "key": "move"
  },
  "speech/ab11": {
   "id": "crb:speech/ab11",
-  "duration": 57,
+  "start": 57,
   "cues": 13,
   "key": "move"
  },
  "speech/ab2": {
   "id": "crb:speech/ab2",
-  "duration": 32,
+  "start": 2,
   "cues": 10,
   "key": "move"
  },
  "speech/ab3": {
   "id": "crb:speech/ab3",
-  "duration": 32,
+  "start": 2,
   "cues": 9,
   "key": "move"
  },
  "speech/ab4": {
   "id": "crb:speech/ab4",
-  "duration": 52,
+  "start": 2,
   "cues": 9,
   "key": "move"
  },
  "speech/ab5": {
   "id": "crb:speech/ab5",
-  "duration": 72,
+  "start": 2,
   "cues": 12,
   "key": "move"
  },
  "speech/ab6": {
   "id": "crb:speech/ab6",
-  "duration": 27,
-  "cues": 9,
+  "start": 2,
+  "cues": 12,
   "key": "move"
  },
  "speech/ab7": {
   "id": "crb:speech/ab7",
-  "duration": 52,
-  "cues": 10,
+  "start": 2,
+  "cues": 14,
   "key": "move"
  },
  "speech/ab8": {
   "id": "crb:speech/ab8",
-  "duration": 27,
-  "cues": 10,
+  "start": 2,
+  "cues": 13,
   "key": "move"
  },
  "speech/ab9": {
   "id": "crb:speech/ab9",
-  "duration": 72,
+  "start": 2,
   "cues": 10,
   "key": "move"
  },
  "speech/speech_domain": {
   "id": "crb:speech/speech_domain",
-  "duration": 201,
+  "start": 201,
   "cues": 13,
   "key": "domain"
  },
  "speech/speech_domain_start": {
   "id": "crb:speech/speech_domain_start",
-  "duration": 962,
-  "cues": 15,
+  "start": 1000,
+  "cues": 16,
   "key": "domainstart"
  },
  "sukuna/15fingers_cutscene": {
   "id": "crb:sukuna/15fingers_cutscene",
-  "duration": 1001,
-  "cues": 50,
+  "start": 1001,
+  "cues": 51,
   "key": "sukunacutscene"
  },
  "sukuna/attacks/basic_combat/demonic_blitz": {
   "id": "crb:sukuna/attacks/basic_combat/demonic_blitz",
-  "duration": 2002,
-  "cues": 78,
+  "start": 2001,
+  "cues": 115,
   "key": "move"
  },
  "sukuna/attacks/basic_combat/demonic_blows": {
   "id": "crb:sukuna/attacks/basic_combat/demonic_blows",
-  "duration": 131,
-  "cues": 31,
+  "start": 131,
+  "cues": 32,
   "key": "move"
  },
  "sukuna/attacks/basic_combat/hellish_descent": {
   "id": "crb:sukuna/attacks/basic_combat/hellish_descent",
-  "duration": 31,
+  "start": 31,
   "cues": 29,
   "key": "move"
  },
  "sukuna/attacks/basic_combat/open_space": {
   "id": "crb:sukuna/attacks/basic_combat/open_space",
-  "duration": 131,
-  "cues": 29,
+  "start": 131,
+  "cues": 31,
   "key": "move"
  },
  "sukuna/attacks/basic_combat/step": {
   "id": "crb:sukuna/attacks/basic_combat/step",
-  "duration": 51,
+  "start": 51,
   "cues": 21,
   "key": "move"
  },
  "sukuna/attacks/basic_combat/takedown": {
   "id": "crb:sukuna/attacks/basic_combat/takedown",
-  "duration": 71,
+  "start": 71,
   "cues": 31,
   "key": "move"
  },
  "sukuna/attacks/cleave_combat/carve": {
   "id": "crb:sukuna/attacks/cleave_combat/carve",
-  "duration": 19,
-  "cues": 26,
+  "start": 19,
+  "cues": 27,
   "key": "move"
  },
  "sukuna/attacks/cleave_combat/cleave_combo": {
   "id": "crb:sukuna/attacks/cleave_combat/cleave_combo",
-  "duration": 1002,
-  "cues": 98,
+  "start": 1001,
+  "cues": 124,
   "key": "move"
  },
  "sukuna/attacks/cleave_combat/dual_cleave": {
   "id": "crb:sukuna/attacks/cleave_combat/dual_cleave",
-  "duration": 26,
-  "cues": 12,
+  "start": 26,
+  "cues": 14,
   "key": "move"
  },
  "sukuna/attacks/cleave_combat/rapid_cleaves": {
   "id": "crb:sukuna/attacks/cleave_combat/rapid_cleaves",
-  "duration": 56,
-  "cues": 27,
+  "start": 56,
+  "cues": 34,
   "key": "move"
  },
  "sukuna/attacks/cleave_combat/rushing_cleave": {
   "id": "crb:sukuna/attacks/cleave_combat/rushing_cleave",
-  "duration": 26,
+  "start": 26,
   "cues": 12,
   "key": "move"
  },
  "sukuna/attacks/cleaves/carving_combo": {
   "id": "crb:sukuna/attacks/cleaves/carving_combo",
-  "duration": 191,
-  "cues": 79,
+  "start": 191,
+  "cues": 91,
   "key": "move"
  },
  "sukuna/attacks/cleaves/cleave": {
   "id": "crb:sukuna/attacks/cleaves/cleave",
-  "duration": 11,
+  "start": 11,
   "cues": 14,
   "key": "move"
  },
  "sukuna/attacks/cleaves/cleave_counter": {
   "id": "crb:sukuna/attacks/cleaves/cleave_counter",
-  "duration": 16,
-  "cues": 10,
+  "start": 16,
+  "cues": 16,
   "key": "move"
  },
  "sukuna/attacks/cleaves/layered_cleave": {
   "id": "crb:sukuna/attacks/cleaves/layered_cleave",
-  "duration": 26,
-  "cues": 7,
+  "start": 26,
+  "cues": 10,
   "key": "move"
  },
  "sukuna/attacks/cleaves/maximum_output_charge": {
   "id": "crb:sukuna/attacks/cleaves/maximum_output_charge",
-  "duration": 5531,
-  "cues": 210,
+  "start": 5531,
+  "cues": 223,
   "key": "move"
  },
  "sukuna/attacks/cleaves/spiderweb": {
   "id": "crb:sukuna/attacks/cleaves/spiderweb",
-  "duration": 41,
+  "start": 41,
   "cues": 22,
   "key": "move"
  },
  "sukuna/attacks/dismantles/ab1": {
   "id": "crb:sukuna/attacks/dismantles/ab1",
-  "duration": 11,
+  "start": 6,
   "cues": 7,
   "key": "move"
  },
  "sukuna/attacks/dismantles/ab1b": {
   "id": "crb:sukuna/attacks/dismantles/ab1b",
-  "duration": 66,
-  "cues": 10,
+  "start": 61,
+  "cues": 11,
   "key": "move"
  },
  "sukuna/attacks/dismantles/ab1c": {
   "id": "crb:sukuna/attacks/dismantles/ab1c",
-  "duration": 4,
+  "start": 4,
   "cues": 3,
   "key": "move"
  },
  "sukuna/attacks/dismantles/ab1d": {
   "id": "crb:sukuna/attacks/dismantles/ab1d",
-  "duration": 36,
-  "cues": 17,
+  "start": 36,
+  "cues": 18,
   "key": "move"
  },
  "sukuna/attacks/dismantles/ab1e": {
   "id": "crb:sukuna/attacks/dismantles/ab1e",
-  "duration": 41,
+  "start": 40,
   "cues": 17,
   "key": "move"
  },
  "sukuna/attacks/dismantles/ab2": {
   "id": "crb:sukuna/attacks/dismantles/ab2",
-  "duration": 31,
+  "start": 29,
   "cues": 13,
   "key": "move"
  },
  "sukuna/attacks/dismantles/ab2b": {
   "id": "crb:sukuna/attacks/dismantles/ab2b",
-  "duration": 13,
-  "cues": 7,
+  "start": 11,
+  "cues": 8,
   "key": "move"
  },
  "sukuna/attacks/dismantles/ab2c": {
   "id": "crb:sukuna/attacks/dismantles/ab2c",
-  "duration": 1002,
-  "cues": 56,
+  "start": 3,
+  "cues": 61,
   "key": "move"
  },
  "sukuna/attacks/dismantles/ab2d": {
   "id": "crb:sukuna/attacks/dismantles/ab2d",
-  "duration": 31,
-  "cues": 15,
+  "start": 29,
+  "cues": 16,
   "key": "move"
  },
  "sukuna/attacks/dismantles/ab2e": {
   "id": "crb:sukuna/attacks/dismantles/ab2e",
-  "duration": 66,
+  "start": 65,
   "cues": 18,
   "key": "move"
  },
  "sukuna/attacks/dismantles/maximum_output_charge": {
   "id": "crb:sukuna/attacks/dismantles/maximum_output_charge",
-  "duration": 1001,
-  "cues": 68,
+  "start": 1001,
+  "cues": 70,
   "key": "move"
  },
  "sukuna/attacks/domains/incomplete/cutscene": {
   "id": "crb:sukuna/attacks/domains/incomplete/cutscene",
-  "duration": 281,
-  "cues": 16,
+  "start": 281,
+  "cues": 42,
   "key": "domain"
  },
  "sukuna/attacks/domains/incomplete/start": {
   "id": "crb:sukuna/attacks/domains/incomplete/start",
-  "duration": 962,
-  "cues": 19,
+  "start": 1000,
+  "cues": 20,
   "key": "domainstart"
  },
  "sukuna/attacks/domains/kitchen/cutscene": {
   "id": "crb:sukuna/attacks/domains/kitchen/cutscene",
-  "duration": 221,
-  "cues": 28,
+  "start": 221,
+  "cues": 65,
   "key": "domain"
  },
  "sukuna/attacks/domains/kitchen/start": {
   "id": "crb:sukuna/attacks/domains/kitchen/start",
-  "duration": 962,
-  "cues": 19,
+  "start": 1000,
+  "cues": 20,
   "key": "domainstart"
  },
  "sukuna/attacks/domains/mahoraga_shrine_cutscene": {
   "id": "crb:sukuna/attacks/domains/mahoraga_shrine_cutscene",
-  "duration": 871,
-  "cues": 4,
+  "start": 51,
+  "cues": 17,
   "key": "sukunacutscene"
  },
  "sukuna/attacks/domains/shrine/cutscene": {
   "id": "crb:sukuna/attacks/domains/shrine/cutscene",
-  "duration": 221,
-  "cues": 52,
+  "start": 221,
+  "cues": 53,
   "key": "domain"
  },
  "sukuna/attacks/domains/shrine/start": {
   "id": "crb:sukuna/attacks/domains/shrine/start",
-  "duration": 962,
-  "cues": 14,
+  "start": 1000,
+  "cues": 15,
   "key": "domainstart"
  },
  "sukuna/attacks/four_combat/demonic_leap": {
   "id": "crb:sukuna/attacks/four_combat/demonic_leap",
-  "duration": 52,
-  "cues": 40,
+  "start": 23,
+  "cues": 41,
   "key": "move"
  },
  "sukuna/attacks/four_combat/double_impact": {
   "id": "crb:sukuna/attacks/four_combat/double_impact",
-  "duration": 36,
-  "cues": 30,
+  "start": 36,
+  "cues": 34,
   "key": "move"
  },
  "sukuna/attacks/four_combat/forced_roles": {
   "id": "crb:sukuna/attacks/four_combat/forced_roles",
-  "duration": 10002,
-  "cues": 166,
+  "start": 10001,
+  "cues": 175,
   "key": "move"
  },
  "sukuna/attacks/four_combat/obliterate": {
   "id": "crb:sukuna/attacks/four_combat/obliterate",
-  "duration": 1002,
-  "cues": 24,
+  "start": 1001,
+  "cues": 40,
   "key": "move"
  },
  "sukuna/attacks/four_combat/overwhelming_power": {
   "id": "crb:sukuna/attacks/four_combat/overwhelming_power",
-  "duration": 115,
-  "cues": 76,
+  "start": 115,
+  "cues": 108,
   "key": "move"
  },
  "sukuna/attacks/fuga/divine_flames": {
   "id": "crb:sukuna/attacks/fuga/divine_flames",
-  "duration": 7002,
-  "cues": 240,
+  "start": 7001,
+  "cues": 269,
   "key": "move"
  },
  "sukuna/attacks/worldslash/chant": {
   "id": "crb:sukuna/attacks/worldslash/chant",
-  "duration": 22,
+  "start": 21,
   "cues": 14,
   "key": "move"
  },
  "sukuna/attacks/worldslash/wcs1": {
   "id": "crb:sukuna/attacks/worldslash/wcs1",
-  "duration": 31,
-  "cues": 14,
+  "start": 31,
+  "cues": 15,
   "key": "move"
  },
  "sukuna/attacks/worldslash/world_slash1": {
   "id": "crb:sukuna/attacks/worldslash/world_slash1",
-  "duration": 137,
-  "cues": 78,
+  "start": 137,
+  "cues": 95,
   "key": "move"
  },
  "sukuna/attacks/worldslash/world_slash2": {
   "id": "crb:sukuna/attacks/worldslash/world_slash2",
-  "duration": 1002,
-  "cues": 90,
+  "start": 982,
+  "cues": 156,
   "key": "move"
  },
  "sukuna/finger_eaten": {
   "id": "crb:sukuna/finger_eaten",
-  "duration": 141,
+  "start": 105,
   "cues": 9,
   "key": "sukunacutscene"
  },
  "sukuna/finger_eaten2": {
   "id": "crb:sukuna/finger_eaten2",
-  "duration": 21,
+  "start": 16,
   "cues": 9,
   "key": "sukunacutscene"
  },
  "sukuna/finger_rejected": {
   "id": "crb:sukuna/finger_rejected",
-  "duration": 121,
+  "start": 121,
   "cues": 7,
   "key": "sukunacutscene"
  },
  "sukuna/heian_awakening": {
   "id": "crb:sukuna/heian_awakening",
-  "duration": 10000,
-  "cues": 64,
+  "start": 8,
+  "cues": 75,
   "key": "sukunacutscene"
  },
  "sukuna/meguna_cutscene": {
   "id": "crb:sukuna/meguna_cutscene",
-  "duration": 10001,
-  "cues": 181,
+  "start": 9999,
+  "cues": 197,
   "key": "sukunacutscene"
  },
  "sukuna/sukuna_awake": {
   "id": "crb:sukuna/sukuna_awake",
-  "duration": 1001,
-  "cues": 51,
+  "start": 1001,
+  "cues": 52,
   "key": "sukunacutscene"
  },
  "sukuna/sukuna_mode": {
   "id": "crb:sukuna/sukuna_mode",
-  "duration": 91,
+  "start": 90,
   "cues": 17,
   "key": "sukunacutscene"
  },
  "sukuna/sukuna_mode2": {
   "id": "crb:sukuna/sukuna_mode2",
-  "duration": 51,
+  "start": 51,
   "cues": 11,
   "key": "sukunacutscene"
  },
  "sukuna/wcs_death_cutscene": {
   "id": "crb:sukuna/wcs_death_cutscene",
-  "duration": 142,
+  "start": 142,
   "cues": 13,
   "key": "sukunacutscene"
  },
  "yuji/brutal_quake": {
   "id": "crb:yuji/brutal_quake",
-  "duration": 87,
-  "cues": 114,
+  "start": 87,
+  "cues": 117,
   "key": "move"
  },
  "yuji/deadly_pursuit": {
   "id": "crb:yuji/deadly_pursuit",
-  "duration": 10002,
-  "cues": 104,
+  "start": 10001,
+  "cues": 149,
   "key": "move"
  },
  "yuji/fierce_strikes": {
   "id": "crb:yuji/fierce_strikes",
-  "duration": 1001,
-  "cues": 110,
+  "start": 1001,
+  "cues": 113,
   "key": "move"
  },
  "yuji/final_flash": {
   "id": "crb:yuji/final_flash",
-  "duration": 992,
-  "cues": 132,
+  "start": 1002,
+  "cues": 133,
   "key": "move"
  },
  "yuji/soul_ab1": {
   "id": "crb:yuji/soul_ab1",
-  "duration": 102,
-  "cues": 13,
+  "start": 101,
+  "cues": 30,
   "key": "move"
  },
  "yuji/soul_ab2": {
   "id": "crb:yuji/soul_ab2",
-  "duration": 1001,
-  "cues": 31,
+  "start": 1001,
+  "cues": 42,
   "key": "move"
  },
  "yuji/soul_ab3": {
   "id": "crb:yuji/soul_ab3",
-  "duration": 1002,
-  "cues": 52,
+  "start": 1001,
+  "cues": 56,
   "key": "move"
  },
  "yuji/soul_ab4": {
   "id": "crb:yuji/soul_ab4",
-  "duration": 37,
+  "start": 36,
   "cues": 18,
   "key": "move"
  },
  "yuji/soul_ab5": {
   "id": "crb:yuji/soul_ab5",
-  "duration": 1001,
-  "cues": 94,
+  "start": 1001,
+  "cues": 96,
   "key": "move"
  },
  "yuji/twinkicks": {
   "id": "crb:yuji/twinkicks",
-  "duration": 1001,
-  "cues": 44,
+  "start": 1001,
+  "cues": 55,
   "key": "move"
  },
  "yuji/vengeance_fists": {
   "id": "crb:yuji/vengeance_fists",
-  "duration": 10002,
-  "cues": 196,
+  "start": 10001,
+  "cues": 203,
   "key": "move"
  },
  "yuji/yuji_domain": {
   "id": "crb:yuji/yuji_domain",
-  "duration": 201,
-  "cues": 18,
+  "start": 201,
+  "cues": 19,
   "key": "domain"
  },
  "yuji/yuji_domain_start": {
   "id": "crb:yuji/yuji_domain_start",
-  "duration": 962,
-  "cues": 14,
+  "start": 1000,
+  "cues": 15,
   "key": "domainstart"
  }
 }

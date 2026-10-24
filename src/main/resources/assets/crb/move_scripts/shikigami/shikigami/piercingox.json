@@ -1,1 +1,1 @@
-{"source":"shikigami/shikigami/piercingox","key":"move","duration":41,"cues":[{"t":1,"until":1,"type":"anim","anim":"animation.ox.charge","target":"self","cond":["score:chance=1"]}]}
+{"source":"shikigami/shikigami/piercingox","key":"move","start":41,"cues":[{"lo":40,"hi":40,"type":"anim","anim":"animation.ox.charge","target":"self","cond":["score:chance=1"]}]}

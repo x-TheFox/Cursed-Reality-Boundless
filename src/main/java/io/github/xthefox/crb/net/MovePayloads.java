@@ -17,17 +17,17 @@ public final class MovePayloads {
     private MovePayloads() {}
 
     /**
-     * Server → trackers: a move started (or is in progress, for late joiners: {@code elapsed > 0}).
-     * Clients play the move script from {@code elapsed}.
+     * Server → trackers: a move started (or is in progress, for late joiners). Clients play the
+     * script from countdown value {@code counter}; {@code start} is its first value.
      */
-    public record Start(int entityId, ResourceLocation moveId, int elapsed, int duration, long seed,
+    public record Start(int entityId, ResourceLocation moveId, int counter, int start, long seed,
                         List<String> tags, Map<String, Integer> scores) implements CustomPacketPayload {
         public static final Type<Start> TYPE = new Type<>(CRB.id("move_start"));
         public static final StreamCodec<FriendlyByteBuf, Start> STREAM_CODEC = StreamCodec.of((buf, p) -> {
             buf.writeVarInt(p.entityId);
             buf.writeResourceLocation(p.moveId);
-            buf.writeVarInt(p.elapsed);
-            buf.writeVarInt(p.duration);
+            buf.writeVarInt(p.counter);
+            buf.writeVarInt(p.start);
             buf.writeLong(p.seed);
             buf.writeCollection(p.tags, FriendlyByteBuf::writeUtf);
             buf.writeMap(p.scores, FriendlyByteBuf::writeUtf, FriendlyByteBuf::writeVarInt);
@@ -52,14 +52,16 @@ public final class MovePayloads {
     }
 
     /** Server → trackers: cue-condition state changed mid-move (e.g. a hit landed → {@code tag=blackflashed}). */
-    public record State(int entityId, List<String> tags, Map<String, Integer> scores) implements CustomPacketPayload {
+    /** Server → trackers: a move's tags/scores changed, or its countdown jumped ({@code counter} is processed next). */
+    public record State(int entityId, List<String> tags, Map<String, Integer> scores, int counter) implements CustomPacketPayload {
         public static final Type<State> TYPE = new Type<>(CRB.id("move_state"));
         public static final StreamCodec<FriendlyByteBuf, State> STREAM_CODEC = StreamCodec.of((buf, p) -> {
             buf.writeVarInt(p.entityId);
             buf.writeCollection(p.tags, FriendlyByteBuf::writeUtf);
             buf.writeMap(p.scores, FriendlyByteBuf::writeUtf, FriendlyByteBuf::writeVarInt);
+            buf.writeVarInt(p.counter);
         }, buf -> new State(buf.readVarInt(), buf.readList(FriendlyByteBuf::readUtf),
-                buf.readMap(HashMap::new, FriendlyByteBuf::readUtf, FriendlyByteBuf::readVarInt)));
+                buf.readMap(HashMap::new, FriendlyByteBuf::readUtf, FriendlyByteBuf::readVarInt), buf.readVarInt()));
 
         @Override
         public Type<? extends CustomPacketPayload> type() { return TYPE; }

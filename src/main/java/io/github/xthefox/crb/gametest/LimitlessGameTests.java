@@ -144,4 +144,36 @@ public final class LimitlessGameTests {
             h.succeed();
         });
     }
+
+    @GameTest(template = "empty5", timeoutTicks = 120, batch = "limitless6")
+    public static void enchantedRedHoldsThenLaunchesOnASecondPress(GameTestHelper h) {
+        noGriefing(h);
+        ServerPlayer p = gojo(h);
+        MoveEngine.start(p, CRB.id("limitless/limitless3e"), 66);
+        // no press: the charge counts down to 5 and holds there (JJA `move=3..5 -> set move 5`)
+        h.runAfterDelay(70, () -> {
+            var m = MoveEngine.active(p).orElseThrow(() -> new AssertionError("the charge should still be held"));
+            h.assertTrue(m.counter() >= 4 && m.counter() <= 5, "held at 5 (counter " + m.counter() + ")");
+            m.input("input"); // second press: max chant -> the 1001 segment
+        });
+        h.runAfterDelay(72, () -> {
+            int c = MoveEngine.active(p).map(io.github.xthefox.crb.move.MoveInstance::counter).orElse(-1);
+            h.assertTrue(c > 990 && c <= 1000, "the press jumps to the launch segment (counter " + c + ")");
+            MoveEngine.end(p, MoveLogic.EndReason.CANCELLED);
+            h.succeed();
+        });
+    }
+
+    @GameTest(template = "empty5", timeoutTicks = 60, batch = "limitless7")
+    public static void enchantedRedEarlyPressFiresPhaseRed(GameTestHelper h) {
+        noGriefing(h);
+        ServerPlayer p = gojo(h);
+        MoveEngine.start(p, CRB.id("limitless/limitless3e"), 66);
+        h.runAfterDelay(15, () -> MoveEngine.active(p).orElseThrow().input("input")); // counter ~51: Phase Red
+        h.succeedWhen(() -> {
+            h.assertFalse(projectiles(h, "phasered", p.position()).isEmpty(), "Phase Red is fired");
+            projectiles(h, "phasered", p.position()).forEach(TechniqueProjectile::discard);
+            MoveEngine.end(p, MoveLogic.EndReason.CANCELLED);
+        });
+    }
 }

@@ -42,7 +42,8 @@ IGNORED_SCORE_CONDS = {"Stun=0", "Disabled=0", "Disabled2=0", "nocts=0"}
 IGNORED_TAG_CONDS = {"tag=!impactframesoff", "tag=!arenaboss"}
 
 STATS = Counter()
-SIM_TYPES = {"hit", "stun", "impulse", "hover", "self_move", "move_toward", "proj_tp", "summon", "shoot", "proj_deleter", "proj_kill", "self_deleter", "carve"}
+SIM_TYPES = {"hit", "stun", "impulse", "hover", "self_move", "move_toward", "proj_tp", "summon", "shoot", "proj_deleter",
+             "proj_kill", "self_deleter", "carve", "counter", "lock", "hold"}
 
 
 # ---------------------------------------------------------------------------------------------
@@ -169,6 +170,8 @@ class Context:
         self.facing = None
         self.runner = False        # extracting a projectile's own tick function
         self.victims = None        # `as @e[r=R,...]` from the caster: who a later `damage @s` hits
+        self.pending_anchor = None # `as @e[...]`: becomes the position anchor at the next `at @s`
+        self.anchor = None         # presentation runs at another entity (projectile, victim)
 
 
 def _intersect(a, b):
@@ -246,9 +249,16 @@ def audience_filters(tok: str):
 
 
 def parse_command(toks: list[str], ctx: Context, key: str):
-    """Returns a cue dict (without t/until) or None."""
+    """Returns a cue dict (without lo/hi) or None."""
     if not toks:
         return None
+    if (not ctx.runner and toks[0] == "scoreboard" and len(toks) >= 6 and toks[1] == "players"
+            and toks[2] in ("set", "add", "remove") and toks[3].startswith("@s") and toks[4] == key):
+        try:
+            # JJA moves jump their own countdown: holds, re-press launches, early exits
+            return {"type": "counter", "op": toks[2], "value": int(toks[5]), "at": list(ctx.pos)}
+        except ValueError:
+            return None
     cue = _parse_command(toks, ctx, key)
     if cue is None:
         cue = _parse_sim(toks, ctx)
@@ -296,6 +306,13 @@ def _parse_sim(toks: list[str], ctx: Context):
         except ValueError:
             return None
         return {"type": "hit", "amount": amount, "radius": r, "at": list(ctx.pos)}
+    if cmd == "scoreboard" and len(toks) >= 6 and toks[1] == "players" and toks[2] == "set" and toks[4] in ("Move", "Camera") \
+            and toks[3].startswith("@s"):
+        try:
+            # JJA: inputpermission movement/camera disabled while the score is 3+
+            return {"type": "lock", "what": toks[4].lower(), "ticks": int(toks[5])}
+        except ValueError:
+            return None
     if cmd == "scoreboard" and len(toks) >= 6 and toks[1] == "players" and toks[2] == "set" and toks[4] == "Deleter" \
             and toks[3].startswith("@s"):
         try:
@@ -355,12 +372,16 @@ def _parse_sim(toks: list[str], ctx: Context):
         if ev == "ds:downfall":
             return {"type": "impulse", "forward": 0, "up": -1.5}
         return None
-    if cmd == "tp" and len(toks) in (3, 4) and toks[1].startswith("@s"):
+    if cmd == "tp" and len(toks) >= 3 and toks[1].startswith("@s") and toks[2].startswith("@s") and not ctx.runner:
+        return {"type": "hold"}  # `tp @s @s`: pinned in place
+    if cmd == "tp" and len(toks) >= 3 and toks[1].startswith("@s") and (len(toks) <= 4 or toks[3] in ("facing", "true", "false")):
         k, xyz, j = split_coords(toks, 2)
         if k == "local" and any(abs(v) > 1e-6 for v in xyz):
             return {"type": "self_move", "local": xyz}
-        if k == "rel" and ctx.runner and any(abs(v) > 1e-6 for v in xyz):
+        if k == "rel" and any(abs(v) > 1e-6 for v in xyz):
             return {"type": "self_move", "rel": xyz}
+        if k == "rel" and not ctx.runner:
+            return {"type": "hold"}  # `tp @s ~~~` every tick: no falling, no drifting
     if cmd == "tp" and len(toks) >= 5 and toks[1].startswith("@s") and toks[3] == "facing" and toks[4].startswith("@e"):
         # tp @s ^^^0.111 facing @e[name=ImagineTRG,...]: step toward a named projectile
         k, xyz, j = split_coords(toks, 2)
@@ -424,6 +445,54 @@ def victim_command(toks: list[str], ctx: Context):
         except ValueError:
             return None
     return None
+
+
+ANCHORABLE = {"particle", "sound", "shake"}
+
+
+def anchor_of(tok: str):
+    """Where presentation runs when JJA executes it at another entity."""
+    kind, args = parse_selector(tok)
+    if args is None:
+        return {"near": 16, "c": 1}
+    name = next((o[5:].strip('"') for o in args["other"] if o.startswith("name=") and not o.startswith("name=!")), None)
+    typ = next((o[5:] for o in args["other"] if o.startswith("type=") and not o.startswith("type=!")), None)
+    if name and "ds:projectile" in tok:
+        return {"projectile": name}
+    if name:
+        return {"name": name}
+    if typ:
+        return {"entity_type": typ, "near": args["r"] or 64}
+    c = next((int(o[2:]) for o in args["other"] if re.fullmatch(r"c=\d+", o)), None)
+    out = {"near": args["r"] if args["r"] is not None else 16}
+    if c:
+        out["c"] = c
+    if kind in ("a", "p"):
+        out["players"] = True
+    return out
+
+
+def input_cond(c: str):
+    """JJA reads a second press of the ability item (`tag=itemUse:ds:limitless3`) or a punch."""
+    if c.startswith("tag=itemUse:"):
+        return "tag=input"
+    if c.startswith("score:punch="):
+        return "tag=input:punch"
+    if c.startswith("score:scroll="):
+        return "tag=input"
+    return c
+
+
+def demote_fact(c: str):
+    if c.startswith("w:near="):
+        return "if:entity"
+    if c.startswith("w:far="):
+        return "unless:entity"
+    if c == "w:solid":
+        return "unless:block"
+    if c == "w:air":
+        return "if:block"
+    return c
 
 
 def world_fact(w: str, args: list[str]):
@@ -613,14 +682,19 @@ def _parse_command(toks: list[str], ctx: Context, key: str):
     if cmd == "effect" and len(toks) >= 3:
         audience = scope_of(toks[1])
         eff = toks[2].replace("minecraft:", "")
-        if audience and not audience.startswith("other") and eff in ("night_vision", "blindness", "darkness", "slowness", "levitation"):
+        if audience and not audience.startswith("other") and eff in (
+                "night_vision", "blindness", "darkness", "slowness", "levitation", "slow_falling", "jump_boost", "invisibility", "speed"):
             cue = {"type": "effect", "effect": eff, "audience": audience}
             nums = [x for x in toks[3:] if re.fullmatch(r"\d+", x)]
             if nums:
                 cue["seconds"] = int(nums[0])
+                if cue["seconds"] == 0:
+                    cue["clear"] = True  # Bedrock: a 0-second effect removes it
             if len(nums) > 1:
                 cue["amplifier"] = int(nums[1])
             return cue
+        if audience and not audience.startswith("other") and eff == "clear":
+            return {"type": "effect", "effect": "*", "clear": True, "audience": audience}
     return None
 
 
@@ -637,6 +711,9 @@ def parse_line(line: str, key: str, allow_ungated: bool = False, runner: bool = 
         while i < len(toks):
             w = toks[i]
             if w == "run":
+                if i + 1 < len(toks) and toks[i + 1] == "execute":
+                    i += 2  # `run execute ...`: the same chain continues
+                    continue
                 i += 1
                 break
             if w in ("as", "at") and i + 1 < len(toks):
@@ -644,9 +721,18 @@ def parse_line(line: str, key: str, allow_ungated: bool = False, runner: bool = 
                 if w == "as" and kind in ("e", "a") and args and args.get("r") is not None \
                         and ctx.self_ctx and ctx.victims is None:
                     ctx.victims = {"radius": args["r"], "at": list(ctx.pos), "cond": audience_filters(toks[i + 1])}
+                if kind not in (None, "s") and ctx.anchor is None:
+                    a = anchor_of(toks[i + 1])
+                    if w == "as":
+                        ctx.pending_anchor = a
+                    elif a is not None:
+                        ctx.anchor = a
+                        ctx.pos = []
                 absorb_selector(ctx, kind, args, key, w)
                 if w == "at" and kind == "s":
-                    ctx.pos = []  # re-anchored at the caster
+                    ctx.pos = []  # re-anchored at the caster (or at the `as` entity)
+                    if ctx.pending_anchor is not None and ctx.anchor is None:
+                        ctx.anchor = ctx.pending_anchor
                 i += 2
             elif w == "positioned" and i + 1 < len(toks):
                 if toks[i + 1] == "as":
@@ -666,7 +752,7 @@ def parse_line(line: str, key: str, allow_ungated: bool = False, runner: bool = 
                 i += 2
             elif w in ("if", "unless") and i + 1 < len(toks):
                 # conditions on world state: keep a marker, skip its arguments up to the next keyword
-                fact = world_fact(w, toks[i + 1:i + 5]) if runner else None
+                fact = world_fact(w, toks[i + 1:i + 5])
                 if fact != "":
                     ctx.cond.append(fact or f"{w}:{toks[i + 1]}")
                 i += 2
@@ -702,13 +788,19 @@ def parse_line(line: str, key: str, allow_ungated: bool = False, runner: bool = 
         STATS["skipped:" + cmd_toks[0]] += 1
         return None
     if not ctx.self_ctx:
-        STATS["skipped:other_context"] += 1
-        return None
+        if ctx.anchor is not None and cue["type"] in ANCHORABLE:
+            cue["anchor"] = ctx.anchor  # e.g. particles on a projectile or on the victim
+        else:
+            STATS["skipped:other_context"] += 1
+            return None
     if ctx.gate is None and not allow_ungated:
         STATS["skipped:ungated"] += 1
         return None
-    if ctx.cond:
-        cue["cond"] = sorted(set(ctx.cond))
+    cond = [input_cond(c) for c in ctx.cond]
+    if not runner and cue["type"] not in ("counter",):
+        cond = [demote_fact(c) for c in cond]  # world tests stay markers outside counter jumps
+    if cond:
+        cue["cond"] = sorted(set(cond))
     return ctx.gate, cue
 
 
@@ -739,14 +831,13 @@ def extract_runner(path: Path, names: set):
             continue
         gate, cue = r
         lo, hi = gate if gate else (None, None)
-        cue = {"t": UNBOUNDED_LO if lo is None else lo, "until": UNBOUNDED_HI if hi is None else hi, **cue}
+        cue = {"lo": UNBOUNDED_LO if lo is None else lo, "hi": UNBOUNDED_HI if hi is None else hi, **cue}
         if "cond" in cue:
             cue["cond"] = ["proj=" + c[5:] if c.startswith("name=") else c for c in cue["cond"]]
         cues.append(cue)
     if not cues:
         return None
-    cues.sort(key=lambda c: c["t"])
-    return {"source": rel, "duration": 0, "key": "Deleter", "mode": "remaining", "names": sorted(names), "cues": cues}
+    return {"source": rel, "start": 0, "key": "Deleter", "mode": "remaining", "names": sorted(names), "cues": cues}
 
 
 def dominant_key(text: str):
@@ -773,38 +864,32 @@ def known_durations():
 
 
 def extract(path: Path, durations: dict):
+    """Cues keyed on the countdown value itself: {"lo", "hi"} (inclusive), in file order."""
     text = path.read_text(encoding="utf-8", errors="ignore")
     key = dominant_key(text)
     if key is None:
         return None
     rel = str(path.relative_to(FN).with_suffix(""))
-    raw = []
-    hi = 0
+    cues = []
     for line in text.splitlines():
         r = parse_line(line, key)
         if r is None:
             continue
         (lo_v, hi_v), cue = r
-        top = hi_v if hi_v is not None else lo_v
-        if top is not None:
-            hi = max(hi, top)
-        raw.append((lo_v, hi_v, cue))
-    if not raw:
-        return None
-    duration = durations.get(rel) or hi + 1
-    cues = []
-    for lo_v, hi_v, cue in raw:
-        # value v runs at elapsed D - v; a range lo..hi covers elapsed D-hi .. D-lo
-        top = hi_v if hi_v is not None else duration
-        bottom = lo_v if lo_v is not None else 1
-        t0, t1 = duration - top, duration - bottom
-        if t1 < 0 or t1 < t0:
-            STATS["skipped:empty_gate"] += 1  # selectors with non-overlapping ranges never run in Bedrock
+        lo = 1 if lo_v is None else max(1, lo_v)  # the move function only runs while the key is 1+
+        hi = UNBOUNDED_HI if hi_v is None else hi_v
+        if hi < lo:
+            STATS["skipped:empty_gate"] += 1
             continue
-        cue = {"t": max(0, t0), "until": t1, **cue}
-        cues.append(cue)
-    cues.sort(key=lambda c: (c["t"], c["until"], c["type"]))
-    return {"source": rel, "key": key, "duration": duration, "cues": cues}
+        cues.append({"lo": lo, "hi": hi, **cue})
+    if not cues:
+        return None
+    start = durations.get(rel)
+    if not start:
+        jumps = [c["value"] for c in cues if c["type"] == "counter" and c["op"] == "set" and c["value"] > 0]
+        tops = [c["hi"] for c in cues if c["hi"] < UNBOUNDED_HI and (not jumps or c["hi"] < min(jumps))]
+        start = (max(tops) if tops else max(c["lo"] for c in cues)) + 1
+    return {"source": rel, "key": key, "start": start, "cues": cues}
 
 
 def main():
@@ -850,11 +935,12 @@ def main():
         dst = OUT / f"{safe}.json"
         dst.parent.mkdir(parents=True, exist_ok=True)
         sim = [c for c in script["cues"] if c["type"] in SIM_TYPES]
-        script["cues"] = [c for c in script["cues"] if c["type"] not in SIM_TYPES]
+        # clients follow unconditional counter jumps (holds, loops) themselves; the rest arrive from the server
+        script["cues"] = [c for c in script["cues"] if c["type"] not in SIM_TYPES or (c["type"] == "counter" and not c.get("cond"))]
         if sim:
             sim_index["crb:" + safe] = sim
         dst.write_text(json.dumps(script, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
-        index[rel] = {"id": f"crb:{safe}", "duration": script["duration"], "cues": len(script["cues"]), "key": script["key"]}
+        index[rel] = {"id": f"crb:{safe}", "start": script["start"], "cues": len(script["cues"]), "key": script["key"]}
         type_counts.update(c["type"] for c in script["cues"])
         type_counts.update(c["type"] for c in sim_index.get("crb:" + safe, []))
     (OUT.parent / "jja" / "move_scripts.json").write_text(json.dumps(dict(sorted(index.items())), indent=1), encoding="utf-8")
@@ -865,14 +951,14 @@ def main():
     effects = {}
     for path in sorted(OUT.rglob("*.json")):
         sc = json.loads(path.read_text(encoding="utf-8"))
-        ev = [{k: c[k] for k in ("t", "until", "effect", "seconds", "amplifier", "audience", "cond", "audience_cond") if k in c}
+        ev = [{k: c[k] for k in ("lo", "hi", "effect", "seconds", "amplifier", "clear", "audience", "cond", "audience_cond") if k in c}
               for c in sc["cues"] if c["type"] == "effect" and c.get("effect") != "night_vision"]
         if ev:
             effects["crb:" + str(path.relative_to(OUT).with_suffix(""))] = ev
     (REPO / "src" / "main" / "resources" / "data" / "crb" / "move_effects.json").write_text(
         json.dumps(dict(sorted(effects.items())), separators=(",", ":")), encoding="utf-8")
     # the server cannot read client assets; it needs durations for /crb move play and NPC moves
-    durations = {v["id"]: v["duration"] for v in index.values()}
+    durations = {v["id"]: v["start"] for v in index.values()}
     data = REPO / "src" / "main" / "resources" / "data" / "crb" / "move_durations.json"
     data.write_text(json.dumps(dict(sorted(durations.items())), indent=0), encoding="utf-8")
     print(f"move scripts: {len(index)}  cues: {sum(type_counts.values())}")
