@@ -71,7 +71,7 @@ public final class BedrockFX extends SimpleJsonResourceReloadListener {
 
     public static void register() {
         ClientMoves.registerHandler("particle", (m, cue, elapsed) -> {
-            Entity caster = ClientMoves.anchor(m);
+            Entity caster = ClientMoves.anchor(m, cue);
             if (caster == null) return;
             Vec3 at = CuePositions.resolve(cue.array("at"), caster.position(), caster.getEyeHeight(), caster.getYRot(), caster.getXRot());
             INSTANCE.spawn(cue.str("particle", ""), at, 0, null);

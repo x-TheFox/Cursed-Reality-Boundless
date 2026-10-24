@@ -41,8 +41,9 @@ public final class CombatState implements INBTSerializable<CompoundTag> {
     /** Applies a stun, keeping the longer of the current and new duration (JJA overwrites with the max). */
     public void stun(int ticks) { if (ticks > stun) { stun = ticks; dirty = true; } }
     public void iframes(int ticks) { if (ticks > iframes) { iframes = ticks; dirty = true; } }
-    public void lockMovement(int ticks) { if (ticks > moveLock) { moveLock = ticks; dirty = true; } }
-    public void lockCamera(int ticks) { if (ticks > cameraLock) { cameraLock = ticks; dirty = true; } }
+    /** Only the start of a lock is sent (its end is too, from {@link #tick()}); refreshing it each tick is silent. */
+    public void lockMovement(int ticks) { if (ticks > moveLock) { if (moveLock == 0) dirty = true; moveLock = ticks; } }
+    public void lockCamera(int ticks) { if (ticks > cameraLock) { if (cameraLock == 0) dirty = true; cameraLock = ticks; } }
     public void zone(int ticks) { if (ticks > zone) { zone = ticks; dirty = true; } }
 
     public void clearStun() { if (stun != 0) { stun = 0; dirty = true; } }

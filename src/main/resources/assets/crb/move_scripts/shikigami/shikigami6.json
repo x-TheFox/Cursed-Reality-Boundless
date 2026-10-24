@@ -1,1 +1,1 @@
-{"source":"shikigami/shikigami6","key":"move","duration":31,"cues":[{"t":1,"until":1,"type":"anim","anim":"animation.piercingox_spawn","target":"self"},{"t":6,"until":6,"type":"particle","particle":"ds:shikigami_appear3","at":[{"local":[0.0,0.0,2.0]}]}]}
+{"source":"shikigami/shikigami6","key":"move","start":31,"cues":[{"lo":30,"hi":30,"type":"anim","anim":"animation.piercingox_spawn","target":"self"},{"lo":25,"hi":25,"type":"particle","particle":"ds:shikigami_appear3","at":[{"local":[0.0,0.0,2.0]}]}]}

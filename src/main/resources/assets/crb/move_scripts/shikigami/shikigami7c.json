@@ -1,1 +1,1 @@
-{"source":"shikigami/shikigami7c","key":"move","duration":40,"cues":[{"t":1,"until":1,"type":"anim","anim":"animation.piercing_water","target":"self","cond":["tag=form7c","tag=shikigami"]}]}
+{"source":"shikigami/shikigami7c","key":"move","start":40,"cues":[{"lo":39,"hi":39,"type":"anim","anim":"animation.piercing_water","target":"self","cond":["tag=form7c","tag=shikigami"]}]}

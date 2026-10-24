@@ -35,13 +35,14 @@ class MoveScriptTest {
                 if (json.has("names")) {
                     // projectile runner: cues keyed on the remaining Deleter, unbounded ends allowed
                     assertFalse(json.getAsJsonArray("names").isEmpty(), p.toString());
-                    for (MoveScript.Cue c : ms.cues()) assertTrue(c.until() >= c.t(), p + " cue at " + c.t());
+                    for (MoveScript.Cue c : ms.cues()) assertTrue(c.hi() >= c.lo(), p + " cue at " + c.lo());
                     cues += ms.cues().size();
                     continue;
                 }
-                assertTrue(ms.duration() > 0, p.toString());
+                assertTrue(ms.start() > 0, p.toString());
                 for (MoveScript.Cue c : ms.cues()) {
-                    assertTrue(c.t() >= 0 && c.until() >= c.t() && c.t() <= ms.duration(), p + " cue at " + c.t());
+                    // countdown values: a move's function only runs while its key is 1+
+                    assertTrue(c.lo() >= 1 && c.hi() >= c.lo(), p + " cue at " + c.lo());
                 }
                 cues += ms.cues().size();
             }
@@ -53,12 +54,24 @@ class MoveScriptTest {
     @Test
     void hollowPurpleMatchesResearch() throws Exception {
         MoveScript purple = load("limitless/limitless5");
-        assertEquals(101, purple.duration());
-        assertTrue(purple.cues().stream().anyMatch(c -> c.t() == 1 && c.type().equals("anim")
+        assertEquals(101, purple.start());
+        // research doc 03 lists elapsed ticks; on JJA's countdown elapsed t is value 101 - t
+        assertTrue(purple.cues().stream().anyMatch(c -> c.hi() == 100 && c.type().equals("anim")
                 && c.str("anim", "").equals("animation.imaginary_purple")));
-        assertTrue(purple.cues().stream().anyMatch(c -> c.t() == 57 && c.type().equals("shake") && c.num("intensity", 0) == 2f));
-        assertTrue(purple.cues().stream().anyMatch(c -> c.t() == 65 && c.type().equals("camera_fade")));
+        assertTrue(purple.cues().stream().anyMatch(c -> c.hi() == 44 && c.type().equals("shake") && c.num("intensity", 0) == 2f));
+        assertTrue(purple.cues().stream().anyMatch(c -> c.hi() == 36 && c.type().equals("camera_fade")));
         assertTrue(purple.cues().stream().filter(c -> c.type().equals("impact")).count() >= 4);
+    }
+
+    /** Enchanted Red: a second press while charging jumps the countdown to the launch segments. */
+    @Test
+    void enchantedRedLaunchesOnASecondPress() throws Exception {
+        MoveScript red = load("limitless/limitless3e");
+        assertEquals(66, red.start());
+        assertTrue(red.cues().stream().anyMatch(c -> c.type().equals("anim") && c.str("anim", "").equals("animation.enchant_red1") && c.hi() == 500),
+                "phase red plays from the jump target");
+        assertTrue(red.cues().stream().anyMatch(c -> c.type().equals("counter") && c.lo() == 3 && c.hi() == 5 && c.num("value", 0) == 5),
+                "the charge holds at 5 until released");
     }
 
     @Test

@@ -31,7 +31,8 @@ public final class MoveEffects implements ResourceManagerReloadListener {
     public static final MoveEffects INSTANCE = new MoveEffects();
     private static final ResourceLocation FILE = CRB.id("move_effects.json");
 
-    record Effect(int t, int until, Holder<MobEffect> effect, int ticks, int amplifier, String audience,
+    /** {@code clear}: Bedrock's 0-second effect removes it ({@code effect @s levitation 0 20}); a null effect clears all. */
+    record Effect(int lo, int hi, Holder<MobEffect> effect, int ticks, int amplifier, boolean clear, String audience,
                   List<String> cond, List<String> audienceCond) {}
 
     private Map<ResourceLocation, List<Effect>> effects = Map.of();
@@ -47,11 +48,14 @@ public final class MoveEffects implements ResourceManagerReloadListener {
                     List<Effect> list = new ArrayList<>();
                     for (JsonElement el : e.getValue().getAsJsonArray()) {
                         JsonObject o = el.getAsJsonObject();
-                        var holder = BuiltInRegistries.MOB_EFFECT.getHolder(ResourceLocation.withDefaultNamespace(o.get("effect").getAsString()));
-                        if (holder.isEmpty()) continue;
-                        list.add(new Effect(o.get("t").getAsInt(), o.get("until").getAsInt(), holder.get(),
+                        String id = o.get("effect").getAsString();
+                        boolean clear = o.has("clear") && o.get("clear").getAsBoolean();
+                        var holder = id.equals("*") ? java.util.Optional.<Holder.Reference<MobEffect>>empty()
+                                : BuiltInRegistries.MOB_EFFECT.getHolder(ResourceLocation.withDefaultNamespace(id));
+                        if (holder.isEmpty() && !id.equals("*")) continue;
+                        list.add(new Effect(o.get("lo").getAsInt(), o.get("hi").getAsInt(), holder.map(x -> (Holder<MobEffect>) x).orElse(null),
                                 Math.max(1, (o.has("seconds") ? o.get("seconds").getAsInt() : 1) * 20),
-                                o.has("amplifier") ? o.get("amplifier").getAsInt() : 0,
+                                o.has("amplifier") ? o.get("amplifier").getAsInt() : 0, clear,
                                 o.has("audience") ? o.get("audience").getAsString() : "self",
                                 strings(o.getAsJsonArray("cond")), strings(o.getAsJsonArray("audience_cond"))));
                     }
@@ -71,15 +75,21 @@ public final class MoveEffects implements ResourceManagerReloadListener {
         return out;
     }
 
-    void apply(MoveInstance m, int elapsed) {
+    void apply(MoveInstance m) {
         List<Effect> list = effects.get(m.moveId());
         if (list == null) return;
         LivingEntity caster = m.caster();
+        int v = m.counter();
         for (Effect e : list) {
-            if (elapsed < e.t() || elapsed > e.until()) continue;
-            if (!CueConditions.test(e.cond(), m.tags(), m.scores())) continue;
+            if (v < e.lo() || v > e.hi()) continue;
+            if (!CueConditions.test(e.cond(), m.condTags(), m.condScores())) continue;
             for (LivingEntity target : audience(caster, e.audience())) {
                 if (!e.audienceCond().isEmpty() && !CueConditions.test(e.audienceCond(), JjaTags.of(target), Map.of())) continue;
+                if (e.clear()) {
+                    if (e.effect() == null) target.removeAllEffects();
+                    else target.removeEffect(e.effect());
+                    continue;
+                }
                 target.addEffect(new MobEffectInstance(e.effect(), e.ticks(), e.amplifier(), false, false, true), caster);
             }
         }

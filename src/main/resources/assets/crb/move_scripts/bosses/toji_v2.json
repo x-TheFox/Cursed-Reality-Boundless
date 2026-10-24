@@ -1,1 +1,1 @@
-{"source":"bosses/toji_v2","key":"move","duration":1,"cues":[{"t":1,"until":1,"type":"anim","anim":"animation.toji.idle","target":"self","cond":["score:Camera=0","score:Move=0","score:cutscene=0"]}]}
+{"source":"bosses/toji_v2","key":"move","start":2,"cues":[]}

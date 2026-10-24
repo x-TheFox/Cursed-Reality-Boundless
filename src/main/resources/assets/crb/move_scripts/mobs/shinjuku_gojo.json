@@ -1,1 +1,1 @@
-{"source":"mobs/shinjuku_gojo","key":"move","duration":1,"cues":[{"t":1,"until":1,"type":"effect","effect":"slowness","audience":"self","seconds":1,"amplifier":3,"cond":["if:entity","score:Frames=1..","score:infinity=1..","tag=Frames"]}]}
+{"source":"mobs/shinjuku_gojo","key":"move","start":993,"cues":[]}

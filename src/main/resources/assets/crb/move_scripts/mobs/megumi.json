@@ -1,1 +1,1 @@
-{"source":"mobs/megumi","key":"move","duration":20,"cues":[{"t":16,"until":17,"type":"particle","particle":"ds:flashstep1","at":[{"rel":[0.0,0.0,0.0]}],"cond":["score:chance=6"]}]}
+{"source":"mobs/megumi","key":"move","start":5,"cues":[{"lo":3,"hi":4,"type":"particle","particle":"ds:flashstep1","at":[{"rel":[0.0,0.0,0.0]}],"cond":["score:chance=6"]}]}

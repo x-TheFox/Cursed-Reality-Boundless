@@ -1,1 +1,1 @@
-{"source":"mobs/toji/flyheads","key":"move","duration":51,"cues":[{"t":0,"until":48,"type":"anim","anim":"animation.stunned","target":"self","cond":["score:Stun=1..","tag=!noStunnedAnim"]},{"t":51,"until":51,"type":"anim","anim":"animation.stunned","target":"self","cond":["score:Stun=1..","tag=!noStunnedAnim"]}]}
+{"source":"mobs/toji/flyheads","key":"move","start":6,"cues":[{"lo":3,"hi":1000000,"type":"anim","anim":"animation.stunned","target":"self","cond":["score:Stun=1..","tag=!noStunnedAnim"]}]}

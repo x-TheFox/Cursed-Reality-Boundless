@@ -1,0 +1,35 @@
+# Visual check: Enchanted Red re-press launch, Limitless Purple (no rocketing up), cutscene locks
+cmd gamerule sendCommandFeedback false
+cmd time set noon
+cmd weather clear
+cmd kill @e[type=!player]
+cmd crb kit give @s crb:gojo
+cmd crb energy set @s 10000
+cmd crb cooldowns reset @s
+cmd summon minecraft:zombie ~ ~ ~12 {NoAI:1b}
+look 0 0
+combat on
+wait 20
+cast 3 sneak
+wait 12
+shot 00_red_charging
+cast 3
+wait 4
+shot 01_red_launch_t4
+wait 8
+shot 02_red_launch_t12
+wait 40
+cmd crb cooldowns reset @s
+cmd crb energy set @s 10000
+cast 5 sneak up
+wait 60
+shot 03_lpurple_t60
+wait 100
+shot 04_lpurple_t160
+wait 150
+shot 05_lpurple_t310
+wait 120
+shot 06_lpurple_t430
+wait 60
+shot 07_lpurple_end
+quit

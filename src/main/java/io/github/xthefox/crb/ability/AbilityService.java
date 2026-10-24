@@ -93,6 +93,13 @@ public final class AbilityService {
         if (ability.isEmpty()) return;
 
         Modifiers mods = Modifiers.fromBits(input.modifierBits());
+        // JJA re-press: pressing the running move's ability again (any stance) launches a charge, picks a chant
+        var running = MoveEngine.active(player);
+        if (running.isPresent() && ability.get().id().equals(running.get().get("ability", ""))
+                && io.github.xthefox.crb.move.MoveSim.INSTANCE.readsInput(running.get().moveId(), "input")) {
+            running.get().input("input");
+            return;
+        }
         for (PressOverride o : OVERRIDES) if (o.handle(player, ability.get(), mods)) return;
         PlayerUser user = PlayerUser.of(player);
         VariantResolver.Result r = VariantResolver.resolve(ability.get(), mods, user, CRBConfig.SERVER.cooldowns.get());
@@ -104,7 +111,8 @@ public final class AbilityService {
         data.addEnergy(-user.cost(v));
         if (v.cooldownTicks() > 0) data.setCooldown(v.cooldownKey(), v.cooldownTicks());
         player.getData(CRBAttachments.COMBO).resetString(); // JJA: starting a move clears the M1 string
-        MoveEngine.start(player, ResourceLocation.fromNamespaceAndPath("crb", v.moveId()), v.durationTicks(), v);
+        MoveEngine.start(player, ResourceLocation.fromNamespaceAndPath("crb", v.moveId()), v.durationTicks(), v)
+                .put("ability", ability.get().id());
     }
 
     /** JJA answers failed casts with a low note.pling and a chat line; we use the action bar. */

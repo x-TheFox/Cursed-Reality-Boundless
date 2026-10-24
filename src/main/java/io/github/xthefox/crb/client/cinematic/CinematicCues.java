@@ -30,7 +30,7 @@ public final class CinematicCues {
         ClientMoves.registerHandler("impact_clear", (m, c, t) -> { if (audience(m, c)) ScreenEffects.clearImpact(); });
         // night vision in JJA is a brightness "pop" on impact; a short flash reads the same without a lingering effect
         ClientMoves.registerHandler("effect", (m, c, t) -> {
-            if ("night_vision".equals(c.str("effect", "")) && t == c.t() && audience(m, c)) ScreenEffects.flash(0.35, 12);
+            if ("night_vision".equals(c.str("effect", "")) && m.entering(c) && audience(m, c)) ScreenEffects.flash(0.35, 12);
         });
         ClientMoves.onEnd(CinematicCues::onEnd);
     }

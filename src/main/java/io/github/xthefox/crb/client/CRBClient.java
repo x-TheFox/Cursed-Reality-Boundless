@@ -54,6 +54,23 @@ public final class CRBClient {
             double k = ScreenEffects.fovMultiplier();
             if (k != 1) e.setFOV(e.getFOV() * k);
         });
+        // JJA `inputpermission ... movement/camera disabled` during cutscenes and stuns
+        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.client.event.MovementInputUpdateEvent e) -> {
+            var state = e.getEntity().getData(io.github.xthefox.crb.data.CRBAttachments.COMBAT);
+            if (!state.movementLocked() && !state.stunned()) return;
+            var in = e.getInput();
+            in.forwardImpulse = 0;
+            in.leftImpulse = 0;
+            in.up = in.down = in.left = in.right = false;
+            in.jumping = false;
+        });
+        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.client.event.CalculatePlayerTurnEvent e) -> {
+            var player = Minecraft.getInstance().player;
+            if (player != null && player.getData(io.github.xthefox.crb.data.CRBAttachments.COMBAT).cameraLocked()) {
+                e.setMouseSensitivity(-1.0 / 3.0); // the turn speed formula (s * 0.6 + 0.2)^3 becomes 0
+                e.setCinematicCameraEnabled(false);
+            }
+        });
         NeoForge.EVENT_BUS.addListener(io.github.xthefox.crb.client.input.CombatMode::preTick);
         NeoForge.EVENT_BUS.addListener(io.github.xthefox.crb.client.input.CombatMode::onScroll);
         NeoForge.EVENT_BUS.addListener(io.github.xthefox.crb.client.input.CombatMode::onInteraction);

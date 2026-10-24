@@ -57,7 +57,7 @@ public final class ProjectileSim {
         HitBatch hits = new HitBatch();
         float yaw = p.getYRot(), pitch = p.getXRot();
         for (SimCue c : entry.sim()) {
-            if (!active(c.t(), c.until(), d)) continue;
+            if (!active(c.lo(), c.hi(), d)) continue;
             if (!CueConditions.test(c.cond(), tags, scores)) continue;
             switch (c.type()) {
                 case "hit", "stun" -> {
